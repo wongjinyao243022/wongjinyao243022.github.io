@@ -10,29 +10,47 @@
     @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
     body {
-        background-color: blanchedalmond;
+        background-color: rgb(253, 233, 205);
     }
 
     .container {
         display: flex;
-        width: 800px;
         height: 340px;
-        gap: 10px;
+        gap: 30px;
         max-width: 1000;
-        align: center;
-
+        align-content: center;
+        justify-content: center;
+        padding-top: 20px;
     }
 
     .A {
-        width: 200px;
-        height: 280px;
+        width: 310px;
+        height: 365px;
         background-color: white;
         padding: 10px;
         border-radius: 10px;
+        justify-content: center;
+        align-content: center;
     }
 
     .building {
-        border-radius: 10px;
+        border-radius: 4px;
+        width: 310px;
+        justify-content: center;
+    }
+
+    .wording1 {
+        font-family: "Oxygen";
+        font-weight: solid bold;
+        padding-left: 13px;
+
+    }
+
+    .wording2 {
+        font-family: "Oxygen";
+        font-size: 14px;
+        padding-left: 13px;
+
     }
 </style>
 
@@ -40,21 +58,20 @@
     <div class="container">
         <div class="A">
             <img class="building" src="images/img3.jpg" width="200">
-            <h3>Residential projects</h3>
-            <p>We build sustainable and modern homes for comfortable living.</p>
+            <h3 class="wording1">Residential projects</h3>
+            <p class="wording2">We build sustainable and modern homes for comfortable living.</p>
         </div>
 
         <div class="A">
             <img class="building" src="images/img1.jpg" width="200">
-            <h3>Commercial spaces</h3>
-            <p>We create efficient, inspiring workspaces for businesses of all sizes</p>
+            <h3 class="wording1">Commercial spaces</h3>
+            <p class="wording2">We create efficient, inspiring workspaces for businesses of all sizes</p>
         </div>
 
         <div class="A">
             <img class="building" src="images/img2.jpg" width="200">
-            <h3>Infrastructure works</h3>
-            <p>We develop strong, reliable infrastructure for growing communities.</p>
-
+            <h3 class="wording1">Infrastructure works</h3>
+            <p class="wording2">We develop strong, reliable infrastructure for growing communities.</p>
         </div>
 
     </div>
