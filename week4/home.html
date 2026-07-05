@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>exercise9</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+    .consult {
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        width: 220px;
+        height: 55px;
+        margin: 2px;
+        border-radius: 8px;
+        font-family: "Space Grotesk";
+    }
+
+    .request {
+        color: black;
+        font-size: 15px;
+        width: 220px;
+        height: 55px;
+        margin: 2px;
+        border-radius: 8px;
+        border: 1px solid black;
+        background-color: white;
+        font-family: "Space Grotesk";
+    }
+
+    .bar {
+        display: flex;
+        width: 1440px;
+        justify-content: center;
+        gap: auto;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .barlogo {
+        padding-right: 430px;
+        padding-left: 30px;
+        align-items: left;
+        width: auto;
+        height: 60px;
+    }
+
+    .selection {
+        display: flex;
+        font-family: "Space Grotesk";
+        justify-content: space-evenly;
+        gap: 40px;
+        align-items: center;
+        width: 800px;
+    }
+
+    .header {
+        display: flex;
+        width: 1440px;
+        height: 450px;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 60px;
+        gap: auto;
+    }
+
+    .content {
+        width: 600px;
+        height: auto;
+        gap: 35px;
+        font-family: "Space Grotesk";
+        align-items: top;
+    }
+
+    .illus {
+        width: 600px;
+        height: 500px;
+        padding-right: 60px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px;
+        width: 1370px;
+        mix-blend-mode: luminosity;
+    }
+
+    .contentp {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contenth {
+        font-size: 60px;
+    }
+
+    .middle {
+        display: flex;
+        width: 1440px;
+        padding: 0 100px;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .service {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        background: #B9FF66;
+    }
+
+    .servicecontent {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 580px;
+        flex-shrink: 0;
+    }
+
+    .item1 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Grey, #F3F3F3);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    h3 {
+        color: #000;
+
+        /* h3 */
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .item2 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Green, #B9FF66);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    .item3 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Dark, #191A23);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    .item4 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Grey, #F3F3F3);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    .item5 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Green, #B9FF66);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    .item6 {
+        display: flex;
+        width: 600px;
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        background: var(--Dark, #191A23);
+        box-shadow: 0 5px 0 0 #191A23;
+    }
+
+    .cta {
+        display: flex;
+        width: 1240px;
+        height: 347px;
+        padding: 0 60px;
+        align-items: center;
+        gap: 275px;
+        flex-shrink: 0;
+        border-radius: 45px;
+        background: var(--Grey, #F3F3F3);
+    }
+
+    .ctaheading {
+
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .ctacontent {
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        width: 500px;
+    }
+
+    .free {
+        display: flex;
+        padding: 20px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        background: var(--Dark, #191A23);
+
+        /*button word*/
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 140% */
+    }
+</style>
+
+<body>
+
+    <div class="bar">
+        <div><img class="barlogo" src="images/barlogo.jpg" height="30px"></div>
+        <div class="selection">
+            <p>About us</p>
+            <p>Services</p>
+            <p>Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <button class="request" type="button">Request a quote</button>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="content">
+            <h1 class="contenth">Navigating the digital landscape for success</h1>
+            <p class="contentp">Our digital marketing agency helps businesses grow and succeed online through a range
+                of services
+                including
+                SEO, PPC, social media marketing, and content creation.</p>
+            <button class="consult" type="button">Book a consultation</button>
+        </div>
+        <div><img class="illus" src="images/Illustration.jpg" width="400"></div>
+    </div>
+
+    <div class="logo">
+        <div><img src="images/amazon.jpg" width="100"></div>
+        <div><img src="images/dribbble.jpg" width="100"></div>
+        <div><img src="images/hubspot.jpg" width="100"></div>
+        <div><img src="images/notion.jpg" width="100"></div>
+        <div><img src="images/netflix.jpg" width="100"></div>
+        <div><img src="images/zoom.jpg" width="100"></div>
+    </div>
+
+
+    <div class="middle">
+        <div class="service">
+            <h2>Services</h2>
+        </div>
+
+        <div class="servicecontent">
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+                These services include:</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="item1">
+        <h3>Search Engine Optimization</h3>
+        <div class="illus1"><img src="images/illus1.jpg" width="200"></div>
+
+        <div class="arrow1"><img src="images/arrow1.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+    <div class="item2">
+        <h3>Pay-Per-Click Advertising</h3>
+        <div class="illus2"><img src="images/illus2.jpg" width="200"></div>
+
+        <div class="arrow2"><img src="images/arrow1.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="item3">
+        <h3>Social Media Marketing</h3>
+        <div class="illus3"><img src="images/illus3.jpg" width="200"></div>
+
+        <div class="arrow3"><img src="images/arrow2.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+    <div class="item4">
+        <h3>Email Marketing</h3>
+        <div class="illus4"><img src="images/illus4.jpg" width="200"></div>
+
+        <div class="arrow4"><img src="images/arrow1.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="item5">
+        <h3>Content Creation</h3>
+        <div class="illus5"><img src="images/illus5.jpg" width="200"></div>
+
+        <div class="arrow5"><img src="images/arrow1.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+    <div class="item6">
+        <h3>Analytics and Tracking</h3>
+        <div class="illus6"><img src="images/illus6.jpg" width="200"></div>
+
+        <div class="arrow6"><img src="images/arrow2.jpg" width="41"></div>
+        <div class="Learnmore">
+            <p>Learn more</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="cta">
+        <div class="ctaheading">
+            <h2>Let's make things happen</h2>
+        </div>
+        <div class="ctaillus"><img src="images/ctaillus.jpg" width="200"></div>
+
+        <div class="ctacontent">
+            <p>Contact us today to learn more about how our digital marketing services can help your
+                business grow and
+                succeed online.</p>
+        </div>
+        <button class="free" type="button">Get your free proposal</button>
+    </div>
+
+</body>
+
+</html>
