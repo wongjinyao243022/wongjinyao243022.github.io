@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .child {
+        width: 25%;
+        background-color: pink;
+    }
+
+    /* MOBILE VIEW */
+    @media screen and (max-width: 580px) {
+        .container {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .child {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="child">1 dsf dsdfs dsf dsfdsf sdfds ds dsdsf dsf dsf dfs df dsf sdfsd dsf sdfsd fdsf dsfdsf
+            dsfdsfdsfdsfds fdsf ds dsdsf</div>
+        <div class="child">2 fsd dsf sdf dsf sdfds dsfs dfdsf sdfdsfd sds fdfs dsf sdfd sfdsf dsfds f</div>
+        <div class="child">2 fsd dsf sdf dsf sdfds dsfs dfdsf sdfdsfd sds fdfs dsf sdfd sfdsf dsfds f</div>
+        <div class="child">2 fsd dsf sdf dsf sdfds dsfs dfdsf sdfdsfd sds fdfs dsf sdfd sfdsf dsfds f</div>
+    </div>
+</body>
+
+
+</html>

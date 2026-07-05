@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise8</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+    .bar {
+        display: flex;
+        padding-left: 55px;
+        padding-right: 55px;
+        font-family: "oxygen";
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .selection {
+        display: flex;
+        gap: 30px;
+        align-content: space-between;
+        min-width: 42%;
+        padding-right: 60px;
+        padding-left: 300px;
+        white-space: nowrap;
+    }
+
+    button {
+        background-color: rgb(245, 63, 7);
+        color: white;
+        font-size: 16px;
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        margin: 8px;
+    }
+
+    .contact {
+        min-width: 20%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .phoneno {
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        /*make things won't wrap, done it in single line*/
+        white-space: nowrap;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        /*make things don't shrink when the screen is small*/
+        flex-shrink: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .selection {
+            display: none;
+        }
+
+        .button {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+            width: 35px;
+            height: auto;
+        }
+
+        .menu {
+            display: block;
+            width: 35px;
+            height: auto;
+            padding-left: 15px;
+            align-self: center;
+            padding-top: 5px;
+        }
+
+        .bar {
+            justify-content: space-between;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+        }
+
+        .contact {
+            min-width: 15%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .icon {
+            display: none;
+        }
+
+        .phoneno {
+            display: none;
+        }
+
+        .contact {
+            justify-content: flex-end;
+        }
+    }
+</style>
+
+<body>
+    <div class="bar">
+        <div class="logo">
+            <img src="image/elementra.webp" width="200px">
+        </div>
+
+        <div class="selection">
+            <p>Home</p>
+            <p>Services</p>
+            <p>Work</p>
+            <p>Project Details</p>
+            <p>Contact</p>
+        </div>
+
+        <div class="contact">
+            <div class="icon"><img src="image/phone.png" width="100%" height="auto"></div>
+            <div class="phoneno">555-123-4567</div>
+            <div class="button">
+                <button type="button">Contact</button>
+            </div>
+            <div class="menu">
+                <img src="image/menu.png" width="100%" height="auto">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
