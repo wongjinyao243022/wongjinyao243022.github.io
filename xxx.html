@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fff4e6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: linear-gradient(90deg, #d62828, #f77f00, #ffbe0b);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            color: black;
+        }
+
+        /* MAIN */
+
+        main {
+
+            background: url("week4/images/background.jpg") center/cover;
+
+            padding: 50px;
+        }
+
+        /* PROFILE */
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid #f77f00;
+            object-fit: cover;
+        }
+
+        .profile h1 {
+            margin-top: 15px;
+            color: #d62828;
+        }
+
+        .profile h3 {
+            color: #f77f00;
+            margin: 10px;
+        }
+
+        .profile p {
+            width: 70%;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .6);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+        }
+
+        .card h2 {
+            color: #d62828;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .card a:hover {
+            background: #f77f00;
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: linear-gradient(90deg, #d62828, #f77f00, #ffbe0b);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .social {
+            margin-bottom: 10px;
+        }
+
+        footer .social a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        @media(max-width:768px) {
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .profile p {
+                width: 100%;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">LOGO</div>
+
+        <div class="social">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="profile">
+
+            <img src="week4/images/ryan.png" alt="Profile">
+
+            <h1>Wong Jin Yao</h1>
+
+            <h3>Web Publishing</h3>
+
+            <p>
+                Hello! I'm Wong Jin Yao. I love combining creativity with technology.
+                My goal is to become a UI/UX Designer and create beautiful user experiences.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2><i class="fa-solid fa-calendar-week"></i> Week 1</h2>
+
+                <a href="week1/exe1.html" target="_blank">Exercise 1</a>
+                <a href="week1/exe2.html" target="_blank">Exercise 2</a>
+
+            </div>
+
+            <div class="card">
+
+                <h2><i class="fa-solid fa-calendar-week"></i> Week 2</h2>
+
+                <a href="week2/artist.html" target="_blank">Exercise 1</a>
+                <a href="week2/button.html" target="_blank">Exercise 2</a>
+                <a href="week2/self-intro.html" target="_blank">Exercise 3</a>
+
+            </div>
+
+            <div class="card">
+
+                <h2><i class="fa-solid fa-calendar-week"></i> Week 3</h2>
+
+                <a href="week3/flexbox1.html" target="_blank">Exercise 1</a>
+                <a href="week3/flexbox2.html" target="_blank">Exercise 2</a>
+
+            </div>
+
+            <div class="card">
+
+                <h2><i class="fa-solid fa-calendar-week"></i> Week 4</h2>
+
+                <a href="week4/menu.html" target="_blank">Exercise 1</a>
+                <a href="week4/home.html" target="_blank">Exercise 2</a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <p>© 2026 Wong Jin Yao. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
