@@ -48,6 +48,11 @@ body {
     gap: 30px;
 }
 
+.blck2hide,
+.blck3hide {
+    display: none;
+}
+
 .blck1,
 .blck2,
 .blck3 {
@@ -157,6 +162,10 @@ body {
     display: block;
 }
 
+.plusicon1 {
+    display: none;
+}
+
 
 /* Minus Icon*/
 .minusicon {
@@ -181,9 +190,10 @@ body {
 
 .row1,
 .row2 {
-    width: 100%;
+    width: 85%;
     margin: 0 auto 35px;
     display: flex;
+    justify-content: space-between;
     gap: 35px;
 }
 
@@ -193,7 +203,7 @@ body {
 .column4,
 .column5,
 .column6 {
-    flex: 1;
+    width: 32%;
     background: #fff;
     border: 2px solid #191A23;
     border-radius: 35px;
@@ -248,7 +258,7 @@ body {
 }
 
 .teambutton {
-    width: 85%;
+    width: 20%;
     margin: 30px auto 80px;
     display: flex;
     justify-content: flex-end;
@@ -269,4 +279,162 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* ---- Section headers: stack heading + paragraph ---- */
+    .casestudy,
+    .WrkPrcss,
+    .Team {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin: 50px auto 30px;
+        gap: 15px;
+    }
+
+    .casecontent,
+    .PrcssP,
+    .TeamP {
+        max-width: 100%;
+    }
+
+    /* ---- Case Study cards: FORCE them to stack ---- */
+
+    .casestudy {
+        align-items: center;
+    }
+
+    .casestudyblcks {
+        display: none;
+    }
+
+    .blck1 {
+        border-right: none;
+        align-content: center;
+        width: 90%;
+        border-right: 20px;
+    }
+
+    .blck1hide,
+    .blck2hide,
+    .blck3hide {
+        color: #fff;
+        line-height: 1.7;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    .blckhide {
+        display: block;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 50px;
+        background: #191A23;
+        border-radius: 50px;
+        margin-top: 30px;
+        padding: 30px;
+        margin-left: 45px;
+    }
+
+
+    .blck1,
+    .blck2,
+    .blck3 {
+        display: none;
+    }
+
+
+    .content1,
+    .content2,
+    .content3,
+    .content4,
+    .content5,
+    .content6 {
+        background: #fff;
+        border-radius: 50px;
+        padding: 20px 25px;
+    }
+
+    .content1 .lower {
+        display: none;
+    }
+
+    .minusicon {
+        display: none;
+    }
+
+    .plusicon1 {
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .plusicon1 img {
+        width: 55px;
+        display: block;
+    }
+
+
+    .content1 .upper,
+    .content2 .upper,
+    .content3 .upper,
+    .content4 .upper,
+    .content5 .upper,
+    .content6 .upper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .upper h2 {
+        font-size: 36px;
+        margin-right: 20px;
+    }
+
+    .contentH h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    /* Size the +/- icons the same */
+    .plusicon img,
+    .plusicon1 img,
+    .minusicon img {
+        width: 32px;
+    }
+}
+
+/* ---- Team cards: stack one per row ---- */
+.row1,
+.row2 {
+    width: 90%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5,
+.column6 {
+    width: 100%;
+}
+
+.Team {
+    align-items: center;
+}
+
+.teambutton {
+    width: 90%;
+    justify-content: center;
+    margin: 20px auto 60px;
+}
+
+.teambutton button {
+    width: 100%;
 }

@@ -1,0 +1,546 @@
+ @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+ .consult {
+     background-color: black;
+     color: white;
+     font-size: 15px;
+     width: 220px;
+     height: 55px;
+     margin: 2px;
+     border-radius: 8px;
+     font-family: "Space Grotesk";
+ }
+
+ .request {
+     color: black;
+     font-size: 15px;
+     width: 220px;
+     height: 55px;
+     margin: 2px;
+     border-radius: 8px;
+     border: 1px solid black;
+     background-color: white;
+     font-family: "Space Grotesk";
+ }
+
+ .bar {
+     display: flex;
+     width: 1440px;
+     justify-content: center;
+     gap: auto;
+     padding: 30px;
+     align-items: center;
+ }
+
+ .menu {
+     display: none;
+ }
+
+ .barlogo {
+     padding-right: 430px;
+     padding-left: 30px;
+     align-items: left;
+     width: auto;
+     height: 60px;
+ }
+
+ .selection {
+     display: flex;
+     font-family: "Space Grotesk";
+     justify-content: space-evenly;
+     gap: 40px;
+     align-items: center;
+     width: 800px;
+ }
+
+ .header {
+     display: flex;
+     width: 1440px;
+     height: 450px;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding: 60px;
+     gap: auto;
+ }
+
+ .content {
+     width: 600px;
+     height: auto;
+     gap: 35px;
+     font-family: "Space Grotesk";
+     align-items: top;
+ }
+
+ .illus {
+     width: 600px;
+     height: 500px;
+     padding-right: 60px;
+ }
+
+ .logo {
+     display: flex;
+     justify-content: space-between;
+     padding: 70px;
+     width: 1370px;
+     mix-blend-mode: luminosity;
+ }
+
+ .contentp {
+     font-size: 20px;
+     padding-bottom: 10px;
+ }
+
+ .contenth {
+     font-size: 60px;
+ }
+
+ h3,
+ p,
+ h2 {
+     font-family: "Space Grotesk";
+ }
+
+ .services {
+     font-family: "Space Grotesk";
+     font-size: 30px;
+     font-weight: 500;
+     border-radius: 7px;
+     background: #B9FF66;
+     width: 180px;
+     height: 50px;
+     padding: 0 7px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .servicecontent {
+     font-family: "Space Grotesk";
+     font-size: 18px;
+     font-weight: 400;
+     width: 580px;
+     flex-shrink: 0;
+ }
+
+ .middle {
+     display: flex;
+     width: 1440px;
+     padding: 0 70px;
+     align-items: flex-start;
+     gap: 50px;
+     align-items: center;
+     padding-bottom: 80px;
+ }
+
+ .green {
+     font-size: 30px;
+     font-weight: 500;
+     display: flex;
+     padding: 0 7px;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 10px;
+     border-radius: 7px;
+     background: #B9FF66;
+     height: 50px;
+     width: fit-content;
+     justify-content: center;
+ }
+
+ .white {
+     font-size: 30px;
+     font-weight: 500;
+     display: flex;
+     padding: 0 7px;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 10px;
+     border-radius: 7px;
+     background: #FFF;
+     height: 50px;
+     width: fit-content;
+     justify-content: center;
+ }
+
+
+ h3 {
+     height: 71px;
+ }
+
+
+ .learnmore {
+     font-size: 20px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ .arrow {
+     width: 41px;
+     height: 41px;
+ }
+
+ .item1 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: var(--Grey, #F3F3F3);
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .words {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     gap: 93px;
+     width: 221px;
+     height: 210px;
+ }
+
+ .bottom {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .illus2 {
+     width: 210px;
+     height: 166.047px;
+     flex-shrink: 0;
+ }
+
+ .item2 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: #B9FF66;
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .item3 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: #191A23;
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .learnmore2 {
+     color: #FFF;
+     font-family: "Space Grotesk";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ .item4 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: var(--Grey, #F3F3F3);
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .item5 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: #B9FF66;
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .item6 {
+     display: flex;
+     width: 580px;
+     padding: 50px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 45px;
+     border: 1px solid var(--Dark, #191A23);
+     background: #191A23;
+     box-shadow: 0 5px 0 0 #191A23;
+ }
+
+ .free {
+     background-color: black;
+     color: white;
+     font-size: 15px;
+     width: 220px;
+     height: 55px;
+     margin: 2px;
+     border-radius: 8px;
+     font-family: "Space Grotesk";
+ }
+
+ .ctaheading {
+     font-family: "Space Grotesk";
+     font-size: 30px;
+     font-weight: 500;
+ }
+
+ .ctacontent {
+     font-family: "Space Grotesk";
+     font-size: 18px;
+     font-weight: 400;
+     width: 500px;
+ }
+
+ .ctawords {
+     display: flex;
+     flex-direction: column;
+     gap: 26px;
+     width: 500px;
+     height: 227px;
+     padding-left: 60px;
+ }
+
+ .cta {
+     display: flex;
+     width: 1200px;
+     height: 347px;
+     padding: 0 60px;
+     align-items: center;
+     gap: 275px;
+     flex-shrink: 0;
+     border-radius: 45px;
+     background: #F3F3F3;
+     padding-left: 100px;
+     padding-right: 100px;
+     justify-content: center;
+     margin: 0 auto;
+ }
+
+ .ctaillus {
+     display: flex;
+     height: 394px;
+     padding-right: 135px;
+     align-items: center;
+     flex-shrink: 0;
+ }
+
+ .row1 {
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+     padding-bottom: 40px;
+     padding-left: 70px;
+     padding-right: 70px;
+     justify-content: space-between;
+     flex-shrink: 0;
+ }
+
+ .row2 {
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+     padding-bottom: 40px;
+     padding-left: 70px;
+     padding-right: 70px;
+     justify-content: space-between;
+     flex-shrink: 0;
+ }
+
+ .row3 {
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+     padding-bottom: 100px;
+     padding-left: 70px;
+     padding-right: 70px;
+     justify-content: space-between;
+     flex-shrink: 0;
+ }
+
+
+
+ @media screen and (max-width:767px) {
+
+     * {
+         box-sizing: border-box;
+         /*讓元素大小包含 padding 和 border，方便排版*/
+     }
+
+     body {
+         margin: 0;
+         /*allow the content to start from the edge of the screen.*/
+         overflow-x: hidden;
+         /*隐藏超出页面宽度的内容，避免左右滚动*/
+     }
+
+     .bar {
+         width: 100%;
+         padding: 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     .barlogo {
+         padding: 0;
+         height: 30px;
+         width: auto;
+     }
+
+     .selection {
+         display: none;
+     }
+
+     .menu {
+         display: block;
+     }
+
+
+
+     .header {
+         width: 100%;
+         height: auto;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .content {
+         width: 100%;
+     }
+
+     .contenth {
+         font-size: 42px;
+         line-height: 1.2;
+     }
+
+     .contentp {
+         font-size: 16px;
+     }
+
+     .illus {
+         width: 100%;
+         height: auto;
+         padding: 0;
+     }
+
+     .consult {
+         width: 100%;
+     }
+
+
+
+     .logo {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 25px;
+         padding: 20px;
+     }
+
+     /* Services Heading */
+
+     .middle {
+         width: 100%;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         gap: 15px;
+     }
+
+     .servicecontent {
+         width: 100%;
+     }
+
+
+
+     .row1,
+     .row2,
+     .row3 {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         padding: 20px;
+     }
+
+     .item1,
+     .item2,
+     .item3,
+     .item4,
+     .item5,
+     .item6 {
+         width: 100%;
+         padding: 25px;
+         border-radius: 30px;
+     }
+
+     .words {
+         width: 55%;
+         height: auto;
+         gap: 40px;
+     }
+
+     .illus2 {
+         width: 120px;
+         height: auto;
+     }
+
+     .illus2 img {
+         width: 100%;
+     }
+
+     .learnmore,
+     .learnmore2 {
+         display: none;
+     }
+
+
+
+     .cta {
+         width: 90%;
+         height: auto;
+         margin: 20px auto;
+         padding: 25px;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .ctawords {
+         width: 100%;
+         padding: 0;
+     }
+
+     .ctacontent {
+         width: 100%;
+     }
+
+     .ctaillus {
+         display: none;
+     }
+
+     .free {
+         width: 100%;
+     }
+
+ }
