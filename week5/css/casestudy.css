@@ -188,9 +188,10 @@ body {
     font-size: 18px;
 }
 
+/* ---- Team section: desktop 3-column grid (matches reference image) ---- */
 .row1,
 .row2 {
-    width: 85%;
+    width: 100%;
     margin: 0 auto 35px;
     display: flex;
     justify-content: space-between;
@@ -258,8 +259,6 @@ body {
 }
 
 .teambutton {
-    width: 20%;
-    margin: 30px auto 80px;
     display: flex;
     justify-content: flex-end;
 }
@@ -268,9 +267,10 @@ body {
     background: #191A23;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 18px 40px;
     font-size: 18px;
+    width: 40%;
 }
 
 .Team {
@@ -406,35 +406,36 @@ body {
     .minusicon img {
         width: 32px;
     }
-}
 
-/* ---- Team cards: stack one per row ---- */
-.row1,
-.row2 {
-    width: 90%;
-    flex-direction: column;
-    gap: 25px;
-}
+    /* ---- Team cards: stack one per row (mobile only) ---- */
+    .row1,
+    .row2 {
+        width: 90%;
+        flex-direction: column;
+        gap: 25px;
+    }
 
-.column1,
-.column2,
-.column3,
-.column4,
-.column5,
-.column6 {
-    width: 100%;
-}
+    .column1,
+    .column2,
+    .column3,
+    .column4,
+    .column5,
+    .column6 {
+        width: 100%;
+    }
 
-.Team {
-    align-items: center;
-}
+    .Team {
+        align-items: center;
+    }
 
-.teambutton {
-    width: 90%;
-    justify-content: center;
-    margin: 20px auto 60px;
-}
+    .teambutton {
+        width: 90%;
+        justify-content: center;
+        margin: 20px auto 60px;
+        align-self: flex-end;
+    }
 
-.teambutton button {
-    width: 100%;
+    .teambutton button {
+        width: 100%;
+    }
 }
