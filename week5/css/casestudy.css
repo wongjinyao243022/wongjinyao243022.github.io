@@ -48,6 +48,7 @@ body {
     gap: 30px;
 }
 
+.blck1hide,
 .blck2hide,
 .blck3hide {
     display: none;
@@ -280,6 +281,8 @@ body {
     align-items: center;
     gap: 30px;
 }
+
+
 
 @media screen and (max-width: 767px) {
 
