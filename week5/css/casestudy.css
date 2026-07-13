@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body {
+    background: #F7F7F7;
+    color: #191A23;
+}
+
+.casestudy,
+.WrkPrcss {
+    width: 85%;
+    margin: 80px auto 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.caseheader h2,
+.PrcssH h2,
+.TeamH h2 {
+    background: #B9FF66;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 40px;
+}
+
+.casecontent,
+.PrcssP,
+.TeamP {
+    max-width: 450px;
+    line-height: 1.5;
+}
+
+.casestudyblcks {
+    width: 85%;
+    margin: auto;
+    background: #191A23;
+    border-radius: 40px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blck1,
+.blck2,
+.blck3 {
+    flex: 1;
+}
+
+.blck1,
+.blck2 {
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+}
+
+.blck1p,
+.blck2p,
+.blck3p {
+    color: #fff;
+    line-height: 1.7;
+}
+
+.lm1,
+.lm2,
+.lm3 {
+    color: #B9FF66;
+    margin-top: 25px;
+}
+
+.learnmore {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    color: #B9FF66;
+    font-size: 22px;
+    font-weight: 500;
+    align-items: baseline;
+}
+
+.learnmore img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.Processes {
+    width: 85%;
+    margin: 40px auto 80px;
+}
+
+/* All Process Cards */
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
+    background: #fff;
+    border: 2px solid #191A23;
+    border-radius: 35px;
+    box-shadow: 0 6px #191A23;
+    padding: 35px 45px;
+    margin-bottom: 30px;
+}
+
+.word2,
+.word3,
+.word4,
+.word5,
+.word6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* First card is green */
+.content1 {
+    background: #B9FF66;
+}
+
+/* Top Row */
+.upper {
+    display: flex;
+    align-items: center;
+}
+
+/* Number */
+.upper h2 {
+    font-size: 60px;
+    margin-right: 25px;
+    font-weight: 700;
+}
+
+/* Heading */
+.contentH h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Plus Icon */
+.plusicon {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plusicon img {
+    width: 55px;
+    display: block;
+}
+
+
+/* Minus Icon*/
+.minusicon {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.minusicon img {
+    width: 55px;
+    display: block;
+}
+
+/* Expanded Text */
+.lower {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 2px solid #191A23;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.row1,
+.row2 {
+    width: 100%;
+    margin: 0 auto 35px;
+    display: flex;
+    gap: 35px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5,
+.column6 {
+    flex: 1;
+    background: #fff;
+    border: 2px solid #191A23;
+    border-radius: 35px;
+    box-shadow: 0 6px #191A23;
+    padding: 25px;
+    display: flex;
+}
+
+.column1 .upper,
+.column2 .upper,
+.column3 .upper,
+.column4 .upper,
+.column5 .upper,
+.column6 .upper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile img {
+    width: 80px;
+}
+
+.info {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.Name h4 {
+    font-size: 24px;
+}
+
+.position p {
+    margin-top: 5px;
+}
+
+.corner {
+    margin-left: auto;
+}
+
+.corner img {
+    width: 35px;
+}
+
+.exp {
+    width: 100%;
+    border-top: 1px solid #191A23;
+    margin-top: 20px;
+    padding-top: 20px;
+    line-height: 1.6;
+}
+
+.teambutton {
+    width: 85%;
+    margin: 30px auto 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teambutton button {
+    background: #191A23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 40px;
+    font-size: 18px;
+}
+
+.Team {
+    width: 85%;
+    margin: 80px 40px 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
