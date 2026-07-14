@@ -127,31 +127,26 @@ body {
     align-items: center;
 }
 
-/* First card is green */
 .content1 {
     background: #B9FF66;
 }
 
-/* Top Row */
 .upper {
     display: flex;
     align-items: center;
 }
 
-/* Number */
 .upper h2 {
     font-size: 60px;
     margin-right: 25px;
     font-weight: 700;
 }
 
-/* Heading */
 .contentH h3 {
     font-size: 28px;
     font-weight: 500;
 }
 
-/* Plus Icon */
 .plusicon {
     margin-left: auto;
     display: flex;
@@ -167,8 +162,6 @@ body {
     display: none;
 }
 
-
-/* Minus Icon*/
 .minusicon {
     margin-left: auto;
     display: flex;
@@ -180,7 +173,6 @@ body {
     display: block;
 }
 
-/* Expanded Text */
 .lower {
     margin-top: 25px;
     padding-top: 25px;
@@ -189,7 +181,6 @@ body {
     font-size: 18px;
 }
 
-/* ---- Team section: desktop 3-column grid (matches reference image) ---- */
 .row1,
 .row2 {
     width: 100%;

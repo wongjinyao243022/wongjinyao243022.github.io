@@ -225,8 +225,6 @@
          padding: 50px 25px 0;
      }
 
-     /* Flatten footer-top / footer-middle so their children can be
-       reordered together as one column via flex `order` */
      .footer-top,
      .footer-middle {
          display: contents;
