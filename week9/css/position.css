@@ -31,7 +31,7 @@ body {
 /* Left Card */
 
 .left-box {
-    width: 220px;
+    width: 300px;
     height: 150px;
     background: #d8ff00;
     position: absolute;
@@ -49,7 +49,7 @@ body {
 }
 
 .small-line {
-    width: 100px;
+    width: 200px;
     height: 2px;
     background: #333;
     margin-bottom: 15px;
@@ -114,4 +114,36 @@ body {
 .right-box p {
     font-size: 13px;
     color: #666;
+}
+
+@media (max-width: 768px) {
+
+    .box {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .left-box {
+        width: 300px;
+        height: 150px;
+        left: -20px;
+        bottom: 20px;
+        padding: 18px;
+    }
+
+    .left-box h1 {
+        font-size: 42px;
+    }
+
+    .right-box {
+        width: 170px;
+        right: -20px;
+        top: 20px;
+        padding: 15px;
+    }
+
+    .number-area h2 {
+        font-size: 28px;
+    }
+
 }
