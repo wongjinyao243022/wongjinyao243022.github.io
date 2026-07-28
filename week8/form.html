@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise13</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Registration Form - Middle School</h1>
+    </div>
+
+    <form action="/action_page.php">
+        <div class="name">
+
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        </div>
+
+
+        <input type="date" id="date" name="date" required>
+        <input type="email" id="email" name="email" placeholder="xxxxxx@gmail.com" required>
+        <br>
+
+        <input type="url" id="url" name="url" placeholder="www.xxxxxx.com.my" required>
+
+        <div class="radio">
+
+            <p>Please select your favorite color:</p>
+            <input type="radio" id="red" name="fav_color" value="Red" required>
+            <label for="html">Red</label><br>
+
+            <input type="radio" id="blue" name="fav_color" value="Blue" required>
+            <label for="css">Blue</label><br>
+
+            <input type="radio" id="green" name="fav_color" value="Green" required>
+            <label for="javascript">Green</label>
+
+        </div>
+
+        <div class="bio">
+            <p><label for="Self-introduction">Self-introduction:</label></p>
+            <textarea id="Self-introduction" name="Self-introduction" rows="4" cols="50"
+                required>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
