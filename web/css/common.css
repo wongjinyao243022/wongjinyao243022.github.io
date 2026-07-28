@@ -7,17 +7,18 @@
     box-sizing: border-box;
 }
 
-
 /* === ROOT VARIABLES === */
 :root {
     --font-heading: "Kumbh Sans", sans-serif;
     --font-base: "Mulish", sans-serif;
     --white: #ffff;
-    --slateblue: #4f578D;
-    --rosepink: #f73760;
-    --beige: #fef8e2;
-    --lightpink: #faf5f8;
+    --slateblue: #4F578D;
+    --textcolor: #1F2937;
+    --rosepink: #F73760;
+    --beige: #FEF8E2;
+    --lightpink: #FAF5F8;
     --submenucolor: #6769b8;
+    --whitebox: #F5F5F5;
 }
 
 /*headings*/
@@ -25,10 +26,54 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6,
+.smalltext {
     font-family: var(--font-heading);
     font-weight: bold;
     line-height: 1.5;
+}
+
+/*h1 is used at banner home, help center */
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+.smalltext {
+    font-size: 17px;
+}
+
+p {
+    font-family: var(--font-base);
+    line-height: 1.5;
+    color: var(--textcolor);
+    padding: 0px 20px;
+
+}
+
+p.extrablod {
+    font-size: 90px;
+    line-height: 500;
 }
 
 .header {
@@ -38,7 +83,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px;
-    font-family: "Kumbh Sans", sans-serif;
+    font-family: var(--font-heading);
 
 }
 
@@ -60,8 +105,8 @@ h5 {
 
 .menu a {
     text-decoration: none;
-    color: #1d2340;
-    font-family: "Kumbh Sans", sans-serif;
+    color: var(--darkblue);
+    font-family: var(--font-heading);
     font-size: 17px;
 
 
@@ -90,7 +135,7 @@ h5 {
     top: 100%;
     left: 0;
     width: 250px;
-    background: #5e64a8;
+    background: var(--slateblue);
     border-radius: 0 0 0 20px;
     overflow: hidden;
     opacity: 0;
@@ -101,7 +146,7 @@ h5 {
 .submenu a {
     display: block;
     padding: 18px 20px;
-    color: white;
+    color: var(--white);
 }
 
 .project-submenu {
@@ -109,7 +154,7 @@ h5 {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #6769b8;
+    background: var(--submenucolor);
     border-radius: 0 0 0 20px;
     pointer-events: none;
     transition: .3s;
@@ -121,7 +166,7 @@ h5 {
 .project-item a {
     display: block;
     padding: 18px 20px;
-    color: white;
+    color: var(--white);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -136,7 +181,7 @@ h5 {
 }
 
 .submenu:hover {
-    background: #F73760;
-    border-color: #F73760;
-    color: white;
+    background: var(--rosepink);
+    border-color: var(--rosepink);
+    color: var(--white);
 }

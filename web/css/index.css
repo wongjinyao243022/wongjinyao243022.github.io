@@ -1,0 +1,51 @@
+.header-bg {
+    background: var(--textcolor);
+    width: 100%;
+}
+
+
+
+.menu a {
+    color: var(--white);
+
+}
+
+.submenu a {
+    background: var(--darkblue);
+    color: var(--white);
+}
+
+
+/*button*/
+.request {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 30px;
+    font-family: var(--font-heading);
+    font-size: 16px;
+    cursor: pointer;
+    width: 236.05px;
+    height: 59.6px;
+    justify-content: center;
+}
+
+.talk-btn {
+    display: none;
+}
+
+.request:hover {
+    background: var(--rosepink);
+    border-color: var(--rosepink);
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.request img {
+    width: 18px;
+    height: 18px;
+}
