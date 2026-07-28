@@ -190,8 +190,7 @@ p.extrablod {
 .hero {
     position: relative;
     background-image: url(../images/heroimages.png);
-    width: 1397px;
-    height: 277px;
+    width: 90%;
     margin-left: 80px;
     margin-right: 80px;
 
