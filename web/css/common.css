@@ -27,41 +27,48 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.smalltext {
+h6 {
     font-family: var(--font-heading);
-    font-weight: bold;
-    line-height: 1.5;
+
 }
 
-/*h1 is used at banner home, help center */
+/*h1 is used at Contact No */
 h1 {
-    font-size: 56px;
+    font-size: 100px;
+    font-weight: 700;
+    Line-height: 120px;
 }
 
 h2 {
-    font-size: 44px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 44px;
+    font-weight: 700;
+    Line-height: 61.6px;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: 700;
+    Line-height: 46.8px;
 }
 
 h5 {
     font-size: 28px;
+    font-weight: 700;
+    Line-height: 39.2px;
 }
 
 h6 {
-    font-size: 22px;
+    font-family: 20px;
+    font-weight: 600;
+    Line-height: 28px;
 }
 
-.smalltext {
-    font-size: 17px;
-}
 
 p {
     font-family: var(--font-base);
