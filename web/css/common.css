@@ -29,8 +29,8 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading);
-
 }
+
 
 /*h1 is used at Contact No */
 h1 {
@@ -94,6 +94,48 @@ p.extrablod {
 
 }
 
+/*buttons*/
+
+/*Post Content Header Contact Button*/
+.postbtn {
+    padding: 18px 36px;
+    border-radius: 100px;
+    font-size: 17px;
+    font-family: var(--font-base);
+    background-color: var(--rosepink);
+}
+
+.postbtn:hover {
+    border-radius: 100px;
+    background-color: #4F578D
+}
+
+
+/*Home Page  Hero Content CTA Button*/
+.heroctabtn {
+    margin: 20px 40px 22px;
+    border-radius: 100px;
+    font-size: 17px;
+    font-family: var(--font-base);
+    background-color: #4F578D;
+}
+
+.heroctabtn:hover {
+    border-radius: 100px;
+    background-color: #4F578D;
+}
+
+/*footer button */
+.footer-btn {
+    padding: 22px 42px;
+    border-radius: 100px;
+    font-size: 17px;
+    font-family: var(--font-base);
+    background-color: transparent;
+    border: 1.6px solid var(--white);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
 
 /*Logo*/
 .logo img {
