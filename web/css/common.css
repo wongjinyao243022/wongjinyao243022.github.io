@@ -117,12 +117,10 @@ p.extrablod {
     border-radius: 100px;
     font-size: 17px;
     font-family: var(--font-base);
-    background-color: #4F578D;
 }
 
 .heroctabtn:hover {
     border-radius: 100px;
-    background-color: #4F578D;
 }
 
 /*footer button */
@@ -133,9 +131,10 @@ p.extrablod {
     font-family: var(--font-base);
     background-color: transparent;
     border: 1.6px solid var(--white);
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: var(--white);
+    color: var(--white);
 }
+
 
 /*Logo*/
 .logo img {
