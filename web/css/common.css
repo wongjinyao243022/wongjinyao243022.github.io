@@ -27,60 +27,115 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.newshero {
     font-family: var(--font-heading);
 }
 
 
-/*h1 is used at Contact No */
+/*h1 is used at footer Contact No */
 h1 {
     font-size: 100px;
     font-weight: 700;
     Line-height: 120px;
 }
 
+/* HERO-TITTLE*/
 h2 {
     font-size: 50px;
     font-weight: 700;
     line-height: 70px;
 }
 
+/*TITTLE*/
 h3 {
     font-size: 44px;
     font-weight: 700;
     Line-height: 61.6px;
 }
 
+/* SUB- TITTLE*/
 h4 {
     font-size: 36px;
     font-weight: 700;
     Line-height: 46.8px;
 }
 
+/*OBJECT-TITTLE*/
 h5 {
     font-size: 28px;
     font-weight: 700;
     Line-height: 39.2px;
 }
 
+/* SUB OBJECT-TITTLE*/
 h6 {
-    font-family: 20px;
+    font-size: 20px;
     font-weight: 600;
     Line-height: 28px;
 }
 
+/* News Insights Hero Section*/
+.newshero {
+    font-size: 80px;
+    line-height: 96px;
+}
 
-p {
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.percentagetitle,
+.linktitle,
+.countertitle,
+.functionsub,
+.menutitle {
     font-family: var(--font-base);
-    line-height: 1.5;
-    color: var(--textcolor);
-    padding: 0px 20px;
+}
+
+/*Hero Description*/
+.p1 {
+    font-size: 24px;
+    line-height: 43.2px;
+    font-weight: 400;
 
 }
 
-p.extrablod {
-    font-size: 90px;
-    line-height: 500;
+/*Quote and Testimonial*/
+.p2 {
+    font-size: 22px;
+    line-height: 35.2px;
+    font-weight: 400;
+}
+
+/*Body Text- General Content*/
+.p3 {
+    font-size: 19px;
+    line-height: 34.2px;
+    font-weight: 400;
+}
+
+/*Supporting Text- Card Description , footer text*/
+.p4 {
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+}
+
+/*Caption / List- List , Feature item , Small Notes*/
+.p5 {
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 400;
+}
+
+
+.menutitle {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.4px;
+
 }
 
 .header {
