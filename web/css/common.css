@@ -140,13 +140,13 @@ h6 {
 }
 
 .header {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 60px;
+    padding: 20px 60px;
     font-family: var(--font-heading);
+    height: 130px;
 
 }
 
@@ -227,7 +227,8 @@ h6 {
 
 /*Logo*/
 .logo img {
-    width: 180px;
+    width: 205px;
+    height: 46.625px;
     display: block;
 }
 
@@ -238,7 +239,6 @@ h6 {
     justify-content: center;
     gap: 38px;
     flex: 1;
-    margin-left: 120px;
 }
 
 .menu a {
