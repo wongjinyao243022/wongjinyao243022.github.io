@@ -1,41 +1,51 @@
+/*HOME PAGE HEADER*/
+
+
 .header-bg {
     background: var(--textcolor);
     width: 100%;
 }
 
-
+/* Home Page Menu */
 
 .menu a {
     color: var(--white);
 
 }
 
+/* Home Page Dropdown */
 .submenu a {
     background: var(--darkblue);
     color: var(--white);
 }
 
 
-/*button*/
+/*Home Page Button*/
 .request {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    width: 236.05px;
+    height: 59.6px;
     padding: 15px 25px;
     background: transparent;
     border: 2px solid var(--white);
-    color: var(--white);
     border-radius: 30px;
+    color: var(--white);
     font-family: var(--font-heading);
     font-size: 16px;
     cursor: pointer;
-    width: 236.05px;
-    height: 59.6px;
-    justify-content: center;
 }
 
+/* Home Page hide Let talk button*/
 .talk-btn {
     display: none;
+}
+
+/* Home Page show Phone button */
+.phone-btn {
+    display: flex;
 }
 
 .request:hover {
@@ -48,4 +58,14 @@
 .request img {
     width: 18px;
     height: 18px;
+}
+
+/* Home Page hide Burger Menu */
+.menu-btn {
+    display: none;
+}
+
+/* Home Page */
+.phone-btn {
+    margin-left: auto;
 }
