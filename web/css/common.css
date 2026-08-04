@@ -19,6 +19,7 @@
     --lightpink: #FAF5F8;
     --submenucolor: #6769b8;
     --whitebox: #F5F5F5;
+    --lightslablue: #A6ABCD;
 }
 
 /*headings*/
@@ -200,6 +201,29 @@ h6 {
     color: var(--white);
 }
 
+/*Data & Analytics ,Private Taxation , Marketing Strategy ,Business Consulting*/
+.servicebtn {
+    font-size: 17px;
+    font-family: var(--font-base);
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--lightslablue);
+    color: var(--white);
+}
+
+.service-btn:hover {
+    background-color: var(--rosepink);
+    color: var(--white);
+}
+
+.hamburgermenu {
+    margin: 2px 0px 0px 15px;
+    background-color: var(--white);
+}
+
+.hamburgermenu:hover {
+    background-color: var(--slateblue);
+}
 
 /*Logo*/
 .logo img {
