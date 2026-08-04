@@ -149,6 +149,16 @@ h6 {
 
 }
 
+/*for Passionate · Dedicated · Professional */
+.section-tag {
+    color: var(--rosepink);
+    font-family: var(--font-base);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30.6px;
+
+}
+
 /*buttons*/
 
 /*Post Content Header Contact Button*/
