@@ -178,14 +178,23 @@ h6 {
 
 
 /*Home Page  Hero Content CTA Button*/
-.heroctabtn {
-    margin: 20px 40px 22px;
+.heroctabtn-left,
+.heroctabtn-right {
+    padding: 20px 40px 22px;
+    margin: 20px 20px 0px 0px;
     border-radius: 100px;
     font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.255px;
+    line-height: 20.4px;
     font-family: var(--font-base);
+    width: fit-content;
+    border: 1.6px solid;
 }
 
-.heroctabtn:hover {
+
+.heroctabtn-left:hover,
+.heroctabtn-right:hover {
     border-radius: 100px;
 }
 
