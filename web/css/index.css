@@ -159,9 +159,10 @@ header {
     box-shadow: 2px 2px 40px 0px rgba(35, 38, 62, 0.1);
     position: relative;
     top: 50px;
+
 }
 
-.feature-card {
+.feature-item {
     display: flex;
     justify-content: flex-start;
     padding: 50px 60px;
@@ -183,7 +184,7 @@ h5 {
 
 }
 
-.card {
+.item {
     padding: 0px 0px 0px 30px;
     border-left: 1.6px solid var(--rosepink);
     margin: 0px 23.563px;
