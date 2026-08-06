@@ -1,0 +1,39 @@
+header {
+    background: #fff;
+}
+
+.request {
+    background: var(--rosepink);
+    color: var(--white);
+    border: none;
+}
+
+.phone-btn {
+    display: none;
+}
+
+.talk-btn {
+    display: flex;
+}
+
+.menu-btn {
+    display: flex;
+}
+
+.menu a {
+    color: var(--textcolor);
+}
+
+.request {
+    background: var(--rosepink);
+    color: var(--white);
+    border: none;
+}
+
+.request:hover {
+    background: var(--slateblue);
+}
+
+.help-center {
+    display: none;
+}
