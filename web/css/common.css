@@ -150,8 +150,6 @@ h6 {
 
 }
 
-
-
 /*for Passionate · Dedicated · Professional */
 .section-tag {
     color: var(--rosepink);
@@ -236,21 +234,6 @@ h6 {
     background-color: var(--slateblue);
 }
 
-.request {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 236px;
-    height: 60px;
-    padding: 18px 36px;
-    border-radius: 30px;
-    background: #F73760;
-    color: #fff;
-    border: none;
-    font-family: var(--font-heading);
-}
-
 /*Logo*/
 .logo img {
     width: 205px;
@@ -269,7 +252,7 @@ h6 {
 
 .menu a {
     text-decoration: none;
-    color: var(--textcolor);
+    color: var(--darkblue);
     font-family: var(--font-heading);
     font-size: 17px;
 
@@ -452,6 +435,7 @@ h6 {
     border: none;
     border-radius: 50%;
     background: #EEF0F6;
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -489,80 +473,4 @@ h6 {
 .hero-overlay h2 {
     margin-bottom: 10px;
     align-items: left;
-}
-
-.header-action {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-/*== Laptop Off Canvas Menu ==*/
-
-.laptop-menu {
-
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: #23253F;
-    padding: 70px 50px;
-    transition: .45s ease;
-    z-index: 9999;
-
-}
-
-.laptop-menu.active {
-
-    left: 0;
-
-}
-
-.laptop-menu a {
-
-    display: block;
-    color: white;
-    font-size: 28px;
-    font-family: var(--font-heading);
-    text-decoration: none;
-    margin: 28px 0;
-
-}
-
-.laptop-menu a:hover {
-
-    color: var(--rosepink);
-}
-
-.close-btn {
-    position: absolute;
-    right: 40px;
-    top: 30px;
-    border: none;
-    background: none;
-    color: white;
-    font-size: 45px;
-    cursor: pointer;
-
-}
-
-/* === Laptop  === */
-@media screen and (max-width:1310px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-btn {
-        display: flex;
-    }
-
-    .phone-btn {
-        display: flex;
-    }
-
-    .header {
-        padding: 20px 50px;
-    }
-
 }

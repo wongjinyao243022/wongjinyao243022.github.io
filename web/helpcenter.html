@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpCenter</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/helpcenter.css">
+</head>
+<style>
+    .search-bar {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 40%;
+        padding: 20px;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+    }
+
+    .section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .section h3 {
+        margin-bottom: 60px;
+        margin-bottom: 60px;
+    }
+
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>Help Center</h2>
+            <h6>How can we help you ? </h6>
+            <div class="search-bar">
+                <input type="text" placeholder="Need help about your business? Ask our experts...">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h3>Get Started Quickly With...</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="manage.jpg" alt="Manage Accounts">
+                <h3>Manage Accounts</h3>
+                <ul>
+                    <li> › How to Become a Client</li>
+                    <li> › Register New Agent Profile</li>
+                    <li> › Quality Enhance Customer Area</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="insights.jpg" alt="Business Insights">
+                <h3>Business Insights</h3>
+                <ul>
+                    <li> › Market Analysis</li>
+                    <li> › Competitive Intelligence</li>
+                    <li> › Customer Behavior Trends</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <img src="insights.jpg" alt="Business Insights">
+            <h3>Business Insights</h3>
+            <ul>
+                <li> › Market Analysis</li>
+                <li> › Competitive Intelligence</li>
+                <li> › Customer Behavior Trends</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
