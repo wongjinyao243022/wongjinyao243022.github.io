@@ -19,6 +19,25 @@ header {
 
 }
 
+.logo img {
+    content: url("../images/whitelogo.png")
+}
+
+
+/*-- Home Header --*/
+
+.phone-btn {
+    display: flex;
+}
+
+.talk-btn {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
 /* Home Page Menu */
 
 .menu a {
@@ -35,21 +54,9 @@ header {
 
 /*Home Page Button*/
 .request {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 236.05px;
-    height: 59.6px;
-    padding: 18px 36px;
     background: transparent;
-    border: 2px solid var(--white);
-    border-radius: 30px;
-    color: var(--white);
-    font-family: var(--font-heading);
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border: 2px solid white;
+    color: white;
 }
 
 /* Home Page hide Let talk button*/
@@ -188,5 +195,17 @@ h5 {
     padding: 0px 0px 0px 30px;
     border-left: 1.6px solid var(--rosepink);
     margin: 0px 23.563px;
+
+}
+
+.logo img {
+    content: url("../images/whitelogo.png");
+}
+
+@media screen and (max-width:1310px) {
+
+    .menu-btn {
+        display: flex;
+    }
 
 }
