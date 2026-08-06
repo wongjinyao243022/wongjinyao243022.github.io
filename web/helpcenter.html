@@ -54,7 +54,7 @@
         overflow: hidden;
         text-align: left;
         border: 1px solid var(--textcolor);
-        margin-bottom: 120px;
+        margin-bottom: 80px;
 
     }
 
@@ -92,10 +92,12 @@
     }
 
     .learning-section {
-        width: 90%;
-        margin: 80px auto;
+        width: 100%;
+        padding: 100px 30px;
+        margin: 80px 0;
         text-align: center;
-        background: var(--lightpink);
+        background: var(--lightbluegrey);
+        box-sizing: border-box;
     }
 
     .learning-section h2 {
@@ -111,19 +113,19 @@
 
     .learning-card {
         width: 30%;
-        background: var(--white);
-        border: 1px solid #E5E5E5;
-        border-radius: 12px;
+        background: var(--darkblue);
         padding: 30px;
         text-align: left;
+        box-sizing: border-box;
     }
 
     .learning-card h5 {
         margin-bottom: 12px;
+        color: var(--white);
     }
 
-    .learning-card p {
-        line-height: 1.6;
+    .learning-card .p4 {
+        color: var(--white);
     }
 </style>
 
@@ -168,46 +170,37 @@
                 </ul>
             </div>
         </div>
-        <section class="learning-section">
+    </section>
+    <section class="learning-section">
 
-            <h2>The Business Learning Zone</h2>
+        <h2>The Business Learning Zone</h2>
 
-            <div class="learning-cards">
-
-                <div class="learning-card">
-                    <h5>Asset Protection Plans</h5>
-                    <p>Protection for consultants & investors</p>
-                </div>
-
-                <div class="learning-card">
-                    <h5>Help Intellectual Ideas</h5>
-                    <p>Practical solutions for transformation</p>
-                </div>
-
-                <div class="learning-card">
-                    <h5>Market Rules & Policies</h5>
-                    <p>Quick guidance from our experts</p>
-                </div>
-
-                <div class="learning-card">
-                    <h5>Strategic Business Trends</h5>
-                    <p>Company priorities in business results</p>
-                </div>
-
-                <div class="learning-card">
-                    <h5>Insights & Opinions</h5>
-                    <p>Industry news and expert analysis</p>
-                </div>
-
-                <div class="learning-card">
-                    <h5>Avada Business Expert's Help & Advice</h5>
-                    <p>Business support and professional guidance</p>
-                </div>
-
+        <div class="learning-cards">
+            <div class="learning-card">
+                <h5>Asset Protection Plans</h5>
+                <p class="p4">Protection for consultants & investors</p>
             </div>
 
-        </section>
+            <div class="learning-card">
+                <h5>Help Intellectual Ideas</h5>
+                <p class="p4">Practical solutions for transformation</p>
+            </div>
+
+            <div class="learning-card">
+                <h5>Market Rules & Policies</h5>
+                <p class="p4">Quick guidance from our experts</p>
+            </div>
+
+            <div class="learning-card">
+                <h5>Strategic Business Trends</h5>
+                <p class="p4">Company priorities in business results</p>
+            </div>
+
+
+        </div>
+
     </section>
+
 </body>
 
 </html>
