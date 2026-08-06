@@ -25,12 +25,15 @@
     }
 
     .section {
-        padding: 60px 20px;
+        width: 90%;
+        margin: auto;
+        padding: 60px 30px;
         text-align: center;
+
     }
 
     .section h3 {
-        margin-bottom: 60px;
+        margin-top: 60px;
         margin-bottom: 60px;
     }
 
@@ -38,23 +41,89 @@
     .cards {
         display: flex;
         justify-content: center;
-        gap: 20px;
         flex-wrap: wrap;
+        gap: 26.35px;
     }
 
     .card {
+        position: relative;
         background: var(--white);
         border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
+        width: 30%;
+        height: 315px;
         overflow: hidden;
         text-align: left;
+        border: 1px solid var(--textcolor);
+        margin-bottom: 120px;
+
+    }
+
+    .card h5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 40px 0 20px 40px;
+        color: var(--white);
+        font-family: var(--font-heading);
+        box-sizing: border-box;
+        z-index: 1;
     }
 
     .card img {
         width: 100%;
-        height: 180px;
+        height: 124px;
         object-fit: cover;
+        display: block;
+    }
+
+    .card ul {
+        list-style: none;
+        padding: 5px 40px;
+    }
+
+    .card li {
+        margin-bottom: 20px;
+        font-family: var(--font-base);
+        font-size: medium;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    .learning-section {
+        width: 90%;
+        margin: 80px auto;
+        text-align: center;
+        background: var(--lightpink);
+    }
+
+    .learning-section h2 {
+        margin-bottom: 60px;
+    }
+
+    .learning-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 26px;
+    }
+
+    .learning-card {
+        width: 30%;
+        background: var(--white);
+        border: 1px solid #E5E5E5;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .learning-card h5 {
+        margin-bottom: 12px;
+    }
+
+    .learning-card p {
+        line-height: 1.6;
     }
 </style>
 
@@ -72,8 +141,8 @@
         <h3>Get Started Quickly With...</h3>
         <div class="cards">
             <div class="card">
-                <img src="manage.jpg" alt="Manage Accounts">
-                <h3>Manage Accounts</h3>
+                <img src="images/manage.png" alt="Manage Accounts">
+                <h5>Manage Accounts</h5>
                 <ul>
                     <li> › How to Become a Client</li>
                     <li> › Register New Agent Profile</li>
@@ -81,24 +150,63 @@
                 </ul>
             </div>
             <div class="card">
-                <img src="insights.jpg" alt="Business Insights">
-                <h3>Business Insights</h3>
+                <img src="images/business.png" alt="Business Insights">
+                <h5>Business Insights</h5>
                 <ul>
                     <li> › Market Analysis</li>
                     <li> › Competitive Intelligence</li>
                     <li> › Customer Behavior Trends</li>
                 </ul>
             </div>
+            <div class="card">
+                <img src="images/download.png" alt="Download Guides">
+                <h5>Download Guides </h5>
+                <ul>
+                    <li> ›Ads And Other Marketing Materials </li>
+                    <li> ›Live ANd On - Demand Webinars</li>
+                    <li> › Small Business Finance Resourcess</li>
+                </ul>
+            </div>
         </div>
-        <div class="card">
-            <img src="insights.jpg" alt="Business Insights">
-            <h3>Business Insights</h3>
-            <ul>
-                <li> › Market Analysis</li>
-                <li> › Competitive Intelligence</li>
-                <li> › Customer Behavior Trends</li>
-            </ul>
-        </div>
+        <section class="learning-section">
+
+            <h2>The Business Learning Zone</h2>
+
+            <div class="learning-cards">
+
+                <div class="learning-card">
+                    <h5>Asset Protection Plans</h5>
+                    <p>Protection for consultants & investors</p>
+                </div>
+
+                <div class="learning-card">
+                    <h5>Help Intellectual Ideas</h5>
+                    <p>Practical solutions for transformation</p>
+                </div>
+
+                <div class="learning-card">
+                    <h5>Market Rules & Policies</h5>
+                    <p>Quick guidance from our experts</p>
+                </div>
+
+                <div class="learning-card">
+                    <h5>Strategic Business Trends</h5>
+                    <p>Company priorities in business results</p>
+                </div>
+
+                <div class="learning-card">
+                    <h5>Insights & Opinions</h5>
+                    <p>Industry news and expert analysis</p>
+                </div>
+
+                <div class="learning-card">
+                    <h5>Avada Business Expert's Help & Advice</h5>
+                    <p>Business support and professional guidance</p>
+                </div>
+
+            </div>
+
+        </section>
     </section>
 </body>
 
