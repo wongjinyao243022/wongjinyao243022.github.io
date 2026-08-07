@@ -394,6 +394,7 @@ body.menu-open {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .card-name {
@@ -402,20 +403,49 @@ body.menu-open {
 
 .card-name>h5 {
     margin-bottom: 15px;
-
 }
+
+.card-name>p {
+    line-height: 30.6px;
+}
+
 
 .card-btn {
     background-color: var(--white);
     border-radius: 100px;
     color: rgb(79, 87, 141);
     padding: 15px 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     gap: 12px;
-    border-color: none;
+    border-color: transparent;
 }
 
+.strategy-cards {
+    background-color: rgb(244, 245, 250);
+    border-radius: 10px;
+    background-size: cover;
+    padding: 60px 50px;
+    margin: 50px 26.35px 40px 26.35px;
+    width: calc(100%/3);
+}
+
+.strategy-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.strategy-cards-container .strategy-cards {
+    width: calc(100%/3 - 60px);
+}
+
+#about {
+    height: 837.7px;
+    margin-top: 120px;
+}
 
 
 @media screen and (max-width:1320px) {
