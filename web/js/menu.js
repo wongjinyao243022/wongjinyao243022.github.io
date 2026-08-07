@@ -1,4 +1,4 @@
-const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-toggle-burger');
 const closeMenu = document.getElementById('close-menu');
 const laptopMenu = document.getElementById('laptop-menu');
 
