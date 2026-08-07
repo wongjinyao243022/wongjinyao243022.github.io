@@ -34,10 +34,7 @@
     display: none;
 }
 
-.menu-btn {
-    display: none;
-    justify-content: center;
-}
+
 
 /* Home Page Menu */
 
@@ -364,6 +361,7 @@ h5 {
     #menu-toggle-burger {
         display: block;
         justify-content: center;
+        display: flex;
     }
 
     .menu {
