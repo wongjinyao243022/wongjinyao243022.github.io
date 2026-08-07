@@ -465,7 +465,8 @@ h6 {
     cursor: pointer;
     margin-left: 16px;
     transition: background-color 0.3s ease;
-    flex-shrink: 0
+    flex-shrink: 0;
+
 }
 
 .menu-btn img {
@@ -516,7 +517,7 @@ h6 {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: #23253F;
+    background: #3D436D;
     padding: 70px 50px;
     transition: .45s ease;
     z-index: 9999;
