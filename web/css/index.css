@@ -53,11 +53,43 @@ header {
 
 
 /*Home Page Button*/
-.request {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
+.header-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.request-phone-btn {
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    padding: 18px 36px;
+    border: solid 1.6px var(--white);
+    border-radius: 100px;
+    gap: 12px;
+    align-items: center;
+    display: flex;
+}
+
+.request-menu-btn {
+    border-radius: 50%;
+    background-color: var(--rosepink);
+    width: 57px;
+    height: 57px;
+    margin-left: 20px;
+}
+
+.hamburger-icon {
+    height: auto;
+    width: auto;
+    color: var(--white);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
 
 /* Home Page hide Let talk button*/
 .talk-btn {
@@ -69,13 +101,13 @@ header {
     display: flex;
 }
 
-.request:hover {
+.request-phone-btn:hover {
     background: var(--rosepink);
     border-color: var(--rosepink);
     color: var(--white);
 }
 
-.request img {
+.request-phone-btn img {
     width: 18px;
     height: 18px;
 }
@@ -85,9 +117,142 @@ header {
     display: none;
 }
 
+
 /* Home Page */
 .phone-btn {
     margin-left: auto;
+}
+
+/*hamburger overlay menu*/
+.laptop-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--darkblue, #12172b);
+    opacity: 99%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+
+    overflow-y: auto;
+    isolation: isolate;
+    z-index: 9999;
+}
+
+.laptop-menu.active {
+    transform: translateX(0);
+}
+
+.overlay-menu-text {
+    margin: 0px 60px 60px 60px;
+
+}
+
+.down-arrow {
+    filter: contrast(100%);
+}
+
+.p1 {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -0.51px;
+}
+
+.menu-text {
+    margin-bottom: 12px;
+
+}
+
+.close-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 1px 6px;
+    margin: 20px 20px 0px 0px;
+    position: sticky;
+}
+
+.laptop-menu a {
+    color: var(--white);
+    font-size: 34px;
+    text-decoration: none;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.2s ease;
+
+
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+.laptop-menu a:hover {
+    color: var(--rosepink);
+}
+
+.overlay-cta {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.contact-no {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+.help-support {
+    font-family: var(--font-base);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.255px;
+    line-height: 43.2px;
+    color: rgb(255, 255, 255, 0.7);
+
+}
+
+.support-hotline {
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: -1.4px;
+    color: var(--white);
+}
+
+.overlay-menu-contact-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%
+}
+
+.overlay-btn {
+    padding: 22px 42px;
+    border-width: 1.6px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--white);
+    border-color: rgb(34, 37, 61);
+    transition-duration: 0.2s;
+    transition-duration: color;
+}
+
+.overlay-btn:hover {
+    background-color: rgb(35, 38, 62);
+
 }
 
 /* home page hero banner */
@@ -96,9 +261,6 @@ header {
     width: 100%;
     margin: 0;
     padding: 79.6px 20px;
-
-
-
 }
 
 .hero-title {
@@ -164,7 +326,7 @@ header {
     align-content: center;
     border-radius: 10px;
     box-shadow: 2px 2px 40px 0px rgba(35, 38, 62, 0.1);
-    position: relative;
+    position: static;
     top: 50px;
 
 }
@@ -186,7 +348,7 @@ h5 {
 
 }
 
-.p4 {
+.item-caption {
     color: rgb(166, 171, 205);
 
 }
@@ -202,10 +364,23 @@ h5 {
     content: url("../images/whitelogo.png");
 }
 
-@media screen and (max-width:1310px) {
+@media screen and (max-width:1320px) {
 
     .menu-btn {
         display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .request-menu-btn:hover {
+        background-color: rgb(206 214 234);
+
     }
 
 }
