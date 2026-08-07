@@ -1,11 +1,11 @@
-const toggleButton = document.getElementById("menu-toggle");
-const menu = document.getElementById("laptop-menu");
-const closeButton = document.getElementById("close-menu");
+const menuToggle = document.getElementById('menu-toggle');
+const closeMenu = document.getElementById('close-menu');
+const laptopMenu = document.getElementById('laptop-menu');
 
-toggleButton.addEventListener("click", () => {
-    menu.classList.add("active");
+menuToggle.addEventListener('click', () => {
+    laptopMenu.classList.add('active');
 });
 
-closeButton.addEventListener("click", () => {
-    menu.classList.remove("active");
+closeMenu.addEventListener('click', () => {
+    laptopMenu.classList.remove('active');
 });
