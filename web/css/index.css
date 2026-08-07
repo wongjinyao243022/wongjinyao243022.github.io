@@ -352,6 +352,17 @@ h5 {
     content: url("../images/whitelogo.png");
 }
 
+#strategy {
+    margin: 120px 60px;
+}
+
+.p3 {
+    color: var(--rosepink);
+
+}
+
+
+
 @media screen and (max-width:1320px) {
 
     .menu-btn {
