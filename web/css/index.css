@@ -10,7 +10,7 @@
 }
 
 /*HOME PAGE HEADER*/
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,12 +200,4 @@ h5 {
 
 .logo img {
     content: url("../images/whitelogo.png");
-}
-
-@media screen and (max-width:1310px) {
-
-    .menu-btn {
-        display: flex;
-    }
-
 }
