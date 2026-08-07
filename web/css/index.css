@@ -154,7 +154,7 @@
 }
 
 
-.p1 {
+.menu-text>.p1 {
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -0.51px;
@@ -326,7 +326,7 @@ body.menu-open {
     gap: 5%;
 }
 
-h5 {
+.item>.h5 {
     color: rgb(34, 37, 61);
     font-size: 22px;
     font-weight: 700;
@@ -358,7 +358,62 @@ h5 {
 
 .p3 {
     color: var(--rosepink);
+    border-bottom-width: 0.1px;
+    border-bottom-color: rgb(34, 37, 61);
+    border-bottom-style: dotted;
 
+}
+
+.tagline {
+    width: 340px;
+}
+
+.strategy-heading {
+    width: 50%;
+
+}
+
+.strategy-title {
+    margin: 20px 0px 15px 0px;
+
+}
+
+.strategy-subheading {
+    margin: 0px 26.35px;
+    padding: 70px 60px 0px 0px;
+}
+
+
+.strategy-subheading>.p1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.strategy-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-name {
+    margin-top: 40px;
+}
+
+.card-name>h5 {
+    margin-bottom: 15px;
+
+}
+
+.card-btn {
+    background-color: var(--white);
+    border-radius: 100px;
+    color: rgb(79, 87, 141);
+    padding: 15px 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    border-color: none;
 }
 
 
