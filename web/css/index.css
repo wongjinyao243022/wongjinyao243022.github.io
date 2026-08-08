@@ -447,34 +447,124 @@ body.menu-open {
     width: calc(100%/3 - 60px);
 }
 
-#about-content-container {
+.about-content-container {
 
     display: flex;
     flex-direction: column;
+    padding: 0px 50px;
+    margin: 0px 26.35px;
 }
 
 #about {
     height: 837.7px;
-    margin-top: 120px;
+    padding: 120px 30px;
     background-image: url(../images/about-bg.jpg);
     background-size: cover;
     height: 873.7px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-img {
+    margin: 0px 26.35px;
+}
+
+.about-us-img>img {
+    border-radius: 0px 0px 0px 25px;
 }
 
 .about-heading>h3 {
     color: var(--white);
-
+    margin: 20px 0px 15px 0px;
 }
 
 .about-heading>.p3 {
-    border-bottom-width: 0.1px;
+    border-bottom-width: 0.05px;
     border-bottom-color: var(--white);
     border-bottom-style: dotted;
     width: fit-content;
 }
 
+.about-us-tab-container {
+    margin: 20px 0px;
+
+}
+
+.about-us-tab {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-name {
+    color: var(--white);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.about-us-tab>button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 11px 15px;
+    margin: 1px;
+}
+
+
+.tab-icon {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.toggle-content .p4 {
+    color: var(--white);
+    line-height: 30.6px;
+    padding: 15px 15px 15px 0px;
+}
+
+.vision-toggle-text {
+    display: none;
+}
+
+.strategy-toggle-text {
+    display: none;
+}
+
+.about-contact>.p4 {
+    margin: 40px 0px 10px 0px;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-phone>span>img {
+    margin: 5px 10px 0px 0px;
+}
+
+.contact-phone .p1 {
+    color: var(--white);
+
+}
+
+#logo-container {
+    height: 268.775px;
+    padding: 80px 30px;
+    background-color: rgb(42, 46, 75);
+}
+
+.row-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
 @media screen and (max-width:1320px) {
 
