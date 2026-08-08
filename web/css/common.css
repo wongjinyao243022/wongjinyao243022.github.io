@@ -57,7 +57,7 @@ h3 {
     Line-height: 61.6px;
 }
 
-/* SUB- TITTLE*/
+/* SUB-TITTLE*/
 h4 {
     font-size: 36px;
     font-weight: 700;
@@ -97,6 +97,7 @@ h6 {
 .menutitle {
     font-family: var(--font-base);
 }
+
 
 /*Hero Description*/
 .p1 {
@@ -151,7 +152,6 @@ h6 {
     padding: 20px 60px;
     font-family: var(--font-heading);
     height: 130px;
-
 }
 
 /*for Passionate · Dedicated · Professional */
@@ -177,7 +177,7 @@ h6 {
 
 .postbtn:hover {
     border-radius: 100px;
-    background-color: #4F578D
+    background-color: var(--slateblue);
 }
 
 
@@ -247,8 +247,8 @@ h6 {
     height: 60px;
     padding: 18px 36px;
     border-radius: 30px;
-    background: #F73760;
-    color: #fff;
+    background: var(--rosepink);
+    color: var(--white);
     border: none;
     font-family: var(--font-heading);
 }
@@ -274,8 +274,6 @@ h6 {
     color: var(--darkblue);
     font-family: var(--font-heading);
     font-size: 17px;
-
-
 }
 
 .has-submenu {
@@ -321,7 +319,7 @@ h6 {
     left: 0;
     width: 850px;
     display: flex;
-    background: white;
+    background: var(--white);
     border-radius: 0 0 0 25px;
     overflow: hidden;
     opacity: 0;
@@ -345,19 +343,19 @@ h6 {
 
 .project-left {
     width: 52%;
-    background: #6769b8;
+    background: var(--slateblue);
     padding: 35px;
 }
 
 .project-left h5 {
-    color: white;
+    color: var(--white);
     margin-bottom: 25px;
 }
 
 .project-right {
 
     width: 48%;
-    background: white;
+    background: var(--white);
     padding: 35px;
 
 }
@@ -372,7 +370,7 @@ h6 {
 
 .project-right h5 {
 
-    color: #1F2937;
+    color: var(--darkblue);
     margin-bottom: 20px;
 
 }
@@ -381,7 +379,7 @@ h6 {
 
     display: inline-block;
     margin-top: 20px;
-    color: #F73760;
+    color: var(--rosepink);
 
 }
 
@@ -396,7 +394,7 @@ h6 {
 
 .project-item a {
 
-    color: white;
+    color: var(--white);
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
@@ -405,7 +403,7 @@ h6 {
 
 .project-item p {
 
-    color: #d6d8ff;
+    color: var(--lightblue);
     font-size: 15px;
     margin-top: 8px;
 
@@ -460,7 +458,7 @@ h6 {
     height: 58px;
     border: none;
     border-radius: 50%;
-    background: #F73760;
+    background: var(--rosepink);
     display: none;
     justify-content: center;
     align-items: center;
@@ -519,7 +517,7 @@ h6 {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: #3D436D;
+    background: var(--slateblue);
     padding: 70px 50px;
     transition: .45s ease;
     z-index: 9999;
@@ -535,7 +533,7 @@ h6 {
 .laptop-menu a {
 
     display: block;
-    color: white;
+    color: var(--white);
     font-size: 28px;
     font-family: var(--font-heading);
     text-decoration: none;
@@ -554,7 +552,7 @@ h6 {
     top: 30px;
     border: none;
     background: none;
-    color: white;
+    color: var(--white);
     font-size: 45px;
     cursor: pointer;
 
