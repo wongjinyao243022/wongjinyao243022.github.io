@@ -77,7 +77,7 @@
 .contact-form textarea {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid var(--whitebox);
     background: transparent;
     padding-bottom: 18px;
     outline: none;
