@@ -431,20 +431,18 @@ body.menu-open {
     background-size: cover;
     padding: 60px 50px;
     margin: 50px 26.35px 40px 26.35px;
-    width: calc(100%/3);
+    width: 404.938px;
+    height: 492.766px;
 }
 
 .strategy-cards-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 0px;
     width: 100%;
+    justify-content: center;
 }
 
-.strategy-cards-container .strategy-cards {
-    width: calc(100%/3 - 60px);
-}
 
 .about-content-container {
 
@@ -600,14 +598,10 @@ body.menu-open {
     justify-content: center;
 }
 
-.team-card-container .team-card {
-
-    width: calc(100%/4 - 40px);
-}
-
 .team-card {
 
     height: 460.862px;
+    width: 323.188px;
     background-color: var(--white);
     box-shadow: rgba(35, 38, 62, 0.1) 2px 2px 40px 0px;
     display: flex;
@@ -922,7 +916,4 @@ body.menu-open {
         background-color: rgb(206 214 234);
 
     }
-
-
-
 }
