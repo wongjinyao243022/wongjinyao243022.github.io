@@ -152,6 +152,8 @@ h6 {
     padding: 20px 60px;
     font-family: var(--font-heading);
     height: 130px;
+    position: relative;
+    z-index: 1000;
 }
 
 /*for Passionate · Dedicated · Professional */
@@ -305,6 +307,7 @@ h6 {
     opacity: 0;
     pointer-events: none;
     transition: .3s;
+    z-index: 1001;
 }
 
 

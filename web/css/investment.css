@@ -27,7 +27,6 @@ header {
 }
 
 
-
 .header {
     display: flex;
     align-items: center;
@@ -36,6 +35,15 @@ header {
 .talk-btn {
     display: flex;
     margin-left: auto;
+}
+
+.header {
+    position: relative;
+    z-index: 1000;
+}
+
+.submenu {
+    z-index: 1001;
 }
 
 .overlay-menu-btn {
@@ -262,4 +270,122 @@ header {
 
 .feature-pink {
     background: var(--lightpink);
+}
+
+/* Success Card */
+
+.success-section {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.success-cards {
+    display: flex;
+    gap: 16px;
+}
+
+.success-card {
+    flex: 1;
+    background: var(--lightbluegrey);
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.success-card h5 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.success-card p {
+    font-family: var(--font-base);
+    font-size: 12px;
+    line-height: 18px;
+    color: #777;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+/* Intro Text*/
+
+.intro-section {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.intro-section p {
+    font-family: var(--font-base);
+    font-size: 13px;
+    line-height: 22px;
+    color: #777;
+    text-align: left;
+}
+
+/* Project Images */
+
+.project-images {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+.project-image {
+    width: 50%;
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Driving Success */
+
+.success-content {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.success-content-text {
+    max-width: 900px;
+}
+
+.success-content h3 {
+    margin-bottom: 25px;
+}
+
+.success-content p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 27px;
+    color: #777;
 }
