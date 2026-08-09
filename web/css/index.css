@@ -138,7 +138,6 @@
     flex-direction: column;
     transform: translateX(100%);
     transition: transform 0.35s ease;
-
     overflow-y: auto;
     isolation: isolate;
     z-index: 9999;
@@ -447,32 +446,459 @@ body.menu-open {
     width: calc(100%/3 - 60px);
 }
 
-#about-content-container {
+.about-content-container {
 
     display: flex;
     flex-direction: column;
+    padding: 0px 50px;
+    margin: 0px 26.35px;
 }
+
+/*about us section*/
 
 #about {
     height: 837.7px;
-    margin-top: 120px;
+    padding: 120px 30px;
     background-image: url(../images/about-bg.jpg);
     background-size: cover;
     height: 873.7px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-img {
+    margin: 0px 26.35px;
+}
+
+.about-us-img>img {
+    border-radius: 0px 0px 0px 25px;
 }
 
 .about-heading>h3 {
     color: var(--white);
-
+    margin: 20px 0px 15px 0px;
 }
 
 .about-heading>.p3 {
-    border-bottom-width: 0.1px;
+    border-bottom-width: 0.05px;
     border-bottom-color: var(--white);
     border-bottom-style: dotted;
     width: fit-content;
+}
+
+.about-us-tab-container {
+    margin: 20px 0px;
+
+}
+
+.about-us-tab {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-name {
+    color: var(--white);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.about-us-tab>button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 11px 15px;
+    margin: 1px;
+}
+
+
+.tab-icon {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.toggle-content .p4 {
+    color: var(--white);
+    line-height: 30.6px;
+    padding: 15px 15px 15px 0px;
+}
+
+.vision-toggle-text {
+    display: none;
+}
+
+.strategy-toggle-text {
+    display: none;
+}
+
+.about-contact>.p4 {
+    margin: 40px 0px 10px 0px;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-phone>span>img {
+    margin: 5px 10px 0px 0px;
+}
+
+.contact-phone .p1 {
+    color: var(--white);
+
+}
+
+/*logo container section*/
+#logo-container {
+    height: 268.775px;
+    padding: 80px 30px;
+    background-color: rgb(42, 46, 75);
+}
+
+.row-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*team experts section*/
+#team {
+    margin: 120px -30px 0px;
+    padding: 0px 30px;
+    height: 953.662px;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.team-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 131.788px 0px 131.788px;
+}
+
+.team-heading>.team-title {
+    margin: 20px 0px 15px 0px;
+}
+
+.team-subtitle>.p4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 50.075px 60px 50.075px;
+}
+
+.team-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team-card-container .team-card {
+
+    width: calc(100%/4 - 40px);
+}
+
+.team-card {
+
+    height: 460.862px;
+    background-color: var(--white);
+    box-shadow: rgba(35, 38, 62, 0.1) 2px 2px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16.050px 20px 16.050px;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.team-card>h6 {
+    margin: 35px 0px 5px 0px;
+}
+
+.position {
+    padding-bottom: 25px;
+    border-bottom-width: 0.05px;
+    border-bottom-color: var(--rosepink);
+    border-bottom-style: dotted;
+    width: fit-content;
+    color: rgb(166, 171, 205);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   SUBSCRIBE SECTION
+========================= */
+
+.footer-upper {
+    height: 377px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    z-index: 2;
+}
+
+.footer-subscribe {
+    width: 976px;
+    height: 373px;
+
+    background-color: #ffffff;
+
+    padding: 60px;
+    margin: 44px 0 0 0;
+
+    box-shadow: 2px 2px 40px rgba(35, 38, 62, 0.10);
+
+    border-bottom-left-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Subscribe title */
+
+.footer-subscribe-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-subscribe-title h4 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #22253d;
+
+    line-height: 1.2;
+}
+
+
+/* Subscribe subtitle */
+
+.footer-subscribe-subtitle {
+    margin: 17px 0;
+    text-align: center;
+}
+
+.footer-subscribe-subtitle p {
+    color: #4f578d;
+}
+
+
+/* Email + button */
+
+.subscribe-textfield {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 34px;
+
+    margin-top: 20px;
+}
+
+.subscribe-email {
+    margin: 17px 0;
+    flex: 1;
+}
+
+.subscribe-email input {
+    border: none;
+
+    padding: 0 17px;
+
+    width: 100%;
+    height: 59px;
+
+    background-color: transparent;
+
+    border-bottom: 1px solid #ced6ea;
+
+    font-family: var(--font-base);
+    font-size: 17px;
+
+    color: #22253d;
+
+    outline: none;
+}
+
+.subscribe-email input::placeholder {
+    color: #22253d;
+    opacity: 1;
+}
+
+
+/* Subscribe button */
+
+.subscribe-submit-btn {
+    flex-shrink: 0;
+}
+
+.subscribe-submit-btn input {
+    font-family: var(--font-base);
+    font-size: 17px;
+    font-weight: 600;
+
+    background-color: #f73660;
+    color: #ffffff;
+
+    padding: 20px 40px 22px 40px;
+
+    border: none;
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.subscribe-submit-btn input:hover {
+    background-color: #22253d;
+}
+
+
+/* =========================
+   DARK FOOTER AREA
+========================= */
+
+#footer-cta {
+    min-height: 793px;
+
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 160px 30px 60px 30px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Footer content */
+
+.footer-cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 300px;
+    height: auto;
+}
+
+
+/* Footer information buttons */
+
+.footer-cta-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-cta-btn>button>.p4 {
+    font-weight: 600;
+    color: var(--white);
+    line-height: 20.4px;
+}
+
+.footer-cta-btn>button {
+    background-color: transparent;
+
+    border-radius: 50px;
+
+    padding: 22px 42px;
+
+    border: 2px solid rgba(205, 203, 234, 0.2);
+
+    margin: 80px 6.5px 0;
+
+    width: 444px;
+}
+
+
+/* Phone number */
+
+.footer-contact-num {
+    color: rgba(205, 203, 234, 0.2);
+
+    margin: 40px 0;
+}
+
+
+/* Social icons */
+
+.footer-social-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-social-icon i {
+    color: rgb(166, 171, 205);
+}
+
+.social-icon i {
+    font-size: 25px;
+}
+
+.social-icon {
+    padding: 12px;
+    margin: 5px 5px 60px;
+
+    background-color: rgb(46, 50, 82);
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+}
+
+
+/* Copyright */
+
+.footer-copyright {
+    margin: 15px 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.red {
+    color: rgba(247, 54, 96, 0.5);
 }
 
 
