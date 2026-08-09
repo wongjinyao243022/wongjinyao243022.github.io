@@ -473,6 +473,11 @@ h6 {
     background: var(--lightslablue);
 }
 
+/* Subpage Header - Burger always visible */
+.menu-btn {
+    display: flex;
+}
+
 
 /*hero section*/
 .hero {
@@ -575,8 +580,12 @@ h6 {
 
 /* === Tablet  === */
 @media screen and (max-width:840px) {
-    .phone-btn {
+    .talk-btn {
         display: none;
+    }
+
+    .menu-btn {
+        display: flex;
     }
 
 }

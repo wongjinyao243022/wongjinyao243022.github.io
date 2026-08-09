@@ -8,12 +8,13 @@ header {
     border: none;
 }
 
-.phone-btn {
-    display: none;
+.menu-btn {
+    display: flex;
 }
 
 .talk-btn {
     display: flex;
+    margin-left: auto;
 }
 
 .menu a {
@@ -25,9 +26,7 @@ header {
     background: var(--slateblue);
 }
 
-.help-center {
-    display: none;
-}
+
 
 .header {
     display: flex;
@@ -42,6 +41,17 @@ header {
 .overlay-menu-btn {
     margin-left: 16px;
 }
+
+/* Subpage Burger Menu */
+.menu-btn {
+    display: flex;
+    background: var(--lightpink);
+}
+
+.menu-btn:hover {
+    background: var(--rosepink);
+}
+
 
 
 /*Laptop Off Canva Menu*/
@@ -166,11 +176,10 @@ header {
     color: var(--white);
 }
 
-/* Investment Page - Always Show Burger */
-.menu {
-    display: none;
-}
+/*==Tablet==*/
 
-.menu-btn {
-    display: flex;
+@media screen and (max-width: 840px) {
+    .talk-btn {
+        display: none;
+    }
 }
