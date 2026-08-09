@@ -8,32 +8,258 @@ header {
     border: none;
 }
 
-.phone-btn {
-    display: none;
+.menu-btn {
+    display: flex;
 }
 
 .talk-btn {
     display: flex;
-}
-
-.menu-btn {
-    display: flex;
+    margin-left: auto;
 }
 
 .menu a {
     color: var(--textcolor);
 }
 
-.request {
-    background: var(--rosepink);
-    color: var(--white);
-    border: none;
-}
 
 .request:hover {
     background: var(--slateblue);
 }
 
-.help-center {
-    display: none;
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.overlay-menu-btn {
+    margin-left: 16px;
+}
+
+/* Subpage Burger Menu */
+.menu-btn {
+    display: flex;
+    background: var(--lightpink);
+}
+
+.menu-btn:hover {
+    background: var(--rosepink);
+}
+
+
+
+/*Laptop Off Canva Menu*/
+.laptop-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(29, 32, 58, 0.96);
+    padding: 70px 8.5% 50px;
+    transition: left 0.45s ease;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.laptop-menu.active {
+    left: 0;
+}
+
+/*Laoptop Menu Links*/
+
+.laptop-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: color 0.3s ease;
+}
+
+.laptop-menu a:hover {
+    color: var(--rosepink);
+}
+
+.laptop-menu .menu-text .p1 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.laptop-menu a>span:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.laptop-menu a>span:last-child p {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 1;
+}
+
+/*Close Button*/
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Contact Information */
+
+.contact-no {
+    margin-top: 35px;
+}
+
+.help-support {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.support-hotline {
+    margin: 8px 0 0;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+/* Contact Buttons */
+.overlay-menu-contact-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.overlay-btn {
+    padding: 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.overlay-btn .p4 {
+    margin: 0;
+    color: var(--white);
+}
+
+/*==Tablet==*/
+
+@media screen and (max-width: 840px) {
+    .talk-btn {
+        display: none;
+    }
+}
+
+/*== Investment Content==*/
+.investment-content {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Main Image */
+.investment-image {
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.investment-image img {
+    width: 100%;
+    height: 660px;
+    object-position: center;
+    display: block;
+    border-radius: 5px;
+}
+
+
+.investment-meta {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-family: var(--font-base);
+    font-size: 15px;
+    color: #999;
+}
+
+/*== Description==*/
+.investment-description {
+    width: 94%;
+    margin: 0 auto 20px;
+}
+
+.investment-description p {
+    margin: 0;
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 1.7;
+    color: #777;
+
+}
+
+.feature-list {
+    width: 1041.78px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+
+.feature-item {
+    width: 1041.78px;
+    height: 68.9px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: var(--font-base);
+    font-size: 17px;
+    color: var(--textcolor);
+    background: var(--white);
+}
+
+.feature-item img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+
+.feature-pink {
+    background: var(--lightpink);
 }
