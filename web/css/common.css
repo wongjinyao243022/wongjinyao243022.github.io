@@ -308,11 +308,7 @@ h6 {
     transition: .3s;
 }
 
-.submenu a {
-    display: block;
-    padding: 18px 20px;
-    color: var(--white);
-}
+
 
 .project-submenu {
     position: absolute;
@@ -442,8 +438,7 @@ h6 {
     color: var(--white);
     background: var(--slateblue);
     border-bottom: 1px solid rgba(255, 255, 255, .12);
-    transition: background .3s ease;
-
+    transition: background-color 0.3s ease;
 }
 
 .submenu a:hover {
