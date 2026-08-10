@@ -82,12 +82,21 @@
 .phone-info {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    white-space: nowrap;
 }
 
+.phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
 .phone-icon img {
-    width: 18%;
+    width: 22px;
+    height: 22px;
+    display: block;
 }
 
 .contact-right {
@@ -130,9 +139,7 @@
 }
 
 .map-section {
-    width: 100%;
-    max-width: 1510px;
-    margin: 100px auto;
+    margin: 100px 80px;
 }
 
 .map-wrapper iframe {
