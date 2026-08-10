@@ -51,9 +51,10 @@
         border-radius: 12px;
         width: 30%;
         height: 315px;
+        margin: 10px;
         overflow: hidden;
         text-align: left;
-        border: 1px solid var(--textcolor);
+        border: 0.5px solid var(--slateblue);
     }
 
     .card h5 {
@@ -77,20 +78,20 @@
 
     .card ul {
         list-style: none;
-        padding: 5px 40px;
+        padding: 20px 40px;
     }
 
     .card li {
-        margin-bottom: 20px;
+        margin-top: 15px;
         font-family: var(--font-base);
-        font-size: medium;
+        font-size: 17px;
         font-weight: 400;
         line-height: 1.6;
     }
 
     .learning-section {
         width: 100%;
-        padding: 100px 30px;
+        padding: 100px 0px;
         margin: 80px 0;
         text-align: center;
         background: var(--lightbluegrey);
@@ -111,18 +112,127 @@
         width: 40%;
         background: var(--darkblue);
         margin: 26.35px;
-        padding: 40px;
+        padding: 50px;
         box-sizing: border-box;
         text-align: left;
     }
 
-    .learning-card h5 {
+    .learning-card-top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
         margin-bottom: 12px;
+    }
+
+    .learning-card-top img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .learning-card h5 {
+        margin: 0;
         color: var(--white);
+        line-height: 1.2;
     }
 
     .learning-card .p4 {
         color: var(--white);
+        margin-top: 20px;
+    }
+
+    .learning-card-content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .learning-card-content .text-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+
+    .resource-section {
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    .resource-cards {
+        width: 92%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .resource-card {
+        width: 30%;
+        position: relative;
+        overflow: hidden
+    }
+
+    .resource-card img {
+        width: 100%;
+        display: block;
+    }
+
+    .resource-card .p1 {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 70px 50px;
+        color: var(--white);
+        text-align: center;
+        font-family: var(--font-heading);
+    }
+
+
+    .faq-section {
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    .faq-section h3 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .faq-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .faq-column {
+        width: 45%;
+    }
+
+    .faq-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #999;
+        padding: 35px 0;
+    }
+
+    .faq-item h6 {
+        margin: 0;
+    }
+
+    .faq-item button {
+        width: 20px;
+        border: none;
+        background: var(--lightslablue);
+        color: var(--white);
+        font-size: 16px;
+        line-height: 20px;
     }
 </style>
 
@@ -152,17 +262,17 @@
                 <img src="images/business.png" alt="Business Insights">
                 <h5>Business Insights</h5>
                 <ul>
-                    <li> › Market Analysis</li>
-                    <li> › Competitive Intelligence</li>
-                    <li> › Customer Behavior Trends</li>
+                    <li> › Getting Started With Business</li>
+                    <li> › What Is Non- Profit Corporation </li>
+                    <li> › Learn About Business Partnership</li>
                 </ul>
             </div>
             <div class="card">
                 <img src="images/download.png" alt="Download Guides">
                 <h5>Download Guides </h5>
                 <ul>
-                    <li> ›Ads And Other Marketing Materials </li>
-                    <li> ›Live ANd On - Demand Webinars</li>
+                    <li> › Ads And Other Marketing Materials </li>
+                    <li> › Live And On - Demand Webinars</li>
                     <li> › Small Business Finance Resourcess</li>
                 </ul>
             </div>
@@ -174,25 +284,129 @@
 
         <div class="learning-cards">
             <div class="learning-card">
-                <h5>Asset Protection Plans</h5>
-                <p class="p4">Protection for consultants & investors</p>
+                <div class="learning-card-content">
+                    <img src="images/asset.png" alt="Asset Protection Plans">
+                    <div class="text-group">
+                        <h5>Asset Protection Plans</h5>
+                        <p class="p4">Protection for consultants & investors</p>
+                    </div>
+                </div>
             </div>
 
             <div class="learning-card">
-                <h5>Help Intellectual Ideas</h5>
-                <p class="p4">Practical solutions for transformation</p>
+                <div class="learning-card-content">
+                    <img src="images/helpintellectual.png" alt="Asset Protection Plans">
+                    <div class="text-group">
+                        <h5>Help Intellectual Ideas</h5>
+                        <p class="p4">Practical solutions for transformation</p>
+                    </div>
+                </div>
             </div>
 
             <div class="learning-card">
-                <h5>Market Rules & Policies</h5>
-                <p class="p4">Quick guidance from our experts</p>
+                <div class="learning-card-content">
+                    <img src="images/marketrules.png" alt="Asset Protection Plans">
+                    <div class="text-group">
+                        <h5>Market Rules & Policies</h5>
+                        <p class="p4">Quick guidance from our experts</p>
+                    </div>
+                </div>
             </div>
 
             <div class="learning-card">
-                <h5>Strategic Business Trends</h5>
-                <p class="p4">Company priorities in business results</p>
+                <div class="learning-card-content">
+                    <img src="images/strategic.png" alt="Asset Protection Plans">
+                    <div class="text-group">
+                        <h5>Strategic Business Trends</h5>
+                        <p class="p4">Company priorities in business results</p>
+                    </div>
+                </div>
             </div>
 
+
+        </div>
+
+    </section>
+
+    <section class="resource-section">
+
+        <div class="resource-cards">
+
+            <div class="resource-card">
+                <img src="images/insights.png" alt="Business Resources">
+                <p class="p1">Business Resources</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="images/busine.png" alt="Business Support">
+                <p class="p1">What is Avada Business </p>
+            </div>
+
+            <div class="resource-card">
+                <img src="images/advice.png" alt="Business Guidance">
+                <p class="p1">Expert’s Help & Advice</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="faq-section">
+
+        <h3>Frequently Asked Questions</h3>
+
+        <div class="faq-container">
+
+            <div class="faq-column">
+
+                <div class="faq-item">
+                    <h6>How can I register as a business?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>What documents are needed to open an account?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>How can I change/update my business details?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>I can’t log in to my account. What should I do?</h6>
+                    <button>+</button>
+                </div>
+
+            </div>
+
+
+            <div class="faq-column">
+
+                <div class="faq-item">
+                    <h6>How long does it take to get my business verified?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>Can I have more than one account for my business?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>How can I view or download my invoices?</h6>
+                    <button>+</button>
+                </div>
+
+                <div class="faq-item">
+                    <h6>Where can I report an issue or give feedback?</h6>
+                    <button>+</button>
+                </div>
+
+            </div>
 
         </div>
 
