@@ -78,7 +78,7 @@ h5 {
 
 /* SUB OBJECT-TITTLE*/
 h6 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     Line-height: 28px;
 }
@@ -131,6 +131,7 @@ h6 {
     font-size: 17px;
     line-height: 30.6px;
     font-weight: 400;
+    letter-spacing: -0.255px;
 }
 
 /*Caption / List- List , Feature item , Small Notes*/
