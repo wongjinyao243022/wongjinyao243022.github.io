@@ -78,7 +78,7 @@ h5 {
 
 /* SUB OBJECT-TITTLE*/
 h6 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     Line-height: 28px;
 }
@@ -747,6 +747,7 @@ h6 {
 
 /* Phone number */
 .footer-contact-num {
+
     color: var(--footernum);
     opacity: 0.2;
     margin: 40px 0;
