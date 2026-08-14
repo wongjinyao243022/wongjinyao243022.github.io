@@ -1,7 +1,1102 @@
-.computer image {
-    max-width: 100%;
-    height: 589px;
-    width: 634px;
+/* =========================
+   HERO BANNER
+========================= */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+
+    /* Add your background separately */
+    background-image: url(../images/bluebackground.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-content h1 {
+    margin: 0;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    margin: 38px 0 0;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #ffffff;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 75px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    min-height: 90px;
+    padding: 0 35px;
+}
+
+.feature-line {
+    width: 2px;
+    height: 90px;
+
+    margin-right: 35px;
+
+    background: #e83e73;
+    flex-shrink: 0;
+}
+
+.feature h3 {
+    margin: 0 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.feature p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #a9afd0;
+}
+
+/* ========================================
+   BASE / ORIGINAL SIZE — 1510px
+======================================== */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+
+    background-image: url(../images/bluebackground.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1510px;
+    margin: 0 auto;
+    padding: 70px 80px;
+    box-sizing: border-box;
+}
+
+/* Title */
+.hero-content h1 {
+    margin: 0;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    margin: 38px 0 0;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #ffffff;
+}
+
+/* Features */
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 75px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    min-height: 90px;
+    padding: 0 35px;
+}
+
+.feature-line {
+    width: 2px;
+    height: 90px;
+
+    margin-right: 35px;
+
+    background-color: #e83e73;
+    flex-shrink: 0;
+}
+
+.feature h3 {
+    margin: 0 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.feature p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    color: #a9afd0;
+}
+
+
+/* ========================================
+   1320px
+======================================== */
+
+@media (max-width: 1320px) {
+
+    .hero-content {
+        padding: 65px 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-subtitle {
+        margin-top: 32px;
+        font-size: 24px;
+    }
+
+    .hero-features {
+        margin-top: 65px;
+    }
+
+    .feature {
+        padding: 0 25px;
+    }
+
+    .feature-line {
+        margin-right: 28px;
+    }
+
+    .feature h3 {
+        font-size: 22px;
+    }
+
+    .feature p {
+        font-size: 17px;
+    }
+}
+
+
+/* ========================================
+   840px — TABLET
+======================================== */
+
+@media (max-width: 840px) {
+
+    .hero-banner {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 60px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        margin-top: 25px;
+        font-size: 21px;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 55px;
+    }
+
+    .feature {
+        min-height: 70px;
+        padding: 0;
+    }
+
+    .feature-line {
+        height: 70px;
+        margin-right: 25px;
+    }
+
+    .feature h3 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+}
+
+
+/* ========================================
+   440px — MOBILE
+======================================== */
+
+@media (max-width: 440px) {
+
+    .hero-banner {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 45px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        margin-top: 20px;
+
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .hero-features {
+        gap: 22px;
+        margin-top: 45px;
+    }
+
+    .feature {
+        min-height: 65px;
+    }
+
+    .feature-line {
+        width: 2px;
+        height: 65px;
+
+        margin-right: 18px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .feature p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* =========================================
+   SUCCESS SECTION
+========================================= */
+
+.success-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 135px 0 40px;
+    box-sizing: border-box;
+}
+
+.success-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.success-image {
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+
+    border-radius: 0 0 22px 22px;
+}
+
+.success-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.success-content {
+    width: 100%;
+}
+
+.success-label {
+    margin: 0 0 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+
+    color: #ed4b72;
+}
+
+.success-content h2 {
+    margin: 0 0 55px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.45;
+
+    color: #242a43;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.success-feature {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.success-feature:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.feature-icon {
+    width: 105px;
+    height: 105px;
+
+    min-width: 105px;
+
+    border: 6px solid #e9ebf3;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.feature-icon i {
+    font-size: 35px;
+    color: #4d5c92;
+}
+
+
+/* =========================================
+   FEATURE TEXT
+========================================= */
+
+.feature-text {
+    margin-left: 35px;
+}
+
+.feature-text h3 {
+    margin: 0 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #242a43;
+}
+
+.feature-text p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #30313d;
+}
+
+
+/* =========================================
+   1320px
+========================================= */
+
+@media (max-width: 1320px) {
+
+    .success-section {
+        padding-top: 110px;
+    }
+
+    .success-container {
+        gap: 70px;
+        padding: 0 45px;
+    }
+
+    .success-image {
+        height: 600px;
+    }
+
+    .success-content h2 {
+        font-size: 42px;
+        margin-bottom: 45px;
+    }
+
+    .success-label {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .feature-icon {
+        width: 95px;
+        height: 95px;
+        min-width: 95px;
+    }
+
+    .feature-icon i {
+        font-size: 31px;
+    }
+
+    .feature-text {
+        margin-left: 28px;
+    }
+
+    .feature-text h3 {
+        font-size: 22px;
+    }
+
+    .feature-text p {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================
+   840px — TABLET
+========================================= */
+
+@media (max-width: 840px) {
+
+    .success-section {
+        padding: 80px 0 60px;
+    }
+
+    .success-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        padding: 0 40px;
+    }
+
+    .success-image {
+        height: 500px;
+
+        border-radius: 0 0 18px 18px;
+    }
+
+    .success-content h2 {
+        font-size: 40px;
+        line-height: 1.3;
+
+        margin-bottom: 45px;
+    }
+
+    .success-label {
+        font-size: 19px;
+    }
+
+    .success-feature {
+        margin-bottom: 25px;
+    }
+
+    .feature-icon {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+
+        border-width: 5px;
+    }
+
+    .feature-icon i {
+        font-size: 30px;
+    }
+
+    .feature-text {
+        margin-left: 25px;
+    }
+
+    .feature-text h3 {
+        font-size: 21px;
+    }
+
+    .feature-text p {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   440px — MOBILE
+========================================= */
+
+@media (max-width: 440px) {
+
+    .success-section {
+        padding: 60px 0 45px;
+    }
+
+    .success-container {
+        padding: 0 22px;
+        gap: 40px;
+    }
+
+    .success-image {
+        height: 330px;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    .success-label {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .success-content h2 {
+        font-size: 30px;
+        line-height: 1.3;
+
+        margin-bottom: 35px;
+    }
+
+    .success-feature {
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+
+        border-width: 4px;
+    }
+
+    .feature-icon i {
+        font-size: 23px;
+    }
+
+    .feature-text {
+        margin-left: 18px;
+    }
+
+    .feature-text h3 {
+        font-size: 17px;
+        line-height: 1.35;
+
+        margin-bottom: 6px;
+    }
+
+    .feature-text p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* =========================================
+   STEPS SECTION
+========================================= */
+
+.steps-section {
+    width: 100%;
+    background-color: #ffffff;
+
+    padding: 85px 0 110px;
+
+    box-sizing: border-box;
+}
+
+.steps-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+    padding: 0 106px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.steps-header {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 80px;
+
+    align-items: start;
+}
+
+
+/* Left heading */
+
+.steps-heading {
+    width: 100%;
+}
+
+.steps-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 28px;
+
+    padding-bottom: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #df4b70;
+}
+
+.steps-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 285px;
+    height: 1px;
+
+    background-color: #e7e7e7;
+}
+
+
+.steps-heading h2 {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    color: #252b45;
+}
+
+
+/* Right description */
+
+.steps-intro {
+    padding-top: 75px;
+}
+
+.steps-intro p {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #272c40;
+}
+
+
+/* =========================================
+   STEPS GRID
+========================================= */
+
+.steps-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 70px;
+
+    margin-top: 65px;
+}
+
+
+/* =========================================
+   STEP ITEM
+========================================= */
+
+.step-item {
+    width: 100%;
+}
+
+
+/* Step pill */
+
+.step-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 106px;
+    height: 51px;
+
+    padding: 0 22px;
+
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+/* Different shades */
+
+.step-one {
+    background-color: #a9afd0;
+}
+
+.step-two {
+    background-color: #7c88b8;
+}
+
+.step-three {
+    background-color: #3e496f;
+}
+
+
+/* =========================================
+   STEP TITLE
+========================================= */
+
+.step-item h3 {
+    margin: 45px 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    color: #252b45;
+}
+
+
+/* =========================================
+   STEP DESCRIPTION
+========================================= */
+
+.step-item p {
+    max-width: 410px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1.85;
+
+    color: #292d3e;
+}
+
+
+/* =========================================
+   1320px
+========================================= */
+
+@media (max-width: 1320px) {
+
+    .steps-section {
+        padding: 75px 0 90px;
+    }
+
+    .steps-container {
+        padding: 0 70px;
+    }
+
+    .steps-header {
+        column-gap: 55px;
+    }
+
+    .steps-heading h2 {
+        font-size: 44px;
+    }
+
+    .steps-label {
+        font-size: 19px;
+    }
+
+    .steps-intro {
+        padding-top: 65px;
+    }
+
+    .steps-intro p {
+        font-size: 21px;
+        line-height: 1.7;
+    }
+
+    .steps-grid {
+        column-gap: 45px;
+        margin-top: 60px;
+    }
+
+    .step-item h3 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .step-item p {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================
+   840px — TABLET
+========================================= */
+
+@media (max-width: 840px) {
+
+    .steps-section {
+        padding: 70px 0 80px;
+    }
+
+    .steps-container {
+        padding: 0 40px;
+    }
+
+    /* Header becomes one column */
+
+    .steps-header {
+        grid-template-columns: 1fr;
+
+        row-gap: 25px;
+    }
+
+    .steps-heading h2 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .steps-label {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .steps-intro {
+        padding-top: 0;
+    }
+
+    .steps-intro p {
+        max-width: 100%;
+
+        font-size: 19px;
+        line-height: 1.7;
+    }
+
+
+    /* Steps become vertical */
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 45px;
+
+        margin-top: 50px;
+    }
+
+    .step-item {
+        max-width: 650px;
+    }
+
+    .step-number {
+        min-width: 105px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+    .step-item h3 {
+        margin-top: 25px;
+
+        font-size: 22px;
+    }
+
+    .step-item p {
+        max-width: 100%;
+
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================
+   440px — MOBILE
+========================================= */
+
+@media (max-width: 440px) {
+
+    .steps-section {
+        padding: 55px 0 65px;
+    }
+
+    .steps-container {
+        padding: 0 25px;
+    }
+
+
+    /* Header */
+
+    .steps-label {
+        font-size: 16px;
+
+        margin-bottom: 18px;
+    }
+
+    .steps-label::after {
+        width: 230px;
+    }
+
+    .steps-heading h2 {
+        font-size: 30px;
+
+        line-height: 1.3;
+    }
+
+    .steps-intro p {
+        font-size: 16px;
+
+        line-height: 1.65;
+    }
+
+
+    /* Steps */
+
+    .steps-grid {
+        row-gap: 38px;
+
+        margin-top: 40px;
+    }
+
+    .step-number {
+        min-width: 95px;
+        height: 45px;
+
+        padding: 0 18px;
+
+        font-size: 15px;
+    }
+
+    .step-item h3 {
+        margin-top: 22px;
+        margin-bottom: 9px;
+
+        font-size: 19px;
+
+        line-height: 1.4;
+    }
+
+    .step-item p {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
 }
 
 .bluebackground {
