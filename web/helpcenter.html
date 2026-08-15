@@ -9,6 +9,61 @@
     <link rel="stylesheet" href="css/helpcenter.css">
 </head>
 <style>
+    .help-hero {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+        background-image: url("../images/header-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 0 0 30px 30px;
+        overflow: hidden;
+    }
+
+    .help-hero-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(20, 25, 55, 0.65);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .help-hero-overlay h2 {
+        color: var(--white);
+        margin: 0;
+        font-family: var(--font-heading);
+        font-size: 40px;
+    }
+
+    .help-hero-overlay h6 {
+        color: var(--white);
+        margin: 20px 0 15px;
+        font-family: var(--font-base);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .search-bar {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 40%;
+        padding: 16px 25px;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-family: var(--font-base);
+    }
+
     /* Subpage Burger Menu */
     .menu-btn {
         display: flex;
@@ -438,14 +493,17 @@
         </div>
     </div>
 
+    <section class="help-hero">
+        <div class="help-hero-overlay">
 
-    <section class="hero">
-        <div class="hero-overlay">
             <h2>Business Help Center</h2>
-            <h6>How can we help you ? </h6>
+
+            <h6>How can we help you ?</h6>
+
             <div class="search-bar">
                 <input type="text" placeholder="Need help about your business? Ask our experts...">
             </div>
+
         </div>
     </section>
     <section class="section">
