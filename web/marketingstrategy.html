@@ -11,7 +11,6 @@
 
     <head>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/investment.css">
         <link rel="stylesheet" href="css/marketingstrategy.css">
     </head>
 
@@ -110,20 +109,98 @@
             </div>
             <a href="#">About</a>
             <a href="#">News & Insights</a>
-            <a href="#" class="help-center">Help Center</a>
-        </div>
+            <div class="has-submenu help-center-menu">
+                <a href="#">
+                    Help Center
+                    <img src="images/line 2.png" alt="arrow" class="arrow">
+                </a>
 
+                <div class="submenu help-submenu">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
 
         <button class="request talk-btn">
             Let's Talk→
         </button>
 
-        <button class="request menu-btn" id="menu-toggle-burger">
-            <img src="images/burger menu.png" alt="Menu">
-        </button>
+        <div class="overlay-menu-btn">
+            <button class="menu-btn" id="menu-toggle-burger">
+                <img class="hamburger-icon" src="images/burger menu.png" alt="Menu">
+            </button>
+        </div>
 
+        <div class="laptop-menu" id="laptop-menu">
+            <button id="close-menu" class="close-btn">
+                ✕
+            </button>
+            <div class="overlay-menu-text">
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Home</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Expertise</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Projects</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">About Us</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">News & Insights</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Help Center</p>
+                    </span>
+
+                    <span>
+                        <p1>&#x2304</p1>
+                    </span>
+                </a>
+            </div>
+
+
+            <div class="overlay-cta">
+                <div class="contact-no">
+                    <p class="help-support">Need help? Call our support 24/7</p>
+                    <h1 class="support-hotline">+1800 555 5555</h1>
+                </div>
+
+                <div class="overlay-menu-contact-btn">
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">contact@your-domain.com</p>
+                    </button>
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">Monday to Friday : 9.00 am - 5.00 pm</p>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="js/menu.js"></script>
 
     <section class="hero-banner">
         <div class="hero-content">
