@@ -1695,6 +1695,198 @@
     color: #a9aec2;
 }
 
+/* =========================================
+   1320px
+========================================= */
+
+@media (max-width: 1320px) {
+
+    .projects-section {
+        padding: 45px 0 90px;
+    }
+
+    .projects-container {
+        padding: 0 45px;
+    }
+
+    .projects-header h2 {
+        font-size: 40px;
+    }
+
+    .projects-description {
+        font-size: 15px;
+    }
+
+    .projects-grid {
+        gap: 35px;
+
+        margin-top: 55px;
+    }
+
+    .project-image {
+        height: 260px;
+    }
+
+    .project-info {
+        width: 84%;
+
+        min-height: 185px;
+
+        padding: 23px 20px 25px;
+    }
+
+    .project-info h3 {
+        font-size: 22px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   840px — TABLET
+========================================= */
+
+@media (max-width: 840px) {
+
+    .projects-section {
+        padding: 60px 0 80px;
+    }
+
+    .projects-container {
+        padding: 0 40px;
+    }
+
+    .projects-label {
+        font-size: 17px;
+    }
+
+    .projects-header h2 {
+        font-size: 36px;
+    }
+
+    .projects-description {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-top: 50px;
+    }
+
+    .project-card {
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        padding-bottom: 95px;
+    }
+
+    .project-image {
+        height: 330px;
+    }
+
+    .project-info {
+        width: 78%;
+
+        min-height: 185px;
+    }
+
+    .project-info h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================
+   440px — MOBILE
+========================================= */
+
+@media (max-width: 440px) {
+
+    .projects-section {
+        padding: 50px 0 65px;
+    }
+
+    .projects-container {
+        padding: 0 22px;
+    }
+
+
+    /* Header */
+
+    .projects-label {
+        font-size: 15px;
+
+        margin-bottom: 18px;
+    }
+
+    .projects-label::after {
+        width: 225px;
+    }
+
+    .projects-header h2 {
+        font-size: 29px;
+
+        margin-bottom: 15px;
+    }
+
+    .projects-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* Cards */
+
+    .projects-grid {
+        gap: 45px;
+
+        margin-top: 40px;
+    }
+
+    .project-card {
+        padding-bottom: 85px;
+    }
+
+    .project-image {
+        height: 230px;
+
+        border-radius: 6px;
+    }
+
+    .project-info {
+        width: 85%;
+
+        min-height: 165px;
+
+        padding: 20px 15px 22px;
+
+        border-radius: 0 0 6px 6px;
+    }
+
+    .project-info h3 {
+        font-size: 19px;
+
+        line-height: 1.4;
+
+        margin-bottom: 10px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+}
 
 .invest3 {
     max-width: 100%;
