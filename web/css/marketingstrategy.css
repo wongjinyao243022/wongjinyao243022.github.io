@@ -1471,6 +1471,231 @@
     }
 }
 
+/* =========================================
+   LATEST PROJECTS SECTION
+========================================= */
+
+.projects-section {
+    width: 100%;
+    background-color: #ffffff;
+
+    padding: 45px 0 100px;
+
+    box-sizing: border-box;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    padding: 0 27px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.projects-header {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+.projects-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 22px;
+
+    padding-bottom: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #df4b70;
+}
+
+.projects-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 265px;
+    height: 1px;
+
+    background-color: #dddddd;
+}
+
+
+.projects-header h2 {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 44px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #252b45;
+}
+
+
+.projects-description {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #303448;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 47px;
+
+    margin-top: 58px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 100px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+    width: 100%;
+    height: 282px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Optional image hover */
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   PROJECT INFORMATION BOX
+========================================= */
+
+.project-info {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    bottom: 0;
+
+    width: 82%;
+
+    min-height: 196px;
+
+    padding: 25px 25px 28px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    text-align: center;
+
+    border-radius: 0 0 7px 7px;
+
+    box-shadow: 0 12px 30px rgba(36, 42, 67, 0.08);
+}
+
+
+.project-info h3 {
+    margin: 0 0 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #252b45;
+}
+
+
+.project-info p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #a9aec2;
+}
+
+
 .invest3 {
     max-width: 100%;
     height: 283px;
