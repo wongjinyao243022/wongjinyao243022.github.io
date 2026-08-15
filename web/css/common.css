@@ -19,7 +19,7 @@
     --lightpink: #FAF5F8;
     --submenucolor: #6769b8;
     --whitebox: #F5F5F5;
-    --lightbluegrey: #f4f5fa;
+    --lightbluegrey: #F4F5FA;
     --lightslablue: #A6ABCD;
     --darkblue: #3D436D;
     --darknavy: #22253D;
@@ -168,7 +168,9 @@ h6 {
     font-size: 19px;
     font-weight: 400;
     line-height: 30.6px;
-
+    display: inline-block;
+    border-bottom: 1px dotted rgb(34, 37, 61);
+    padding-bottom: 2px;
 }
 
 /*buttons*/
@@ -439,6 +441,55 @@ h6 {
     left: 0;
 }
 
+/*header*/
+.request {
+    background: var(--rosepink);
+    color: var(--white);
+    border: none;
+}
+
+.menu-btn {
+    display: flex;
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu a {
+    color: var(--textcolor);
+}
+
+
+.request:hover {
+    background: var(--slateblue);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.header {
+    position: relative;
+    z-index: 1000;
+}
+
+.submenu {
+    z-index: 1001;
+}
+
+.overlay-menu-btn {
+    margin-left: 16px;
+}
+
 .submenu a {
     display: block;
     padding: 18px 20px;
@@ -461,7 +512,7 @@ h6 {
     height: 58px;
     border: none;
     border-radius: 50%;
-    background: var(--rosepink);
+    background: var(--lightpink);
     display: none;
     justify-content: center;
     align-items: center;
@@ -568,6 +619,7 @@ h6 {
 
 }
 
+/*FOOTER */
 #footer-cta {
     min-height: 793px;
     background-image: url(../images/footer-bg.jpg);
@@ -577,8 +629,6 @@ h6 {
     position: relative;
     z-index: 1;
 }
-
-/*FOOTER */
 
 #footer {
     position: relative;

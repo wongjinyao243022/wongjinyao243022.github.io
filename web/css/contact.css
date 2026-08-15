@@ -1,5 +1,5 @@
 .contact-info {
-    max-width: 90%;
+    max-width: 93%;
     margin: 80px auto;
     padding: 10px;
     display: flex;
@@ -9,7 +9,7 @@
 
 .card {
     width: 100%;
-    background: var(--whitebox);
+    background: var(--lightbluegrey);
     border-radius: 10px;
     overflow: hidden;
     margin-left: 26.35px;
@@ -38,7 +38,8 @@
 
 .card .p4 {
     color: var(--textcolor);
-    padding: 40px 40px 30px;
+    font-weight: 600;
+    padding: 30px 35px 20px;
 }
 
 .card-content {
@@ -57,7 +58,7 @@
 }
 
 .contact-left {
-    width: 42%;
+    width: 45%;
     padding: 80px 80px;
 }
 
@@ -90,10 +91,10 @@
 }
 
 .contact-right {
-    width: 58%;
-    background: var(--whitebox);
+    width: 50%;
+    background: var(--lightbluegrey);
     padding: 60px;
-    margin-right: 80px;
+    border-radius: 0 0 0 20px;
 }
 
 .contact-form {
@@ -115,18 +116,55 @@
 .contact-form textarea {
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--whitebox);
+    border-bottom: 0.8px solid #000000;
     background: transparent;
-    padding-bottom: 18px;
+    padding: 0 17px 18px;
     outline: none;
+    border-radius: 0;
+    resize: vertical;
+    min-height: 52px;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+    letter-spacing: -0.255px;
+    color: var(--textcolor);
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: var(--rosepink);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+    letter-spacing: -0.255px;
+    color: var(--textcolor);
+}
+
+.contact-form textarea {
+    min-height: 120px;
 }
 
 .callback-btn {
-    width: 38%;
+    width: 48%;
     height: 62px;
     border-radius: 100px;
     background: var(--slateblue);
     color: var(--white);
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+    letter-spacing: -0.255px;
 }
 
 .map-section {

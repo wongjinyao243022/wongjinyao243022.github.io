@@ -11,13 +11,10 @@
 
     <head>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/investment.css">
         <link rel="stylesheet" href="css/marketingstrategy.css">
     </head>
 
     <div class="header">
-
-
         <div class="logo">
             <a href="index.html">
                 <img src="images/image 24.png" alt="AvadaBusiness"></a>
@@ -110,20 +107,98 @@
             </div>
             <a href="#">About</a>
             <a href="#">News & Insights</a>
-            <a href="#" class="help-center">Help Center</a>
-        </div>
+            <div class="has-submenu help-center-menu">
+                <a href="#">
+                    Help Center
+                    <img src="images/line 2.png" alt="arrow" class="arrow">
+                </a>
 
+                <div class="submenu help-submenu">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
 
         <button class="request talk-btn">
             Let's Talk→
         </button>
 
-        <button class="request menu-btn" id="menu-toggle-burger">
-            <img src="images/burger menu.png" alt="Menu">
-        </button>
+        <div class="overlay-menu-btn">
+            <button class="menu-btn" id="menu-toggle-burger">
+                <img class="hamburger-icon" src="images/burger menu.png" alt="Menu">
+            </button>
+        </div>
 
+        <div class="laptop-menu" id="laptop-menu">
+            <button id="close-menu" class="close-btn">
+                ✕
+            </button>
+            <div class="overlay-menu-text">
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Home</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Expertise</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Projects</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">About Us</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">News & Insights</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Help Center</p>
+                    </span>
+
+                    <span>
+                        <p1>&#x2304</p1>
+                    </span>
+                </a>
+            </div>
+
+
+            <div class="overlay-cta">
+                <div class="contact-no">
+                    <p class="help-support">Need help? Call our support 24/7</p>
+                    <h1 class="support-hotline">+1800 555 5555</h1>
+                </div>
+
+                <div class="overlay-menu-contact-btn">
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">contact@your-domain.com</p>
+                    </button>
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">Monday to Friday : 9.00 am - 5.00 pm</p>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="js/menu.js"></script>
 
     <section class="hero-banner">
         <div class="hero-content">
@@ -188,7 +263,7 @@
                 <!-- Feature 1 -->
                 <div class="success-feature">
                     <div class="feature-icon">
-                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <img src="images/hyperscaleicon.png" alt="icon1">
                     </div>
 
                     <div class="feature-text">
@@ -200,7 +275,7 @@
                 <!-- Feature 2 -->
                 <div class="success-feature">
                     <div class="feature-icon">
-                        <i class="fa-solid fa-chart-line"></i>
+                        <img src="images/innovativeicon.png" alt="icon2">
                     </div>
 
                     <div class="feature-text">
@@ -212,7 +287,7 @@
                 <!-- Feature 3 -->
                 <div class="success-feature">
                     <div class="feature-icon">
-                        <i class="fa-solid fa-globe"></i>
+                        <img src="images/globalicon.png" alt="icon3">
                     </div>
 
                     <div class="feature-text">
@@ -452,50 +527,181 @@
     </section>
 
 
+    <section class="projects-section">
+        <div class="projects-container">
 
-    <h6>Passionate - Dedicated - Professional</h6>
-    <h1>Our Latest Projects</h1>
-    <p>Euisque cursus metus vitae sedpharetra auctor semy mas interdum magna augue get diam vestibulum anipsum faucibus
-    </p>
+            <!-- Section Heading -->
+            <div class="projects-header">
+                <p class="projects-label">
+                    Passionate – Dedicated – Professional
+                </p>
 
-    <div class="project-cards">
-        <div class="project-card">
-            <img src="images/recent2.png" alt="Project" width="50%">
-            <h5>Financial Growth Project</h5>
-            <p>Integer quam morbi quisque felis</p>
+                <h2>Our Latest Projects</h2>
+
+                <p class="projects-description">
+                    Euisque cursus metus vitae sedpharetra auctor semy mas interdum
+                    magna augue get diam vestibulum anispsum faucibus
+                </p>
+            </div>
+
+
+            <!-- Projects -->
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/recent2.png" alt="Financial Growth Project">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>
+                            Financial Growth<br>
+                            Project
+                        </h3>
+
+                        <p>
+                            Integer qum morbi quisque<br>
+                            felis
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/recent3.png" alt="Data Analysis Project">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>
+                            Data Analysis<br>
+                            Project
+                        </h3>
+
+                        <p>
+                            Nulla metus duia ullamcorper
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/computer image.jpg" alt="Business Task Project">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>
+                            Business Task<br>
+                            Project
+                        </h3>
+
+                        <p>
+                            Class aptent tacis socioq litora
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="images/recent3.png" alt="Project" width="50%">
-            <h5>Data Analysis Project</h5>
-            <p>Nulla metus duia ullamcorper</p>
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+
+            <!-- Section Header -->
+            <div class="testimonials-header">
+
+                <p class="testimonials-label">
+                    Passionate – Dedicated – Professional
+                </p>
+
+                <h2>What People Are Saying</h2>
+
+                <p class="testimonials-description">
+                    Euisque cursus metus vitae sedpharetra auctor semy mas interdum
+                    <br>
+                    magna augue get diam vestibulum anispsum faucibus
+                </p>
+
+            </div>
+
+
+            <!-- Testimonials -->
+            <div class="testimonials-grid">
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonial-text">
+                        Dignissim lacinia nunc. Pellentesque nibh quam
+                        celerisque sem at dolor. Maecenas mattis convallis
+                        tristique sem. Proin ligula egestas quis pulvinar
+                        ullamcorper est venena dignissim.
+                    </p>
+
+                    <div class="testimonial-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="testimonial-author">
+                        John Deo – CEO ABCWorks
+                    </p>
+
+                </div>
+
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonial-text">
+                        Dignissim lacinia nunc. Pellentesque nibh quam
+                        celerisque sem at dolor. Maecenas mattis convallis
+                        tristique sem. Proin ligula egestas quis pulvinar
+                        ullamcorper est venena dignissim.
+                    </p>
+
+                    <div class="testimonial-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="testimonial-author">
+                        Smith Tait – CEO ABCWorks
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="images/computer image.jpg" alt="Project" width="50%">
-            <h5>Business Task Project</h5>
-            <p>Class apten tacis socioq litora</p>
-        </div>
-    </div>
-
-    <h6>Passionate - Dedicated - Professional</h6>
-    <h1>What People Are Saying</h1>
-    <p>Euisque cursus metus vitae sedpharetra auctor semy mas interdum magna augue get diam vestibulum anipsum faucibus
-    </p>
-
-    <div class="paragraph">
-        <div class="left-paragraph">
-            <h6>Dignissim lacinia nunc. Pellent esque nibh quam celerisque sem at dolor. Maecenas mattis convallis
-                tristique sem. Proin ligula egestas quis pulvinar ullamcorper est venena dignissim.</h6>
-            <p>John Deo-CEO ABCWorks</p>
-        </div>
-
-        <div class="right-paragraph">
-            <h6>Dignissim lacinia nunc. Pellent esque nibh quam celerisque sem at dolor. Maecenas mattis convallis
-                tristique sem. Proin ligula egestas quis pulvinar ullamcorper est venena dignissim.</h6>
-            <p>Smith Tait-CEO ABCWorks</p>
-        </div>
-    </div>
 
     <footer id="footer">
         <div class="footer-upper">
@@ -545,28 +751,28 @@
                 <div class="footer-social-icon">
                     <div class="social-icon">
                         <span>
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <img src="images/facebook.png" alt="Facebook">
                         </span>
                     </div>
                     <div class="social-icon">
                         <span>
-                            <i class="fa-brands fa-x-twitter"></i>
+                            <img src="images/twitter.png" alt="Twitter">
                         </span>
                     </div>
 
                     <div class="social-icon">
                         <span>
-                            <i class="fa-brands fa-instagram"></i>
+                            <img src="images/instagram.png" alt="Instagram">
                         </span>
                     </div>
                     <div class="social-icon">
                         <span>
-                            <i class="fa-brands fa-pinterest-p"></i>
+                            <img src="images/pinterest.png" alt="Pinterest">
                         </span>
                     </div>
                     <div class="social-icon">
                         <span>
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <img src="images/linkedin.png" alt="LinkedIn">
                         </span>
                     </div>
                 </div>
