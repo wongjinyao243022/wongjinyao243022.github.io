@@ -1888,6 +1888,416 @@
     }
 }
 
+/* =========================================
+   TESTIMONIALS SECTION
+========================================= */
+
+.testimonials-section {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 85px 0 100px;
+
+    box-sizing: border-box;
+}
+
+.testimonials-container {
+    width: 100%;
+
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    padding: 0 80px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.testimonials-header {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.testimonials-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 25px;
+
+    padding-bottom: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #df4b70;
+}
+
+
+.testimonials-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 285px;
+    height: 1px;
+
+    background-color: #dddddd;
+}
+
+
+.testimonials-header h2 {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #252b45;
+}
+
+
+.testimonials-description {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #303448;
+}
+
+
+/* =========================================
+   TESTIMONIAL GRID
+========================================= */
+
+.testimonials-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 100px;
+
+    margin-top: 55px;
+}
+
+
+/* =========================================
+   TESTIMONIAL
+========================================= */
+
+.testimonial {
+    text-align: center;
+
+    padding: 0 35px;
+}
+
+
+/* =========================================
+   QUOTE ICON
+========================================= */
+
+.quote-icon {
+    width: 100%;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.quote-icon i {
+    font-size: 48px;
+
+    color: #252b45;
+}
+
+
+/* =========================================
+   TESTIMONIAL TEXT
+========================================= */
+
+.testimonial-text {
+    max-width: 570px;
+
+    margin: 15px auto 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 19px;
+    font-weight: 400;
+
+    line-height: 1.75;
+
+    color: #303448;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.testimonial-rating {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+.testimonial-rating i {
+    font-size: 19px;
+
+    color: #ed416d;
+}
+
+
+/* =========================================
+   AUTHOR
+========================================= */
+
+.testimonial-author {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #a9aec2;
+}
+
+
+/* =========================================
+   1320px
+========================================= */
+
+@media (max-width: 1320px) {
+
+    .testimonials-section {
+        padding: 75px 0 90px;
+    }
+
+    .testimonials-container {
+        padding: 0 60px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 39px;
+    }
+
+    .testimonials-description {
+        font-size: 15px;
+    }
+
+    .testimonials-grid {
+        column-gap: 70px;
+
+        margin-top: 50px;
+    }
+
+    .testimonial {
+        padding: 0 20px;
+    }
+
+    .quote-icon i {
+        font-size: 45px;
+    }
+
+    .testimonial-text {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================
+   840px — TABLET
+========================================= */
+
+@media (max-width: 840px) {
+
+    .testimonials-section {
+        padding: 70px 0 80px;
+    }
+
+    .testimonials-container {
+        padding: 0 40px;
+    }
+
+
+    /* Header */
+
+    .testimonials-label {
+        font-size: 17px;
+
+        margin-bottom: 20px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 36px;
+    }
+
+    .testimonials-description {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* Testimonials become vertical */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 60px;
+
+        margin-top: 45px;
+    }
+
+    .testimonial {
+        max-width: 650px;
+
+        margin: 0 auto;
+
+        padding: 0;
+    }
+
+    .quote-icon {
+        height: 60px;
+    }
+
+    .quote-icon i {
+        font-size: 43px;
+    }
+
+    .testimonial-text {
+        font-size: 17px;
+
+        line-height: 1.7;
+
+        margin-top: 15px;
+    }
+
+    .testimonial-rating i {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================
+   440px — MOBILE
+========================================= */
+
+@media (max-width: 440px) {
+
+    .testimonials-section {
+        padding: 55px 0 65px;
+    }
+
+    .testimonials-container {
+        padding: 0 25px;
+    }
+
+
+    /* Header */
+
+    .testimonials-label {
+        font-size: 15px;
+
+        margin-bottom: 18px;
+    }
+
+    .testimonials-label::after {
+        width: 230px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 29px;
+
+        margin-bottom: 15px;
+    }
+
+    .testimonials-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* Testimonials */
+
+    .testimonials-grid {
+        row-gap: 50px;
+
+        margin-top: 40px;
+    }
+
+    .testimonial {
+        padding: 0;
+    }
+
+    .quote-icon {
+        height: 50px;
+    }
+
+    .quote-icon i {
+        font-size: 36px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin: 12px auto 25px;
+    }
+
+    .testimonial-rating {
+        gap: 3px;
+
+        margin-bottom: 8px;
+    }
+
+    .testimonial-rating i {
+        font-size: 16px;
+    }
+
+    .testimonial-author {
+        font-size: 13px;
+    }
+}
+
 .invest3 {
     max-width: 100%;
     height: 283px;
