@@ -35,6 +35,8 @@ and  nav.bar text color  */
     --darknavy: #22253D;
     /*background color of icon back layer , navbar text color when hover*/
     --lavendablue: #CED6EA;
+    /*footer contact number color*/
+    --footernum: #F5F5F5;
 
 }
 
