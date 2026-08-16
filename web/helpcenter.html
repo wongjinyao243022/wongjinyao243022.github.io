@@ -11,13 +11,13 @@
 <style>
     .help-hero {
         width: 90%;
-        height: 200px;
+        height: 400px;
         margin: 0 auto;
-        background-image: url("../images/header-bg.jpg");
+        background-image: url(images/heroimages.png);
         background-size: cover;
         background-position: center;
         position: relative;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 0 30px;
         overflow: hidden;
     }
 
@@ -34,17 +34,15 @@
 
     .help-hero-overlay h2 {
         color: var(--white);
-        margin: 0;
+        margin: 0 0 20px;
         font-family: var(--font-heading);
-        font-size: 40px;
     }
 
-    .help-hero-overlay h6 {
+    .help-hero-overlay h5 {
         color: var(--white);
         margin: 20px 0 15px;
         font-family: var(--font-base);
-        font-size: 18px;
-        font-weight: 400;
+
     }
 
     .search-bar {
@@ -52,42 +50,38 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .search-field {
+        position: relative;
+        width: 40%;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 22px;
+        top: 48%;
+        transform: translateY(-50%) scaleX(-1);
+        font-size: 30px;
+        pointer-events: none;
     }
 
     .search-bar input {
-        width: 40%;
-        padding: 16px 25px;
+        width: 100%;
+        padding: 20px 20px 20px 58px;
         border-radius: 100px;
         border: none;
         outline: none;
         box-sizing: border-box;
         font-family: var(--font-base);
+        letter-spacing: -0.255px;
+        color: var(--textcolor);
     }
 
-    /* Subpage Burger Menu */
-    .menu-btn {
-        display: flex;
-        background: var(--lightpink);
-    }
-
-    .menu-btn:hover {
-        background: var(--rosepink);
-    }
-
-
-    .search-bar {
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .search-bar input {
-        width: 40%;
-        padding: 20px;
-        border-radius: 100px;
-        border: none;
-        outline: none;
+    .search-bar input::placeholder {
+        color: rgba(31, 41, 55, 0.7);
     }
 
     .section {
@@ -498,10 +492,13 @@
 
             <h2>Business Help Center</h2>
 
-            <h6>How can we help you ?</h6>
+            <h5>How can we help you ?</h5>
 
             <div class="search-bar">
-                <input type="text" placeholder="Need help about your business? Ask our experts...">
+                <div class="search-field">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" class="p4" placeholder="Need help about your business? Ask our experts...">
+                </div>
             </div>
 
         </div>
@@ -767,7 +764,7 @@
         </section>
 
     </footer>
-
+    <script src="js/menu.js"></script>
 
 
 </body>

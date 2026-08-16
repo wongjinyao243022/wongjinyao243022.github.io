@@ -211,6 +211,8 @@ h6 {
     border-radius: 100px;
 }
 
+
+
 /*footer button */
 .footer-btn {
     padding: 22px 42px;
@@ -871,4 +873,64 @@ h6 {
         display: flex;
     }
 
+    /*hero section*/
+    .hero {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0 0 0 45px;
+        background-size: cover;
+    }
+
+    .hero-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 70px 60px;
+        box-sizing: border-box;
+    }
+
+    .hero-overlay h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .hero-overlay h6 {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: left;
+    }
+}
+
+
+
+
+
+/* ---------- MOBILE : 440px ---------- */
+
+@media (max-width: 440px) {
+
+    .hero {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0 0 0 30px;
+    }
+
+    .hero-overlay {
+        gap: 8px;
+        padding: 50px 30px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .hero-overlay h6 {
+        font-size: 11px;
+        line-height: 1.4;
+    }
 }
