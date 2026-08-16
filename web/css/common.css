@@ -11,20 +11,30 @@
 :root {
     --font-heading: "Kumbh Sans", sans-serif;
     --font-base: "Mulish", sans-serif;
-    --white: #ffff;
+    --white: #ffffff;
+    /*icon background color ,btn when hover color , submenu background color  */
     --slateblue: #4F578D;
+    /*Boday text color */
     --textcolor: #1F2937;
+    /*btn background color , submenu color when hover
+and  nav.bar text color  */
     --rosepink: #F73760;
+    /*background color of icon back layer*/
     --beige: #FEF8E2;
+    --darkpink: #D7536F;
+    /*background of column box*/
     --lightpink: #FAF5F8;
-    --submenucolor: #6769b8;
-    --whitebox: #F5F5F5;
     --lightbluegrey: #F4F5FA;
-    --lightslablue: #A6ABCD;
+    --lightslablue: #F8FAF5;
+    /*button background color*/
+    --submenucolor: #767EB2;
+    --whitebox: #F5F5F5;
+    /*buttonbackground*/
     --darkblue: #3D436D;
+    /*background of section box*/
     --darknavy: #22253D;
+    /*background color of icon back layer , navbar text color when hover*/
     --lavendablue: #CED6EA;
-    --footernum: #CDD5EA;
 
 }
 
@@ -82,6 +92,8 @@ h6 {
     font-weight: 600;
     Line-height: 28px;
 }
+
+.faq
 
 /* News Insights Hero Section*/
 .newshero {
