@@ -8,242 +8,213 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/helpcenter.css">
 </head>
-<style>
-    .search-bar {
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .search-bar input {
-        width: 40%;
-        padding: 20px;
-        border-radius: 100px;
-        border: none;
-        outline: none;
-    }
-
-    .section {
-        width: 90%;
-        margin: auto;
-        padding: 60px 30px;
-        text-align: center;
-
-    }
-
-    .section h3 {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-
-    .cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 26.35px;
-    }
-
-    .card {
-        position: relative;
-        background: var(--white);
-        border-radius: 12px;
-        width: 30%;
-        height: 315px;
-        margin: 10px;
-        overflow: hidden;
-        text-align: left;
-        border: 0.5px solid var(--slateblue);
-    }
-
-    .card h5 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 40px 0 20px 40px;
-        color: var(--white);
-        font-family: var(--font-heading);
-        box-sizing: border-box;
-        z-index: 1;
-    }
-
-    .card img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .card ul {
-        list-style: none;
-        padding: 20px 40px;
-    }
-
-    .card li {
-        margin-top: 15px;
-        font-family: var(--font-base);
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 1.6;
-    }
-
-    .learning-section {
-        width: 100%;
-        padding: 100px 0px;
-        margin: 80px 0;
-        text-align: center;
-        background: var(--lightbluegrey);
-        box-sizing: border-box;
-    }
-
-    .learning-section h2 {
-        margin-bottom: 60px;
-    }
-
-    .learning-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .learning-card {
-        width: 40%;
-        background: var(--darkblue);
-        margin: 26.35px;
-        padding: 50px;
-        box-sizing: border-box;
-        text-align: left;
-    }
-
-    .learning-card-top {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 12px;
-    }
-
-    .learning-card-top img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        flex-shrink: 0;
-    }
-
-    .learning-card h5 {
-        margin: 0;
-        color: var(--white);
-        line-height: 1.2;
-    }
-
-    .learning-card .p4 {
-        color: var(--white);
-        margin-top: 20px;
-    }
-
-    .learning-card-content {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .learning-card-content .text-group {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 30px;
-    }
-
-
-    .resource-section {
-        width: 100%;
-        padding: 80px 0;
-    }
-
-    .resource-cards {
-        width: 92%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    .resource-card {
-        width: 30%;
-        position: relative;
-        overflow: hidden
-    }
-
-    .resource-card img {
-        width: 100%;
-        display: block;
-    }
-
-    .resource-card .p1 {
-        position: absolute;
-        bottom: 50px;
-        width: 100%;
-        margin: 0;
-        padding: 70px 50px;
-        color: var(--white);
-        text-align: center;
-        font-family: var(--font-heading);
-    }
-
-
-    .faq-section {
-        width: 100%;
-        padding: 80px 0;
-    }
-
-    .faq-section h3 {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .faq-container {
-        width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }
-
-    .faq-column {
-        width: 45%;
-    }
-
-    .faq-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #999;
-        padding: 35px 0;
-    }
-
-    .faq-item h6 {
-        margin: 0;
-    }
-
-    .faq-item button {
-        width: 20px;
-        border: none;
-        background: var(--lightslablue);
-        color: var(--white);
-        font-size: 16px;
-        line-height: 20px;
-    }
-</style>
 
 <body>
-    <section class="hero">
-        <div class="hero-overlay">
-            <h2>Help Center</h2>
-            <h6>How can we help you ? </h6>
-            <div class="search-bar">
-                <input type="text" placeholder="Need help about your business? Ask our experts...">
+
+    <div class="header">
+
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/image 24.png" alt="AvadaBusiness"></a>
+        </div>
+
+        <div class="menu">
+            <div class="has-submenu">
+                <a href="#">
+                    Expertise
+                    <img src="images/line 2.png" alt="arrow" class="arrow">
+                </a>
+
+                <div class="submenu">
+                    <a href="business.html">Business Consulting</a>
+                    <a href="content.html">Content Planning</a>
+                    <a href="data.html">Data & Analytics</a>
+                    <a href="marketing.html">Marketing Strategy</a>
+                    <a href="private.html">Private Taxation</a>
+                    <a href="sales.html">Sales Management</a>
+                </div>
+
             </div>
+
+            <div class="has-submenu">
+                <a href="#">
+                    Projects
+                    <img src="images/line 2.png" alt="arrow" class="arrow">
+                </a>
+
+                <div class="project-submenu">
+
+
+                    <div class="project-left">
+
+                        <h5>Recent Projects</h5>
+
+                        <div class="project-item">
+                            <img src="images/nav ic1.png" alt="Presentation" class="project-icon">
+
+                            <div class="project-content">
+                                <a href="investment.html">Big Investment</a>
+                                <p>Auis sagittis ipsum praesent</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <img src="images/nav ic2.png" alt="Settings" class="project-icon">
+                            <div class="project-content">
+                                <a href="supply.html">Supply Chain</a>
+                                <p>Conubil nostra per cenpta</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <img src="images/nav ic3.png" alt="Analytics" class="project-icon">
+
+                            <div class="project-content">
+                                <a href="financial.html">Financial Growth</a>
+                                <p>Scelerisque dolor motie tamp</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <img src="images/nav ic4.png" alt="Research" class="project-icon">
+                            <div class="project-content">
+
+                                <a href="ideal.html">Ideal Tracking</a>
+                                <p>Euismod lacus sed magna</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="project-right">
+
+                        <h5>Featured Project</h5>
+
+                        <img src="images/image 6.png" alt="Project">
+
+                        <h6>Financial Growth Project</h6>
+
+                        <a href="project.html" class="view-btn">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <a href="#">About</a>
+            <a href="#">News & Insights</a>
+            <div class="has-submenu help-center-menu">
+                <a a href="helpcenter.html">
+                    Help Center
+                    <img src="images/line 2.png" alt="arrow" class="arrow">
+                </a>
+
+                <div class="submenu help-submenu">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="request talk-btn">
+            Let's Talk→
+        </button>
+
+        <div class="overlay-menu-btn">
+            <button class="menu-btn" id="menu-toggle-burger">
+                <img class="hamburger-icon" src="images/burger menu.png" alt="Menu">
+            </button>
+        </div>
+
+        <div class="laptop-menu" id="laptop-menu">
+            <button id="close-menu" class="close-btn">
+                ✕
+            </button>
+            <div class="overlay-menu-text">
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Home</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Expertise</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Projects</p>
+                    </span>
+
+                    <span>
+                        <p>&#x2304</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">About Us</p>
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">News & Insights</p>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="menu-text">
+                        <p class="p1">Help Center</p>
+                    </span>
+
+                    <span>
+                        <p1>&#x2304</p1>
+                    </span>
+                </a>
+            </div>
+
+
+            <div class="overlay-cta">
+                <div class="contact-no">
+                    <p class="help-support">Need help? Call our support 24/7</p>
+                    <h1 class="support-hotline">
+                        <p class="num">+1800 555 5555</p>
+                    </h1>
+                </div>
+
+                <div class="overlay-menu-contact-btn">
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">contact@your-domain.com</p>
+                    </button>
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">Monday to Friday : 9.00 am - 5.00 pm</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="help-hero">
+        <div class="help-hero-overlay">
+
+            <h2>Business Help Center</h2>
+
+            <h5>How can we help you ?</h5>
+
+            <div class="search-bar">
+                <div class="search-field">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" class="p4" placeholder="Need help about your business? Ask our experts...">
+                </div>
+            </div>
+
         </div>
     </section>
     <section class="section">
@@ -280,7 +251,7 @@
     </section>
     <section class="learning-section">
 
-        <h2>The Business Learning Zone</h2>
+        <h3>The Business Learning Zone</h3>
 
         <div class="learning-cards">
             <div class="learning-card">
@@ -411,6 +382,104 @@
         </div>
 
     </section>
+
+
+    <footer id="footer">
+        <div class="footer-upper">
+            <div class="footer-subscribe">
+                <div class="footer-subscribe-title">
+                    <h4>Keep Updated & Don't Miss Anything!</h4>
+                </div>
+
+                <div class="footer-subscribe-subtitle">
+                    <p class="p4">Setus vitae pharetra auctor kasu mattiy sed interdum</p>
+                </div>
+
+                <div class="subscribe-textfield">
+                    <div class="subscribe-email">
+                        <input type="email" name="email" id="email" placeholder="Enter your email *">
+                    </div>
+
+                    <div class="subscribe-submit-btn">
+                        <input type="submit" value="Subscribe ➞">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <section id="footer-cta" class="footer-container">
+
+            <div class="footer-cta-container">
+                <img class="footer-logo" src="images/whitelogo.png" width="300px" height="68.25px">
+                <div class="footer-cta-btn">
+                    <button type="button">
+                        <p class="p4"> Jalan Main St, KL 58200, Malaysia</p>
+                    </button>
+
+                    <button type="button">
+                        <p class="p4">contact@avada-company.com</p>
+                    </button>
+
+                    <button type="button">
+                        <p class="p4">Monday to Friday :9 am - 5pm</p>
+                    </button>
+
+                </div>
+                <h1 class="footer-contact-num">+6012 - 345 6789</h1>
+
+                <div class="footer-social-icon">
+
+                    <div class="social-icon">
+                        <span>
+                            <img src="images/facebook.png" alt="Facebook">
+                        </span>
+                    </div>
+
+                    <div class="social-icon">
+                        <span>
+                            <img src="images/twitter.png" alt="X">
+                        </span>
+                    </div>
+
+                    <div class="social-icon">
+                        <span>
+                            <img src="images/instagram.png" alt="Instagram">
+                        </span>
+                    </div>
+
+                    <div class="social-icon">
+                        <span>
+                            <img src="images/pinterest.png" alt="Pinterest">
+                        </span>
+                    </div>
+
+                    <div class="social-icon">
+                        <span>
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="p5"> © 2012 - 2026 •
+                        <span class="red">Avada</span>
+                        is a
+                        <span class="red">Website Builder</span>
+                        for
+                        <span class="red">WordPress</span>
+                        and
+                        <span class="red">eCommerce</span> •
+                        All Rights Reserved •
+                        Developed by <span class="red">ThemeFusion</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <script src="js/menu.js"></script>
+
 
 </body>
 

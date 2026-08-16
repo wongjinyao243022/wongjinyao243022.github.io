@@ -11,21 +11,38 @@
 :root {
     --font-heading: "Kumbh Sans", sans-serif;
     --font-base: "Mulish", sans-serif;
-    --white: #ffff;
+    --white: #ffffff;
+    /*icon background color ,btn when hover color , submenu background color  */
     --slateblue: #4F578D;
+    /*Boday text color */
     --textcolor: #1F2937;
+    /*btn background color , submenu color when hover
+and  nav.bar text color  */
     --rosepink: #F73760;
+    /*background color of icon back layer*/
     --beige: #FEF8E2;
+    --darkpink: #D7536F;
+    /*background of column box*/
     --lightpink: #FAF5F8;
-    --submenucolor: #6769b8;
+    --lightbluegrey: #F4F5FA;
+    --lightslablue: #F8FAF5;
+    /*button background color*/
+    --submenucolor: #767EB2;
     --whitebox: #F5F5F5;
-    --lightbluegrey: #f4f5fa;
-    --lightslablue: #A6ABCD;
+    /*buttonbackground*/
     --darkblue: #3D436D;
+    /*background of section box*/
+    --darknavy: #22253D;
+    /*background color of icon back layer , navbar text color when hover*/
+    --lavendablue: #CED6EA;
+    /*footer contact number color*/
+    --footernum: #F5F5F5;
+
 }
 
 /*headings*/
 h1,
+.num,
 h2,
 h3,
 h4,
@@ -41,6 +58,13 @@ h1 {
     font-size: 100px;
     font-weight: 700;
     Line-height: 120px;
+}
+
+/*humburger menu number*/
+.num {
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 /* HERO-TITTLE*/
@@ -74,10 +98,12 @@ h5 {
 
 /* SUB OBJECT-TITTLE*/
 h6 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     Line-height: 28px;
 }
+
+.faq
 
 /* News Insights Hero Section*/
 .newshero {
@@ -127,6 +153,7 @@ h6 {
     font-size: 17px;
     line-height: 30.6px;
     font-weight: 400;
+    letter-spacing: -0.255px;
 }
 
 /*Caption / List- List , Feature item , Small Notes*/
@@ -152,6 +179,8 @@ h6 {
     padding: 20px 60px;
     font-family: var(--font-heading);
     height: 130px;
+    position: relative;
+    z-index: 1000;
 }
 
 /*for Passionate · Dedicated · Professional */
@@ -161,7 +190,9 @@ h6 {
     font-size: 19px;
     font-weight: 400;
     line-height: 30.6px;
-
+    display: inline-block;
+    border-bottom: 1px dotted rgb(34, 37, 61);
+    padding-bottom: 2px;
 }
 
 /*buttons*/
@@ -201,6 +232,8 @@ h6 {
 .heroctabtn-right:hover {
     border-radius: 100px;
 }
+
+
 
 /*footer button */
 .footer-btn {
@@ -305,6 +338,7 @@ h6 {
     opacity: 0;
     pointer-events: none;
     transition: .3s;
+    z-index: 1001;
 }
 
 
@@ -431,6 +465,55 @@ h6 {
     left: 0;
 }
 
+/*header*/
+.request {
+    background: var(--rosepink);
+    color: var(--white);
+    border: none;
+}
+
+.menu-btn {
+    display: flex;
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu a {
+    color: var(--textcolor);
+}
+
+
+.request:hover {
+    background: var(--slateblue);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.header {
+    position: relative;
+    z-index: 1000;
+}
+
+.submenu {
+    z-index: 1001;
+}
+
+.overlay-menu-btn {
+    margin-left: 16px;
+}
+
 .submenu a {
     display: block;
     padding: 18px 20px;
@@ -453,7 +536,7 @@ h6 {
     height: 58px;
     border: none;
     border-radius: 50%;
-    background: var(--rosepink);
+    background: var(--lightpink);
     display: none;
     justify-content: center;
     align-items: center;
@@ -486,76 +569,353 @@ h6 {
     width: 90%;
     margin-left: 80px;
     margin-right: 80px;
-
+    border-radius: 0 0 0 60px;
 }
 
 .hero-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     color: var(--whitebox);
-    text-align: center;
-    padding: 40px;
+    padding: 100px;
     width: 100%;
 }
 
 .hero-overlay h2 {
-    margin-bottom: 10px;
-    align-items: left;
+    margin: 0;
+    text-align: left;
 }
 
-
-.header-action {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.hero-overlay h6 {
+    margin: 0;
+    text-align: right;
+    color: var(--whitebox);
 }
-
-/*== Laptop Off Canvas Menu ==*/
 
 .laptop-menu {
-
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: var(--slateblue);
-    padding: 70px 50px;
-    transition: .45s ease;
+    background: rgba(29, 32, 58, 0.96);
+    padding: 70px 8.5% 50px;
+    transition: left 0.45s ease;
     z-index: 9999;
-
+    overflow-y: auto;
 }
 
 .laptop-menu.active {
-
     left: 0;
-
 }
 
+/*Laoptop Menu Links*/
+
 .laptop-menu a {
-
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     color: var(--white);
-    font-size: 28px;
     font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 400;
     text-decoration: none;
-    margin: 28px 0;
-
+    margin: 0;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: color 0.3s ease;
 }
 
 .laptop-menu a:hover {
-
     color: var(--rosepink);
 }
 
+.laptop-menu .menu-text .p1 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.laptop-menu a>span:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.laptop-menu a>span:last-child p {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 1;
+}
+
+/*Close Button*/
 .close-btn {
     position: absolute;
-    right: 40px;
-    top: 30px;
+    top: 25px;
+    right: 45px;
+    width: 55px;
+    height: 55px;
     border: none;
-    background: none;
+    background: transparent;
     color: var(--white);
-    font-size: 45px;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
     cursor: pointer;
+    z-index: 10;
+}
 
+.help-support {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.overlay-btn {
+    padding: 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.support-hotline {
+    margin: 8px 0 0;
+    color: var(--white);
+}
+
+.support-hotline .num {
+    margin: 0;
+}
+
+/*FOOTER */
+#footer-cta {
+    min-height: 793px;
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 160px 30px 60px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+#footer {
+    position: relative;
+    background-color: var(--white);
+}
+
+
+/* SUBSCRIBE SECTION */
+
+.footer-upper {
+    height: 377px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-subscribe {
+    width: 62%;
+    height: 373px;
+    background-color: var(--white);
+    padding: 60px;
+    margin: 44px 0 0 0;
+    box-shadow: 2px 2px 40px rgba(35, 38, 62, 0.10);
+    border-bottom-left-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Subscribe title */
+
+.footer-subscribe-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-subscribe-title .h4 {
+    margin: 0;
+    color: var(--textblue);
+
+}
+
+
+/* Subscribe subtitle */
+.footer-subscribe-subtitle {
+    margin: 17px 0;
+    text-align: center;
+}
+
+.footer-subscribe-subtitle .p4 {
+    color: var(--slateblue);
+}
+
+
+/* Email + button */
+.subscribe-textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 34px;
+    margin-top: 20px;
+}
+
+.subscribe-email {
+    margin: 17px 0;
+    flex: 1;
+}
+
+.subscribe-email input {
+    border: none;
+    padding: 0 17px;
+    width: 100%;
+    height: 59px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--lavendablue);
+    font-family: var(--font-base);
+    font-size: 17px;
+    color: var(--darknavy);
+    outline: none;
+}
+
+.subscribe-email input::placeholder {
+    color: var(--darknavy);
+}
+
+
+/* Subscribe button */
+
+.subscribe-submit-btn {
+    flex-shrink: 0;
+}
+
+.subscribe-submit-btn input {
+    font-family: var(--font-base);
+    font-size: 17px;
+    font-weight: 600;
+    background-color: var(--rosepink);
+    color: var(--white);
+    padding: 20px 40px 22px 40px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.subscribe-submit-btn input:hover {
+    background-color: var(--darknavy);
+}
+
+
+/*DARK FOOTER AREA */
+
+#footer-cta {
+    min-height: 793px;
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 160px 30px 60px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Footer content */
+.footer-cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Footer logo */
+.footer-logo {
+    width: 19%;
+    height: auto;
+}
+
+
+/* Footer information buttons */
+
+.footer-cta-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-cta-btn>button>.p4 {
+    font-weight: 600;
+    color: var(--white);
+    line-height: 20.4px;
+}
+
+.footer-cta-btn>button {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 22px 42px;
+    border: 2px solid rgba(205, 203, 234, 0.2);
+    margin: 80px 6.5px 0;
+    width: 444px;
+}
+
+
+/* Phone number */
+.footer-contact-num {
+
+    color: var(--footernum);
+    opacity: 0.2;
+    margin: 40px 0;
+}
+
+
+/* Social icons */
+
+.footer-social-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-social-icon img {
+    width: auto;
+}
+
+.social-icon {
+    padding: 12px;
+    margin: 5px 5px 60px;
+    background-color: rgb(46, 50, 82);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+/* Copyright */
+.footer-copyright {
+    margin: 15px 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.red {
+    color: var(--rosepink);
 }
 
 /* === Laptop  === */
@@ -588,4 +948,64 @@ h6 {
         display: flex;
     }
 
+    /*hero section*/
+    .hero {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0 0 0 45px;
+        background-size: cover;
+    }
+
+    .hero-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 70px 60px;
+        box-sizing: border-box;
+    }
+
+    .hero-overlay h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .hero-overlay h6 {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: left;
+    }
+}
+
+
+
+
+
+/* ---------- MOBILE : 440px ---------- */
+
+@media (max-width: 440px) {
+
+    .hero {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0 0 0 30px;
+    }
+
+    .hero-overlay {
+        gap: 8px;
+        padding: 50px 30px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .hero-overlay h6 {
+        font-size: 11px;
+        line-height: 1.4;
+    }
 }
