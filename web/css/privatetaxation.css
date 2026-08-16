@@ -535,6 +535,29 @@ header {
 }
 
 /* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.success-image {
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+
+    border-radius: 0 0 22px 22px;
+}
+
+.businessman-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================
    SUCCESS SECTION
 ========================================= */
 
