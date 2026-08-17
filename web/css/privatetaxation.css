@@ -862,7 +862,7 @@ header {
 .steps-header h2 {
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
     font-size: 44px;
     font-weight: 700;
@@ -891,7 +891,7 @@ header {
 
     margin: 0 auto;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
     font-size: 24px;
     font-weight: 400;
@@ -945,7 +945,7 @@ header {
 
     border-radius: 30px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
     font-size: 24px;
     font-weight: 400;
@@ -983,9 +983,9 @@ header {
 .step-content h3 {
     margin: 0 0 15px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 700;
 
     line-height: 1.4;
@@ -999,9 +999,9 @@ header {
 
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
 
     line-height: 1.8;
@@ -1560,7 +1560,7 @@ header {
 .projects-header h2 {
     margin: 0 0 22px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
     font-size: 44px;
     font-weight: 700;
@@ -1652,7 +1652,7 @@ header {
 .projects-header h2 {
     margin: 0 0 38px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
     font-size: 44px;
     font-weight: 700;
@@ -1672,7 +1672,7 @@ header {
 
     margin: 0 auto;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
     font-size: 17px;
     font-weight: 400;
@@ -1790,7 +1790,7 @@ header {
 
     font-size: 28px;
     font-weight: 700;
-
+    font-family: var(--font-heading);
     line-height: 1.4;
 
     color: #111827;
@@ -1803,7 +1803,7 @@ header {
     margin: 0;
 
     font-size: 17px;
-
+    font-family: var(--font-base);
     line-height: 1.5;
 
     color: #b3b7c5;
@@ -1834,7 +1834,7 @@ header {
     margin: 0;
 
     font-size: 17px;
-
+    font-family: var(--font-base);
     line-height: 1.7;
 
     color: #303548;
