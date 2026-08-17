@@ -1,0 +1,134 @@
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    background-image: url(../images/bluebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content h3 {
+    margin: 0;
+    color: var(--white);
+}
+
+.hero-subtitle {
+    text-align: center;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.hero-subtitle .p1 {
+    margin: 0;
+}
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 75px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    padding: 0 35px;
+    text-align: left;
+}
+
+.feature-line {
+    width: 2px;
+    height: 90px;
+    margin-right: 35px;
+    background: var(--rosepink);
+    flex-shrink: 0;
+}
+
+.feature-text.p4 {
+    text-align: left;
+}
+
+.feature h6 {
+    margin: 0 0 12px;
+    color: var(--white);
+}
+
+.feature p {
+    margin: 0;
+    color: #a9afd0;
+}
+
+@media (max-width: 840px) {
+    .hero-content {
+        padding: 50px 25px;
+    }
+
+    .hero-content h3 {
+        font-size: 34px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr;
+        margin-top: 45px;
+        gap: 18px;
+    }
+
+    .feature {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .hero-banner {
+        min-height: 420px;
+    }
+
+    .hero-content {
+        padding: 35px 18px;
+    }
+
+    .hero-content h3 {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .feature {
+        padding: 0 10px;
+    }
+
+    .feature-line {
+        height: 70px;
+        margin-right: 18px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+}
