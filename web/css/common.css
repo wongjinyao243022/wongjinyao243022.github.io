@@ -308,7 +308,7 @@ h6 {
 
 .menu a {
     text-decoration: none;
-    color: var(--darkblue);
+    color: var(--textcolor);
     font-family: var(--font-heading);
     font-size: 17px;
 }
@@ -366,6 +366,7 @@ h6 {
 .project-content {
     display: flex;
     flex-direction: column;
+    color: var(--textcolor);
 }
 
 .project-icon {
@@ -382,7 +383,7 @@ h6 {
 }
 
 .project-left h5 {
-    color: var(--white);
+    color: var(--textcolor);
     margin-bottom: 25px;
 }
 
@@ -427,8 +428,7 @@ h6 {
 }
 
 .project-item a {
-
-    color: var(--white);
+    color: var(--textcolor);
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
@@ -505,7 +505,7 @@ h6 {
 .submenu a {
     display: block;
     padding: 18px 20px;
-    color: var(--white);
+    color: var(--textcolor);
     background: var(--slateblue);
     border-bottom: 1px solid rgba(255, 255, 255, .12);
     transition: background-color 0.3s ease;
