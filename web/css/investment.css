@@ -411,7 +411,7 @@ header {
     width: 100%;
 }
 
-.success-content-text h3 {
+.success-content-text h4 {
     margin: 0 0 15px 0;
     font-family: var(--font-heading);
     font-size: 44px;
@@ -537,7 +537,7 @@ header {
     letter-spacing: -0.255px;
 }
 
-
+/*laptop size*/
 @media screen and (max-width: 1320px) {
     /*investment content*/
 
@@ -637,4 +637,409 @@ header {
     .recent-project {
         width: calc((100% - 30px) / 2);
     }
+}
+
+/*Tablet*/
+/* =========================================================
+   TABLET
+   <= 840px
+   ========================================================= */
+
+@media screen and (max-width: 840px) {
+
+    /* =========================
+       INVESTMENT CONTENT
+       ========================= */
+
+    .investment-content {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 45px 0;
+    }
+
+
+    /* =========================
+       MAIN IMAGE
+       ========================= */
+
+    .investment-image {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .investment-image img {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 100 / 50;
+        height: auto;
+        object-fit: cover;
+        object-position: 51% 35%;
+        display: inline;
+        vertical-align: top;
+        border: none;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       META
+       ========================= */
+
+    .investment-meta {
+        width: 100%;
+        margin: 0 auto 25px;
+        text-align: left;
+    }
+
+
+    /* =========================
+       DESCRIPTION
+       ========================= */
+
+    .investment-description {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .investment-description p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .investment-description br {
+        display: none;
+    }
+
+
+    /* =========================
+       FEATURE LIST
+       ========================= */
+
+    .feature-list {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .feature-item {
+        width: 100%;
+        height: auto;
+        min-height: 68.9px;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+
+    /* =========================
+       SUCCESS SECTION
+       ========================= */
+
+    .success-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .success-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* =========================
+       SUCCESS CARD
+       ========================= */
+
+    .success-card {
+        width: calc(100% - 28.325px);
+        height: auto;
+        aspect-ratio: 100 / 51.3;
+
+        flex: none;
+
+        margin-left: 14.1625px;
+        margin-right: 14.1625px;
+
+        padding: 60px 30px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgb(244, 245, 250);
+
+        border: none;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        box-shadow: none;
+
+        overflow: hidden;
+    }
+
+    /* =========================
+       SUCCESS ICON
+       ========================= */
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+    }
+
+    .success-icon img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       SUCCESS CARD TITLE
+       ========================= */
+
+    .success-card h6 {
+        margin: 0 0 10px;
+        font-family: var(--font-base);
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 700;
+        color: rgb(34, 37, 61);
+    }
+
+
+    /* =========================
+       SUCCESS CARD DESCRIPTION
+       ========================= */
+
+    .success-card .p4 {
+        margin: 0 auto;
+        max-width: 180px;
+        text-align: center;
+    }
+
+
+    /* =========================
+       INTRO
+       ========================= */
+
+    .intro-section {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px 0 60px;
+    }
+
+    .intro-section .p4 {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    /* =========================
+   DRIVING SUCCESS
+   ========================= */
+
+    .success-content {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 35px 0 60px;
+    }
+
+    .success-content-text {
+        width: 100%;
+    }
+
+    .success-content-text h4 {
+        width: 100%;
+        margin: 0 0 15px;
+        font-family: var(--font-heading);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--darknavy);
+    }
+
+    .success-content-text .p4 {
+        width: 100%;
+        margin: 0;
+        font-family: var(--font-base);
+        font-size: 17px;
+        line-height: 30.6px;
+        font-weight: 400;
+        letter-spacing: -0.255px;
+        color: var(--darknavy);
+    }
+
+    .project-images {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .project-image {
+        position: relative;
+        width: 100%;
+        flex: none;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 384.337px;
+        max-width: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 5px;
+    }
+
+
+    /* =========================
+   IMAGE CAPTION
+   ========================= */
+
+    .image-caption-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 32px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+
+        pointer-events: none;
+    }
+
+    .image-caption {
+        width: 100%;
+    }
+
+    .image-caption-title {
+        margin: 0;
+        padding: 0;
+
+        font-family: var(--font-base);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: -0.255px;
+
+        color: var(--white);
+
+        text-align: left;
+        text-transform: uppercase;
+
+        cursor: pointer;
+    }
+
+    /* =========================
+   RECENT PROJECTS
+   TABLET <= 840px
+   ========================= */
+
+    .recent-projects {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 60px 0 100px;
+    }
+
+    .recent-project-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .recent-project {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* =========================
+   RECENT PROJECT IMAGE
+   ========================= */
+
+    .recent-project img {
+        width: 100%;
+        height: 384.337px;
+        max-width: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: 50% 50%;
+
+        border-radius: 5px;
+    }
+
+    /* =========================
+   PROJECT TITLE
+   ========================= */
+
+    .recent-project h6 {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 384.337px;
+
+        margin: 0;
+        padding: 32px;
+
+        box-sizing: border-box;
+
+        color: #fff;
+
+        font-family: var(--font-heading);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+
+        text-align: left;
+        text-transform: uppercase;
+
+        z-index: 2;
+    }
+
+    /* =========================
+   PROJECT CATEGORY
+   ========================= */
+
+    .recent-project .p4 {
+        display: none;
+    }
+
 }
