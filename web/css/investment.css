@@ -197,13 +197,13 @@ header {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 /* Main Image */
 .investment-image {
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
 }
 
 .investment-image img {
@@ -212,32 +212,33 @@ header {
     max-width: 100%;
     object-fit: cover;
     object-position: 51% 35%;
-    display: inline;
-    vertical-align: top;
+    display: block;
     border-radius: 5px;
 }
 
 /* Meta  */
 .investment-meta {
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     text-align: left;
     font-family: var(--font-base);
     font-size: 15px;
+    line-height: 24px;
     color: #999;
 }
 
 /*== Description==*/
 .investment-description {
-    width: 94%;
-    margin: 0 auto 20px;
+    width: 1041.78px;
+    max-width: 100%;
+    margin: 0 auto 30px;
 }
 
 .investment-description p {
     margin: 0;
     font-family: var(--font-base);
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 30.6px;
     color: #777;
 
 }
@@ -251,7 +252,7 @@ header {
 
 
 .feature-item {
-    width: 1041.78px;
+    width: 100%;
     height: 68.9px;
     display: flex;
     align-items: center;
@@ -281,7 +282,7 @@ header {
     width: 100%;
     max-width: 1085px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 70px 0;
 }
 
 .success-cards {
@@ -331,13 +332,20 @@ header {
 
 /* Card Title */
 
-.success-card h5 {
+.success-card h6 {
     margin: 0 0 10px;
     font-family: var(--font-base);
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     color: rgb(34, 37, 61);
+}
+
+
+.success-card .p4 {
+    margin: 0 auto;
+    max-width: 180px;
+    text-align: center;
 }
 
 /* Card Description */
@@ -356,9 +364,9 @@ header {
 
 .intro-section {
     width: 1041.78px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
-    box-sizing: border-box;
+    padding: 50px 0 60px;
 }
 
 .intro-section .p4 {
@@ -376,7 +384,8 @@ header {
 /* Project Images */
 
 .project-images {
-    max-width: 1010px;
+    width: 1010px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     gap: 18px;
@@ -393,6 +402,7 @@ header {
 /* Driving Success */
 .success-content {
     width: 1010px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 35px 0 60px;
 }
@@ -460,9 +470,9 @@ header {
 
 .recent-projects {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1085px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 0 100px;
 }
 
 .recent-title {
@@ -486,20 +496,23 @@ header {
 
 .recent-project-list {
     display: flex;
-    gap: 45px;
+    gap: 40px;
     justify-content: center;
 }
 
 .recent-project {
-    width: 50%;
+    width: calc((100% - 40px) / 2);
     text-align: center;
 }
 
 .recent-project img {
     width: 100%;
-    height: 250px;
+    max-width: 100%;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
-    display: block;
+    object-position: 50% 50%;
+    display: inline;
+    vertical-align: top;
     border-radius: 5px;
 }
 
