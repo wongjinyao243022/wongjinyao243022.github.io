@@ -961,21 +961,16 @@ h6 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 12px;
         padding: 70px 60px;
         box-sizing: border-box;
     }
 
-    .hero-overlay h2 {
-        font-size: 32px;
-        line-height: 1.2;
-        text-align: left;
-    }
-
+    .hero-overlay h2,
     .hero-overlay h6 {
-        font-size: 14px;
-        line-height: 1.4;
-        text-align: left;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -999,13 +994,13 @@ h6 {
         padding: 50px 30px;
     }
 
-    .hero-overlay h2 {
-        font-size: 25px;
-        line-height: 1.2;
-    }
+
 
     .hero-overlay h6 {
-        font-size: 11px;
-        line-height: 1.4;
+        text-align: center;
+    }
+
+    .request-phone-btn {
+        display: none;
     }
 }

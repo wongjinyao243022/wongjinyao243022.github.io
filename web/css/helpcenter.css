@@ -74,7 +74,6 @@
  }
 
  .section {
-     width: 90%;
      margin: auto;
      padding: 60px 30px;
      text-align: center;
@@ -230,12 +229,15 @@
 
  .resource-card .p1 {
      position: absolute;
-     bottom: 50px;
+     inset: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
      width: 100%;
      margin: 0;
-     padding: 70px 50px;
+     padding: 0 20px;
      color: var(--white);
-     text-align: center;
  }
 
 
@@ -396,11 +398,19 @@
 
 
      .learning-card-content {
-         gap: 10px;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 12px;
+     }
+
+     .learning-card-content img {
+         width: 58px;
+         height: 58px;
      }
 
      .learning-card-content .text-group {
          margin-left: 0;
+         width: 100%;
      }
 
 
@@ -421,12 +431,6 @@
      .resource-card {
          width: 100%;
      }
-
-     .resource-card .p1 {
-         bottom: 25px;
-         padding: 40px 25px;
-     }
-
 
      .faq-section {
          width: 100%;
@@ -637,8 +641,14 @@
      }
 
      .faq-item button {
-         width: 14px;
+         width: 20px;
+         height: 20px;
+         min-width: 20px;
          font-size: 9px;
-         line-height: 14px;
+         line-height: 20px;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0;
      }
  }
