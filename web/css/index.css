@@ -306,50 +306,65 @@ body.menu-open {
 
 /* header features section*/
 .features {
-    margin-left: 86.35px;
-    margin-right: 86.35px;
-    height: 174.2px;
-    background-color: var(--white);
-    align-content: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 40px 0px rgba(35, 38, 62, 0.1);
-    position: static;
-    top: 50px;
+    width: calc(100% - 120px);
+    max-width: 1290px;
+    min-height: 174px;
 
+    margin: 0 auto;
+
+    background-color: var(--white);
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 40px 0px rgba(35, 38, 62, 0.1);
+
+    position: relative;
+    z-index: 5;
 }
 
 .feature-item {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    padding: 45px 50px;
+    gap: 25px;
+    justify-items: center;
+}
+
+.item {
+    min-height: 74px;
+
+    padding: 0 0 0 30px;
+
+    border-left: 2px solid var(--rosepink);
+
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 50px 60px;
-    gap: 5%;
-    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .item>h6 {
     color: rgb(34, 37, 61);
+
     font-size: 22px;
     font-weight: 700;
+
     letter-spacing: -0.44px;
     line-height: 28.6px;
-    margin: 10px 0px 5px 0px;
-}
 
-.item>.p4 {
-    line-height: 30.6px;
+    margin: 0 0 7px 0;
 }
 
 .item-caption {
     color: rgb(166, 171, 205);
-
 }
 
-.item {
-    padding: 0px 0px 0px 30px;
-    border-left: 1.6px solid var(--rosepink);
-    margin: 0px 23.563px;
-
+.item-caption .p4 {
+    margin: 0;
+    line-height: 24px;
 }
 
 .logo img {
@@ -896,24 +911,236 @@ body.menu-open {
 }
 
 
-@media screen and (max-width:1320px) {
+/* =========================
+   1320px RESPONSIVE
+========================= */
 
-    .menu-btn {
-        display: flex;
-    }
+@media screen and (max-width: 1320px) {
 
-    #menu-toggle-burger {
-        display: block;
-        justify-content: center;
-        display: flex;
-    }
+    /* =========================
+       HEADER
+    ========================= */
 
     .menu {
         display: none;
     }
 
-    .request-menu-btn:hover {
-        background-color: rgb(206 214 234);
+    #menu-toggle-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .menu-btn {
+        display: flex;
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+        width: calc(100% - 70px);
+        margin: 0 auto;
+    }
+
+    .feature-item {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 40px 35px;
+        gap: 15px;
+    }
+
+    .item {
+        margin: 0;
+        padding-left: 25px;
+    }
+
+
+    /* =========================
+       STRATEGY
+    ========================= */
+
+    #strategy {
+        margin: 100px 30px;
+    }
+
+    .strategy-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .strategy-heading {
+        width: 50%;
+    }
+
+    .strategy-subheading {
+        width: 50%;
+        margin: 0;
+        padding: 50px 30px 0 0;
+    }
+
+
+    /* 3 CARDS IN ONE ROW */
+
+    .strategy-cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        width: 100%;
+    }
+
+    .strategy-cards {
+        width: 100%;
+        height: 470px;
+
+        margin: 40px 0 30px 0;
+
+        padding: 50px 40px;
+
+        box-sizing: border-box;
+    }
+
+    .card-icon {
+        width: 119px;
+        height: 119px;
+        max-width: 100%;
+    }
+
+    .card-name {
+        margin-top: 35px;
+    }
+
+    .card-name>h5 {
+        font-size: 25px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .card-name>p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .card-btn {
+        margin-top: 25px;
+        padding: 15px 30px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    #about {
+        padding: 90px 30px;
+        height: auto;
+        min-height: 800px;
+    }
+
+    .about-us-img {
+        margin: 0 15px;
+    }
+
+    .about-us-img>img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .about-content-container {
+        padding: 0 30px;
+        margin: 0;
+    }
+
+
+    .about-us-tab {
+        display: none;
+    }
+
+
+    /* =========================
+       LOGOS
+    ========================= */
+
+    #logo-container {
+        height: auto;
+        padding: 60px 30px;
+    }
+
+
+    /* =========================
+       TEAM
+    ========================= */
+
+    #team {
+        height: auto;
+        margin: 100px 0 0;
+        padding: 0 30px 100px;
+    }
+
+    .team-heading {
+        margin: 0 auto 50px;
+        max-width: 700px;
+    }
+
+    .team-subtitle>.p4 {
+        margin: 0 auto 40px;
+    }
+
+    /* 2 CARDS IN ONE ROW */
+
+    .team-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .team-card {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 10px 10px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .team-card>img {
+        width: 100%;
+        height: auto;
+        max-height: 360px;
+
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .team-card>h6 {
+        margin: 25px 0 5px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-subscribe {
+        width: calc(100% - 80px);
+        max-width: 976px;
+    }
+
+    .footer-cta-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-cta-btn>button {
+        width: 300px;
     }
 }
