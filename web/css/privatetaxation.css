@@ -1139,70 +1139,230 @@ header {
 }
 
 /* =========================================
-   LATEST PROJECTS SECTION
+   PROJECTS SECTION
 ========================================= */
 
-.latestprojects-section {
+.projects-section {
     width: 100%;
+    overflow: hidden;
 
-    background-color: #374265;
-
-    padding: 35px 0 0;
-
-    box-sizing: border-box;
-
-    position: relative;
-}
-
-
-/* =========================================
-   CONTAINER
-========================================= */
-
-.latestprojects-container {
-    width: 100%;
-    max-width: 1510px;
-
-    margin: 0 auto;
-
-    padding: 0 86px;
+    background-color: #ffffff;
 
     box-sizing: border-box;
 }
+
 
 /* =========================================
    HEADER
 ========================================= */
 
-.latestprojects-header {
+.projects-header {
+    width: 100%;
+
+    background-color: #303754;
+
     text-align: center;
 
-    padding-bottom: 85px;
+    padding: 45px 20px 120px;
+
+    box-sizing: border-box;
 }
 
-.latestprojects-label {
-    margin: 0 0 28px;
+
+/* Small pink heading */
+
+.projects-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 18px;
+
+    padding-bottom: 7px;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
 
-    color: #ed4b72;
+    line-height: 1.4;
+
+    color: #e94b72;
 }
 
-.latestprojects-header h2 {
-    margin: 0;
+
+/* Small underline */
+
+.projects-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 285px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Main title */
+
+.projects-header h2 {
+    margin: 0 0 22px;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 700;
 
     line-height: 1.3;
 
     color: #ffffff;
 }
+
+
+/* Introduction */
+
+.projects-intro {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+}
+
+
+.projects-container {
+    width: 100%;
+    max-width: 1360px;
+
+    margin: -80px auto 0;
+
+    padding: 0 20px 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    align-items: start;
+
+    gap: 45px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+       PROJECT ITEM
+    ===================================== */
+
+.project-item {
+    width: 100%;
+    max-width: 420px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+       PROJECT CARD
+    ===================================== */
+
+.project-card {
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+       PROJECT IMAGE
+    ===================================== */
+
+.project-card img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =====================================
+       WHITE INFORMATION BOX
+    ===================================== */
+
+.project-info {
+    width: 78%;
+
+    margin: -55px auto 0;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.project-info h3 {
+    margin: 0 0 10px;
+
+    text-align: center;
+}
+
+
+.project-info p {
+    margin: 0;
+
+    text-align: center;
+}
+
+
+/* =====================================
+       DESCRIPTION
+    ===================================== */
+
+.project-description {
+    width: 100%;
+    max-width: 390px;
+
+    margin: 22px auto 0;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
 
 /* =========================
    FOOTER
