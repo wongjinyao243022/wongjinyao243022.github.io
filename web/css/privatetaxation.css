@@ -320,7 +320,7 @@ header {
     margin: 0;
     text-align: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
     font-size: 44px;
     font-weight: 700;
     line-height: 1.2;
@@ -334,7 +334,7 @@ header {
 
     text-align: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4;
@@ -371,7 +371,7 @@ header {
 .feature h3 {
     margin: 0 0 12px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 700;
 
@@ -381,7 +381,7 @@ header {
 .feature p {
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
     font-size: 17px;
 
     color: #a9afd0;
@@ -606,7 +606,7 @@ header {
 
     margin: 0 0 25px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
     font-size: 44px;
     font-weight: 700;
@@ -624,7 +624,7 @@ header {
 
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
     font-size: 17px;
     font-weight: 400;
@@ -703,7 +703,7 @@ header {
 
     margin: 0 0 25px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
 
     font-size: 44px;
     font-weight: 700;
@@ -719,7 +719,7 @@ header {
 
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
 
     font-size: 17px;
     font-weight: 400;
