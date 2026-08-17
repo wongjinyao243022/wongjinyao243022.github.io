@@ -550,7 +550,8 @@ h6 {
 }
 
 
-/*hero section*/
+/*hero section for Contact Us, About Us , our project,Big Investment Project,Supply Chain,Financial Growth,News & Insights,
+Ideal Tracking Project*/
 .hero {
     position: relative;
     background-image: url(../images/heroimages.png);
@@ -597,6 +598,66 @@ h6 {
 .laptop-menu.active {
     left: 0;
 }
+
+/*banner for PRIVATE TAXATION， MARKETING STRATEGY，Data & Analytics*/
+.inner-banner {
+    width: 100%;
+    min-height: 480px;
+    background-image: url(../images/bluebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+
+.inner-banner-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 40px;
+    box-sizing: border-box;
+}
+
+
+.inner-banner-content h3 {
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+
+.inner-banner-content .p1 {
+    color: var(--white);
+    text-align: center;
+}
+
+
+.inner-features {
+    width: 850px;
+    margin: 55px auto 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.inner-feature {
+    min-height: 41px;
+    border-left: 2px solid var(--rosepink);
+}
+
+
+.inner-feature h6 {
+    text-align: left;
+    padding: 0 0 0 30px;
+}
+
+
+.inner-feature .p4 {
+    color: var(--submenucolor);
+    text-align: left;
+    padding: 0 0 0 30px;
+}
+
 
 /*Laoptop Menu Links*/
 
