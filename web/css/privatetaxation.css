@@ -535,6 +535,229 @@ header {
 }
 
 /* =========================================
+   BUSINESS HERO SECTION
+========================================= */
+
+.business-hero {
+    width: 100%;
+    background-color: #ffffff;
+
+    padding: 0 120px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO CONTAINER
+========================================= */
+
+.business-hero-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 430px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.business-hero-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 50px 60px 50px 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Small heading */
+
+.business-hero-label {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #df4b70;
+}
+
+
+/* Main heading */
+
+.business-hero-title {
+    max-width: 600px;
+
+    margin: 0 0 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    color: #080b12;
+}
+
+
+/* Description */
+
+.business-hero-description {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #20232d;
+}
+
+
+/* =========================================
+   BUSINESS HERO SECTION
+========================================= */
+
+.business-hero {
+    width: 100%;
+    background-color: #ffffff;
+
+    padding: 0 120px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO CONTAINER
+========================================= */
+
+.business-hero-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 430px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.business-hero-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 50px 60px 50px 0;
+
+    box-sizing: border-box;
+}
+
+
+.business-hero-label {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #df4b70;
+}
+
+
+.business-hero-title {
+    max-width: 600px;
+
+    margin: 0 0 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    color: #080b12;
+}
+
+
+.business-hero-description {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #20232d;
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.business-hero-image {
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 0 0 0 35px;
+}
+
+
+.businessman-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* =========================================
    SUCCESS SECTION
 ========================================= */
 
@@ -558,6 +781,731 @@ header {
     padding: 0 30px;
     box-sizing: border-box;
 }
+
+/* =========================================
+   STEPS SECTION
+========================================= */
+
+.steps-section {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 0 20px 70px;
+
+    box-sizing: border-box;
+}
+
+
+.steps-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.steps-header {
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 0;
+
+    box-sizing: border-box;
+}
+
+
+.steps-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 22px;
+
+    padding-bottom: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #df4b70;
+}
+
+
+.steps-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 285px;
+    height: 1px;
+
+    background-color: #dddddd;
+}
+
+
+.steps-header h2 {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #151b2f;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.steps-description {
+    width: 100%;
+
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+
+.steps-description p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #252b3b;
+}
+
+
+/* =========================================
+   STEPS LIST
+========================================= */
+
+.steps-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px;
+
+    margin-top: 55px;
+}
+
+
+/* =========================================
+   STEP ITEM
+========================================= */
+
+.step-item {
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.step-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 106px;
+    height: 50px;
+
+    border-radius: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.step-one {
+    background-color: #a9afd0;
+}
+
+
+.step-two {
+    background-color: #7885bb;
+}
+
+
+.step-three {
+    background-color: #39456f;
+}
+
+
+/* =========================================
+   STEP CONTENT
+========================================= */
+
+.step-content {
+    margin-top: 40px;
+}
+
+
+.step-content h3 {
+    margin: 0 0 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #20263b;
+}
+
+
+.step-content p {
+    max-width: 420px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: #303548;
+}
+
+/* =========================================
+   CENTER THE STEPS SECTION
+========================================= */
+
+.steps-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   EACH STEP
+========================================= */
+
+.step-item {
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #dddddd;
+
+    box-sizing: border-box;
+}
+
+
+/* Remove line from last step */
+
+.step-item:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.step-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 36px;
+
+    margin: 0 auto;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+/* Step colours */
+
+.step-one {
+    background-color: #a9afd0;
+}
+
+.step-two {
+    background-color: #7885bb;
+}
+
+.step-three {
+    background-color: #39456f;
+}
+
+
+/* =========================================
+   STEP CONTENT
+========================================= */
+
+.step-content {
+    width: 100%;
+
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+
+.step-content h3 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #20263b;
+
+    text-align: center;
+}
+
+
+.step-content p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #303548;
+
+    text-align: center;
+}
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.projects-header {
+    width: 100%;
+
+    background-color: #303754;
+
+    text-align: center;
+
+    padding: 45px 20px 120px;
+
+    box-sizing: border-box;
+}
+
+
+/* Small pink heading */
+
+.projects-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 18px;
+
+    padding-bottom: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: #e94b72;
+}
+
+
+/* Small underline */
+
+.projects-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 285px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Main title */
+
+.projects-header h2 {
+    margin: 0 0 22px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #ffffff;
+}
+
+/* =========================================
+   LATEST PROJECTS SECTION
+========================================= */
+
+.latest-projects {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   DARK BLUE HEADER
+========================================= */
+
+.projects-header {
+    width: 100%;
+
+    min-height: 290px;
+
+    background-color: #303754;
+
+    text-align: center;
+
+    padding: 70px 20px 110px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.projects-subtitle {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 18px;
+
+    padding-bottom: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: #e84b70;
+}
+
+
+.projects-subtitle::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 235px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+.projects-header h2 {
+    margin: 0 0 38px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.projects-intro {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+/* =========================================
+   PROJECTS CONTAINER
+========================================= */
+
+.project-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin: -28px auto 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   EACH PROJECT
+========================================= */
+
+.project-item {
+    width: 100%;
+    max-width: 560px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+    width: 560px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-card img {
+    display: block;
+
+    width: 100%;
+    height: 310px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   PROJECT INFORMATION
+========================================= */
+
+.project-info {
+    width: 88%;
+
+    margin: 0 auto;
+
+    padding: 15px 20px 17px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.project-info h3 {
+    margin: 0 0 7px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #111827;
+
+    text-align: center;
+}
+
+
+.project-info p {
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    color: #b3b7c5;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   DESCRIPTION UNDER CARD
+========================================= */
+
+.project-description {
+    width: 100%;
+    max-width: 560px;
+
+    margin: 30px auto 0;
+
+    padding: 0 10px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.project-description p {
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #303548;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SPACE BETWEEN PROJECTS
+========================================= */
+
+.project-item+.project-item {
+    margin-top: 60px;
+}
+
 
 /* =========================
    FOOTER

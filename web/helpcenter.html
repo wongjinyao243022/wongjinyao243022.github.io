@@ -8,294 +8,6 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/helpcenter.css">
 </head>
-<style>
-    .help-hero {
-        width: 90%;
-        height: 400px;
-        margin: 0 auto;
-        background-image: url(images/heroimages.png);
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        border-radius: 0 0 0 30px;
-        overflow: hidden;
-    }
-
-    .help-hero-overlay {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(20, 25, 55, 0.65);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .help-hero-overlay h2 {
-        color: var(--white);
-        margin: 0 0 20px;
-        font-family: var(--font-heading);
-    }
-
-    .help-hero-overlay h5 {
-        color: var(--white);
-        margin: 20px 0 15px;
-        font-family: var(--font-base);
-
-    }
-
-    .search-bar {
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 10px;
-        margin-top: 30px;
-    }
-
-    .search-field {
-        position: relative;
-        width: 40%;
-    }
-
-    .search-icon {
-        position: absolute;
-        left: 22px;
-        top: 48%;
-        transform: translateY(-50%) scaleX(-1);
-        font-size: 30px;
-        pointer-events: none;
-    }
-
-    .search-bar input {
-        width: 100%;
-        padding: 20px 20px 20px 58px;
-        border-radius: 100px;
-        border: none;
-        outline: none;
-        box-sizing: border-box;
-        font-family: var(--font-base);
-        letter-spacing: -0.255px;
-        color: var(--textcolor);
-    }
-
-    .search-bar input::placeholder {
-        color: rgba(31, 41, 55, 0.7);
-    }
-
-    .section {
-        width: 90%;
-        margin: auto;
-        padding: 60px 30px;
-        text-align: center;
-
-    }
-
-    .section h3 {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-
-    .cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 26.35px;
-    }
-
-    .card {
-        position: relative;
-        background: var(--white);
-        border-radius: 12px;
-        width: 30%;
-        height: 315px;
-        margin: 10px;
-        overflow: hidden;
-        text-align: left;
-        border: 0.5px solid var(--slateblue);
-    }
-
-    .card h5 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 40px 0 20px 40px;
-        color: var(--white);
-        font-family: var(--font-heading);
-        box-sizing: border-box;
-        z-index: 1;
-    }
-
-    .card img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .card ul {
-        list-style: none;
-        padding: 20px 40px;
-    }
-
-    .card li {
-        margin-top: 15px;
-        font-family: var(--font-base);
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 1.6;
-    }
-
-    .learning-section {
-        width: 100%;
-        padding: 100px 0px;
-        margin: 80px 0;
-        text-align: center;
-        background: var(--lightbluegrey);
-        box-sizing: border-box;
-    }
-
-    .learning-section h2 {
-        margin-bottom: 60px;
-    }
-
-    .learning-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .learning-card {
-        width: 40%;
-        background: var(--darkblue);
-        margin: 26.35px;
-        padding: 50px;
-        box-sizing: border-box;
-        text-align: left;
-        border-radius: 0 0 0 20px;
-    }
-
-    .learning-card-top {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 12px;
-    }
-
-    .learning-card-top img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        flex-shrink: 0;
-    }
-
-    .learning-card h5 {
-        margin: 0;
-        color: var(--white);
-        line-height: 1.2;
-    }
-
-    .learning-card .p4 {
-        color: var(--white);
-        margin-top: 20px;
-    }
-
-    .learning-card-content {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .learning-card-content .text-group {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 30px;
-    }
-
-
-    .resource-section {
-        width: 100%;
-        padding: 80px 0;
-    }
-
-    .resource-cards {
-        width: 92%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    .resource-card {
-        width: 30%;
-        position: relative;
-        overflow: hidden
-    }
-
-    .resource-card img {
-        width: 100%;
-        display: block;
-    }
-
-    .resource-card .p1 {
-        position: absolute;
-        bottom: 50px;
-        width: 100%;
-        margin: 0;
-        padding: 70px 50px;
-        color: var(--white);
-        text-align: center;
-        font-family: var(--font-heading);
-    }
-
-
-    .faq-section {
-        width: 100%;
-        padding: 80px 0;
-    }
-
-    .faq-section h3 {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .faq-container {
-        width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }
-
-    .faq-column {
-        width: 45%;
-    }
-
-    .faq-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #999;
-        padding: 35px 0;
-    }
-
-    .faq-item h6 {
-        margin: 0;
-    }
-
-    .faq-item button {
-        width: 20px;
-        border: none;
-        background: var(--lightslablue);
-        color: var(--white);
-        font-size: 16px;
-        line-height: 20px;
-    }
-</style>
 
 <body>
 
@@ -318,8 +30,8 @@
                     <a href="business.html">Business Consulting</a>
                     <a href="content.html">Content Planning</a>
                     <a href="data.html">Data & Analytics</a>
-                    <a href="marketing.html">Marketing Strategy</a>
-                    <a href="private.html">Private Taxation</a>
+                    <a href="marketingstrategy.html">Marketing Strategy</a>
+                    <a href="privatetaxation.html">Private Taxation</a>
                     <a href="sales.html">Sales Management</a>
                 </div>
 
@@ -472,7 +184,9 @@
             <div class="overlay-cta">
                 <div class="contact-no">
                     <p class="help-support">Need help? Call our support 24/7</p>
-                    <h1 class="support-hotline">+1800 555 5555</h1>
+                    <h1 class="support-hotline">
+                        <p class="num">+1800 555 5555</p>
+                    </h1>
                 </div>
 
                 <div class="overlay-menu-contact-btn">
@@ -537,7 +251,7 @@
     </section>
     <section class="learning-section">
 
-        <h2>The Business Learning Zone</h2>
+        <h3>The Business Learning Zone</h3>
 
         <div class="learning-cards">
             <div class="learning-card">
@@ -601,7 +315,7 @@
 
             <div class="resource-card">
                 <img src="images/advice.png" alt="Business Guidance">
-                <p class="p1">Expert’s Help & Advice</p>
+                <p class="p1">Expert's Help & Advice</p>
             </div>
 
         </div>
@@ -624,17 +338,17 @@
                 </div>
 
                 <div class="faq-item">
-                    <h6>What documents are needed to open an account?</h6>
+                    <h6>How do i protect my intellectual property?</h6>
                     <button>+</button>
                 </div>
 
                 <div class="faq-item">
-                    <h6>How can I change/update my business details?</h6>
+                    <h6>What are the key factors for online business?</h6>
                     <button>+</button>
                 </div>
 
                 <div class="faq-item">
-                    <h6>I can’t log in to my account. What should I do?</h6>
+                    <h6>Define the importance of market research?</h6>
                     <button>+</button>
                 </div>
 
@@ -644,22 +358,22 @@
             <div class="faq-column">
 
                 <div class="faq-item">
-                    <h6>How long does it take to get my business verified?</h6>
+                    <h6>How can i build a strong brand for my business?</h6>
                     <button>+</button>
                 </div>
 
                 <div class="faq-item">
-                    <h6>Can I have more than one account for my business?</h6>
+                    <h6>Can Icreate an online presence for my business?</h6>
                     <button>+</button>
                 </div>
 
                 <div class="faq-item">
-                    <h6>How can I view or download my invoices?</h6>
+                    <h6>How can I secure funding form my startup?</h6>
                     <button>+</button>
                 </div>
 
                 <div class="faq-item">
-                    <h6>Where can I report an issue or give feedback?</h6>
+                    <h6>What's the importance of a business plan?</h6>
                     <button>+</button>
                 </div>
 

@@ -11,25 +11,38 @@
 :root {
     --font-heading: "Kumbh Sans", sans-serif;
     --font-base: "Mulish", sans-serif;
-    --white: #ffff;
+    --white: #ffffff;
+    /*icon background color ,btn when hover color , submenu background color  */
     --slateblue: #4F578D;
+    /*Boday text color */
     --textcolor: #1F2937;
+    /*btn background color , submenu color when hover
+and  nav.bar text color  */
     --rosepink: #F73760;
+    /*background color of icon back layer*/
     --beige: #FEF8E2;
+    --darkpink: #D7536F;
+    /*background of column box*/
     --lightpink: #FAF5F8;
-    --submenucolor: #6769b8;
-    --whitebox: #F5F5F5;
     --lightbluegrey: #F4F5FA;
-    --lightslablue: #A6ABCD;
+    --lightslablue: #F8FAF5;
+    /*button background color*/
+    --submenucolor: #767EB2;
+    --whitebox: #F5F5F5;
+    /*buttonbackground*/
     --darkblue: #3D436D;
+    /*background of section box*/
     --darknavy: #22253D;
+    /*background color of icon back layer , navbar text color when hover*/
     --lavendablue: #CED6EA;
-    --footernum: #CDD5EA;
+    /*footer contact number color*/
+    --footernum: #F5F5F5;
 
 }
 
 /*headings*/
 h1,
+.num,
 h2,
 h3,
 h4,
@@ -45,6 +58,13 @@ h1 {
     font-size: 100px;
     font-weight: 700;
     Line-height: 120px;
+}
+
+/*humburger menu number*/
+.num {
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 /* HERO-TITTLE*/
@@ -81,6 +101,12 @@ h6 {
     font-size: 22px;
     font-weight: 600;
     Line-height: 28px;
+}
+
+.faqtext {
+    font-size: 20px;
+    font-weight: 700;
+    Line-height: 36px;
 }
 
 /* News Insights Hero Section*/
@@ -282,7 +308,7 @@ h6 {
 
 .menu a {
     text-decoration: none;
-    color: var(--darkblue);
+    color: var(--textcolor);
     font-family: var(--font-heading);
     font-size: 17px;
 }
@@ -340,6 +366,7 @@ h6 {
 .project-content {
     display: flex;
     flex-direction: column;
+    color: var(--textcolor);
 }
 
 .project-icon {
@@ -356,7 +383,7 @@ h6 {
 }
 
 .project-left h5 {
-    color: var(--white);
+    color: var(--textcolor);
     margin-bottom: 25px;
 }
 
@@ -401,8 +428,7 @@ h6 {
 }
 
 .project-item a {
-
-    color: var(--white);
+    color: var(--textcolor);
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
@@ -443,24 +469,8 @@ h6 {
     left: 0;
 }
 
-/*header*/
-.request {
-    background: var(--rosepink);
-    color: var(--white);
-    border: none;
-}
-
 .menu-btn {
     display: flex;
-}
-
-.talk-btn {
-    display: flex;
-    margin-left: auto;
-}
-
-.menu a {
-    color: var(--textcolor);
 }
 
 
@@ -495,7 +505,7 @@ h6 {
 .submenu a {
     display: block;
     padding: 18px 20px;
-    color: var(--white);
+    color: var(--textcolor);
     background: var(--slateblue);
     border-bottom: 1px solid rgba(255, 255, 255, .12);
     transition: background-color 0.3s ease;
@@ -571,54 +581,107 @@ h6 {
     color: var(--whitebox);
 }
 
-/*== Laptop Off Canvas Menu ==*/
-
 .laptop-menu {
-
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: var(--slateblue);
-    padding: 70px 50px;
-    transition: .45s ease;
+    background: rgba(29, 32, 58, 0.96);
+    padding: 70px 8.5% 50px;
+    transition: left 0.45s ease;
     z-index: 9999;
-
+    overflow-y: auto;
 }
 
 .laptop-menu.active {
-
     left: 0;
-
 }
 
+/*Laoptop Menu Links*/
+
 .laptop-menu a {
-
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     color: var(--white);
-    font-size: 28px;
     font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 400;
     text-decoration: none;
-    margin: 28px 0;
-
+    margin: 0;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: color 0.3s ease;
 }
 
 .laptop-menu a:hover {
-
     color: var(--rosepink);
 }
 
+.laptop-menu .menu-text .p1 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.laptop-menu a>span:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.laptop-menu a>span:last-child p {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 1;
+}
+
+/*Close Button*/
 .close-btn {
     position: absolute;
-    right: 40px;
-    top: 30px;
+    top: 25px;
+    right: 45px;
+    width: 55px;
+    height: 55px;
     border: none;
-    background: none;
+    background: transparent;
     color: var(--white);
-    font-size: 45px;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
     cursor: pointer;
+    z-index: 10;
+}
 
+.help-support {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.overlay-btn {
+    padding: 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.support-hotline {
+    margin: 8px 0 0;
+    color: var(--white);
+}
+
+.support-hotline .num {
+    margin: 0;
 }
 
 /*FOOTER */
@@ -886,21 +949,16 @@ h6 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 12px;
         padding: 70px 60px;
         box-sizing: border-box;
     }
 
-    .hero-overlay h2 {
-        font-size: 32px;
-        line-height: 1.2;
-        text-align: left;
-    }
-
+    .hero-overlay h2,
     .hero-overlay h6 {
-        font-size: 14px;
-        line-height: 1.4;
-        text-align: left;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -924,13 +982,13 @@ h6 {
         padding: 50px 30px;
     }
 
-    .hero-overlay h2 {
-        font-size: 25px;
-        line-height: 1.2;
-    }
+
 
     .hero-overlay h6 {
-        font-size: 11px;
-        line-height: 1.4;
+        text-align: center;
+    }
+
+    .request-phone-btn {
+        display: none;
     }
 }
