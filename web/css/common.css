@@ -103,7 +103,11 @@ h6 {
     Line-height: 28px;
 }
 
-.faq
+.faqtext {
+    font-size: 20px;
+    font-weight: 700;
+    Line-height: 36px;
+}
 
 /* News Insights Hero Section*/
 .newshero {
@@ -465,24 +469,8 @@ h6 {
     left: 0;
 }
 
-/*header*/
-.request {
-    background: var(--rosepink);
-    color: var(--white);
-    border: none;
-}
-
 .menu-btn {
     display: flex;
-}
-
-.talk-btn {
-    display: flex;
-    margin-left: auto;
-}
-
-.menu a {
-    color: var(--textcolor);
 }
 
 
