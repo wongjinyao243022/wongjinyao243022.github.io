@@ -1070,6 +1070,12 @@ body.menu-open {
         padding: 60px 30px;
     }
 
+    .row-logo {
+        display: row;
+        gap: 35px;
+        justify-items: center;
+    }
+
 
     /* =========================
        TEAM
@@ -1102,8 +1108,8 @@ body.menu-open {
     }
 
     .team-card {
-        width: 100%;
-        height: auto;
+        width: 645.2px;
+        height: 763.39px;
 
         margin: 0;
         padding: 10px 10px 20px;
@@ -1112,12 +1118,10 @@ body.menu-open {
     }
 
     .team-card>img {
-        width: 100%;
-        height: auto;
-        max-height: 360px;
-
+        width: 615.25px;
+        height: 576.79px;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 8px;
     }
 
     .team-card>h6 {
@@ -1135,12 +1139,224 @@ body.menu-open {
     }
 
     .footer-cta-btn {
+
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
+
     }
 
     .footer-cta-btn>button {
-        width: 300px;
+        width: 411.612px;
+
+    }
+
+}
+
+/* =========================
+   840px RESPONSIVE
+========================= */
+
+@media screen and (max-width: 840px) {
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .request-phone-btn {
+        display: none;
+    }
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+        width: calc(100% - 40px);
+    }
+
+    .feature-item {
+        padding: 30px 25px;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* =========================
+       STRATEGY
+    ========================= */
+
+    #strategy {
+        margin: 70px 20px;
+    }
+
+    .strategy-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 550px;
+    }
+
+    .strategy-heading {
+        width: 100%;
+    }
+
+    .tagline {
+        width: auto;
+    }
+
+    .strategy-subheading {
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+
+    .strategy-cards-container {
+        gap: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+
+    .strategy-cards {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 40px 30px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    #about {
+        flex-direction: column;
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .about-us-img {
+        margin: 0 0 30px 0;
+        width: 100%;
+    }
+
+    .about-us-img>img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .about-content-container {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-heading>.p3 {
+        margin: 0 auto;
+    }
+
+    .about-us-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-tab>button {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .toggle-content {
+        text-align: center;
+    }
+
+    .toggle-content .p4 {
+        padding: 15px 0;
+    }
+
+    .about-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* =========================
+       LOGOS
+    ========================= */
+
+    .row-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        justify-items: center;
+    }
+
+
+    /* =========================
+       TEAM
+    ========================= */
+
+    #team {
+        padding: 0 20px 70px;
+    }
+
+    .team-heading {
+        margin: 0 auto 40px;
+        max-width: 100%;
+    }
+
+    .team-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 480px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 790.45px;
+        height: 884.188px;
+    }
+
+    .team-card>img {
+        width: 760.1px;
+        height: 712.59px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-subscribe {
+        width: calc(100% - 40px);
+        padding: 40px 24px;
+        height: auto;
+    }
+
+    .footer-subscribe-title h4 {
+        font-size: 26px;
+    }
+
+    #footer-cta {
+        padding: 100px 20px 40px;
+    }
+
+    .footer-cta-btn {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-cta-btn>button {
+        width: 780.03px;
+        margin: 15px 0 0;
     }
 }
