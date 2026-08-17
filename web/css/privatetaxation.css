@@ -1506,6 +1506,343 @@ header {
     margin-top: 60px;
 }
 
+/* =====================================================
+   1320px
+===================================================== */
+
+@media (min-width: 841px) and (max-width: 1320px) {
+
+    .projects-container {
+        width: 100%;
+
+        padding: 0 40px;
+
+        margin: 0 auto;
+
+        box-sizing: border-box;
+    }
+
+
+    .project-item {
+        width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .project-card {
+        width: 520px;
+        max-width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    .project-image {
+        width: 100%;
+        height: 290px;
+    }
+
+
+    .project-info {
+        width: 88%;
+
+        margin: 0 auto;
+
+        padding: 14px 18px 16px;
+    }
+
+
+    .project-info h3 {
+        font-size: 28px;
+    }
+
+
+    .project-info p {
+        font-size: 17px;
+    }
+
+
+    .project-description {
+        width: 100%;
+        max-width: 580px;
+
+        margin: 30px auto 0;
+
+        padding: 0 15px;
+
+        text-align: center;
+    }
+
+
+    .project-description p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+    .project-item+.project-item {
+        margin-top: 60px;
+    }
+}
+
+
+/* =====================================================
+   840px
+===================================================== */
+
+@media (min-width: 441px) and (max-width: 840px) {
+
+    .projects-container {
+        width: 100%;
+
+        padding: 0 30px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+
+    .project-item {
+        width: 100%;
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .project-card {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+
+    .project-image {
+        width: 100%;
+        height: 280px;
+    }
+
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .project-info {
+        width: 88%;
+
+        margin: 0 auto;
+
+        padding: 13px 15px 15px;
+
+        text-align: center;
+    }
+
+
+    .project-info h3 {
+        font-size: 28px;
+
+        text-align: center;
+    }
+
+
+    .project-info p {
+        font-size: 17px;
+
+        text-align: center;
+    }
+
+
+    .project-description {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 30px auto 0;
+
+        padding: 0 15px;
+
+        text-align: center;
+    }
+
+
+    .project-description p {
+        font-size: 17px;
+
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+
+    .project-item+.project-item {
+        margin-top: 60px;
+    }
+}
+
+
+/* =====================================================
+   440px
+===================================================== */
+
+@media (max-width: 440px) {
+
+    .projects-container {
+        width: 100%;
+
+        padding: 0 15px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+
+    .project-item {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* ---------------------------------------------
+       CARD
+    --------------------------------------------- */
+
+    .project-card {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 0 auto;
+
+        border-radius: 7px;
+    }
+
+
+    /* ---------------------------------------------
+       IMAGE
+    --------------------------------------------- */
+
+    .project-image {
+        width: 100%;
+        height: 180px;
+    }
+
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* ---------------------------------------------
+       CARD INFORMATION
+    --------------------------------------------- */
+
+    .project-info {
+        width: 88%;
+
+        margin: 0 auto;
+
+        padding: 10px 8px 12px;
+
+        text-align: center;
+    }
+
+
+    .project-info h3 {
+        margin: 0 0 5px;
+
+        font-size: 28px;
+
+        line-height: 1.4;
+
+        text-align: center;
+    }
+
+
+    .project-info p {
+        margin: 0;
+
+        font-size: 17px;
+
+        line-height: 1.4;
+
+        text-align: center;
+    }
+
+
+    /* ---------------------------------------------
+       DESCRIPTION
+    --------------------------------------------- */
+
+    .project-description {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 30px auto 0;
+
+        padding: 0 5px;
+
+        text-align: center;
+    }
+
+
+    .project-description p {
+        margin: 0;
+
+        font-size: 17px;
+
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* ---------------------------------------------
+       SPACE BETWEEN CARDS
+    --------------------------------------------- */
+
+    .project-item+.project-item {
+        margin-top: 60px;
+    }
+}
 
 /* =========================
    FOOTER
