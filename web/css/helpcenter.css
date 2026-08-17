@@ -24,13 +24,11 @@
  .help-hero-overlay h2 {
      color: var(--white);
      margin: 0 0 20px;
-     font-family: var(--font-heading);
  }
 
  .help-hero-overlay h5 {
      color: var(--white);
      margin: 20px 0 15px;
-     font-family: var(--font-base);
 
  }
 
@@ -64,7 +62,6 @@
      border: none;
      outline: none;
      box-sizing: border-box;
-     font-family: var(--font-base);
      letter-spacing: -0.255px;
      color: var(--textcolor);
  }
@@ -74,7 +71,7 @@
  }
 
  .section {
-     width: 90%;
+     width: 95%;
      margin: auto;
      padding: 60px 30px;
      text-align: center;
@@ -112,7 +109,6 @@
      margin: 0;
      padding: 40px 0 20px 40px;
      color: var(--white);
-     font-family: var(--font-heading);
      box-sizing: border-box;
      z-index: 1;
  }
@@ -130,10 +126,11 @@
 
  .card li {
      margin-top: 15px;
-     font-family: var(--font-base);
      font-size: 17px;
      font-weight: 400;
      line-height: 1.6;
+     font-family: var(--font-base);
+
  }
 
  .learning-section {
@@ -230,12 +227,15 @@
 
  .resource-card .p1 {
      position: absolute;
-     bottom: 50px;
+     inset: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
      width: 100%;
      margin: 0;
-     padding: 70px 50px;
+     padding: 0 20px;
      color: var(--white);
-     text-align: center;
  }
 
 
@@ -272,7 +272,7 @@
  .faq-item button {
      width: 20px;
      border: none;
-     background: var(--slateblue);
+     background: var(--submenucolor);
      color: var(--white);
      font-size: 16px;
      line-height: 20px;
@@ -396,11 +396,19 @@
 
 
      .learning-card-content {
-         gap: 10px;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 12px;
+     }
+
+     .learning-card-content img {
+         width: 58px;
+         height: 58px;
      }
 
      .learning-card-content .text-group {
          margin-left: 0;
+         width: 100%;
      }
 
 
@@ -422,12 +430,6 @@
          width: 100%;
      }
 
-     .resource-card .p1 {
-         bottom: 25px;
-         padding: 40px 25px;
-     }
-
-
      .faq-section {
          width: 100%;
          padding: 60px 0;
@@ -448,8 +450,13 @@
          width: 100%;
      }
 
-     .faq-item {
+     .faq-item h6 {
          gap: 15px;
+         padding: 18px 0;
+     }
+
+     .faq-item h6 {
+         line-height: 1.4;
      }
  }
 
@@ -632,13 +639,23 @@
      }
 
      .faq-item h6 {
-         font-size: 8px;
          line-height: 1.4;
      }
 
      .faq-item button {
-         width: 14px;
+         width: 20px;
+         height: 20px;
+         min-width: 20px;
          font-size: 9px;
-         line-height: 14px;
+         line-height: 20px;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0;
+     }
+
+     .faq-item {
+         padding: 20px 0;
+         gap: 8px;
      }
  }
