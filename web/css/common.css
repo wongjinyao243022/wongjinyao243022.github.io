@@ -458,16 +458,6 @@ h6 {
     color: var(--rosepink);
 }
 
-.laptop-menu {
-
-    position: fixed;
-    left: -320px;
-    transition: .4s;
-}
-
-.laptop-menu.active {
-    left: 0;
-}
 
 .menu-btn {
     display: flex;
@@ -580,23 +570,6 @@ Ideal Tracking Project*/
     margin: 0;
     text-align: right;
     color: var(--whitebox);
-}
-
-.laptop-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: rgba(29, 32, 58, 0.96);
-    padding: 70px 8.5% 50px;
-    transition: left 0.45s ease;
-    z-index: 9999;
-    overflow-y: auto;
-}
-
-.laptop-menu.active {
-    left: 0;
 }
 
 /*banner for PRIVATE TAXATION， MARKETING STRATEGY，Data & Analytics*/
@@ -977,14 +950,6 @@ Ideal Tracking Project*/
         display: flex;
     }
 
-    .phone-btn {
-        display: flex;
-    }
-
-    .header {
-        padding: 20px 50px;
-    }
-
 }
 
 /* === Tablet  === */
@@ -997,30 +962,6 @@ Ideal Tracking Project*/
         display: flex;
     }
 
-    /*hero section*/
-    .hero {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 0 0 0 45px;
-        background-size: cover;
-    }
-
-    .hero-overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        padding: 70px 60px;
-        box-sizing: border-box;
-    }
-
-    .hero-overlay h2,
-    .hero-overlay h6 {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 
