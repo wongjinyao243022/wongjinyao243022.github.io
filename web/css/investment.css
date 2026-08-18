@@ -480,14 +480,6 @@ header {
     margin-bottom: 25px;
 }
 
-.recent-title p {
-    font-family: var(--font-base);
-    font-size: 12px;
-    line-height: 18px;
-    color: var(--rosepink);
-    margin-bottom: 8px;
-}
-
 .recent-title h3 {
     font-size: 28px;
     line-height: 39px;
@@ -640,16 +632,11 @@ header {
 }
 
 /*Tablet*/
-/* =========================================================
-   TABLET
-   <= 840px
-   ========================================================= */
 
 @media screen and (max-width: 840px) {
 
-    /* =========================
-       INVESTMENT CONTENT
-       ========================= */
+
+    /*INVESTMENT CONTENT*/
 
     .investment-content {
         width: 90%;
@@ -658,10 +645,8 @@ header {
         padding: 45px 0;
     }
 
+    /* MAIN IMAGE*/
 
-    /* =========================
-       MAIN IMAGE
-       ========================= */
 
     .investment-image {
         width: 100%;
@@ -683,9 +668,7 @@ header {
     }
 
 
-    /* =========================
-       META
-       ========================= */
+    /*META*/
 
     .investment-meta {
         width: 100%;
@@ -693,10 +676,7 @@ header {
         text-align: left;
     }
 
-
-    /* =========================
-       DESCRIPTION
-       ========================= */
+    /* DESCRIPTION*/
 
     .investment-description {
         width: 100%;
@@ -714,9 +694,8 @@ header {
     }
 
 
-    /* =========================
-       FEATURE LIST
-       ========================= */
+
+    /*  FEATURE LIST*/
 
     .feature-list {
         width: 100%;
@@ -735,9 +714,8 @@ header {
     }
 
 
-    /* =========================
-       SUCCESS SECTION
-       ========================= */
+    /* SUCCESS SECTION*/
+
 
     .success-section {
         width: 100%;
@@ -754,9 +732,8 @@ header {
     }
 
 
-    /* =========================
-       SUCCESS CARD
-       ========================= */
+    /* SUCCESS CARD*/
+
 
     .success-card {
         width: calc(100% - 28.325px);
@@ -791,9 +768,9 @@ header {
         overflow: hidden;
     }
 
-    /* =========================
-       SUCCESS ICON
-       ========================= */
+
+
+    /* SUCCESS ICON */
 
     .success-icon {
         width: 60px;
@@ -808,9 +785,7 @@ header {
     }
 
 
-    /* =========================
-       SUCCESS CARD TITLE
-       ========================= */
+    /*SUCCESS CARD TITLE*/
 
     .success-card h6 {
         margin: 0 0 10px;
@@ -822,9 +797,8 @@ header {
     }
 
 
-    /* =========================
-       SUCCESS CARD DESCRIPTION
-       ========================= */
+    /*SUCCESS CARD DESCRIPTION*/
+
 
     .success-card .p4 {
         margin: 0 auto;
@@ -833,10 +807,7 @@ header {
     }
 
 
-    /* =========================
-       INTRO
-       ========================= */
-
+    /*INTRO*/
     .intro-section {
         width: 90%;
         max-width: 100%;
@@ -849,9 +820,8 @@ header {
         margin: 0 0 20px;
     }
 
-    /* =========================
-   DRIVING SUCCESS
-   ========================= */
+
+    /* DRIVING SUCCESS*/
 
     .success-content {
         width: 90%;
@@ -917,9 +887,9 @@ header {
     }
 
 
-    /* =========================
-   IMAGE CAPTION
-   ========================= */
+
+    /* IMAGE CAPTION*/
+
 
     .image-caption-container {
         position: absolute;
@@ -961,10 +931,8 @@ header {
         cursor: pointer;
     }
 
-    /* =========================
-   RECENT PROJECTS
-   TABLET <= 840px
-   ========================= */
+
+    /*RECENT PROJECTS*/
 
     .recent-projects {
         width: 90%;
@@ -986,9 +954,8 @@ header {
         margin: 0;
     }
 
-    /* =========================
-   RECENT PROJECT IMAGE
-   ========================= */
+    /* RECENT PROJECT IMAGE*/
+
 
     .recent-project img {
         width: 100%;
@@ -1003,9 +970,8 @@ header {
         border-radius: 5px;
     }
 
-    /* =========================
-   PROJECT TITLE
-   ========================= */
+
+    /*PROJECT TITLE*/
 
     .recent-project h6 {
         position: absolute;
@@ -1034,12 +1000,429 @@ header {
         z-index: 2;
     }
 
-    /* =========================
-   PROJECT CATEGORY
-   ========================= */
+
+    /*PROJECT CATEGORY*/
 
     .recent-project .p4 {
         display: none;
     }
+
+}
+
+/*Mobile size*/
+
+@media screen and (max-width: 440px) {
+
+    /*Investment content*/
+    .investment-content {
+        width: 380px;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 35px 0;
+    }
+
+    .investment-image {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .investment-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 190px;
+
+        aspect-ratio: 100 / 50;
+
+        object-fit: cover;
+        object-position: 51% 35%;
+
+        display: inline;
+        vertical-align: top;
+
+        border: none;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+
+    /*Meta*/
+    .investment-meta {
+        width: 100%;
+        margin: 0 auto 20px;
+        text-align: left;
+    }
+
+    /*Description*/
+
+    .investment-description {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 25px;
+    }
+
+    .investment-description p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .investment-description br {
+        display: none;
+    }
+
+    /*Feature list*/
+    .feature-list {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .feature-item {
+        width: 100%;
+        min-height: 68.9px;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Success section */
+    @media screen and (max-width: 440px) {
+
+        .success-section {
+            width: 100%;
+            padding: 23px 0 40px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .success-cards {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .success-card {
+            width: calc(100% - 8px);
+            max-width: none;
+
+            height: 450px;
+            min-height: 450px;
+
+            margin: 0 4px;
+            padding: 132px 30px 40px;
+
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            background: rgb(244, 245, 250);
+
+            border: none;
+            border-radius: 0;
+            border-bottom-left-radius: 25px;
+
+            overflow: hidden;
+
+            flex: none;
+        }
+
+        .success-icon {
+            width: 76px;
+            height: 76px;
+
+            min-width: 76px;
+            min-height: 76px;
+
+            margin: 0 0 28px;
+
+            border-radius: 50%;
+
+            background: var(--white);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+        }
+
+        .success-icon img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+        }
+
+
+
+        .success-card h6 {
+            width: 100%;
+            margin: 0 0 10px;
+            font-family: var(--font-base);
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 700;
+            color: rgb(34, 37, 61);
+            text-align: center;
+        }
+
+        .success-card .p4 {
+            width: 100%;
+            max-width: 220px;
+
+            margin: 0 auto;
+
+            font-family: var(--font-base);
+            font-size: 17px;
+            line-height: 30px;
+            font-weight: 400;
+
+            color: #777;
+
+            text-align: center;
+        }
+    }
+
+
+    /*Intro*/
+    .intro-section {
+        width: 380px;
+        max-width: calc(100% - 20px);
+
+        margin: 0 auto;
+
+        padding: 40px 0 35px;
+    }
+
+    .intro-section .p4 {
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    .project-images {
+        width: 320px;
+        max-width: calc(100% - 20px);
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .project-image {
+        position: relative;
+
+        width: 100%;
+        height: 178.962px;
+
+        flex: none;
+
+        overflow: hidden;
+
+        border-radius: 5px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 178.962px;
+
+        max-width: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 5px;
+    }
+
+
+    .image-caption-container {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 32px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+
+        pointer-events: none;
+    }
+
+    .image-caption {
+        width: 100%;
+    }
+
+    .image-caption-title {
+        margin: 0;
+        padding: 0;
+
+        font-family: var(--font-base);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: -0.255px;
+
+        color: var(--white);
+
+        text-align: left;
+        text-transform: uppercase;
+
+        cursor: pointer;
+    }
+
+    /*Driving success*/
+
+    .success-content {
+        width: 380px;
+        max-width: calc(100% - 20px);
+
+        margin: 0 auto;
+
+        padding: 30px 0 45px;
+    }
+
+    .success-content-text {
+        width: 100%;
+    }
+
+    .success-content-text h4 {
+        width: 100%;
+
+        margin: 0 0 12px;
+
+        font-family: var(--font-heading);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+
+        color: var(--darknavy);
+    }
+
+    .success-content-text .p4 {
+        width: 100%;
+
+        margin: 0;
+
+        font-family: var(--font-base);
+        font-size: 17px;
+        line-height: 30.6px;
+        font-weight: 400;
+        letter-spacing: -0.255px;
+
+        color: var(--darknavy);
+    }
+
+    /*Recent projects*/
+    .recent-projects {
+        width: 380px;
+        max-width: calc(100% - 20px);
+
+        margin: 0 auto;
+
+        padding: 40px 0 60px;
+    }
+
+    .recent-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .recent-title p {
+        margin-bottom: 8px;
+    }
+
+    .recent-title h3 {
+        font-size: 28px;
+        line-height: 39px;
+        margin: 0;
+    }
+
+
+    .recent-project-list {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .recent-project {
+        position: relative;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    .recent-project img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 3 / 2;
+
+        object-fit: cover;
+        object-position: 50% 50%;
+
+        display: inline;
+        vertical-align: top;
+
+        border-radius: 5px;
+    }
+
+
+    .recent-project h6 {
+        position: static;
+
+        width: 100%;
+        height: auto;
+
+        margin: 10px 0 5px;
+        padding: 0;
+
+        font-family: var(--font-heading);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 39px;
+
+        color: var(--darknavy);
+
+        text-align: center;
+        text-transform: capitalize;
+
+        z-index: auto;
+    }
+
+    .recent-project .p4 {
+        display: block;
+
+        font-family: var(--font-base);
+        font-size: 17px;
+        line-height: 30.6px;
+    }
+
 
 }
