@@ -377,18 +377,6 @@
    LEFT CONTENT
 ========================================= */
 
-.business-hero-content {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-    padding: 50px 60px 50px 0;
-
-    box-sizing: border-box;
-}
-
-
 /* Small heading */
 
 .business-hero-label {
