@@ -234,12 +234,9 @@ header {
     margin: 0 auto 30px;
 }
 
-.investment-description p {
+.investment-description .p4 {
     margin: 0;
-    font-family: var(--font-base);
-    font-size: 17px;
-    line-height: 30.6px;
-    color: #777;
+    color: var(--textcolor);
 
 }
 
