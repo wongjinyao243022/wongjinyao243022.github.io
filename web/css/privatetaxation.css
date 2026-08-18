@@ -455,32 +455,9 @@
 
 .business-hero {
     width: 100%;
-    background-color: #ffffff;
-
     padding: 0 120px 60px;
-
     box-sizing: border-box;
 }
-
-
-/* =========================================
-   HERO CONTAINER
-========================================= */
-
-.business-hero-container {
-    width: 100%;
-    max-width: 1510px;
-
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    min-height: 430px;
-
-    overflow: hidden;
-}
-
 
 /* =========================================
    LEFT CONTENT
@@ -555,16 +532,9 @@
     border-radius: 0 0 0 35px;
 }
 
-.businessman-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 0 35px;
-}
-
 .businessman-image img {
     display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: center;
 
