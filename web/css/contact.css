@@ -36,6 +36,15 @@
 
 }
 
+.request {
+    background-color: var(--darkblue);
+
+}
+
+.request:hover {
+    background-color: var(--rosepink);
+}
+
 .card .p4 {
     color: var(--textcolor);
     font-weight: 600;
