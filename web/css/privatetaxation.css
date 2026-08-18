@@ -859,17 +859,9 @@ header {
 }
 
 
-.steps-header h2 {
+.steps-header h3 {
     margin: 0;
-
-    font-family: var(--font-heading);
-
-    font-size: 44px;
-    font-weight: 700;
-
-    line-height: 1.3;
-
-    color: #151b2f;
+    color: var(--textcolor);
 }
 
 
