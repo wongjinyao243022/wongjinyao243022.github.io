@@ -601,16 +601,6 @@ header {
     width: 100%;
 }
 
-.section-tag {
-    margin: 0 0 30px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-
-    color: #ed4b72;
-}
-
 .success-content h2 {
     margin: 0 0 55px;
 

@@ -1,6 +1,6 @@
-gsap.to(".footer-subscribe", {
+gsap.to(".footer-upper", {
     scrollTrigger: {
-        trigger: ".section",
+        trigger: ".footer-subscribe",
         start: "top 20%" /* target, screen*/,
         scrub: true,
         markers: 2
