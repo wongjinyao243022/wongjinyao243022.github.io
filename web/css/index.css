@@ -125,6 +125,75 @@
 }
 
 /*hamburger overlay menu*/
+
+
+/* Overlay main menu button */
+
+.overlay-main-btn {
+    width: 100%;
+    padding: 28px 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: transparent;
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 400;
+
+    cursor: pointer;
+    text-align: left;
+}
+
+.overlay-main-btn:hover {
+    color: var(--rosepink);
+}
+
+
+/* Arrow */
+
+.overlay-arrow {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Hide submenu */
+
+.overlay-submenu {
+    display: none;
+}
+
+
+/* Show submenu when active */
+
+.overlay-item.active .overlay-submenu {
+    display: block;
+    align-items: center;
+}
+
+
+/* Submenu links */
+
+.overlay-submenu a {
+    font-size: 24px;
+    padding: 18px 0;
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Arrow rotate */
+
+.overlay-item.active .overlay-arrow {
+    transform: rotate(180deg);
+}
+
+
 .laptop-menu {
     position: fixed;
     top: 0;
@@ -132,11 +201,9 @@
     width: 100%;
     height: 100%;
     background: rgb(27, 29, 48);
-    opacity: 99%;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
-    transition: transform 0.35s ease;
     overflow-y: auto;
     isolation: isolate;
     z-index: 9999;
