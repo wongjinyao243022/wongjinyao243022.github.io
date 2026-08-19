@@ -1,0 +1,107 @@
+/* ========================================
+   PROJECT CONTENT SECTION
+======================================== */
+
+.project-content {
+    width: 100%;
+    background-color: #f1fff1;
+    padding: 40px 20px 0;
+}
+
+.project-container {
+    width: 100%;
+    max-width: 976px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   FEATURED IMAGE
+======================================== */
+
+.featured-image {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 445px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   POST META
+======================================== */
+
+.post-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    min-height: 35px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #555;
+
+    border-top: 5px solid #f1fff1;
+    border-bottom: 5px solid #f1fff1;
+
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+.post-meta span {
+    white-space: nowrap;
+}
+
+.post-meta strong {
+    font-weight: 500;
+    color: #333;
+}
+
+.post-meta a {
+    color: #f04b62;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   ARTICLE CONTENT
+======================================== */
+
+.article-content {
+    background-color: #e2e2e2;
+
+    margin-top: 0;
+    padding: 30px 40px 35px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+
+    box-sizing: border-box;
+}
+
+.article-content p {
+    margin: 0 0 15px;
+}
+
+.article-content p:last-child {
+    margin-bottom: 0;
+}
