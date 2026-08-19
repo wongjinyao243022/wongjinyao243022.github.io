@@ -1025,7 +1025,7 @@ Ideal Tracking Project*/
 
     /* Hide Let's Talk */
     .talk-btn {
-        display: none;
+        display: flex;
     }
 
     /* Keep burger */
@@ -1037,6 +1037,15 @@ Ideal Tracking Project*/
         display: flex;
     }
 }
+
+/* === Small Tablet === */
+@media screen and (max-width: 600px) {
+
+    .talk-btn {
+        display: none;
+    }
+}
+
 
 
 /* ---------- MOBILE : 440px ---------- */
