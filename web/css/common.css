@@ -980,8 +980,20 @@ Ideal Tracking Project*/
 /* === Laptop  === */
 @media screen and (max-width: 1320px) {
 
+    .hero {
+        background-size: cover;
+        margin: 0px 15.963px;
+    }
+
+    .hero-overlay {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .header {
-        padding: 20px 40px;
+        padding: 18px 20px;
+        height: 100px;
     }
 
     /* Hide desktop navigation */
@@ -1009,21 +1021,7 @@ Ideal Tracking Project*/
 /* === Tablet  === */
 @media screen and (max-width: 840px) {
 
-    .hero {
-        background-size: cover;
-        margin: 0px 15.963px;
-    }
 
-    .hero-overlay {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .header {
-        padding: 18px 20px;
-        height: 100px;
-    }
 
     /* Hide Let's Talk */
     .talk-btn {
