@@ -53,11 +53,11 @@ header {
 /* Subpage Burger Menu */
 .menu-btn {
     display: flex;
-    background: var(--lightpink);
+    background: #f4f5fa;
 }
 
 .menu-btn:hover {
-    background: var(--rosepink);
+    filter: invert(100%);
 }
 
 

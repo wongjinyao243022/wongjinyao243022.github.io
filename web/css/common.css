@@ -266,52 +266,77 @@ h6 {
     color: var(--white);
 }
 
-.hamburgermenu {
-    margin: 2px 0px 0px 15px;
-    background-color: var(--white);
-}
+/* =========================================================
+   COMMON HEADER
+   Used by ALL SUBPAGES
+========================================================= */
 
-.hamburgermenu:hover {
-    background-color: var(--slateblue);
-}
+.header {
+    width: 100%;
+    max-width: 100%;
 
-.request {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 236px;
-    height: 60px;
-    padding: 18px 36px;
-    border-radius: 30px;
-    background: var(--rosepink);
-    color: var(--white);
-    border: none;
+    justify-content: space-between;
+
+    height: 130px;
+    padding: 20px 60px;
+
+    background-color: var(--white);
+
     font-family: var(--font-heading);
+
+    position: relative;
+    z-index: 1000;
 }
 
-/*Logo*/
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    flex-shrink: 0;
+}
+
 .logo img {
     width: 205px;
     height: 46.625px;
     display: block;
 }
 
-/*Menu*/
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 38px;
+
     flex: 1;
+
+    margin-left: 40px;
 }
 
 .menu a {
     text-decoration: none;
+
     color: var(--textcolor);
+
     font-family: var(--font-heading);
     font-size: 17px;
+
+    white-space: nowrap;
 }
+
+
+/* =========================================================
+   NAVIGATION WITH ARROW
+========================================================= */
 
 .has-submenu {
     position: relative;
@@ -320,133 +345,97 @@ h6 {
 .has-submenu>a {
     display: flex;
     align-items: center;
+
     gap: 5px;
 }
 
 .arrow {
-    width: 12px;
-    height: auto;
-    display: block;
     width: 10px;
+    height: auto;
+
+    display: block;
+
     margin-top: 2px;
 }
 
+
+/* =========================================================
+   NORMAL DROPDOWN
+========================================================= */
+
 .submenu {
     position: absolute;
+
     top: 100%;
     left: 0;
+
     width: 250px;
+
     background: var(--slateblue);
+
     border-radius: 0 0 0 20px;
+
     overflow: hidden;
+
     opacity: 0;
     pointer-events: none;
-    transition: .3s;
+
+    transition: 0.3s;
+
     z-index: 1001;
 }
-
-
-
-.project-submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 850px;
-    display: flex;
-    background: var(--white);
-    border-radius: 0 0 0 25px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: .3s;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, .2);
-    z-index: 999;
-}
-
-.project-content {
-    display: flex;
-    flex-direction: column;
-    color: var(--textcolor);
-}
-
-.project-icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 5px;
-    opacity: 0.7;
-}
-
-.project-left {
-    width: 52%;
-    background: var(--slateblue);
-    padding: 35px;
-}
-
-.project-left h5 {
-    color: var(--textcolor);
-    margin-bottom: 25px;
-}
-
-.project-right {
-
-    width: 48%;
-    background: var(--white);
-    padding: 35px;
-
-}
-
-.project-right img {
-
-    width: 100%;
-    border-radius: 10px;
-    margin: 20px 0;
-
-}
-
-.project-right h5 {
-
-    color: var(--darkblue);
-    margin-bottom: 20px;
-
-}
-
-.view-btn {
-
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--rosepink);
-
-}
-
-.project-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 22px 0;
-    border-top: 1px solid rgba(255, 255, 255, .15);
-
-}
-
-.project-item a {
-    color: var(--textcolor);
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: none;
-
-}
-
-.project-item p {
-
-    color: var(--lightblue);
-    font-size: 15px;
-    margin-top: 8px;
-
-}
-
 
 .has-submenu:hover>.submenu {
     opacity: 1;
     pointer-events: auto;
+}
+
+.submenu a {
+    display: block;
+
+    padding: 18px 20px;
+
+    color: var(--textcolor);
+    background: var(--slateblue);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: var(--rosepink);
+}
+
+
+/* =========================================================
+   PROJECT MEGA MENU
+========================================================= */
+
+.project-submenu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 850px;
+
+    display: flex;
+
+    background: var(--white);
+
+    border-radius: 0 0 0 25px;
+
+    overflow: hidden;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    z-index: 999;
 }
 
 .has-submenu:hover>.project-submenu {
@@ -454,42 +443,202 @@ h6 {
     pointer-events: auto;
 }
 
+.project-content {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--textcolor);
+}
+
+.project-icon {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 5px;
+
+    opacity: 0.7;
+}
+
+.project-left {
+    width: 52%;
+
+    background: var(--slateblue);
+
+    padding: 35px;
+}
+
+.project-left h5 {
+    color: var(--textcolor);
+
+    margin-bottom: 25px;
+}
+
+.project-right {
+    width: 48%;
+
+    background: var(--white);
+
+    padding: 35px;
+}
+
+.project-right img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+}
+
+.project-right h5 {
+    color: var(--darkblue);
+
+    margin-bottom: 20px;
+}
+
+.view-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: var(--rosepink);
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-item a {
+    color: var(--textcolor);
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.project-item p {
+    color: var(--lightblue);
+
+    font-size: 15px;
+
+    margin-top: 8px;
+}
+
 .project-item:hover a {
     color: var(--rosepink);
 }
 
 
-.menu-btn {
+/* =========================================================
+   SUBPAGE "LET'S TALK" BUTTON
+========================================================= */
+
+.talk-btn {
     display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
 }
 
+.request {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 214px;
+    height: 60px;
+
+    padding: 18px 36px;
+
+    border-radius: 30px;
+
+    background: var(--rosepink);
+
+    color: var(--white);
+
+    border: none;
+
+    font-family: var(--font-heading);
+
+    cursor: pointer;
+}
 
 .request:hover {
     background: var(--slateblue);
 }
 
 
-.header {
+/* =========================================================
+   SUBPAGE BURGER BUTTON
+========================================================= */
+
+/*
+   IMPORTANT:
+   Subpage burger is visible on desktop.
+   This matches your Image 2.
+*/
+
+.menu-btn {
+    width: 57px;
+    height: 57px;
+
+    margin-left: 20px;
+
+    border-radius: 50%;
+
+    background-color: #F4F5FA;
+
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+    border-color: transparent;
+}
+
+#menu-toggle-burger {
+    display: flex;
+
+    justify-content: center;
     align-items: center;
 }
 
-.talk-btn {
-    display: flex;
+.hamburger-icon {
+    width: 28.04px;
+    height: auto;
+
+    display: block;
 }
 
-.header {
-    position: relative;
-    z-index: 1000;
-}
 
-.submenu {
-    z-index: 1001;
-}
+/* =========================================================
+   OVERLAY MENU BUTTON
+========================================================= */
 
 .overlay-menu-btn {
     margin-left: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .submenu a {
     display: block;
@@ -507,47 +656,18 @@ h6 {
 
 
 
-/* === Burger menu === */
-.menu-btn {
-    width: 58px;
-    height: 58px;
-    border: none;
-    border-radius: 50%;
-    background: var(--lightpink);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 16px;
-    transition: background-color 0.3s ease;
-    flex-shrink: 0;
-
-}
-
-.menu-btn img {
-    width: 22px;
-    display: block;
-}
-
-.menu-btn:hover {
-    background: var(--slateblue);
-}
-
-/* Subpage Header - Burger always visible */
-.menu-btn {
-    display: flex;
-}
-
 
 /*hero section for Contact Us, About Us , our project,Big Investment Project,Supply Chain,Financial Growth,News & Insights,
 Ideal Tracking Project*/
 .hero {
     position: relative;
     background-image: url(../images/heroimages.png);
-    width: 90%;
     margin-left: 80px;
     margin-right: 80px;
     border-radius: 0 0 0 60px;
+    background-repeat: no-repeat;
+    flex-shrink: 1;
+
 }
 
 .hero-overlay {
@@ -556,7 +676,7 @@ Ideal Tracking Project*/
     justify-content: space-between;
     gap: 20px;
     color: var(--whitebox);
-    padding: 100px;
+    padding: 100px 48px;
     width: 100%;
 }
 
@@ -566,6 +686,8 @@ Ideal Tracking Project*/
 }
 
 .hero-overlay h6 {
+    font-size: 24px;
+    font-weight: 400;
     margin: 0;
     text-align: right;
     color: var(--whitebox);
@@ -632,90 +754,6 @@ Ideal Tracking Project*/
 
 
 /*Laoptop Menu Links*/
-
-.laptop-menu a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    color: var(--white);
-    font-family: var(--font-heading);
-    font-size: 34px;
-    font-weight: 400;
-    text-decoration: none;
-    margin: 0;
-    padding: 28px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    transition: color 0.3s ease;
-}
-
-.laptop-menu a:hover {
-    color: var(--rosepink);
-}
-
-.laptop-menu .menu-text .p1 {
-    margin: 0;
-    font-family: var(--font-heading);
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 400;
-}
-
-.laptop-menu a>span:last-child {
-    display: flex;
-    align-items: center;
-}
-
-.laptop-menu a>span:last-child p {
-    margin: 0;
-    color: var(--white);
-    font-family: var(--font-heading);
-    font-size: 24px;
-    line-height: 1;
-}
-
-/*Close Button*/
-.close-btn {
-    position: absolute;
-    top: 25px;
-    right: 45px;
-    width: 55px;
-    height: 55px;
-    border: none;
-    background: transparent;
-    color: var(--white);
-    font-family: Arial, sans-serif;
-    font-size: 42px;
-    font-weight: 300;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.help-support {
-    margin: 0;
-    color: var(--white);
-    font-family: var(--font-base);
-    font-size: 17px;
-    line-height: 1.5;
-}
-
-.overlay-btn {
-    padding: 16px 25px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    background: transparent;
-    color: var(--white);
-    cursor: pointer;
-}
-
-.support-hotline {
-    margin: 8px 0 0;
-    color: var(--white);
-}
-
-.support-hotline .num {
-    margin: 0;
-}
 
 /*FOOTER */
 #footer-cta {
@@ -940,64 +978,94 @@ Ideal Tracking Project*/
 }
 
 /* === Laptop  === */
-@media screen and (max-width:1320px) {
+@media screen and (max-width: 1320px) {
+
+    .header {
+        padding: 20px 40px;
+    }
+
+    /* Hide desktop navigation */
     .menu {
         display: none;
+    }
+
+    /* Keep Let's Talk */
+    .talk-btn {
+        display: flex;
+    }
+
+    /* Keep burger */
+    #menu-toggle-burger {
+        display: flex;
     }
 
     .menu-btn {
         display: flex;
     }
+}
 
-    .phone-btn {
+
+
+/* === Tablet  === */
+@media screen and (max-width: 840px) {
+
+    .hero {
+        background-size: cover;
+        margin: 0px 15.963px;
+    }
+
+    .hero-overlay {
         display: flex;
+        flex-direction: column;
+
     }
 
     .header {
-        padding: 20px 50px;
+        padding: 18px 20px;
+        height: 100px;
     }
 
+    /* Hide Let's Talk */
+    .talk-btn {
+        display: none;
+    }
+
+    /* Keep burger */
+    #menu-toggle-burger {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
 }
 
-/* === Tablet  === */
-@media screen and (max-width:840px) {
+
+/* ---------- MOBILE : 440px ---------- */
+
+@media screen and (max-width: 440px) {
+
+    .header {
+        padding: 15px 16px;
+    }
+
+    .logo img {
+        width: auto;
+        max-width: 150px;
+        height: auto;
+    }
+
     .talk-btn {
         display: none;
     }
 
     .menu-btn {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #menu-toggle-burger {
         display: flex;
-    }
-
-}
-
-
-
-
-
-/* ---------- MOBILE : 440px ---------- */
-
-@media (max-width: 440px) {
-
-    .hero {
-        width: 93%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 0 0 0 30px;
-    }
-
-    .hero-overlay {
-        gap: 8px;
-        padding: 50px 30px;
-    }
-
-
-
-    .hero-overlay h6 {
-        text-align: center;
-    }
-
-    .request-phone-btn {
-        display: none;
     }
 }

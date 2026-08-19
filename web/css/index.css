@@ -1,107 +1,121 @@
-/* home page hero section */
+/* =========================================================
+   HOME PAGE HERO
+========================================================= */
+
 .home-hero {
     width: 100%;
     height: 750px;
-    background: url(../images/header-bg.jpg);
+
+    background-image: url("../images/header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
     position: relative;
 }
 
-/*HOME PAGE HEADER*/
+
+/* =========================================================
+   HOME PAGE HEADER
+   ---------------------------------------------------------
+   Homepage header is different from subpage header.
+
+   Homepage:
+   - Transparent background
+   - White logo
+   - White navigation
+   - White phone button
+========================================================= */
+
 .header {
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
-    background: none;
 
+    padding: 20px 60px;
+
+    background: transparent;
+
+    position: relative;
+    z-index: 100;
 }
+
+
+/* =========================================================
+   HOME LOGO
+========================================================= */
 
 .logo img {
-    content: url("../images/whitelogo.png")
+    content: url("../images/whitelogo.png");
 }
 
 
-/*-- Home Header --*/
+/* =========================================================
+   HOME DESKTOP NAVIGATION
+========================================================= */
 
-.phone-btn {
+.menu {
     display: flex;
+    align-items: center;
 }
-
-.talk-btn {
-    display: none;
-}
-
-
-
-/* Home Page Menu */
 
 .menu a {
     color: var(--white);
-
 }
 
-/* Home Page Dropdown */
+
+/* Dropdown */
+
 .submenu a {
-    background: var(--darkblue);
+    background-color: var(--darkblue);
     color: var(--white);
 }
 
 
-/*Home Page Button*/
+/* =========================================================
+   HEADER BUTTON AREA
+========================================================= */
+
 .header-btn {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
+}
+
+
+/* =========================================================
+   HOME PHONE BUTTON
+========================================================= */
+
+.phone-btn {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
 }
 
 .request-phone-btn {
-    background: transparent;
-    color: white;
-    font-weight: 600;
-    padding: 18px 36px;
-    border: solid 1.6px var(--white);
-    border-radius: 100px;
-    gap: 12px;
+    display: flex;
     align-items: center;
-    display: flex;
-}
 
-.menu-btn {
-    border-radius: 50%;
-    background-color: var(--rosepink);
-    width: 57px;
-    height: 57px;
-    margin-left: 20px;
-    justify-content: center;
-}
+    padding: 18px 36px;
 
-.hamburger-icon {
-    height: auto;
-    width: auto;
-}
-
-#menu-toggle-burger {
-    display: none;
-}
-
-
-
-/* Home Page hide Let talk button*/
-.talk-btn {
-    display: none;
-}
-
-/* Home Page show Phone button */
-.phone-btn {
-    display: flex;
-}
-
-.request-phone-btn:hover {
-    background: var(--rosepink);
-    border-color: var(--rosepink);
+    background-color: transparent;
     color: var(--white);
+
+    border: 1.6px solid var(--white);
+    border-radius: 100px;
+
+    gap: 12px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .request-phone-btn img {
@@ -109,32 +123,74 @@
     height: 18px;
 }
 
-/* Home Page hide Burger Menu */
-.menu-btn {
+.request-phone-btn:hover {
+    background-color: var(--rosepink);
+    border-color: var(--rosepink);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   LET'S TALK BUTTON
+   ---------------------------------------------------------
+   Homepage does NOT use the subpage Let's Talk button.
+========================================================= */
+
+.talk-btn {
     display: none;
 }
+
+
+/* =========================================================
+   HOMEPAGE BURGER
+   ---------------------------------------------------------
+   Desktop:
+   hidden
+
+   <= 1320px:
+   shown
+========================================================= */
+
+#menu-toggle-burger {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+
+    width: 57px;
+    height: 57px;
+
+    margin-left: 20px;
+
+    border-radius: 50%;
+
+    background-color: var(--rosepink);
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Overlay button alignment */
 
 .overlay-menu-btn {
     justify-content: center;
 }
 
-
-/* Home Page */
-.phone-btn {
-    margin-left: auto;
-}
-
-/*hamburger overlay menu*/
-
-
 /* Overlay main menu button */
 
 .overlay-main-btn {
     width: 100%;
-    padding: 28px 0;
+
+    padding: 18px 0;
+
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
     background: transparent;
+
     color: var(--white);
 
     display: flex;
@@ -145,8 +201,13 @@
     font-size: 34px;
     font-weight: 400;
 
+    line-height: 1.2;
+
     cursor: pointer;
+
     text-align: left;
+
+    transition: color 0.2s ease;
 }
 
 .overlay-main-btn:hover {
@@ -158,7 +219,13 @@
 
 .overlay-arrow {
     font-size: 30px;
+    line-height: 1;
+
     transition: transform 0.3s ease;
+}
+
+.overlay-item.active .overlay-arrow {
+    transform: rotate(180deg);
 }
 
 
@@ -166,6 +233,7 @@
 
 .overlay-submenu {
     display: none;
+    padding: 5px 0 10px 25px;
 }
 
 
@@ -173,18 +241,31 @@
 
 .overlay-item.active .overlay-submenu {
     display: block;
-    align-items: center;
 }
 
 
 /* Submenu links */
 
+
 .overlay-submenu a {
-    font-size: 24px;
-    padding: 18px 0;
+    font-family: var(--font-base);
+
+    font-size: 20px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    padding: 12px 0;
+
     border-bottom: none;
-    color: rgba(255, 255, 255, 0.75);
+
+    color: rgba(255, 255, 255, 0.7);
 }
+
+.overlay-submenu a:hover {
+    color: var(--rosepink);
+}
+
 
 
 /* Arrow rotate */
@@ -193,19 +274,33 @@
     transform: rotate(180deg);
 }
 
+/* =========================================================
+   BURGER OVERLAY MENU
+========================================================= */
 
 .laptop-menu {
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
-    height: 100%;
-    background: rgb(27, 29, 48);
+    height: 100vh;
+
+    background-color: var(--darknavy);
+
     display: flex;
     flex-direction: column;
+
     transform: translateX(100%);
+
+    transition: transform 0.45s ease;
+
     overflow-y: auto;
+    overflow-x: hidden;
+
     isolation: isolate;
+
     z-index: 9999;
 }
 
@@ -213,8 +308,53 @@
     transform: translateX(0);
 }
 
+
+/* =========================================================
+   BURGER CLOSE BUTTON
+========================================================= */
+
+.close-btn {
+    position: absolute;
+
+    top: 30px;
+    right: 40px;
+
+    width: 57px;
+    height: 57px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--rosepink);
+
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    z-index: 10001;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: var(--slateblue);
+    transform: rotate(90deg);
+}
+
+
+
 .overlay-menu-text {
-    margin: 0px 60px 60px 60px;
+    margin: 120px 60px 60px 60px;
 
 }
 
@@ -233,15 +373,28 @@
 
 .laptop-menu a {
     color: var(--white);
+
+    font-family: var(--font-heading);
     font-size: 34px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
     text-decoration: none;
-    padding: 14px 0;
+
+    padding: 18px 0;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
     transition: color 0.2s ease;
+}
 
-
+.laptop-menu a:hover {
+    color: var(--rosepink);
 }
 
 body.menu-open {
@@ -433,9 +586,7 @@ body.menu-open {
     line-height: 24px;
 }
 
-.logo img {
-    content: url("../images/whitelogo.png");
-}
+
 
 #strategy {
     margin: 120px 60px;
@@ -983,13 +1134,24 @@ body.menu-open {
 @media screen and (max-width: 1320px) {
 
     /* =========================
-       HEADER
+       HOMEPAGE HEADER
     ========================= */
 
+    .header {
+        padding: 20px 35px;
+    }
+
+    /* Hide desktop navigation */
     .menu {
         display: none;
     }
 
+    /* Phone button remains visible */
+    .phone-btn {
+        display: flex;
+    }
+
+    /* Show burger */
     #menu-toggle-burger {
         display: flex;
         justify-content: center;
@@ -1012,6 +1174,7 @@ body.menu-open {
 
     .feature-item {
         grid-template-columns: repeat(4, 1fr);
+
         padding: 40px 35px;
         gap: 15px;
     }
@@ -1042,12 +1205,13 @@ body.menu-open {
 
     .strategy-subheading {
         width: 50%;
+
         margin: 0;
         padding: 50px 30px 0 0;
     }
 
 
-    /* 3 CARDS IN ONE ROW */
+    /* Strategy cards */
 
     .strategy-cards-container {
         gap: 30px;
@@ -1058,7 +1222,6 @@ body.menu-open {
         height: 470px;
 
         margin: 40px 0 30px 0;
-
         padding: 50px 40px;
 
         box-sizing: border-box;
@@ -1097,6 +1260,7 @@ body.menu-open {
 
     #about {
         padding: 90px 30px;
+
         height: auto;
         min-height: 800px;
     }
@@ -1116,7 +1280,6 @@ body.menu-open {
         margin: 0;
     }
 
-
     .about-us-tab {
         display: none;
     }
@@ -1132,9 +1295,10 @@ body.menu-open {
     }
 
     .row-logo {
-        display: row;
+        display: flex;
         gap: 35px;
-        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
     }
 
 
@@ -1144,6 +1308,7 @@ body.menu-open {
 
     #team {
         height: auto;
+
         margin: 100px 0 0;
         padding: 0 30px 100px;
     }
@@ -1159,6 +1324,7 @@ body.menu-open {
 
     .team-card-container {
         display: grid;
+
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
 
@@ -1187,6 +1353,7 @@ body.menu-open {
         height: 380px;
 
         object-fit: cover;
+
         border-radius: 8px 8px 0 0;
     }
 
@@ -1206,18 +1373,18 @@ body.menu-open {
     }
 
     .footer-cta-btn {
-
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+
         justify-content: center;
+
         width: 100%;
     }
 
     .footer-cta-btn>button {
         width: 100%;
     }
-
 }
 
 /* =========================
@@ -1230,9 +1397,34 @@ body.menu-open {
        HEADER
     ========================= */
 
+    .header {
+        padding: 18px 25px;
+    }
+
+    /*
+       Hide phone button on tablet/mobile
+    */
+
     .request-phone-btn {
         display: none;
     }
+
+    .phone-btn {
+        display: none;
+    }
+
+    /*
+       Burger remains visible
+    */
+
+    .menu-btn {
+        display: flex;
+    }
+
+    #menu-toggle-burger {
+        display: flex;
+    }
+
 
     /* =========================
        FEATURES
@@ -1243,11 +1435,13 @@ body.menu-open {
     }
 
     .feature-item {
-        padding: 50px 60px 50px 80px;
-        gap: 25px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        padding: 50px 60px 50px 80px;
+
+        gap: 25px;
     }
 
 
@@ -1262,11 +1456,13 @@ body.menu-open {
     .strategy-header {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 550px;
+
+        margin-top: 0;
     }
 
     .strategy-heading {
         width: 100%;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1278,20 +1474,22 @@ body.menu-open {
 
     .strategy-subheading {
         width: 100%;
-        padding: 25px 0 0 0;
+        padding: 25px 0 0;
     }
 
     .strategy-cards-container {
-        gap: 80px;
         display: flex;
         flex-direction: column;
+
+        gap: 40px;
+
         margin-bottom: 80px;
     }
-
 
     .strategy-cards {
         width: 100%;
         height: auto;
+
         margin: 0;
         padding: 40px 30px;
     }
@@ -1303,24 +1501,28 @@ body.menu-open {
 
     #about {
         flex-direction: column;
+
         padding: 60px 20px;
+
         min-height: auto;
     }
 
     .about-us-img {
-        margin: 0 0 30px 0;
         width: 100%;
+        margin: 0 0 30px;
     }
 
     .about-us-img>img {
         width: 100%;
         max-width: 100%;
+
         border-radius: 15px;
     }
 
     .about-content-container {
         padding: 0;
         margin: 0;
+
         align-items: center;
         text-align: center;
     }
@@ -1361,8 +1563,11 @@ body.menu-open {
 
     .row-logo {
         display: grid;
+
         grid-template-columns: repeat(3, 1fr);
+
         row-gap: 40px;
+
         justify-items: center;
     }
 
@@ -1383,20 +1588,34 @@ body.menu-open {
     .team-card-container {
         display: flex;
         flex-direction: column;
+
         gap: 25px;
+
+        width: 100%;
         max-width: 480px;
-        justify-content: center;
+
+        margin: 0 auto;
+
         align-items: center;
     }
 
     .team-card {
-        width: 790.45px;
-        height: 884.188px;
+        width: 100%;
+        max-width: 480px;
+
+        height: auto;
+
+        margin: 0 0 30px;
+        padding: 0 0 25px;
     }
 
     .team-card>img {
-        width: 760.1px;
-        height: 712.59px;
+        width: 100%;
+        height: auto;
+
+        max-height: 500px;
+
+        object-fit: cover;
     }
 
 
@@ -1406,14 +1625,18 @@ body.menu-open {
 
     .footer-subscribe {
         width: calc(100% - 40px);
-        padding: 40px 24px;
+
         height: auto;
-        border-radius: 25px 25px 25px 25px;
+
+        padding: 40px 24px;
+
+        border-radius: 25px;
     }
 
     .subscribe-textfield {
         flex-direction: column;
         align-items: stretch;
+
         gap: 20px;
     }
 
@@ -1422,28 +1645,67 @@ body.menu-open {
     }
 
     .subscribe-submit-btn input {
-        width: 660.1px;
+        width: 100%;
     }
 
     .footer-cta-btn {
         flex-direction: column;
+
         width: 100%;
+
         align-items: center;
     }
 
     .footer-cta-btn>button {
-        width: 30%;
+        width: 100%;
         margin: 15px 0 0;
     }
 
     .footer-logo {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 }
 
+/* =========================================================
+   440px RESPONSIVE
+   Mobile
+========================================================= */
+
 @media screen and (max-width: 440px) {
 
+    /* =========================
+       HEADER
+    ========================= */
 
+    .header {
+        padding: 15px 16px;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+    .phone-btn {
+        display: none;
+    }
+
+    .logo img {
+        width: auto;
+        max-width: 150px;
+        height: auto;
+    }
+
+    #menu-toggle-burger {
+        display: flex;
+    }
+
+    .menu-btn {
+        width: 50px;
+        height: 50px;
+
+        margin-left: 10px;
+    }
 
 
 
@@ -1468,18 +1730,28 @@ body.menu-open {
 
     .herobtn {
         flex-direction: column;
+
         gap: 12px;
+
         width: 100%;
     }
 
     .heroctabtn-left,
     .heroctabtn-right {
         width: 100%;
+
         justify-content: center;
+
         padding: 14px 20px;
+
         font-size: 14px;
     }
 
+    .logo img {
+        width: auto;
+        max-width: 150px;
+        height: auto;
+    }
 
     /* =========================
        FEATURES
@@ -1490,11 +1762,13 @@ body.menu-open {
     }
 
     .feature-item {
-        padding: 30px 24px;
-        gap: 20px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        padding: 30px 24px;
+
+        gap: 20px;
     }
 
     .item>h6 {
@@ -1560,7 +1834,7 @@ body.menu-open {
     }
 
     .about-us-img {
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
     }
 
     .about-content-container {
@@ -1582,6 +1856,7 @@ body.menu-open {
 
     .row-logo {
         grid-template-columns: repeat(2, 1fr);
+
         row-gap: 30px;
     }
 
@@ -1609,13 +1884,18 @@ body.menu-open {
 
     .team-card {
         width: 100%;
+        max-width: 100%;
+
         height: auto;
+
         padding: 0 0 20px;
     }
 
     .team-card>img {
         width: 100%;
         height: 280px;
+
+        object-fit: cover;
     }
 
 
@@ -1624,7 +1904,9 @@ body.menu-open {
     ========================= */
 
     .footer-subscribe {
-        padding: 40px 24px;
+        width: calc(100% - 24px);
+
+        padding: 40px 20px;
     }
 
     .footer-subscribe-title h4 {
@@ -1646,7 +1928,10 @@ body.menu-open {
     }
 
     .subscribe-submit-btn input {
-        padding: 20px 20px;
+        width: 100%;
+
+        padding: 20px;
+
         font-size: 16px;
     }
 
