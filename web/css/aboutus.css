@@ -1,0 +1,431 @@
+header {
+    background: var(--white);
+}
+
+.request {
+    background: var(--rosepink);
+    color: var(--white);
+    border: none;
+}
+
+.request:hover {
+    background: var(--slateblue);
+}
+
+.menu-btn {
+    display: flex;
+    background: var(--lightpink);
+}
+
+/*whole circular button changes when hovered*/
+
+.menu-btn:hover {
+    filter: invert(100%);
+    color: var(--white);
+    background: var(--submenucolor);
+}
+
+.overlay-menu-btn .menu-btn:hover {
+    filter: none;
+    background: var(--slateblue);
+}
+
+.overlay-menu-btn .menu-btn:hover .hamburger-icon {
+    filter: brightness(0) invert(1);
+}
+
+.talk-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+
+
+.overlay-menu-btn {
+    margin-left: 16px;
+}
+
+
+
+/* ================================
+           LAPTOP / MOBILE MENU
+        ================================ */
+
+.laptop-menu {
+
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    background: rgba(29, 32, 58, 0.96);
+    padding: 70px 8.5% 50px;
+    transition: left 0.45s ease;
+    overflow-y: auto;
+}
+
+
+.laptop-menu.active {
+
+    left: 0;
+}
+
+
+/* ================================
+           CLOSE BUTTON
+        ================================ */
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 8.5%;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+
+/* ================================
+           OVERLAY MENU
+        ================================ */
+
+.overlay-menu-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 500px;
+}
+
+
+.overlay-menu-text>a {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    padding-bottom: 15px;
+}
+
+
+.overlay-menu-text p {
+
+    margin: 0;
+}
+
+
+.menu-text .p1 {
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+           MOBILE ARROW
+        ================================ */
+
+.mobile-arrow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.mobile-arrow p {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    color: var(--white);
+}
+
+
+/* ================================
+           MOBILE EXPERTISE
+        ================================ */
+
+.mobile-submenu-item {
+
+    width: 100%;
+}
+
+
+.mobile-menu-link {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 0 15px;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: transparent;
+
+    color: var(--white);
+
+    cursor: pointer;
+
+    text-align: left;
+}
+
+
+.mobile-menu-link .menu-text {
+
+    display: block;
+}
+
+
+/* NO ARROW ANIMATION */
+
+.mobile-menu-link .mobile-arrow p {
+
+    transition: none;
+}
+
+
+.mobile-submenu {
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 15px 0 5px 20px;
+}
+
+
+.mobile-submenu.active {
+
+    display: flex;
+}
+
+
+.mobile-submenu a {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+.mobile-submenu a:hover {
+    opacity: 0.7;
+}
+
+
+/* ================================
+           OVERLAY CTA
+        ================================ */
+
+.overlay-cta {
+    margin-top: 70px;
+    max-width: 500px;
+}
+
+
+.help-support {
+    margin: 0 0 8px;
+    color: var(--white);
+}
+
+
+.support-hotline {
+    margin: 0;
+    color: var(--white);
+}
+
+
+/* ================================
+           CONTACT BUTTONS
+        ================================ */
+
+.overlay-menu-contact-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+
+.overlay-btn {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    border-radius: 5px;
+    padding: 12px 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.overlay-btn .p4 {
+    margin: 0;
+    color: var(--white);
+
+}
+
+
+/* ================================
+           1080px
+        ================================ */
+
+@media (max-width: 1080px) {
+
+    .menu {
+
+        display: none;
+    }
+
+
+    .request {
+
+        display: none;
+    }
+
+
+    .overlay-menu-btn {
+
+        display: block;
+    }
+
+
+    .header {
+
+        justify-content: space-between;
+    }
+
+}
+
+
+/* ================================
+           720px
+        ================================ */
+
+@media (max-width: 720px) {
+
+    .header {
+
+        padding: 15px 18px;
+    }
+
+
+    .laptop-menu {
+
+        padding: 65px 7% 40px;
+    }
+
+
+    .close-btn {
+
+        right: 7%;
+
+        top: 22px;
+    }
+
+
+    .menu-text .p1 {
+
+        font-size: 20px;
+    }
+
+
+    .overlay-cta {
+
+        margin-top: 50px;
+    }
+
+
+    .support-hotline {
+
+        font-size: 25px;
+    }
+
+}
+
+
+/* ================================
+           500px
+        ================================ */
+
+@media (max-width: 500px) {
+
+    .laptop-menu {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+    }
+
+
+    .close-btn {
+
+        right: 6%;
+    }
+
+
+    .overlay-menu-text {
+
+        gap: 18px;
+    }
+
+
+    .menu-text .p1 {
+
+        font-size: 18px;
+    }
+
+
+    .overlay-cta {
+
+        margin-top: 40px;
+    }
+
+
+    .support-hotline {
+
+        font-size: 22px;
+    }
+
+
+    .help-support {
+
+        font-size: 12px;
+    }
+
+}
