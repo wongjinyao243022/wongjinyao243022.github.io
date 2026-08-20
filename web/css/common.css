@@ -439,67 +439,89 @@ h6 {
 }
 
 .project-left {
-    width: 52%;
+    width: 50%;
     color: var(--white);
     background: var(--slateblue);
-
     padding: 35px;
 }
 
-.project-left h5 {
+.project-left h6 {
     padding: 0 0 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 
 .project-left .texta {
     color: var(--white);
 }
 
 .project-right {
-    width: 48%;
-
+    width: 50%;
     background: var(--white);
-
     padding: 35px;
 }
 
 .project-right img {
     width: 100%;
-
     border-radius: 10px;
-
     margin: 20px 0;
 }
 
-.project-right h5 {
+.project-right h6 {
     color: var(--darkblue);
-
-    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--textcolor) 15%, transparent);
 
 }
 
-.view-btn {
+.project-right-title {
+    padding: 0;
+}
+
+.project-right-title h6 {
+    border-bottom: none;
+    padding: 0;
+}
+
+.project-left-title h6 {
+    color: var(--white);
+}
+
+.project-left-title.p4 {
     display: inline-block;
-
     margin-top: 20px;
-
     color: var(--rosepink);
+    text-decoration: none;
 }
+
+.project-left-title.p4:hover {
+    color: var(--slateblue);
+}
+
 
 .project-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 18px;
     padding: 15px 0;
 }
 
 .project-item .subpagetitle {
     color: var(--lightblue);
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .project-item:hover a {
     color: var(--rosepink);
+}
+
+.project-right.view-btn {
+    color: var(--rosepink);
+
+}
+
+.project-right.view-btn:hover {
+    color: var(--slateblue);
 }
 
 
@@ -981,6 +1003,7 @@ Ideal Tracking Project*/
     .menu-btn {
         display: flex;
     }
+
 }
 
 
@@ -990,9 +1013,8 @@ Ideal Tracking Project*/
 
 
 
-    /* Hide Let's Talk */
     .talk-btn {
-        display: flex;
+        display: none;
     }
 
     /* Keep burger */
@@ -1002,14 +1024,6 @@ Ideal Tracking Project*/
 
     .menu-btn {
         display: flex;
-    }
-}
-
-/* === Small Tablet === */
-@media screen and (max-width: 600px) {
-
-    .talk-btn {
-        display: none;
     }
 }
 
@@ -1029,9 +1043,7 @@ Ideal Tracking Project*/
         height: auto;
     }
 
-    .talk-btn {
-        display: none;
-    }
+
 
     .menu-btn {
         width: 50px;
