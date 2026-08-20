@@ -175,18 +175,6 @@ h6 {
 
 }
 
-.header {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    font-family: var(--font-heading);
-    height: 130px;
-    position: relative;
-    z-index: 1000;
-}
-
 /*for Passionate · Dedicated · Professional */
 .section-tag {
     color: var(--rosepink);
@@ -274,18 +262,13 @@ h6 {
 .header {
     width: 100%;
     max-width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 130px;
     padding: 20px 60px;
-
     background-color: var(--white);
-
     font-family: var(--font-heading);
-
     position: relative;
     z-index: 1000;
 }
