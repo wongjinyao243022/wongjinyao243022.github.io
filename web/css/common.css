@@ -62,6 +62,13 @@ h1 {
     Line-height: 120px;
 }
 
+/*.support-hotline number*/
+.num {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 84px
+}
+
 /*humburger menu number*/
 .num {
     font-size: 56px;

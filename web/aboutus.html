@@ -123,9 +123,7 @@
         <button class="request talk-btn">
             Let's Talk→
         </button>
-        <!-- ================================
-             BURGER BUTTON
-        ================================ -->
+
 
         <div class="overlay-menu-btn">
 
@@ -137,11 +135,6 @@
 
         </div>
 
-
-        <!-- ================================
-             LAPTOP / MOBILE MENU
-        ================================ -->
-
         <div class="laptop-menu" id="laptop-menu">
 
             <button id="close-menu" class="close-btn" type="button">
@@ -150,9 +143,6 @@
 
 
             <div class="overlay-menu-text">
-
-
-                <!-- HOME -->
 
                 <a href="index.html">
 
@@ -167,9 +157,6 @@
                 </a>
 
 
-                <!-- ================================
-                     EXPERTISE
-                ================================ -->
 
                 <div class="mobile-submenu-item">
 
@@ -337,131 +324,47 @@
 
                 </div>
 
+            </div>
 
 
-                <!-- ================================
-                 CONTACT
-            ================================ -->
+            <div class="overlay-cta">
 
-                <div class="overlay-cta">
+                <div class="contact-no">
 
+                    <p class="help-support p1">
+                        Need help? Call our support 24/7
 
-                    <div class="contact-no">
+                    </p>
 
-                        <p class="help-support">
-                            Need help? Call our support 24/7
+                    <p class="support-hotline num">
+                        +1800 555 5555
+                    </p>
+
+                </div>
+
+                <div class="overlay-menu-contact-btn">
+
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">
+                            contact@your-domain.com
                         </p>
+                    </button>
 
-                        <h1 class="support-hotline">
-                            +1800 555 5555
-                        </h1>
-
-                    </div>
-
-
-                    <div class="overlay-menu-contact-btn">
-
-
-                        <button class="overlay-btn" type="button">
-
-                            <p class="p4">
-                                contact@your-domain.com
-                            </p>
-
-                        </button>
-
-
-                        <button class="overlay-btn" type="button">
-
-                            <p class="p4">
-                                Monday to Friday : 9.00 am - 5.00 pm
-                            </p>
-
-                        </button>
-
-
-                    </div>
+                    <button class="overlay-btn" type="button">
+                        <p class="p4">
+                            Monday to Friday : 9.00 am - 5.00 pm
+                        </p>
+                    </button>
 
                 </div>
 
             </div>
 
         </div>
+
+
     </div>
-
-
-
-    <script>
-
-        /* ================================
-           OPEN LAPTOP MENU
-        ================================ */
-
-        const menuToggle =
-            document.getElementById("menu-toggle-burger");
-
-        const laptopMenu =
-            document.getElementById("laptop-menu");
-
-        const closeMenu =
-            document.getElementById("close-menu");
-
-
-        menuToggle.addEventListener("click", function () {
-
-            laptopMenu.classList.add("active");
-
-        });
-
-
-        /* ================================
-           CLOSE LAPTOP MENU
-        ================================ */
-
-        closeMenu.addEventListener("click", function () {
-
-            laptopMenu.classList.remove("active");
-
-        });
-
-
-        /* ================================
-           EXPERTISE SUBMENU
-        ================================ */
-
-        const mobileMenuLinks =
-            document.querySelectorAll(".mobile-menu-link");
-
-
-        mobileMenuLinks.forEach(function (button) {
-
-            button.addEventListener("click", function () {
-
-                const submenu =
-                    button.nextElementSibling;
-
-                const arrow =
-                    button.querySelector(".mobile-arrow p");
-
-
-                submenu.classList.toggle("active");
-
-
-                if (submenu.classList.contains("active")) {
-
-                    arrow.textContent = "⌃";
-
-                } else {
-
-                    arrow.textContent = "⌄";
-
-                }
-
-            });
-
-        });
-
-    </script>
+    <script src="js/menu.js"></script>
 
 
 </body>
