@@ -2,28 +2,10 @@ header {
     background: var(--white);
 }
 
-.request {
-    background: var(--rosepink);
-    color: var(--white);
-    border: none;
-}
-
-.request:hover {
-    background: var(--slateblue);
-}
-
-.menu-btn {
-    display: flex;
-    background: var(--lightpink);
-}
 
 /*whole circular button changes when hovered*/
 
-.menu-btn:hover {
-    filter: invert(100%);
-    color: var(--white);
-    background: var(--submenucolor);
-}
+
 
 .overlay-menu-btn .menu-btn:hover {
     filter: none;
@@ -134,13 +116,15 @@ header {
 }
 
 
-.menu-text .p1 {
-
-    font-size: 22px;
-
-    font-weight: 500;
+.menu-text .text {
+    margin: 0;
+    text-decoration: none;
+    color: var(--white);
 }
 
+.menu-text .text:hover {
+    color: var(--rosepink);
+}
 
 /* ================================
            MOBILE ARROW
@@ -165,6 +149,9 @@ header {
     color: var(--white);
 }
 
+.mobile-arrow p:hover {
+    color: var(--rosepink);
+}
 
 /* ================================
            MOBILE EXPERTISE
@@ -234,16 +221,10 @@ header {
 }
 
 
-.mobile-submenu a {
-
+.mobile-submenu .p2 {
     color: var(--white);
-
     text-decoration: none;
-
-    font-size: 15px;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
     padding-bottom: 8px;
 }
 
