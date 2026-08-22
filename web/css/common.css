@@ -570,7 +570,7 @@ h6 {
 
     background: var(--rosepink);
 
-    color: var(--white);
+    color: var(--lightbluegrey);
 
     border: none;
 
@@ -599,7 +599,7 @@ h6 {
     height: 57px;
     margin-left: 20px;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--lightbluegrey);
     flex-shrink: 0;
     cursor: pointer;
     border-color: transparent;
