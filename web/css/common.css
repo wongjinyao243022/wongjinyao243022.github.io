@@ -1297,7 +1297,6 @@ Ideal Tracking Project*/
     .hero-overlay {
         display: flex;
         flex-direction: column;
-
     }
 
     .header {
@@ -1320,23 +1319,30 @@ Ideal Tracking Project*/
     }
 
     /* Keep burger */
-    #menu-toggle-burger {
-        display: flex;
-    }
-
     .menu-btn {
         display: flex;
     }
 
+    /* ========================= 
+       OVERLAY MENU 
+       ========================= */
+
+    .laptop-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
 
     .overlay-menu-text {
-        width: 50%;
-        flex: 1;
+        width: 100%;
+        flex: none;
     }
 
     .overlay-cta {
-        width: 50%;
-        flex: 1;
+        width: 100%;
+        flex: none;
+        margin: 40px 0 0 0;
+        text-align: center;
     }
 }
 
