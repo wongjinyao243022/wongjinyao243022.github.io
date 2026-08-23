@@ -1311,6 +1311,10 @@ Ideal Tracking Project*/
     /* Keep Let's Talk */
     .talk-btn {
         display: flex;
+        width: auto;
+        padding: 16px 30px;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     /* Keep burger */
@@ -1322,9 +1326,17 @@ Ideal Tracking Project*/
         display: flex;
     }
 
+
+    .overlay-menu-text {
+        width: 50%;
+        flex: 1;
+    }
+
+    .overlay-cta {
+        width: 50%;
+        flex: 1;
+    }
 }
-
-
 
 /* === Tablet  === */
 @media screen and (max-width: 840px) {
