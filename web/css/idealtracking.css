@@ -31,6 +31,7 @@
     display: block;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 
 .article-meta {
@@ -75,7 +76,8 @@
     }
 
     .article-image {
-        height: 560px;
+        height: 100%;
+        border-radius: 8px;
     }
 
     .article-meta {
@@ -100,8 +102,8 @@
     }
 
     .article-image {
-        height: 420px;
-        border-radius: 0 0 8px 8px;
+        height: 100%;
+        border-radius: 8px;
     }
 
     .article-meta {
@@ -129,8 +131,8 @@
     }
 
     .article-image {
-        height: 250px;
-        border-radius: 0 0 6px 6px;
+        height: 100%;
+        border-radius: 8px;
     }
 
     .article-image img {
@@ -240,4 +242,122 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+}
+
+/* =========================
+   1320px Screen
+========================= */
+
+@media (max-width: 1320px) {
+    .business-info-section {
+        padding: 45px 0 65px;
+    }
+
+    .business-info-container {
+        padding: 0 150px;
+    }
+
+    .business-description {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 28px;
+    }
+
+    .business-item {
+        min-height: 54px;
+        padding: 0 22px;
+    }
+
+    .star-icon {
+        width: 34px;
+        font-size: 22px;
+    }
+
+    .business-item p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   840px Screen
+========================= */
+
+@media (max-width: 840px) {
+    .business-info-section {
+        padding: 40px 0 55px;
+    }
+
+    .business-info-container {
+        padding: 0 60px;
+    }
+
+    .business-description {
+        font-size: 15px;
+        line-height: 1.75;
+        margin-bottom: 25px;
+    }
+
+    .business-list {
+        gap: 8px;
+    }
+
+    .business-item {
+        min-height: 58px;
+        padding: 12px 20px;
+    }
+
+    .star-icon {
+        width: 32px;
+        min-width: 32px;
+        font-size: 21px;
+    }
+
+    .business-item p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================
+   440px Screen
+========================= */
+
+@media (max-width: 440px) {
+    .business-info-section {
+        padding: 30px 0 40px;
+    }
+
+    .business-info-container {
+        padding: 0 20px;
+    }
+
+    .business-description {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .business-list {
+        gap: 6px;
+    }
+
+    .business-item {
+        min-height: auto;
+        padding: 14px 15px;
+        align-items: flex-start;
+    }
+
+    .star-icon {
+        width: 30px;
+        min-width: 30px;
+        margin-top: 2px;
+        font-size: 20px;
+    }
+
+    .business-item p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
