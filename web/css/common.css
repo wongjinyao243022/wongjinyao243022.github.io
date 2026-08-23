@@ -2106,6 +2106,14 @@ Achieve Your Goals */
         padding: 0 30px;
     }
 
+    .hero-overlay h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero-overlay h6 {
+        text-align: center;
+    }
 
 
     /* =========================
