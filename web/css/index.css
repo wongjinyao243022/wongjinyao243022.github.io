@@ -47,9 +47,8 @@
     align-items: center;
     justify-content: center;
     gap: 38px;
-
     position: absolute;
-    left: 50%;
+    left: 47%;
     transform: translateX(-50%);
 }
 
@@ -63,13 +62,14 @@
    HEADER BUTTON AREA
 ========================================================= */
 
+
 .header-btn {
-
+    display: flex;
     align-items: center;
-
     position: absolute;
     right: 60px;
-    top: 4%;
+    top: 30px;
+    z-index: 1000;
 }
 
 /* =========================================================
@@ -86,14 +86,25 @@
 .request-phone-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
+
     padding: 18px 36px;
+
     background-color: transparent;
     color: var(--white);
+
     border: 1.6px solid var(--white);
     border-radius: 100px;
-    gap: 12px;
-    font-weight: 600;
 
+    gap: 12px;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1001;
 }
 
 .request-phone-btn img {
@@ -101,6 +112,10 @@
     height: 18px;
 }
 
+.request-phone-btn .p4 {
+    color: var(--white);
+    margin: 0;
+}
 
 .request-phone-btn:hover {
     background-color: var(--rosepink);
