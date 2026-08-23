@@ -340,20 +340,10 @@
 
 .background-shape {
     position: absolute;
-
-    top: -180px;
-    left: 30%;
-
-    width: 420px;
-    height: 680px;
-
-    border-radius: 50%;
-
-    background: rgba(20, 26, 45, 0.2);
-
-    transform: rotate(-20deg);
-
-    pointer-events: none;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 
