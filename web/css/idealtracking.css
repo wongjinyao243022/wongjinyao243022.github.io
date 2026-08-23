@@ -661,3 +661,101 @@
 
     color: var(--darknavy);
 }
+
+/* =========================================================
+   RECENTLY COMPLETED PROJECTS
+   ========================================================= */
+
+.recent-projects {
+    width: 100%;
+    max-width: 1085px;
+
+    margin: 0 auto;
+
+    padding: 60px 0 100px;
+}
+
+.recent-title {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.recent-title p {
+    margin-bottom: 8px;
+
+    font-family: var(--font-base);
+    font-size: 12px;
+    line-height: 18px;
+
+    color: var(--rosepink);
+}
+
+.recent-title h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: 28px;
+    line-height: 39px;
+}
+
+.recent-project-list {
+    display: flex;
+
+    gap: 40px;
+
+    justify-content: center;
+}
+
+.recent-project {
+    width: calc((100% - 40px) / 2);
+
+    min-width: 0;
+
+    text-align: center;
+}
+
+.recent-project img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 3 / 2;
+
+    height: auto;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    border-radius: 5px;
+}
+
+.recent-project h6 {
+    margin: 10px 0 5px;
+
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+
+    letter-spacing: -0.64px;
+
+    color: var(--darknavy);
+
+    text-align: center;
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+.recent-project .p4 {
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+
+    letter-spacing: -0.255px;
+
+    color: var(--darknavy);
+}
