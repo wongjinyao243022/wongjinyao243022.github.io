@@ -243,11 +243,15 @@
 
 .laptop-menu {
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100vh;
+
     background-color: var(--darknavy);
+
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
@@ -255,6 +259,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     isolation: isolate;
+
     z-index: 9999;
 }
 
@@ -417,10 +422,17 @@ body.menu-open {
 
 /* home page hero banner */
 .hero-banner {
-    align-content: center;
-    width: 100%;
-    margin: 0;
+    position: relative;
+    z-index: 10;
+
+    width: calc(100% - 120px);
+    max-width: 1290px;
+
+    margin: -600px auto 0;
+
     padding: 79.6px 20px;
+
+    box-sizing: border-box;
 }
 
 .hero-title {

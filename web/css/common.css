@@ -674,7 +674,7 @@ Ideal Tracking Project*/
 }
 
 /*banner for PRIVATE TAXATION， MARKETING STRATEGY，Data & Analytics*/
-.hero-banner {
+.innerhero-banner {
     position: relative;
     width: 100%;
     background-image: url(../images/bluebackground.jpg);
@@ -685,7 +685,7 @@ Ideal Tracking Project*/
     overflow: hidden;
 }
 
-.hero-content {
+.innerhero-content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -694,22 +694,22 @@ Ideal Tracking Project*/
 }
 
 
-.hero-content h3 {
+.innerhero-content h3 {
     margin: 0;
     text-align: center;
     color: var(--white);
 }
 
-.hero-subtitle {
+.innerhero-subtitle {
     margin: 38px 0 0;
 }
 
-.hero-subtitle .p1 {
+.innerhero-subtitle .p1 {
     text-align: center;
     color: var(--white);
 }
 
-.hero-features {
+.innerhero-features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -1926,19 +1926,19 @@ Achieve Your Goals */
         display: flex;
     }
 
-    .hero-banner {
+    .innerhero-banner {
         min-height: 500px;
     }
 
-    .hero-content {
+    .innerhero-content {
         padding: 60px 40px;
     }
 
-    .hero-subtitle {
+    .innerhero-subtitle {
         margin-top: 25px;
     }
 
-    .hero-features {
+    .innerhero-features {
         display: flex;
         flex-direction: column;
         gap: 25px;
@@ -2117,19 +2117,19 @@ Achieve Your Goals */
     }
 
     /* HERO */
-    .hero-banner {
+    .innerhero-banner {
         min-height: auto;
     }
 
-    .hero-content {
+    .innerhero-content {
         padding: 50px 25px;
     }
 
-    .hero-subtitle {
+    .innerhero-subtitle {
         margin-top: 20px;
     }
 
-    .hero-features {
+    .innerhero-features {
         gap: 25px;
         margin-top: 45px;
     }
