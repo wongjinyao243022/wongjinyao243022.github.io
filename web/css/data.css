@@ -383,16 +383,19 @@
 
 /* Step pill */
 .step-number {
-    margin-top: -37px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    min-width: 106px;
+    height: 51px;
+    padding: 0 22px;
+    border-radius: 30px;
+    box-sizing: border-box;
     font-family: var(--font-base);
     font-size: 15px;
     font-weight: 400;
+    color: var(--white);
 
-    pointer-events: none;
 }
 
 
