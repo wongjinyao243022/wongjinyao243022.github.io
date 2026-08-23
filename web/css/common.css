@@ -217,6 +217,7 @@ h6 {
     display: inline-block;
     border-bottom: 1px dotted rgb(34, 37, 61);
     padding-bottom: 2px;
+    margin: 20px 0;
 }
 
 /*buttons*/
@@ -1906,6 +1907,26 @@ Achieve Your Goals */
         padding: 0 25px;
     }
 
+    .footer-subscribe {
+        width: calc(100% - 80px);
+        max-width: 976px;
+    }
+
+    /*footer*/
+
+    .footer-cta-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .footer-cta-btn>button {
+        width: 100%;
+    }
 }
 
 /* === Tablet  === */
@@ -2085,6 +2106,53 @@ Achieve Your Goals */
         padding: 0 30px;
     }
 
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-subscribe {
+        width: calc(100% - 40px);
+
+        height: auto;
+
+        padding: 40px 24px;
+
+        border-radius: 25px;
+    }
+
+    .subscribe-textfield {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 20px;
+    }
+
+    .subscribe-email {
+        margin: 0;
+    }
+
+    .subscribe-submit-btn input {
+        width: 100%;
+    }
+
+    .footer-cta-btn {
+        flex-direction: column;
+
+        width: 100%;
+
+        align-items: center;
+    }
+
+    .footer-cta-btn>button {
+        width: 100%;
+        margin: 15px 0 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 60px;
+    }
 
 }
 
@@ -2352,5 +2420,64 @@ Achieve Your Goals */
 
     .testimonial-rating {
         margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-subscribe {
+        width: calc(100% - 24px);
+
+        padding: 40px 20px;
+    }
+
+    .footer-subscribe-title h4 {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .footer-subscribe-subtitle p {
+        font-size: 16px;
+    }
+
+    .subscribe-textfield {
+        margin-top: 30px;
+    }
+
+    .subscribe-email input {
+        font-size: 16px;
+        height: 55px;
+    }
+
+    .subscribe-submit-btn input {
+        width: 100%;
+
+        padding: 20px;
+
+        font-size: 16px;
+    }
+
+    #footer-cta {
+        padding: 60px 16px 30px;
+    }
+
+    .footer-logo {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+
+    .footer-cta-btn>button {
+        width: 100%;
+    }
+
+    .footer-contact-num {
+        font-size: 28px;
+    }
+
+    .social-icon {
+        width: 42px;
+        height: 42px;
     }
 }
