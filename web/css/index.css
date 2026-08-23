@@ -76,11 +76,11 @@
    HOME PHONE BUTTON
 ========================================================= */
 
-.phone-btn {
+.header-btn {
     display: flex;
     align-items: center;
-
     margin-left: auto;
+    text-decoration: none;
 }
 
 .request-phone-btn {
@@ -93,6 +93,7 @@
     border-radius: 100px;
     gap: 12px;
     font-weight: 600;
+
 }
 
 .request-phone-btn img {
@@ -100,10 +101,6 @@
     height: 18px;
 }
 
-.request-phone-btn img {
-    width: 18px;
-    height: 18px;
-}
 
 .request-phone-btn:hover {
     background-color: var(--rosepink);
