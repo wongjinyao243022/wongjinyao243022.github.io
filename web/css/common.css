@@ -1721,7 +1721,7 @@ Achieve Your Goals */
 
 /* Phone number */
 .footer-contact-num {
-
+    text-align: center;
     color: var(--footernum);
     opacity: 0.2;
     margin: 40px 0;
