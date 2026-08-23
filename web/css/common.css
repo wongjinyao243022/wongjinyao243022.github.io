@@ -580,13 +580,6 @@ h6 {
 /* =========================================================
    SUBPAGE BURGER BUTTON
 ========================================================= */
-
-/*
-   IMPORTANT:
-   Subpage burger is visible on desktop.
-   This matches your Image 2.
-*/
-
 .menu-btn {
     width: 57px;
     height: 57px;
