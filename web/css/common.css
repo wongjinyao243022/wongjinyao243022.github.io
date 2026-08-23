@@ -1038,7 +1038,9 @@ Ideal Tracking Project*/
 
 
 .overlay-menu-text {
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 
