@@ -41,7 +41,7 @@
     gap: 10px;
     margin-top: 39px;
 
-    font-family: Arial, sans-serif;
+    font-family: var(--font-base);
     font-size: 15px;
     font-weight: 400;
     color: #59616d;
@@ -177,8 +177,8 @@
 .business-description {
     margin: 0 0 30px;
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: var(--font-base);
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.85;
     letter-spacing: 0.2px;
@@ -206,7 +206,7 @@
 
     padding: 0 24px;
 
-    font-family: Arial, sans-serif;
+    font-family: var(--font-base);
     color: #343b46;
 }
 
@@ -225,8 +225,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-
-    font-size: 24px;
     line-height: 1;
     color: #c96972;
 }
@@ -239,7 +237,7 @@
 .business-item p {
     margin: 0;
 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -258,7 +256,6 @@
     }
 
     .business-description {
-        font-size: 15px;
         line-height: 1.8;
         margin-bottom: 28px;
     }
@@ -270,11 +267,10 @@
 
     .star-icon {
         width: 34px;
-        font-size: 22px;
     }
 
     .business-item p {
-        font-size: 15px;
+        line-height: 1.55;
     }
 }
 
@@ -293,7 +289,6 @@
     }
 
     .business-description {
-        font-size: 15px;
         line-height: 1.75;
         margin-bottom: 25px;
     }
@@ -310,7 +305,6 @@
     .star-icon {
         width: 32px;
         min-width: 32px;
-        font-size: 21px;
     }
 
     .business-item p {
@@ -440,7 +434,7 @@
 
     position: relative;
 
-    /* 外层圆环 */
+    /* Outer ring */
     background: var(--white);
 
     border: 10px solid #eef0f7;
@@ -640,7 +634,7 @@
     margin: 0 0 15px;
 
     font-family: var(--font-heading);
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 61.6px;
 
@@ -685,7 +679,7 @@
     margin-bottom: 8px;
 
     font-family: var(--font-base);
-    font-size: 12px;
+    font-size: 19px;
     line-height: 18px;
 
     color: var(--rosepink);
@@ -695,7 +689,7 @@
     margin: 0;
 
     font-family: var(--font-heading);
-    font-size: 28px;
+    font-size: 44px;
     line-height: 39px;
 }
 
