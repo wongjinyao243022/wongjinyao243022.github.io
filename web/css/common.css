@@ -580,13 +580,6 @@ h6 {
 /* =========================================================
    SUBPAGE BURGER BUTTON
 ========================================================= */
-
-/*
-   IMPORTANT:
-   Subpage burger is visible on desktop.
-   This matches your Image 2.
-*/
-
 .menu-btn {
     width: 57px;
     height: 57px;
@@ -681,63 +674,553 @@ Ideal Tracking Project*/
 }
 
 /*banner for PRIVATE TAXATION， MARKETING STRATEGY，Data & Analytics*/
-.inner-banner {
+.innerhero-banner {
+    position: relative;
     width: 100%;
-    min-height: 480px;
     background-image: url(../images/bluebackground.jpg);
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-
-.inner-banner-content {
+.innerhero-content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 120px 40px;
+    padding: 70px 40px;
     box-sizing: border-box;
 }
 
 
-.inner-banner-content h3 {
-    margin-bottom: 17px;
+.innerhero-content h3 {
+    margin: 0;
     text-align: center;
-}
-
-
-.inner-banner-content .p1 {
     color: var(--white);
+}
+
+.innerhero-subtitle {
+    margin: 38px 0 0;
+}
+
+.innerhero-subtitle .p1 {
     text-align: center;
+    color: var(--white);
+}
+
+.innerhero-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 75px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    padding: 0 35px;
+}
+
+.feature-line {
+    width: 2px;
+    height: 90px;
+    margin-right: 35px;
+    background: var(--rosepink);
+    flex-shrink: 0;
+}
+
+.feature h6 {
+    margin: 0 0 10px;
+    color: var(--white);
+}
+
+.feature .p4 {
+    margin: 0;
+    color: var(--herotext);
+}
+
+/*section for We Leverage Growth Using Cutting
+Edge Technology*/
+
+.technology-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.technology-card {
+    flex: 1;
+    width: auto;
+    background: var(--lightbluegrey);
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.technology-title {
+    margin: 0;
+    padding: 38px 38px 0;
+    color: var(--textcolor);
+}
+
+.technology-title.h6 {
+    font-weight: none;
+}
+
+.technology-image {
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+}
+
+.technology-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.technology-card:hover .technology-image img {
+    transform: scale(1.04);
+}
+
+.technology-content {
+    min-height: 198px;
+    padding: 31px 38px 28px;
+    font-family: var(--font-base);
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.technology-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.technology-item:last-child {
+    margin-bottom: 0;
+}
+
+.technology-item p {
+    margin: 0;
+    color: #30384c;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.technology-icon {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--white);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.technology-icon.check {
+    color: var(--rosepink);
+}
+
+.technology-icon.star {
+    color: var(--rosepink);
+    font-size: 20px;
 }
 
 
-.inner-features {
-    width: 850px;
-    margin: 55px auto 0;
+
+/*section for Driving Success To Your
+Everyday Business */
+.success-section {
+    width: 100%;
+    padding: 135px 0 40px;
+    box-sizing: border-box;
+}
+
+.success-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.success-image {
+    width: 100%;
+    height: 589px;
+    overflow: hidden;
+
+    border-radius: 0 0 0 22px;
+}
+
+.success-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.success-content {
+    width: 100%;
+}
+
+.success-content h3 {
+    margin: 0 0 55px;
+    color: var(--textcolor)
+}
+
+
+.success-feature {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.success-feature:last-child {
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    width: 17%;
+    min-height: 96px;
+    border: 6px solid #e9ebf3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.feature-icon i {
+    font-size: 35px;
+    color: var(--darkblue);
+}
+
+
+.feature-text {
+    margin-left: 35px;
+}
+
+.feature-text h6 {
+    margin: 0 0 12px;
+    color: var(--textcolor);
+}
+
+.feature-text .p4 {
+    margin: 0;
+    color: var(--textcolor);
+}
+
+/*section for The Steps We Follow To
+Achieve Your Goals */
+.steps-section {
+    width: 100%;
+    padding: 85px 0 110px;
+    box-sizing: border-box;
+}
+
+.steps-container {
+    width: 100%;
+    max-width: 1510px;
+
+    margin: 0 auto;
+    padding: 0 106px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.steps-header {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 80px;
+
+    align-items: start;
+}
+
+
+/* Left heading */
+
+.steps-heading {
+    width: 100%;
+}
+
+.steps-label {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 28px;
+    padding-bottom: 8px;
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--rosepink);
+}
+
+.steps-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 285px;
+    height: 1px;
+    background-color: #e7e7e7;
+}
+
+
+.steps-heading h3 {
+    color: var(--textcolor);
+    margin-top: 20px;
+}
+
+
+/* Right description */
+
+.steps-intro {
+    padding-top: 50px;
+}
+
+.steps-intro.p1 {
+    margin: 0;
+    color: var(--textcolor);
+}
+
+
+
+.steps-grid {
     display: flex;
     justify-content: space-between;
-    text-align: left;
+    gap: 90px;
+    margin-top: 65px;
+}
+
+.step-item {
+    flex: 1;
+    min-width: 0;
+}
+
+.step-box {
+    width: 106px;
+    height: 51px;
+    border-radius: 30px;
+
+}
+
+/* Step pill */
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 106px;
+    height: 51px;
+    padding: 0 22px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+
+}
+
+.step-one {
+    background-color: var(--lightblue);
+}
+
+.step-two {
+    background-color: var(--submenucolor);
+}
+
+.step-three {
+    background-color: var(--darkblue);
 }
 
 
-.inner-feature {
-    min-height: 41px;
-    border-left: 2px solid var(--rosepink);
+.step-item h6 {
+    margin: 45px 0 12px;
+    color: var(--textcolor);
 }
 
 
-.inner-feature h6 {
-    text-align: left;
-    padding: 0 0 0 30px;
+
+.step-item.p4 {
+
+    margin: 0;
+    color: var(--textcolor);
 }
 
 
-.inner-feature .p4 {
-    color: var(--submenucolor);
-    text-align: left;
-    padding: 0 0 0 30px;
+/*section for What People Are Saying*/
+
+.testimonials-section {
+    width: 100%;
+
+    background-color: var(--white);
+
+    padding: 85px 0 100px;
+
+    box-sizing: border-box;
 }
+
+.testimonials-container {
+    width: 100%;
+
+    max-width: 1510px;
+
+    margin: 0 auto;
+
+    padding: 0 80px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.testimonials-header {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.testimonials-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 25px;
+
+    padding-bottom: 8px;
+    color: var(--rosepink);
+}
+
+
+.testimonials-label::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 285px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+
+.testimonials-header h3 {
+    color: var(--textcolor);
+    margin: 20px 0 15px 0;
+}
+
+
+.testimonials-description.p4 {
+    margin: 0;
+    color: var(--textcolor);
+    margin-bottom: 60px;
+}
+
+
+
+.testimonials-grid {
+    display: flex;
+
+    column-gap: 100px;
+
+    margin-top: 55px;
+}
+
+.testimonial {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.testimonial {
+    text-align: center;
+
+    padding: 0 35px;
+}
+
+
+.quote-icon {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quote-icon i {
+    font-size: 48px;
+    color: var(--textcolor);
+}
+
+.testimonial-text {
+    margin: 15px auto 30px;
+    color: var(--textcolor);
+}
+
+
+.testimonial-rating {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+.testimonial-rating i {
+    color: var(--rosepink);
+}
+
+
+
+
+.testimonial-author {
+    margin: 0;
+    color: var(--herotext);
+}
+
 
 /*whole circular button changes when hovered*/
 
@@ -750,14 +1233,6 @@ Ideal Tracking Project*/
 
 .overlay-menu-btn .menu-btn:hover .hamburger-icon {
     filter: brightness(0) invert(1);
-}
-
-
-
-
-
-.overlay-menu-btn {
-    margin-left: 16px;
 }
 
 
@@ -1038,7 +1513,9 @@ Ideal Tracking Project*/
 
 
 .overlay-menu-text {
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 
@@ -1295,7 +1772,6 @@ Ideal Tracking Project*/
     .hero-overlay {
         display: flex;
         flex-direction: column;
-
     }
 
     .header {
@@ -1318,24 +1794,118 @@ Ideal Tracking Project*/
     }
 
     /* Keep burger */
-    #menu-toggle-burger {
-        display: flex;
-    }
-
     .menu-btn {
         display: flex;
     }
 
+    /* ========================= 
+       OVERLAY MENU 
+       ========================= */
+
+    .laptop-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
 
     .overlay-menu-text {
-        width: 50%;
-        flex: 1;
+        width: 100%;
+        flex: none;
     }
 
     .overlay-cta {
-        width: 50%;
-        flex: 1;
+        width: 100%;
+        flex: none;
+        margin: 40px 0 0 0;
+        text-align: center;
     }
+
+    /* HERO */
+    .hero-content {
+        padding: 65px 60px;
+    }
+
+    .hero-subtitle {
+        margin-top: 32px;
+    }
+
+    .hero-features {
+        margin-top: 65px;
+    }
+
+    .feature {
+        padding: 0 25px;
+    }
+
+    .feature-line {
+        margin-right: 28px;
+    }
+
+
+    /* TECHNOLOGY CARDS */
+    .technology-cards {
+        width: 90%;
+        gap: 35px;
+        margin-top: 100px;
+    }
+
+    .technology-title {
+        padding: 32px 30px 0;
+    }
+
+    .technology-content {
+        padding: 28px 30px 25px;
+    }
+
+
+    /* SUCCESS */
+    .success-section {
+        padding: 110px 40px 40px;
+    }
+
+    .success-container {
+        max-width: 1200px;
+        gap: 70px;
+    }
+
+    .success-image {
+        height: 520px;
+    }
+
+    .success-content h3 {
+        margin-bottom: 45px;
+    }
+
+
+    /* STEPS */
+    .steps-container {
+        max-width: 1320px;
+        padding: 0 70px;
+    }
+
+    .steps-header {
+        column-gap: 60px;
+    }
+
+    .steps-grid {
+        column-gap: 60px;
+    }
+
+
+    /* TESTIMONIALS */
+    .testimonials-container {
+        max-width: 1320px;
+        padding: 0 60px;
+    }
+
+    .testimonials-grid {
+        column-gap: 70px;
+    }
+
+    .testimonial {
+        padding: 0 25px;
+    }
+
 }
 
 /* === Tablet  === */
@@ -1355,6 +1925,167 @@ Ideal Tracking Project*/
     .menu-btn {
         display: flex;
     }
+
+    .innerhero-banner {
+        min-height: 500px;
+    }
+
+    .innerhero-content {
+        padding: 60px 40px;
+    }
+
+    .innerhero-subtitle {
+        margin-top: 25px;
+    }
+
+    .innerhero-features {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 55px;
+    }
+
+    .feature {
+        min-height: 70px;
+        padding: 0;
+    }
+
+    .feature-line {
+        height: 70px;
+        margin-right: 25px;
+    }
+
+    .feature h6 {
+        margin-bottom: 8px;
+    }
+
+
+    /* TECHNOLOGY CARDS */
+    .technology-cards {
+        flex-direction: column;
+        width: 85%;
+        gap: 35px;
+        margin-top: 80px;
+    }
+
+    .technology-card {
+        width: 100%;
+    }
+
+    .technology-image {
+        height: 300px;
+    }
+
+    .technology-title {
+        padding: 32px 30px 0;
+    }
+
+    .technology-content {
+        min-height: auto;
+        padding: 30px;
+    }
+
+
+    /* SUCCESS */
+    .success-section {
+        padding: 90px 40px 40px;
+    }
+
+    .success-container {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        max-width: 700px;
+    }
+
+    .success-image {
+        width: 100%;
+        height: 450px;
+        border-radius: 0 0 0 22px;
+    }
+
+    .success-content {
+        width: 100%;
+    }
+
+    .success-content h3 {
+        margin-bottom: 40px;
+    }
+
+    .feature-icon {
+        width: 96px;
+        min-width: 96px;
+        height: 96px;
+    }
+
+    .feature-text {
+        margin-left: 25px;
+    }
+
+
+    /* STEPS */
+    .steps-section {
+        padding: 70px 0 90px;
+    }
+
+    .steps-container {
+        max-width: 840px;
+        padding: 0 40px;
+    }
+
+    .steps-header {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .steps-intro {
+        padding-top: 0;
+    }
+
+    .steps-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        margin-top: 55px;
+    }
+
+    .step-item {
+        width: 100%;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-section {
+        padding: 70px 0 80px;
+    }
+
+    .testimonials-container {
+        max-width: 840px;
+        padding: 0 40px;
+    }
+
+    .testimonials-header {
+        max-width: 650px;
+    }
+
+    .testimonials-description.p4 {
+        margin-bottom: 45px;
+    }
+
+
+    .testimonials-grid {
+        flex-direction: column;
+        gap: 65px;
+        margin-top: 45px;
+    }
+
+    .testimonial {
+        width: 100%;
+        flex: none;
+        padding: 0 30px;
+    }
+
+
 }
 
 
@@ -1383,5 +2114,243 @@ Ideal Tracking Project*/
 
     #menu-toggle-burger {
         display: flex;
+    }
+
+    /* HERO */
+    .innerhero-banner {
+        min-height: auto;
+    }
+
+    .innerhero-content {
+        padding: 50px 25px;
+    }
+
+    .innerhero-subtitle {
+        margin-top: 20px;
+    }
+
+    .innerhero-features {
+        gap: 25px;
+        margin-top: 45px;
+    }
+
+    .feature {
+        min-height: 65px;
+    }
+
+    .feature-line {
+        width: 2px;
+        height: 65px;
+        margin-right: 18px;
+    }
+
+    .feature h6 {
+        margin-bottom: 6px;
+    }
+
+
+    /* TECHNOLOGY CARDS */
+    .technology-cards {
+        width: calc(100% - 40px);
+        gap: 25px;
+        margin-top: 60px;
+    }
+
+    .technology-card {
+        width: 100%;
+    }
+
+    .technology-title {
+        padding: 25px 22px 0;
+    }
+
+    .technology-image {
+        height: 210px;
+    }
+
+    .technology-content {
+        min-height: auto;
+        padding: 25px 22px;
+    }
+
+    .technology-item {
+        margin-bottom: 16px;
+    }
+
+    .technology-item p {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .technology-icon {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .technology-icon.star {
+        font-size: 17px;
+    }
+
+
+    /* SUCCESS */
+    .success-section {
+        padding: 70px 25px 30px;
+    }
+
+    .success-container {
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .success-image {
+        height: 300px;
+        border-radius: 0 0 0 18px;
+    }
+
+    .success-content h3 {
+        margin-bottom: 35px;
+    }
+
+    .success-feature {
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        min-height: 70px;
+        border-width: 4px;
+    }
+
+    .feature-icon i {
+        font-size: 27px;
+    }
+
+    .feature-text {
+        margin-left: 18px;
+    }
+
+    .feature-text h6 {
+        margin-bottom: 8px;
+    }
+
+
+    /* STEPS */
+    .steps-section {
+        padding: 60px 0 75px;
+    }
+
+    .steps-container {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    .steps-header {
+        gap: 20px;
+    }
+
+    .steps-label {
+        margin-bottom: 20px;
+        padding-bottom: 7px;
+        font-size: 17px;
+    }
+
+    .steps-label::after {
+        width: 200px;
+    }
+
+    .steps-heading h3 {
+        margin-top: 15px;
+    }
+
+    .steps-intro {
+        padding-top: 0;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        row-gap: 45px;
+        margin-top: 45px;
+    }
+
+    .step-item {
+        width: 100%;
+    }
+
+    .step-box {
+        width: 100px;
+        height: 48px;
+    }
+
+    .step-number {
+        margin-top: -35px;
+        font-size: 14px;
+    }
+
+    .step-item h6 {
+        margin: 38px 0 10px;
+    }
+
+
+    /* TESTIMONIALS */
+    .testimonials-section {
+        padding: 60px 0 70px;
+    }
+
+    .testimonials-container {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    .testimonials-header {
+        max-width: 100%;
+    }
+
+    .testimonials-label {
+        margin-bottom: 20px;
+        padding-bottom: 7px;
+    }
+
+    .testimonials-label::after {
+        width: 200px;
+    }
+
+    .testimonials-header h3 {
+        margin: 15px 0 12px;
+    }
+
+    .testimonials-description.p4 {
+        margin-bottom: 40px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+        margin-top: 40px;
+    }
+
+    .testimonial {
+        padding: 0 10px;
+    }
+
+    .quote-icon {
+        height: 55px;
+    }
+
+    .quote-icon i {
+        font-size: 40px;
+    }
+
+    .testimonial-text {
+        margin: 12px auto 25px;
+    }
+
+    .testimonial-rating {
+        margin-bottom: 8px;
     }
 }
