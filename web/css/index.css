@@ -108,6 +108,9 @@
     color: var(--white);
 }
 
+.arrow {
+    filter: brightness(0) invert(1);
+}
 
 /* =========================================================
    LET'S TALK BUTTON

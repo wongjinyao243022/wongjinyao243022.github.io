@@ -46,7 +46,7 @@
 
     text-align: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4;
@@ -86,7 +86,7 @@
 .feature h3 {
     margin: 0 0 12px;
 
-    font-family: var(--font-base);
+    font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 700;
 
@@ -96,29 +96,14 @@
 .feature p {
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-base);
+    font-size: 17px;
+    font-weight: 400;
+
     font-size: 17px;
     font-weight: 400;
 
     color: #a9afd0;
-}
-
-/* ========================================
-   BASE / ORIGINAL SIZE — 1510px
-======================================== */
-
-.hero-banner {
-    position: relative;
-    width: 100%;
-    min-height: 480px;
-
-    background-image: url(../images/bluebackground.jpg);
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    overflow: hidden;
 }
 
 .bluebackground {
@@ -129,86 +114,6 @@
     display: block;
     position: absolute;
     background-size: cover;
-}
-
-.hero-content {
-    width: 100%;
-    max-width: 1510px;
-    margin: 0 auto;
-    padding: 70px 80px;
-    box-sizing: border-box;
-}
-
-/* Title */
-.hero-content h1 {
-    margin: 0;
-    text-align: center;
-
-    font-family: var(--font-heading);
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 1.2;
-
-    color: #ffffff;
-}
-
-/* Subtitle */
-.hero-subtitle {
-    margin: 38px 0 0;
-
-    text-align: center;
-
-    font-family: var(--font-base);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.4;
-
-    color: #ffffff;
-}
-
-/* Features */
-.hero-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    margin-top: 75px;
-}
-
-.feature {
-    display: flex;
-    align-items: center;
-
-    min-height: 90px;
-    padding: 0 35px;
-}
-
-.feature-line {
-    width: 2px;
-    height: 90px;
-
-    margin-right: 35px;
-
-    background-color: #e83e73;
-    flex-shrink: 0;
-}
-
-.feature h3 {
-    margin: 0 0 12px;
-
-    font-family: var(--font-heading);
-    font-size: 22px;
-    font-weight: 700;
-
-    color: #ffffff;
-}
-
-.feature p {
-    margin: 0;
-
-    font-family: var(--font-base);
-    font-size: 17px;
-
-    color: #a9afd0;
 }
 
 
@@ -229,6 +134,7 @@
     .hero-subtitle {
         margin-top: 32px;
         font-size: 24px;
+        font-family: var(--font-base);
     }
 
     .hero-features {
@@ -244,10 +150,12 @@
     }
 
     .feature h3 {
+        font-family: var(--font-heading);
         font-size: 22px;
     }
 
     .feature p {
+        font-family: var(--font-base);
         font-size: 17px;
     }
 }
@@ -274,6 +182,7 @@
     .hero-subtitle {
         margin-top: 25px;
         font-size: 24px;
+        font-family: var(--font-base);
     }
 
     .hero-features {
@@ -295,11 +204,13 @@
     }
 
     .feature h3 {
+        font-family: var(--font-heading);
         font-size: 24px;
         margin-bottom: 8px;
     }
 
     .feature p {
+        font-family: var(--font-base);
         font-size: 17px;
     }
 }
@@ -322,11 +233,12 @@
     .hero-content h1 {
         font-size: 32px;
         line-height: 1.2;
+        font-family: var(--font-heading);
     }
 
     .hero-subtitle {
         margin-top: 20px;
-
+        font-family: var(--font-base);
         font-size: 17px;
         line-height: 1.5;
     }
@@ -348,12 +260,15 @@
     }
 
     .feature h3 {
+        font-family: var(--font-heading);
         font-size: 22px;
         margin-bottom: 6px;
     }
 
     .feature p {
+        font-family: var(--font-base);
         font-size: 17px;
+        font-weight: 400;
         line-height: 1.4;
     }
 }
@@ -390,7 +305,7 @@
 
 .success-image {
     width: 100%;
-    height: 589px;
+    height: 100%;
     overflow: hidden;
 
     border-radius: 0 0 0 22px;
