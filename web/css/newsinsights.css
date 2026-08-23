@@ -316,3 +316,160 @@
         font-size: 15px;
     }
 }
+
+
+/* ========================================
+   NEWS GRID SECTION
+======================================== */
+
+.news-grid-section {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+
+    background: #2f374e;
+
+    padding: 76px 0 80px;
+}
+
+
+/* ========================================
+   BACKGROUND DECORATIVE CURVE
+======================================== */
+
+.background-shape {
+    position: absolute;
+
+    top: -180px;
+    left: 30%;
+
+    width: 420px;
+    height: 680px;
+
+    border-radius: 50%;
+
+    background: rgba(20, 26, 45, 0.2);
+
+    transform: rotate(-20deg);
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.news-grid-container {
+    position: relative;
+    z-index: 1;
+
+    width: 1280px;
+    max-width: calc(100% - 220px);
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 88px;
+}
+
+
+/* ========================================
+   NEWS ITEM
+======================================== */
+
+.news-item {
+    min-width: 0;
+}
+
+
+/* ========================================
+   CATEGORY
+======================================== */
+
+.news-category {
+    margin: 0 0 17px;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.news-category span {
+    color: #b8becb;
+}
+
+
+/* ========================================
+   NEWS TITLE
+======================================== */
+
+.news-item h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 29px;
+    line-height: 1.42;
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* ========================================
+   DOTTED DIVIDER
+======================================== */
+
+.news-divider {
+    width: 80px;
+    height: 1px;
+
+    margin: 31px 0 22px;
+
+    border-top: 1px dotted rgba(255, 255, 255, 0.35);
+}
+
+
+/* ========================================
+   CONTINUE READING LINK
+======================================== */
+
+.continue-reading {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #f04b68;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.continue-reading span {
+    font-size: 20px;
+    line-height: 1;
+
+    transition: 0.3s ease;
+}
+
+.continue-reading:hover {
+    color: #ff6b85;
+}
+
+.continue-reading:hover span {
+    transform: translateX(5px);
+}
