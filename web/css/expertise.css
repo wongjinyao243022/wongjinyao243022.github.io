@@ -51,9 +51,7 @@
     margin: 0;
 }
 
-/* ---------------------------------------------------------
-   SECTION HEADING (shared by approach / about / testimonial)
---------------------------------------------------------- */
+/* section heading (approach/about/testimonial)*/
 .section-heading {
     max-width: 700px;
     margin: 0 auto;
@@ -82,9 +80,7 @@
     color: #6b7280;
 }
 
-/* ---------------------------------------------------------
-   APPROACH SECTION
---------------------------------------------------------- */
+/* approach section*/
 .approach-section {
     width: 100%;
     padding: 110px 60px 60px;
@@ -101,19 +97,19 @@
 }
 
 .approach-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 80px;
 }
 
-.approach-item.reverse .approach-content {
-    order: 2;
+.approach-item-reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
 }
 
-.approach-item.reverse .approach-image {
-    order: 1;
-}
 
 .approach-content {
     max-width: 480px;
@@ -180,19 +176,6 @@
     object-position: center;
 }
 
-/* ---------------------------------------------------------
-   CTA BANNER  ("Speak To Our Experts...")
-   NOTE: this markup does not exist yet in expertise.html —
-   add the snippet below between .approach-section and
-   .about-section:
-
-   <section class="cta-banner">
-       <p class="p2">
-           Speak To Our Experts +60 12-345 6789 or
-           <a href="contact.html">Request A Quote</a>
-       </p>
-   </section>
---------------------------------------------------------- */
 .cta-banner {
     max-width: 1200px;
     margin: 100px auto 0;
@@ -216,9 +199,7 @@
     text-decoration: underline;
 }
 
-/* ---------------------------------------------------------
-   ABOUT / STATS SECTION  (dark navy)
---------------------------------------------------------- */
+/*about section*/
 .about-section {
     position: relative;
     width: 100%;
@@ -229,8 +210,6 @@
     box-sizing: border-box;
     background-image: url(../images/about-backgroud.jpg);
 }
-
-/* faint decorative grid of squares behind content */
 
 
 .about-container {
@@ -287,9 +266,6 @@
     font-weight: 700;
 }
 
-/* profile photo with dashed ring + floating icon badges */
-
-
 
 /* stats row */
 .statistics {
@@ -320,9 +296,7 @@
     line-height: 30.6px;
 }
 
-/* ---------------------------------------------------------
-   TESTIMONIAL SECTION
---------------------------------------------------------- */
+/* testimonial section*/
 .testimonial-section {
     width: 100%;
     padding: 120px 60px 100px;
@@ -378,9 +352,6 @@
     color: var(--herotext);
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 @media screen and (max-width: 1320px) {
     .hero-content {
         padding: 65px 60px;
@@ -515,11 +486,11 @@
     }
 
     .stats-container {
-        grid-template-columns: 1fr;
         row-gap: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .testimonial-container {
@@ -559,16 +530,13 @@
         margin-top: 45px;
     }
 
-
-
-
     .stats-container {
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
 
-    .profile-img img {
+    .profile-image img {
         width: 98%;
     }
 

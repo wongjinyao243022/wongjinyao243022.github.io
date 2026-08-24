@@ -163,7 +163,7 @@
 
 /* Per-step circular photos: only used in the 440px mobile layout,
    hidden everywhere else since desktop/tablet use the shared .process-img instead */
-.process-step-img {
+.step-img {
     display: none;
 }
 
@@ -432,6 +432,10 @@ li {
 
     .process-title {
         margin: 0px 16.563px;
+    }
+
+    .step-img {
+        display: block;
     }
 
     .section-tag {
