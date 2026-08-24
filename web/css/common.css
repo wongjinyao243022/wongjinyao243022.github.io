@@ -1691,8 +1691,8 @@ Achieve Your Goals */
 
 /* Footer logo */
 .footer-logo {
-    width: 19%;
-    height: auto;
+    width: 300px;
+    height: 68.25px;
 }
 
 
@@ -1761,6 +1761,7 @@ Achieve Your Goals */
 .footer-copyright {
     margin: 15px 0;
     color: rgba(255, 255, 255, 0.4);
+    text-align: center;
 }
 
 .red {
@@ -1915,6 +1916,7 @@ Achieve Your Goals */
     .footer-subscribe {
         width: calc(100% - 80px);
         max-width: 976px;
+
     }
 
     /*footer*/
@@ -2120,7 +2122,6 @@ Achieve Your Goals */
         text-align: center;
     }
 
-
     /* =========================
        FOOTER
     ========================= */
@@ -2132,7 +2133,7 @@ Achieve Your Goals */
 
         padding: 40px 24px;
 
-        border-radius: 25px;
+        border-bottom-left-radius: 25px;
     }
 
     .subscribe-textfield {
@@ -2158,7 +2159,7 @@ Achieve Your Goals */
         align-items: center;
     }
 
-    .footer-cta-btn>button {
+    .footer-cta-btn>.button-link {
         width: 100%;
         margin: 15px 0 0;
     }
@@ -2440,6 +2441,10 @@ Achieve Your Goals */
        FOOTER
     ========================= */
 
+    .footer-upper {
+        height: 450px;
+    }
+
     .footer-subscribe {
         width: calc(100% - 24px);
 
@@ -2476,17 +2481,9 @@ Achieve Your Goals */
         padding: 60px 16px 30px;
     }
 
-    .footer-logo {
-        width: 200px;
-        margin-bottom: 40px;
-    }
 
-    .footer-cta-btn>button {
+    .footer-cta-btn>.button-link {
         width: 100%;
-    }
-
-    .footer-contact-num {
-        font-size: 28px;
     }
 
     .social-icon {
