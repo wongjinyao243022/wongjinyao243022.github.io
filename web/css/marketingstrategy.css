@@ -1074,7 +1074,6 @@
     gap: 48px;
 
     position: relative;
-    z-index: 2;
 }
 
 
@@ -1109,14 +1108,7 @@
 
     object-fit: cover;
     object-position: center;
-
-    transition: transform 0.4s ease;
 }
-
-.technology-card:hover .technology-image img {
-    transform: scale(1.04);
-}
-
 
 /* =========================================
    CARD CONTENT
