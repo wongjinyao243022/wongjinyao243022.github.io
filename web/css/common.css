@@ -1749,6 +1749,8 @@ Achieve Your Goals */
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+    color: var(--white);
+    font-size: 22px;
 }
 
 
@@ -2480,9 +2482,7 @@ Achieve Your Goals */
         width: 100%;
     }
 
-    .footer-contact-num {
-        font-size: 28px;
-    }
+
 
     .social-icon {
         width: 42px;
