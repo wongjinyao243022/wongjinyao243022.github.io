@@ -1113,11 +1113,6 @@
     transition: transform 0.4s ease;
 }
 
-.technology-card:hover .technology-image img {
-    transform: scale(1.04);
-}
-
-
 /* =========================================
    CARD CONTENT
 ========================================= */
