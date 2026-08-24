@@ -1749,6 +1749,8 @@ Achieve Your Goals */
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+    color: var(--white);
+    font-size: 22px;
 }
 
 
@@ -1756,6 +1758,7 @@ Achieve Your Goals */
 .footer-copyright {
     margin: 15px 0;
     color: rgba(255, 255, 255, 0.4);
+    text-align: center;
 }
 
 .red {
@@ -2160,6 +2163,8 @@ Achieve Your Goals */
 
     .footer-logo {
         margin-bottom: 60px;
+        width: 300px;
+        height: 68.25px;
     }
 
 }
@@ -2435,6 +2440,10 @@ Achieve Your Goals */
        FOOTER
     ========================= */
 
+    .footer-upper {
+        height: 450px;
+    }
+
     .footer-subscribe {
         width: calc(100% - 24px);
 
@@ -2472,7 +2481,8 @@ Achieve Your Goals */
     }
 
     .footer-logo {
-        width: 200px;
+        width: 300px;
+        height: 68.25px;
         margin-bottom: 40px;
     }
 
@@ -2480,9 +2490,7 @@ Achieve Your Goals */
         width: 100%;
     }
 
-    .footer-contact-num {
-        font-size: 28px;
-    }
+
 
     .social-icon {
         width: 42px;
