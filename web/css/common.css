@@ -1703,13 +1703,13 @@ Achieve Your Goals */
     flex-direction: row;
 }
 
-.footer-cta-btn>button>.p4 {
+.footer-cta-btn>a>.p4 {
     font-weight: 600;
     color: var(--white);
     line-height: 20.4px;
 }
 
-.footer-cta-btn>button {
+.footer-cta-btn>a {
     background-color: transparent;
     border-radius: 50px;
     padding: 22px 42px;
