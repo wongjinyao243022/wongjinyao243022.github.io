@@ -1,0 +1,149 @@
+/* =========================
+   FINANCIAL INTRO
+========================= */
+
+.financial-intro {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.financial-intro-container {
+    width: 1122px;
+    margin: 0 auto;
+}
+
+.financial-intro-image {
+    width: 1122px;
+    height: 627px;
+}
+
+.financial-intro-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.financial-intro-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.financial-intro-text p {
+    margin: 0;
+}
+
+
+/* =========================
+   PROJECT OVERVIEW
+========================= */
+
+.project-overview {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.project-overview-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* title */
+
+.project-overview-title {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-overview-title h3 {
+    margin: 0 0 15px;
+}
+
+.project-overview-title p {
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+
+/* =========================
+   OVERVIEW GRID
+========================= */
+
+.overview-grid {
+    width: 100%;
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.overview-card {
+    min-height: 225px;
+
+    padding: 35px 60px;
+
+    border: 1px solid #e5e5e5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* top row */
+
+.overview-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* icon circle */
+
+.overview-icon {
+    width: 107px;
+    height: 107px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-icon img {
+    width: 107px;
+    height: 107px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* card title */
+
+.overview-card-header h6 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* description */
+
+.overview-card>p {
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    padding-left: 40px;
+}
