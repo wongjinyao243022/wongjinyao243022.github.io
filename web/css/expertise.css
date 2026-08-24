@@ -486,11 +486,11 @@
     }
 
     .stats-container {
-        grid-template-columns: 1fr;
         row-gap: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .testimonial-container {
@@ -536,7 +536,7 @@
         gap: 60px;
     }
 
-    .profile-img img {
+    .profile-image img {
         width: 98%;
     }
 
