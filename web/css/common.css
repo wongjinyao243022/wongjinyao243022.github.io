@@ -1703,13 +1703,13 @@ Achieve Your Goals */
     flex-direction: row;
 }
 
-.footer-cta-btn>a>.p4 {
+.footer-cta-btn>button>.p4 {
     font-weight: 600;
     color: var(--white);
     line-height: 20.4px;
 }
 
-.footer-cta-btn>a {
+.footer-cta-btn>button {
     background-color: transparent;
     border-radius: 50px;
     padding: 22px 42px;
@@ -1733,6 +1733,8 @@ Achieve Your Goals */
 .footer-social-icon {
     display: flex;
     flex-direction: row;
+    color: var(--white);
+    font-size: 22px;
 }
 
 .footer-social-icon img {
