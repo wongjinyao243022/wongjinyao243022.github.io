@@ -388,6 +388,16 @@
 
 
 /* =========================================
+   BUSINESS HERO SECTION
+========================================= */
+
+.business-hero {
+    width: 100%;
+    padding: 0 120px 60px;
+    box-sizing: border-box;
+}
+
+/* =========================================
    LEFT CONTENT
 ========================================= */
 
@@ -499,15 +509,6 @@
     box-sizing: border-box;
 }
 
-/* =====================================================
-  440px
-===================================================== */
-@media (min-width: 440px) {
-
-    .business-hero-container {
-        display: block;
-    }
-}
 
 /* =========================================
    SECTION HEADER
@@ -1457,8 +1458,16 @@
     .project-item+.project-item {
         margin-top: 60px;
     }
-}
 
+    .business-hero-container {
+        display: grid
+    }
+
+    .business-hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* =====================================================
    440px
