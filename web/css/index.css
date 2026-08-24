@@ -1175,7 +1175,7 @@ body.menu-open {
         height: auto;
 
         margin: 0 0 30px;
-        padding: 0 0 25px;
+        padding: 10px 10px 25px 10px;
     }
 
     .team-card>img {
@@ -1241,7 +1241,7 @@ body.menu-open {
     }
 
     .hero-title {
-        font-size: 26px;
+        font-size: 56px;
         margin-bottom: 16px;
     }
 
