@@ -1733,6 +1733,8 @@ Achieve Your Goals */
 .footer-social-icon {
     display: flex;
     flex-direction: row;
+    color: var(--white);
+    font-size: 22px;
 }
 
 .footer-social-icon img {
