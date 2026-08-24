@@ -749,275 +749,6 @@ body.menu-open {
     color: rgb(166, 171, 205);
 }
 
-/* =========================
-   FOOTER
-========================= */
-
-#footer {
-    position: relative;
-    background-color: #ffffff;
-}
-
-
-/* =========================
-   SUBSCRIBE SECTION
-========================= */
-
-.footer-upper {
-    height: 377px;
-    background-color: #ffffff;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    position: relative;
-    z-index: 2;
-}
-
-.footer-subscribe {
-    width: 976px;
-    height: 373px;
-
-    background-color: #ffffff;
-
-    padding: 60px;
-    margin: 44px 0 0 0;
-
-    box-shadow: 2px 2px 40px rgba(35, 38, 62, 0.10);
-
-    border-bottom-left-radius: 25px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: relative;
-    z-index: 5;
-}
-
-
-/* Subscribe title */
-
-.footer-subscribe-title {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.footer-subscribe-title h4 {
-    margin: 0;
-
-    font-family: var(--font-heading);
-    font-size: 36px;
-    font-weight: 700;
-
-    color: #22253d;
-
-    line-height: 1.2;
-}
-
-
-/* Subscribe subtitle */
-
-.footer-subscribe-subtitle {
-    margin: 17px 0;
-    text-align: center;
-}
-
-.footer-subscribe-subtitle p {
-    color: #4f578d;
-}
-
-
-/* Email + button */
-
-.subscribe-textfield {
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    gap: 34px;
-
-    margin-top: 20px;
-}
-
-.subscribe-email {
-    margin: 17px 0;
-    flex: 1;
-}
-
-.subscribe-email input {
-    border: none;
-
-    padding: 0 17px;
-
-    width: 100%;
-    height: 59px;
-
-    background-color: transparent;
-
-    border-bottom: 1px solid #ced6ea;
-
-    font-family: var(--font-base);
-    font-size: 17px;
-
-    color: #22253d;
-
-    outline: none;
-}
-
-.subscribe-email input::placeholder {
-    color: #22253d;
-    opacity: 1;
-}
-
-
-/* Subscribe button */
-
-.subscribe-submit-btn {
-    flex-shrink: 0;
-}
-
-.subscribe-submit-btn input {
-    font-family: var(--font-base);
-    font-size: 17px;
-    font-weight: 600;
-
-    background-color: #f73660;
-    color: #ffffff;
-
-    padding: 20px 40px 22px 40px;
-
-    border: none;
-    border-radius: 100px;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.subscribe-submit-btn input:hover {
-    background-color: #22253d;
-}
-
-
-/* =========================
-   DARK FOOTER AREA
-========================= */
-
-#footer-cta {
-    min-height: 793px;
-
-    background-image: url(../images/footer-bg.jpg);
-    background-size: cover;
-    background-position: center;
-
-    padding: 160px 30px 60px 30px;
-
-    position: relative;
-    z-index: 1;
-}
-
-
-/* Footer content */
-
-.footer-cta-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-/* Footer logo */
-
-.footer-logo {
-    width: 300px;
-    height: auto;
-}
-
-
-/* Footer information buttons */
-
-.footer-cta-btn {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-cta-btn>button>.p4 {
-    font-weight: 600;
-    color: var(--white);
-    line-height: 20.4px;
-}
-
-.footer-cta-btn>button {
-    background-color: transparent;
-
-    border-radius: 50px;
-
-    padding: 22px 42px;
-
-    border: 2px solid rgba(205, 203, 234, 0.2);
-
-    margin: 80px 6.5px 0;
-
-    width: 100%;
-}
-
-
-/* Phone number */
-
-.footer-contact-num {
-    color: rgba(205, 213, 234, 0.2);
-    margin: 40px 0;
-}
-
-
-/* Social icons */
-
-.footer-social-icon {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-social-icon i {
-    color: rgb(166, 171, 205);
-}
-
-.social-icon i {
-    font-size: 25px;
-}
-
-.social-icon {
-    padding: 12px;
-    margin: 5px 5px 60px;
-
-    background-color: rgb(46, 50, 82);
-
-    width: 50px;
-    height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 6px;
-}
-
-
-/* Copyright */
-
-.footer-copyright {
-    margin: 15px 0;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-.red {
-    color: rgba(247, 54, 96, 0.5);
-}
-
 
 /* =========================
    1320px RESPONSIVE
@@ -1053,231 +784,207 @@ body.menu-open {
     .menu-btn {
         display: flex;
     }
+}
 
-
-    /* =========================
+/* =========================
        FEATURES
     ========================= */
 
-    .features {
-        width: calc(100% - 70px);
-        margin: 0 auto;
-    }
+.features {
+    width: calc(100% - 70px);
+    margin: 0 auto;
+}
 
-    .feature-item {
-        grid-template-columns: repeat(4, 1fr);
+.feature-item {
+    grid-template-columns: repeat(4, 1fr);
 
-        padding: 40px 35px;
-        gap: 15px;
-    }
+    padding: 40px 35px;
+    gap: 15px;
+}
 
-    .item {
-        margin: 0;
-        padding-left: 25px;
-    }
+.item {
+    margin: 0;
+    padding-left: 25px;
+}
 
 
-    /* =========================
+/* =========================
        STRATEGY
     ========================= */
 
-    #strategy {
-        margin: 100px 30px;
-    }
+#strategy {
+    margin: 100px 30px;
+}
 
-    .strategy-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+.strategy-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    .strategy-heading {
-        width: 50%;
-    }
+.strategy-heading {
+    width: 50%;
+}
 
-    .strategy-subheading {
-        width: 50%;
+.strategy-subheading {
+    width: 50%;
 
-        margin: 0;
-        padding: 50px 30px 0 0;
-    }
-
-
-    /* Strategy cards */
-
-    .strategy-cards-container {
-        gap: 30px;
-    }
-
-    .strategy-cards {
-        width: 100%;
-        height: 470px;
-
-        margin: 40px 0 30px 0;
-        padding: 50px 40px;
-
-        box-sizing: border-box;
-    }
-
-    .card-icon {
-        width: 119px;
-        height: 119px;
-        max-width: 100%;
-    }
-
-    .card-name {
-        margin-top: 35px;
-    }
-
-    .card-name>h5 {
-        font-size: 25px;
-        line-height: 1.3;
-        margin-bottom: 15px;
-    }
-
-    .card-name>p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-
-    .card-btn {
-        margin-top: 25px;
-        padding: 15px 30px;
-    }
+    margin: 0;
+    padding: 50px 30px 0 0;
+}
 
 
-    /* =========================
+/* Strategy cards */
+
+.strategy-cards-container {
+    gap: 30px;
+}
+
+.strategy-cards {
+    width: 100%;
+    height: 470px;
+
+    margin: 40px 0 30px 0;
+    padding: 50px 40px;
+
+    box-sizing: border-box;
+}
+
+.card-icon {
+    width: 119px;
+    height: 119px;
+    max-width: 100%;
+}
+
+.card-name {
+    margin-top: 35px;
+}
+
+.card-name>h5 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.card-name>p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.card-btn {
+    margin-top: 25px;
+    padding: 15px 30px;
+}
+
+
+/* =========================
        ABOUT
     ========================= */
 
-    #about {
-        padding: 90px 30px;
+#about {
+    padding: 90px 30px;
 
-        height: auto;
-        min-height: 800px;
-    }
+    height: auto;
+    min-height: 800px;
+}
 
-    .about-us-img {
-        margin: 0 15px;
-    }
+.about-us-img {
+    margin: 0 15px;
+}
 
-    .about-us-img>img {
-        width: 100%;
-        max-width: 550px;
-        height: auto;
-    }
+.about-us-img>img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
 
-    .about-content-container {
-        padding: 0 30px;
-        margin: 0;
-    }
+.about-content-container {
+    padding: 0 30px;
+    margin: 0;
+}
 
-    .about-us-tab {
-        display: none;
-    }
+.about-us-tab {
+    display: none;
+}
 
 
-    /* =========================
+/* =========================
        LOGOS
     ========================= */
 
-    #logo-container {
-        height: auto;
-        padding: 60px 30px;
-    }
+#logo-container {
+    height: auto;
+    padding: 60px 30px;
+}
 
-    .row-logo {
-        display: flex;
-        gap: 35px;
-        justify-content: space-around;
-        align-items: center;
-    }
+.row-logo {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
-    /* =========================
+/* =========================
        TEAM
     ========================= */
 
-    #team {
-        height: auto;
+#team {
+    height: auto;
 
-        margin: 100px 0 0;
-        padding: 0 30px 100px;
-    }
-
-    .team-heading {
-        margin: 0 auto 50px;
-        max-width: 700px;
-    }
-
-    .team-subtitle>.p4 {
-        margin: 0 auto 40px;
-    }
-
-    .team-card-container {
-        display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-
-        max-width: 1260px;
-        margin: 0 auto;
-    }
-
-    .team-card {
-        width: 100%;
-        height: auto;
-
-        margin: 0 0 60px;
-        padding: 0 0 25px;
-
-        box-sizing: border-box;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        overflow: hidden;
-    }
-
-    .team-card>img {
-        width: 100%;
-        height: 380px;
-
-        object-fit: cover;
-
-        border-radius: 8px 8px 0 0;
-    }
-
-    .team-card>h6 {
-        margin: 25px 0 5px;
-        text-align: center;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-subscribe {
-        width: calc(100% - 80px);
-        max-width: 976px;
-    }
-
-    .footer-cta-btn {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
-        justify-content: center;
-
-        width: 100%;
-    }
-
-    .footer-cta-btn>button {
-        width: 100%;
-    }
+    margin: 100px 0 0;
+    padding: 0 30px 100px;
 }
+
+.team-heading {
+    margin: 0 auto 50px;
+    max-width: 700px;
+}
+
+.team-subtitle>.p4 {
+    margin: 0 auto 40px;
+}
+
+.team-card-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.team-card {
+    width: 100%;
+    height: auto;
+
+    margin: 0 0 60px;
+    padding: 0 0 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.team-card>img {
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.team-card>h6 {
+    margin: 25px 0 5px;
+    text-align: center;
+}
+
 
 /* =========================
    840px RESPONSIVE
@@ -1513,53 +1220,6 @@ body.menu-open {
 
         object-fit: cover;
     }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-subscribe {
-        width: calc(100% - 40px);
-
-        height: auto;
-
-        padding: 40px 24px;
-
-        border-radius: 25px;
-    }
-
-    .subscribe-textfield {
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 20px;
-    }
-
-    .subscribe-email {
-        margin: 0;
-    }
-
-    .subscribe-submit-btn input {
-        width: 100%;
-    }
-
-    .footer-cta-btn {
-        flex-direction: column;
-
-        width: 100%;
-
-        align-items: center;
-    }
-
-    .footer-cta-btn>button {
-        width: 100%;
-        margin: 15px 0 0;
-    }
-
-    .footer-logo {
-        margin-bottom: 60px;
-    }
 }
 
 /* =========================================================
@@ -1794,62 +1454,4 @@ body.menu-open {
         object-fit: cover;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-subscribe {
-        width: calc(100% - 24px);
-
-        padding: 40px 20px;
-    }
-
-    .footer-subscribe-title h4 {
-        font-size: 32px;
-        line-height: 1.25;
-    }
-
-    .footer-subscribe-subtitle p {
-        font-size: 16px;
-    }
-
-    .subscribe-textfield {
-        margin-top: 30px;
-    }
-
-    .subscribe-email input {
-        font-size: 16px;
-        height: 55px;
-    }
-
-    .subscribe-submit-btn input {
-        width: 100%;
-
-        padding: 20px;
-
-        font-size: 16px;
-    }
-
-    #footer-cta {
-        padding: 60px 16px 30px;
-    }
-
-    .footer-logo {
-        width: 200px;
-        margin-bottom: 40px;
-    }
-
-    .footer-cta-btn>button {
-        width: 100%;
-    }
-
-    .footer-contact-num {
-        font-size: 28px;
-    }
-
-    .social-icon {
-        width: 42px;
-        height: 42px;
-    }
 }
