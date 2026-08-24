@@ -325,7 +325,7 @@
 .business-hero {
     width: 100%;
     background-color: var(--white);
-    padding: 0 120px 60px;
+    padding: 0 90px 60px;
     box-sizing: border-box;
 }
 
@@ -894,7 +894,6 @@
     /* Content */
 
     .step-content {
-        width: 100%;
         margin-top: 25px;
         text-align: center;
     }
