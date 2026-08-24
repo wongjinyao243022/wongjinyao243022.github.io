@@ -278,23 +278,23 @@
     height: 350px;
 }
 
-.project-content {
+.project-contents {
     background-color: var(--lightbluegrey);
     padding: 30px 60px;
     width: 50%;
     border-bottom-right-radius: 30px;
 }
 
-.project-content>button {
+.project-contents>button {
     width: 167.969px;
     height: 56.391px;
 }
 
-.project-content>h4 {
+.project-contents>h4 {
     margin: 40px 0px 10px 0px;
 }
 
-.project-content>.p3 {
+.project-contents>.p3 {
     margin-bottom: 30px;
 }
 
