@@ -1141,7 +1141,7 @@
    EACH PROJECT
 ========================================= */
 
-.project-item {
+.project-items {
     width: 100%;
     max-width: 560px;
     display: flex;
@@ -1261,7 +1261,7 @@
    SPACE BETWEEN PROJECTS
 ========================================= */
 
-.project-item+.project-item {
+.project-items+.project-items {
     margin-top: 60px;
 }
 
