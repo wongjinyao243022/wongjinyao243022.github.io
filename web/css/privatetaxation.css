@@ -1459,11 +1459,13 @@
         margin-top: 60px;
     }
 
-    .business-hero-container {
-        display: grid
-    }
 
     .business-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .business-hero-container {
         display: flex;
         flex-direction: column;
     }
