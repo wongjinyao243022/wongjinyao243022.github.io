@@ -115,8 +115,8 @@
 
  .card img {
      width: 100%;
-     object-fit: cover;
      display: block;
+     border-radius: 0;
  }
 
  .card ul {
@@ -232,6 +232,7 @@
  .resource-card img {
      width: 100%;
      display: block;
+     border-radius: 0;
  }
 
  .resource-card .p1 {
@@ -247,9 +248,6 @@
      color: var(--white);
  }
 
- /* =========================================================
-   FAQ SECTION
-========================================================= */
 
  .faq-section {
      width: 100%;
@@ -262,10 +260,6 @@
  }
 
 
- /* =========================================================
-   FAQ CONTAINER
-========================================================= */
-
  .faq-container {
      width: 90%;
      max-width: 1200px;
@@ -277,18 +271,12 @@
  }
 
 
- /* =========================================================
-   FAQ COLUMN
-========================================================= */
 
  .faq-column {
      width: 50%;
  }
 
 
- /* =========================================================
-   FAQ ITEM
-========================================================= */
 
  .faq-item {
      width: 100%;
@@ -296,10 +284,6 @@
      border-bottom: 1px solid rgba(79, 87, 141, 0.15);
  }
 
-
- /* =========================================================
-   QUESTION
-========================================================= */
 
  .faq-question {
      width: 100%;
@@ -319,30 +303,22 @@
  }
 
 
- /* Question text */
+
 
  .faq-question h6 {
      margin: 0;
      padding-right: 30px;
-
      color: var(--darkblue);
  }
 
 
- /* =========================================================
-   PLUS / MINUS BUTTON
-========================================================= */
  .faq-question button {
      width: 30px;
      height: 30px;
-
      flex-shrink: 0;
-
      padding: 0;
      margin: 0;
-
      border: none;
-
      background-color: var(--lightblue);
      color: var(--white);
 
@@ -357,7 +333,6 @@
      cursor: pointer;
  }
 
- /* Remove button background when hover/focus */
 
  .faq-question button:focus,
  .faq-question button:active {
@@ -369,66 +344,6 @@
 
  .faq-question button:hover {
      background-color: var(--rosepink);
- }
-
- /* =========================================================
-   ANSWER
-========================================================= */
-
- .faq-answer {
-     max-height: 0;
-
-     overflow: hidden;
-
-     padding: 0;
-
-     transition:
-         max-height 0.3s ease,
-         padding 0.3s ease;
- }
-
- .faq-answer.p4 {
-     margin: 0;
-
-     padding-right: 40px;
-
-     color: var(--textcolor);
-
-     line-height: 1.7;
- }
-
-
- /* =========================================================
-   ACTIVE ANSWER
-========================================================= */
-
- .faq-item.active .faq-answer {
-     max-height: 200px;
-
-     padding: 0 0 25px;
- }
-
-
- /* =========================================================
-   CHANGE + TO −
-========================================================= */
-
- .faq-item.active .faq-icon {
-     font-size: 0;
- }
-
- .faq-item.active .faq-icon::after {
-     content: "−";
-     font-size: 22px;
- }
-
-
- /* =========================================================
-   HOVER
-========================================================= */
-
- .faq-question:hover h6 {
-     color: var(--rosepink);
  }
 
 

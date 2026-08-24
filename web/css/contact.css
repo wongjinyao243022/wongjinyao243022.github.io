@@ -26,6 +26,7 @@
     height: 80%;
     object-fit: cover;
     display: block;
+    border-radius: 0;
 }
 
 .card-image h5 {
@@ -84,6 +85,7 @@
     width: 22px;
     height: 22px;
     display: block;
+    border-radius: 0;
 }
 
 .contact-right {
@@ -223,7 +225,10 @@
     .contact-right {
         width: 55%;
         padding: 50px;
-        box-sizing: border-box;
+    }
+
+    .contact-info {
+        max-width: 0;
     }
 }
 

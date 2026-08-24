@@ -316,9 +316,8 @@ h6 {
 }
 
 .logo img {
-    width: 205px;
-    height: 46.625px;
     display: block;
+    border-radius: 0;
 }
 
 
@@ -607,6 +606,7 @@ h6 {
     width: 50%;
     height: auto;
     display: block;
+    border-radius: 0;
 }
 
 
@@ -671,8 +671,6 @@ Ideal Tracking Project*/
 }
 
 .hero-overlay h6 {
-    font-size: 24px;
-    font-weight: 400;
     margin: 0;
     text-align: right;
     color: var(--whitebox);
@@ -695,7 +693,7 @@ Ideal Tracking Project*/
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 40px;
-    box-sizing: border-box;
+
 }
 
 
@@ -715,16 +713,14 @@ Ideal Tracking Project*/
 }
 
 .innerhero-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    display: flex;
+    justify-content: space-between;
     margin-top: 75px;
 }
 
 .feature {
     display: flex;
     align-items: center;
-    min-height: 90px;
     padding: 0 35px;
 }
 
@@ -733,7 +729,6 @@ Ideal Tracking Project*/
     height: 90px;
     margin-right: 35px;
     background: var(--rosepink);
-    flex-shrink: 0;
 }
 
 .feature h6 {
@@ -779,14 +774,14 @@ Edge Technology*/
 
 .technology-image {
     width: 100%;
-    height: 267px;
     overflow: hidden;
 }
 
 .technology-image img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 220px;
+    border-radius: 0px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.4s ease;
@@ -801,11 +796,9 @@ Edge Technology*/
     padding: 31px 38px 28px;
     font-family: var(--font-base);
     font-size: 16px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     box-sizing: border-box;
 }
 
@@ -821,7 +814,7 @@ Edge Technology*/
 
 .technology-item p {
     margin: 0;
-    color: #30384c;
+    color: var(--darkblue);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
@@ -858,15 +851,13 @@ Everyday Business */
 .success-section {
     width: 100%;
     padding: 135px 0 40px;
-    box-sizing: border-box;
 }
 
 .success-container {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 110px;
     align-items: center;
     box-sizing: border-box;
@@ -874,18 +865,12 @@ Everyday Business */
 
 .success-image {
     width: 100%;
-    height: 589px;
     overflow: hidden;
-
-    border-radius: 0 0 0 22px;
 }
 
 .success-image img {
     width: 100%;
-    height: 100%;
-
     display: block;
-
     object-fit: cover;
     object-position: center;
 }
@@ -920,7 +905,11 @@ Everyday Business */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
+
+}
+
+.feature-icon img {
+    border-radius: 0;
 }
 
 .feature-icon i {
@@ -954,17 +943,10 @@ Achieve Your Goals */
 .steps-container {
     width: 100%;
     max-width: 1510px;
-
     margin: 0 auto;
     padding: 0 106px;
-
-    box-sizing: border-box;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
 
 .steps-header {
     display: grid;
@@ -1191,6 +1173,9 @@ Achieve Your Goals */
     align-items: center;
 }
 
+.quote-icon img {
+    border-radius: 0;
+}
 
 .quote-icon i {
     font-size: 48px;
@@ -1370,28 +1355,18 @@ Achieve Your Goals */
 
 
 .mobile-menu-link {
-
     width: 100%;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     padding: 0 0 15px;
-
     border: none;
-
     border-bottom: none;
-
     background: transparent;
-
     color: var(--white);
-
     cursor: pointer;
-
     text-align: left;
+    border-radius: 0;
 }
 
 
@@ -2010,9 +1985,7 @@ img {
         width: 100%;
     }
 
-    .technology-image {
-        height: 300px;
-    }
+
 
     .technology-title {
         padding: 32px 30px 0;
