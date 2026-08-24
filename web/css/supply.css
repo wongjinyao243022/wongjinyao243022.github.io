@@ -1,0 +1,1244 @@
+/*Supply Intro*/
+
+.supply-intro {
+    width: 100%;
+    padding: 70px 0 60px;
+    background: var(--white);
+    box-sizing: border-box;
+}
+
+.supply-intro-container {
+    width: 100%;
+    max-width: 1085px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Image */
+
+.supply-intro-image {
+    width: 971px;
+    height: 553px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.supply-intro-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Description */
+
+.supply-intro-text {
+    width: 971px;
+    margin: 25px auto 0;
+}
+
+.supply-intro-text p {
+    margin: 0 0 10px;
+
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 400;
+
+    color: var(--darkblue);
+}
+
+
+/* ==================================================
+   PROJECT CHALLENGES
+================================================== */
+
+.project-challenges {
+    width: 100%;
+    background: var(--white);
+    padding: 0 0 80px;
+    box-sizing: border-box;
+}
+
+.challenges-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Title */
+
+.challenges-title {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 30px;
+    box-sizing: border-box;
+}
+
+.challenges-title h3 {
+    margin: 0;
+}
+
+
+/* Challenge Grid */
+
+.challenge-grid {
+    width: 1135.38px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 560.19px 560.19px;
+    column-gap: 15px;
+    row-gap: 23px;
+}
+
+
+/* Challenge Card */
+.challenge-card {
+    width: 560.19px;
+    height: 293px;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Pink */
+
+.challenge-card.pink {
+    background: var(--rosepink);
+}
+
+
+/* Blue */
+
+.challenge-card.blue {
+    background: var(--slateblue);
+}
+
+
+/* Card Title */
+
+.challenge-card h5 {
+    margin: 0 0 16px;
+    color: var(--white);
+}
+
+.challenge-card p {
+    width: 85%;
+    margin: 0;
+    color: var(--white);
+}
+
+
+
+.investment-meta {
+    width: 100%;
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+    font-family: var(--font-base);
+    font-size: 17px;
+    line-height: 30.6px;
+
+    color: var(--slateblue);
+}
+
+.investment-meta a {
+    color: var(--rosepink);
+    text-decoration: none;
+}
+
+/* ==================================================
+   PROJECT SCOPE
+================================================== */
+
+.project-scope {
+    width: 100%;
+    background: var(--white);
+    padding: 0 0 150px;
+    box-sizing: border-box;
+}
+
+
+/* Scope container */
+
+.scope-container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* Scope title */
+
+.scope-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-scope-title-wrap .eyebrow {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-scope-title {
+    width: 100%;
+    text-align: center;
+}
+
+.project-scope-title h3 {
+    margin: 0;
+}
+
+
+.scope-title h3 {
+    margin: 0;
+}
+
+
+/* Scope Grid*/
+
+.scope-grid {
+    width: 100%;
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: 597px 597px;
+
+    column-gap: 30px;
+    row-gap: 100px;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+/* Scope Card*/
+
+.scope-card {
+    position: relative;
+
+    width: 597px;
+    height: 398px;
+
+    box-sizing: border-box;
+}
+
+
+/* Image */
+
+.scope-image {
+    width: 597px;
+    height: 398px;
+
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.scope-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/*White box*/
+
+.scope-content {
+    position: absolute;
+
+    width: 535px;
+    height: 161px;
+
+    left: 50%;
+    bottom: -73px;
+
+    transform: translateX(-50%);
+
+    background: var(--white);
+
+    box-sizing: border-box;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* Scope card title */
+
+.scope-content h5 {
+    margin: 0 0 10px;
+
+    color: var(--darknavy);
+}
+
+
+/* Scope card subtitle */
+
+.scope-content p {
+    width: 85%;
+
+    margin: 0;
+
+    color: var(--darkblue);
+}
+
+
+
+
+/* ==================================================
+   EXPECTED OUTCOME
+================================================== */
+
+.expected-outcome {
+    width: 100%;
+    background: var(--white);
+    padding: 0 0 120px;
+    box-sizing: border-box;
+}
+
+
+/* Title */
+
+.expected-outcome-title {
+    width: 100%;
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.expected-outcome-title .eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expected-outcome-title h3 {
+    margin: 0;
+}
+
+
+/* ==================================================
+   OUTCOME LIST
+================================================== */
+
+.outcome-list {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   OUTCOME ROW
+================================================== */
+
+.outcome-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    column-gap: 45px;
+
+    margin-bottom: 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* Last row */
+
+.outcome-row:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.outcome-image {
+    width: 100%;
+
+    aspect-ratio: 721 / 513;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.outcome-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.outcome-content {
+    width: 100%;
+    min-height: 0;
+
+    padding: 0 20px 5px 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* Title */
+
+.outcome-content h5 {
+    margin: 0 0 12px;
+
+    color: var(--darknavy);
+}
+
+
+/* Description */
+
+.outcome-content p {
+    width: 90%;
+
+    margin: 0;
+
+    color: var(--darkblue);
+}
+
+
+/*LAPTOP — 1320px*/
+@media screen and (max-width: 1320px) {
+
+    /* Supply Intro */
+    .supply-intro {
+        padding: 55px 0 50px;
+    }
+
+    .supply-intro-container {
+        width: 90%;
+        max-width: 1085px;
+    }
+
+    .supply-intro-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 971 / 553;
+    }
+
+    .supply-intro-text {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+
+    /* Challenges */
+
+    .project-challenges {
+        padding-bottom: 65px;
+    }
+
+    .challenges-container {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .challenge-grid {
+        width: 100%;
+        max-width: 1135.38px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+    .challenge-card {
+        width: 100%;
+        height: 270px;
+    }
+
+
+    /* Scope */
+
+    .project-scope {
+        padding-bottom: 125px;
+    }
+
+    .scope-container {
+        width: 90%;
+        max-width: 1230px;
+    }
+
+    .scope-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        column-gap: 25px;
+        row-gap: 90px;
+    }
+
+    .scope-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .scope-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 597 / 398;
+    }
+
+    .scope-content {
+        width: 90%;
+        height: 145px;
+        bottom: -65px;
+    }
+
+
+    /* Expected Outcome */
+
+    .outcome-list {
+        width: 100%;
+    }
+
+    .outcome-row {
+        width: 100%;
+
+        grid-template-columns:
+            minmax(0, 1fr) minmax(0, 1fr);
+
+        column-gap: 35px;
+    }
+
+    .outcome-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 721 / 513;
+    }
+
+    .outcome-content {
+        width: 100%;
+        height: auto;
+
+        min-height: 0;
+
+        padding: 0 25px 5px 0;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 840px) {
+
+    /*Supply Info*/
+    .supply-intro {
+        padding: 45px 0 50px;
+    }
+
+    .supply-intro-container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .supply-intro-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .supply-intro-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .supply-intro-text p {
+        margin-bottom: 10px;
+    }
+
+
+    .investment-meta {
+        width: 100%;
+
+        margin-bottom: 25px;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       CHALLENGES
+    ===================================================== */
+
+    .project-challenges {
+        padding-bottom: 60px;
+    }
+
+    .challenges-container {
+        width: 90%;
+        max-width: 720px;
+    }
+
+    .challenges-title {
+        padding-bottom: 25px;
+    }
+
+    .challenge-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .challenge-card {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* PROJECT SCOPE*/
+    .project-scope {
+        padding: 0 0 120px;
+    }
+
+    .scope-container {
+        width: 90%;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+
+    /* Scope title */
+
+    .scope-title {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .project-scope-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-scope-title h3 {
+        margin: 0;
+    }
+
+
+    /* Scope Grid */
+
+    .scope-grid {
+        width: 100%;
+        max-width: 560px;
+
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        row-gap: 90px;
+    }
+
+
+    /* Scope Card */
+
+    .scope-card {
+        width: 100%;
+        max-width: 560px;
+
+        height: auto;
+
+        position: relative;
+    }
+
+
+    /* Image */
+
+    .scope-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 3 / 2;
+
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .scope-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* White Box */
+
+    .scope-content {
+        width: calc(100% - 40px);
+        max-width: 520px;
+
+        height: 145px;
+
+        left: 50%;
+        bottom: -65px;
+
+        transform: translateX(-50%);
+
+        padding: 20px;
+
+        box-sizing: border-box;
+
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    /* Scope card title */
+
+    .scope-content h5 {
+        margin: 0 0 8px;
+
+        color: var(--darknavy);
+    }
+
+
+    /* Scope card subtitle */
+
+    .scope-content p {
+        width: 90%;
+
+        margin: 0;
+
+        color: var(--darkblue);
+    }
+
+
+    /*Expected outcome*/
+    .expected-outcome {
+        width: 100%;
+        padding: 0 0 90px;
+    }
+
+
+    /* Title */
+
+    .expected-outcome-title {
+        width: 90%;
+        margin: 0 auto 30px;
+
+        text-align: center;
+    }
+
+
+    /* Outcome List */
+
+    .outcome-list {
+        width: 90%;
+        max-width: 680px;
+
+        margin: 0 auto;
+    }
+
+
+    /* Outcome Row */
+
+    .outcome-row {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 0 50px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Last row */
+
+    .outcome-row:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* Image */
+
+    .outcome-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 3 / 2;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .outcome-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* Content */
+
+    .outcome-content {
+        width: 100%;
+        height: auto;
+
+        padding: 0;
+
+        margin-top: 0;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+
+    /* Title */
+
+    .outcome-content h5 {
+        margin: 0 0 8px;
+
+        color: var(--darknavy);
+    }
+
+
+    /* Description */
+
+    .outcome-content p {
+        width: 100%;
+
+        margin: 0;
+
+        color: var(--darkblue);
+    }
+}
+
+/*Small tablet 600px*/
+@media screen and (max-width: 600px) {
+
+    /*Info*/
+    .supply-intro {
+        padding: 40px 0 45px;
+    }
+
+    .supply-intro-container {
+        width: calc(100% - 32px);
+        max-width: 100%;
+    }
+
+    .supply-intro-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+    }
+
+    .supply-intro-text {
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    .supply-intro-text p {
+        margin-bottom: 8px;
+    }
+
+    .investment-meta {
+        margin-bottom: 20px;
+
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /*Project challenges*/
+    .project-challenges {
+        padding-bottom: 50px;
+    }
+
+    .challenges-container {
+        width: calc(100% - 32px);
+        max-width: 100%;
+    }
+
+    .challenges-title {
+        padding-bottom: 20px;
+    }
+
+    .challenge-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .challenge-card {
+        width: 100%;
+        height: 220px;
+
+        padding: 0 20px;
+    }
+
+    .challenge-card h5 {
+        margin-bottom: 12px;
+    }
+
+    .challenge-card p {
+        width: 90%;
+    }
+
+    /*Project scope*/
+    .project-scope {
+        padding: 0 0 95px;
+    }
+
+    .scope-container {
+        width: calc(100% - 32px);
+        max-width: 100%;
+    }
+
+    .scope-title {
+        margin-bottom: 25px;
+    }
+
+    .scope-grid {
+        width: 100%;
+        max-width: 460px;
+
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+        row-gap: 75px;
+    }
+
+    .scope-card {
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .scope-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 3 / 2;
+
+        border-radius: 10px;
+    }
+
+    .scope-content {
+        width: calc(100% - 28px);
+
+        height: 120px;
+
+        left: 50%;
+        bottom: -54px;
+
+        padding: 14px;
+    }
+
+    .scope-content h5 {
+        margin-bottom: 6px;
+    }
+
+    .scope-content p {
+        width: 92%;
+    }
+
+    /*Expected outcome*/
+
+    .expected-outcome {
+        padding: 0 0 80px;
+    }
+
+    .expected-outcome-title {
+        margin-bottom: 30px;
+    }
+
+    /*Outcome List*/
+    .outcome-list {
+        width: calc(100% - 32px);
+        max-width: 100%;
+
+        margin: 0 auto;
+    }
+
+    /*Outcome row*/
+
+    .outcome-row {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 40px;
+    }
+
+    /*Outcome image*/
+
+    .outcome-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 3 / 2;
+    }
+
+    /*Outcome content*/
+    .outcome-content {
+        width: 100%;
+        height: auto;
+
+        padding: 15px 0 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .outcome-content h5 {
+        margin: 0 0 8px;
+    }
+
+    .outcome-content p {
+        width: 100%;
+    }
+}
+
+/*Mobile -400px*/
+
+@media screen and (max-width: 400px) {
+
+    /*Info*/
+    .supply-intro {
+        padding: 32px 0 38px;
+    }
+
+    .supply-intro-container {
+        width: calc(100% - 24px);
+    }
+
+    .supply-intro-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .supply-intro-text {
+        margin-top: 15px;
+    }
+
+    .investment-meta {
+        font-size: 13px;
+        line-height: 20px;
+
+        margin-bottom: 18px;
+    }
+
+    /*Project challenges*/
+    .project-challenges {
+        padding-bottom: 40px;
+    }
+
+    .challenges-container {
+        width: calc(100% - 24px);
+    }
+
+    .challenges-title {
+        padding-bottom: 18px;
+    }
+
+    .challenge-grid {
+        gap: 12px;
+    }
+
+    .challenge-card {
+        height: 190px;
+        padding: 0 15px;
+    }
+
+    .challenge-card h5 {
+        margin-bottom: 8px;
+    }
+
+    .challenge-card p {
+        width: 95%;
+    }
+
+    /*Project scope*/
+    .project-scope {
+        padding-bottom: 85px;
+    }
+
+    .scope-container {
+        width: calc(100% - 24px);
+    }
+
+    .scope-title {
+        margin-bottom: 20px;
+    }
+
+    .scope-grid {
+        width: 100%;
+        max-width: 100%;
+
+        row-gap: 65px;
+    }
+
+    .scope-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .scope-image {
+        width: 100%;
+
+        aspect-ratio: 3 / 2;
+
+        border-radius: 9px;
+    }
+
+    .scope-content {
+        width: calc(100% - 22px);
+
+        height: 108px;
+
+        bottom: -48px;
+
+        padding: 12px;
+    }
+
+    .scope-content h5 {
+        margin-bottom: 5px;
+    }
+
+    .scope-content p {
+        width: 94%;
+    }
+
+    /*Expected outcome*/
+    .expected-outcome {
+        padding-bottom: 60px;
+    }
+
+    .expected-outcome-title {
+        margin-bottom: 20px;
+    }
+
+    .expected-outcome-title h3 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /*Outcome list*/
+    .outcome-list {
+        width: calc(100% - 24px);
+        max-width: 100%;
+    }
+
+    /*Outcome row*/
+    .outcome-row {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 30px;
+    }
+
+    /*Outcome image*/
+    .outcome-image {
+        width: 100%;
+
+        aspect-ratio: 3 / 2;
+
+        overflow: hidden;
+    }
+
+
+    /*Outcome Content*/
+
+    .outcome-content {
+        width: 100%;
+
+        height: auto;
+
+        padding: 12px 0 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .outcome-content h5 {
+        margin: 0 0 7px;
+    }
+
+    .outcome-content p {
+        width: 100%;
+    }
+}
