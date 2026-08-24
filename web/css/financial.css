@@ -1,7 +1,4 @@
-/* =========================
-   FINANCIAL INTRO
-========================= */
-
+/*Intro*/
 .financial-intro {
     width: 100%;
     padding-top: 80px;
@@ -31,26 +28,28 @@
 
 .financial-intro-text p {
     margin: 0;
+
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    letter-spacing: 0;
 }
 
 
-/* =========================
-   PROJECT OVERVIEW
-========================= */
-
+/*Project iverview*/
 .project-overview {
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .project-overview-container {
-    width: 100%;
+    width: 1150.38px;
     margin: 0 auto;
 }
 
-
-/* title */
+/*Title*/
 
 .project-overview-title {
     width: 700px;
@@ -59,91 +58,1072 @@
 }
 
 .project-overview-title h3 {
-    margin: 0 0 15px;
+    margin: 0 0 8px;
+
+    font-family: var(--font-heading);
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 61.6px;
 }
 
 .project-overview-title p {
-    margin: 0 auto;
-    max-width: 620px;
+    width: 100%;
+    margin: 0;
+
+    font-family: var(--font-base);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+
+    letter-spacing: 0;
 }
 
-
-/* =========================
-   OVERVIEW GRID
-========================= */
+/*Grid*/
 
 .overview-grid {
-    width: 100%;
-    margin-top: 55px;
+    width: 1150.38px;
+
+    margin-top: 35px;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-    gap: 0;
+    grid-template-columns: 560.19px 560.19px;
+
+    column-gap: 30px;
+    row-gap: 45px;
 }
 
-
-/* =========================
-   CARD
-========================= */
+/*Card*/
 
 .overview-card {
-    min-height: 225px;
+    width: 560.19px;
+    height: 293px;
 
-    padding: 35px 60px;
+    border: 1px solid #e6e8ee;
 
-    border: 1px solid #e5e5e5;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
 
-    display: flex;
-    flex-direction: column;
+    padding: 0 46px;
+
+    box-sizing: border-box;
 }
 
 
-/* top row */
 
 .overview-card-header {
     display: flex;
     align-items: center;
+
     gap: 18px;
+
+    padding-top: 25px;
 }
 
 
-/* icon circle */
+
+
+/*Icon*/
 
 .overview-icon {
     width: 107px;
     height: 107px;
 
-    flex-shrink: 0;
+    border-radius: 50%;
+
+    background-color: var(--lightbluegrey);
+    border: 7px solid var(--lavendablue);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .overview-icon img {
-    width: 107px;
-    height: 107px;
+    width: 55px;
+    height: 55px;
+
     object-fit: contain;
     display: block;
 }
 
-
-/* card title */
-
+/*Title*/
 .overview-card-header h6 {
     margin: 0;
+
     white-space: nowrap;
+
+    font-family: var(--font-heading);
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
-
-/* description */
+/*Description*/
 
 .overview-card>p {
-    margin-top: 15px;
-    margin-bottom: 0;
+    width: 350px;
+
+    margin: 13px auto 0;
 
     text-align: center;
 
-    padding-left: 40px;
+    font-family: var(--font-base);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+/*Why Choose us*/
+.why-choose {
+    width: 100%;
+    padding: 20px 0 100px;
+    background: var(--white);
+}
+
+/*Title*/
+.why-choose-title {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.why-choose-title p {
+    margin: 0 0 3px;
+
+    font-family: var(--font-base);
+
+    font-size: 10px;
+    line-height: 14px;
+
+    font-weight: 400;
+
+    color: var(--rosepink);
+}
+
+
+.why-choose-title h3 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: 28px;
+    line-height: 36px;
+
+    font-weight: 700;
+
+    color: #000000;
+}
+
+/*Card grid*/
+.why-choose-grid {
+    width: 1065.38px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 502.69px 502.69px;
+
+    column-gap: 60px;
+    row-gap: 68px;
+}
+
+/*card*/
+.why-card {
+    width: 502.69px;
+    height: 529.35px;
+
+    background: var(--lightbluegrey);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+}
+
+
+/*Card image*/
+.why-card-image {
+    width: 502px;
+    height: 335px;
+
+    overflow: hidden;
+
+    border-radius: 8px 8px 0 0;
+}
+
+
+.why-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*card content*/
+
+.why-card-content {
+    width: 100%;
+
+    height: 194.35px;
+
+    padding: 20px 30px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+/*Card title*/
+
+.why-card-content h6 {
+    margin: 0 0 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: 22px;
+    line-height: 28px;
+
+    font-weight: 700;
+
+    color: #000000;
+}
+
+/*card description*/
+
+.why-card-content p {
+    width: 100%;
+
+    margin: 0 auto;
+
+    font-family: var(--font-base);
+
+    font-size: 16px;
+    line-height: 27.2px;
+
+    font-weight: 400;
+
+    color: #555555;
+}
+
+.overview-card:hover .overview-icon {
+    background-color: var(--rosepink);
+    border-color: var(--rosepink);
+}
+
+.overview-card:hover .overview-icon img {
+    filter: brightness(0) invert(1);
+}
+
+/*Laptop 1320px*/
+
+@media screen and (max-width: 1320px) {
+
+    /*Intro*/
+    .financial-intro {
+        padding-top: 70px;
+    }
+
+
+    .financial-intro-container {
+        width: 90%;
+        max-width: 1050px;
+
+        margin: 0 auto;
+    }
+
+
+    .financial-intro-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 1122 / 627;
+    }
+
+
+    .financial-intro-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .financial-intro-text {
+        margin-top: 13px;
+    }
+
+
+    .financial-intro-text p {
+        font-size: 15px;
+        line-height: 25.5px;
+    }
+
+    /*Overview*/
+
+    .project-overview {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+
+
+    .project-overview-container {
+        width: 90%;
+        max-width: 1020px;
+
+        margin: 0 auto;
+    }
+
+    /*Title*/
+    .project-overview-title {
+        width: 650px;
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    .project-overview-title h3 {
+        margin-bottom: 7px;
+
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+
+    .project-overview-title p {
+        font-size: 15px;
+        line-height: 25.5px;
+    }
+
+
+    /*Grid*/
+    .overview-grid {
+        width: 100%;
+
+        margin-top: 30px;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+
+    /*Card*/
+    .overview-card {
+        width: 100%;
+        height: 245px;
+
+        padding: 0 32px;
+
+        box-sizing: border-box;
+    }
+
+    /*Card header*/
+
+
+    .overview-card-header {
+        gap: 15px;
+
+        padding-top: 20px;
+    }
+
+    /*Icon*/
+
+    .overview-icon {
+        width: 85px;
+        height: 85px;
+
+        border-width: 5px;
+    }
+
+
+    .overview-icon img {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    /*Card Title*/
+
+    .overview-card-header h6 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /*Description*/
+    .overview-card>p {
+        width: 100%;
+        max-width: 320px;
+
+        margin-top: 10px;
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /*Why choose us*/
+    .why-choose {
+        padding: 20px 0 80px;
+    }
+
+
+
+    /*Title*/
+
+    .why-choose-title {
+        margin-bottom: 30px;
+    }
+
+
+    .why-choose-title p {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+
+    .why-choose-title h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    /*Card Grid*/
+
+    .why-choose-grid {
+        width: 100%;
+        max-width: 1000px;
+
+        margin: 0 auto;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 30px;
+        row-gap: 55px;
+    }
+
+    /*Card*/
+
+    .why-card {
+        width: 100%;
+        height: auto;
+
+        min-height: 510px;
+    }
+
+    /*Image*/
+    .why-card-image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 502 / 335;
+    }
+
+
+    .why-card-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    /*Card Content*/
+
+    .why-card-content {
+        height: auto;
+        min-height: 185px;
+
+        padding: 18px 25px 20px;
+    }
+
+
+    .why-card-content h6 {
+        margin-bottom: 17px;
+
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .why-card-content p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+
+
+
+    /*Tablet 840px*/
+    @media screen and (max-width: 840px) {
+
+        /*Intro*/
+        .financial-intro {
+            padding-top: 55px;
+        }
+
+        .financial-intro-container {
+            width: calc(100% - 60px);
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .financial-intro-image {
+            width: 100%;
+            height: auto;
+
+            aspect-ratio: 780 / 546;
+        }
+
+        .financial-intro-text {
+            margin-top: 14px;
+        }
+
+        .financial-intro-text p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+
+        /*Overview*/
+        .project-overview {
+            padding: 50px 0 60px;
+        }
+
+
+        .project-overview-container {
+            width: calc(100% - 60px);
+            max-width: 780px;
+
+            margin: 0 auto;
+        }
+
+
+        /*Title*/
+
+        .project-overview-title {
+            width: 100%;
+            max-width: 650px;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+
+        .project-overview-title h3 {
+            margin-bottom: 8px;
+
+            font-size: 38px;
+            line-height: 52px;
+        }
+
+
+        .project-overview-title p {
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+
+
+        /*Grid*/
+
+        .overview-grid {
+            width: 100%;
+
+            margin-top: 35px;
+
+            grid-template-columns: 1fr;
+
+            row-gap: 22px;
+        }
+
+
+        /*Card*/
+
+        .overview-card {
+            width: 100%;
+            height: auto;
+
+            min-height: 200px;
+
+            padding: 0 35px;
+
+            box-sizing: border-box;
+        }
+
+
+        /*Card Header*/
+
+        .overview-card-header {
+            gap: 18px;
+
+            padding-top: 22px;
+        }
+
+        /*Icon*/
+
+        .overview-icon {
+            width: 88px;
+            height: 88px;
+
+            border-width: 6px;
+        }
+
+
+        .overview-icon img {
+            width: 46px;
+            height: 46px;
+        }
+
+
+        /*Card Title*/
+
+        .overview-card-header h6 {
+            white-space: normal;
+
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+
+        /*Description*/
+
+        .overview-card>p {
+            width: 100%;
+            max-width: 430px;
+
+            margin: 15px auto 0;
+
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        /*Why Choose Us*/
+
+        .why-choose {
+            padding: 20px 0 70px;
+        }
+
+        /*Title*/
+
+        .why-choose-title {
+            margin-bottom: 30px;
+        }
+
+        .why-choose-title p {
+            font-size: 9px;
+            line-height: 13px;
+        }
+
+        .why-choose-title h3 {
+            font-size: 25px;
+            line-height: 34px;
+        }
+
+        /*Grid*/
+
+        .why-choose-grid {
+            width: calc(100% - 60px);
+            max-width: 720px;
+
+            grid-template-columns: 1fr;
+
+            row-gap: 30px;
+        }
+
+        /*Card*/
+
+        .why-card {
+            width: 100%;
+            height: auto;
+
+            min-height: 0;
+        }
+
+        /*Image*/
+
+        .why-card-image {
+            width: 100%;
+            height: auto;
+
+            aspect-ratio: 502 / 335;
+        }
+
+        /*Content*/
+
+        .why-card-content {
+            height: auto;
+            min-height: 170px;
+
+            padding: 22px 25px 25px;
+        }
+
+        .why-card-content h6 {
+            margin-bottom: 15px;
+
+            font-size: 21px;
+            line-height: 29px;
+        }
+
+        .why-card-content p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+    }
+
+    /*Small Tablet 600px*/
+    @media screen and (max-width: 600px) {
+
+        /*Intro*/
+        .financial-intro {
+            padding-top: 45px;
+        }
+
+        .financial-intro-container {
+            width: calc(100% - 40px);
+            max-width: 600px;
+        }
+
+        .financial-intro-text {
+            margin-top: 12px;
+        }
+
+        .financial-intro-text p {
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+
+        /*Overview*/
+        .project-overview {
+            padding: 45px 0 55px;
+        }
+
+
+        .project-overview-container {
+            width: calc(100% - 32px);
+
+            margin: 0 auto;
+        }
+
+
+        .project-overview-title {
+            width: 100%;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+
+        .project-overview-title h3 {
+            margin-bottom: 8px;
+
+            font-size: 32px;
+            line-height: 43px;
+        }
+
+
+        .project-overview-title p {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        /*Grid*/
+
+        .overview-grid {
+            width: 100%;
+
+            margin-top: 30px;
+
+            grid-template-columns: 1fr;
+
+            row-gap: 20px;
+        }
+
+
+        /*Card*/
+
+        .overview-card {
+            width: 100%;
+            height: auto;
+
+            min-height: 190px;
+
+            padding: 0 25px;
+
+            box-sizing: border-box;
+        }
+
+        /*Card Header*/
+
+        .overview-card-header {
+            gap: 15px;
+
+            padding-top: 20px;
+        }
+
+
+        /*Icon*/
+
+        .overview-icon {
+            width: 78px;
+            height: 78px;
+
+            border-width: 5px;
+
+            flex-shrink: 0;
+        }
+
+
+
+        .overview-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        /*Card Title*/
+
+        .overview-card-header h6 {
+            white-space: normal;
+
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+
+        /*Description*/
+
+        .overview-card>p {
+            width: 100%;
+            max-width: 330px;
+
+            margin: 15px auto 0;
+
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        /*Why choose us*/
+        .why-choose {
+            padding: 12px 0 50px;
+        }
+
+        .why-choose-title {
+            margin-bottom: 22px;
+        }
+
+        .why-choose-title h3 {
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+        .why-choose-grid {
+            width: calc(100% - 40px);
+            max-width: 600px;
+
+            row-gap: 32px;
+        }
+
+        .why-card {
+            min-height: 400px;
+        }
+
+        .why-card-content {
+            min-height: 160px;
+
+            padding: 16px 22px;
+        }
+
+        .why-card-content h6 {
+            margin-bottom: 12px;
+
+            font-size: clamp(17px, 2.8vw, 18px);
+            line-height: 24px;
+        }
+
+        .why-card-content p {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+
+    /*Mobile 440px*/
+    @media screen and (max-width: 440px) {
+
+        /*Intro*/
+        .financial-intro {
+            padding-top: 35px;
+        }
+
+        .financial-intro-container {
+            width: calc(100% - 32px);
+            max-width: none;
+        }
+
+        .financial-intro-text {
+            margin-top: 10px;
+        }
+
+        .financial-intro-text p {
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+
+        /*Overview*/
+        .project-overview {
+            padding-top: 32px;
+            padding-bottom: 30px;
+        }
+
+        .project-overview-container {
+            width: calc(100% - 32px);
+            max-width: none;
+        }
+
+        /*Title → left aligned*/
+        .project-overview-title {
+            width: 100%;
+            max-width: 100%;
+
+            margin: 0;
+
+            text-align: left;
+        }
+
+        .project-overview-title h3 {
+            margin-bottom: 10px;
+
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .project-overview-title p {
+            text-align: left;
+
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+        .overview-grid {
+            margin-top: 20px;
+            row-gap: 18px;
+        }
+
+        .overview-card {
+            width: 100%;
+            height: auto;
+            min-height: 230px;
+
+            padding: 22px 20px;
+
+            text-align: left;
+        }
+
+        .overview-card-header {
+            flex-direction: column;
+            align-items: flex-start;
+
+            gap: 12px;
+
+            padding-top: 0;
+        }
+
+        .overview-icon {
+            width: 64px;
+            height: 64px;
+
+            border-width: 4px;
+        }
+
+        .overview-icon img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .overview-card-header h6 {
+            font-size: clamp(15px, 3.8vw, 17px);
+            line-height: 23px;
+        }
+
+        .overview-card>p {
+            width: 100%;
+            max-width: 100%;
+
+            margin: 10px 0 0;
+
+            text-align: left;
+
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+
+        .why-choose {
+            padding: 10px 0 45px;
+        }
+
+        .why-choose-title {
+            margin-bottom: 18px;
+        }
+
+        .why-choose-title p {
+            font-size: 8px;
+            line-height: 12px;
+        }
+
+        .why-choose-title h3 {
+            font-size: 19px;
+            line-height: 26px;
+        }
+
+        .why-choose-grid {
+            width: calc(100% - 32px);
+            max-width: none;
+
+            row-gap: 26px;
+        }
+
+        .why-card {
+            min-height: 350px;
+        }
+
+        .why-card-content {
+            min-height: 145px;
+
+            padding: 14px 18px;
+        }
+
+        .why-card-content h6 {
+            margin-bottom: 10px;
+
+            font-size: clamp(15px, 4vw, 16px);
+            line-height: 22px;
+        }
+
+        .why-card-content p {
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
 }

@@ -79,8 +79,10 @@
 .header-btn {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    text-decoration: none;
+    position: absolute;
+    right: 105px;
+    top: 20px;
+    z-index: 1000;
 }
 
 .request-phone-btn {
@@ -168,15 +170,13 @@
 
 .overlay-main-btn {
     position: absolute;
-    top: 30px;
+    top: 90px;
     right: 35px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1001;
 }
-
 
 /* Arrow */
 
@@ -344,6 +344,11 @@ body.menu-open {
     flex-direction: column;
     gap: 20px;
     width: 100%
+}
+
+.overlay-btn:hover {
+    background-color: rgb(35, 38, 62);
+
 }
 
 /* home page hero banner */
