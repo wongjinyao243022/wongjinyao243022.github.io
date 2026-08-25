@@ -1710,7 +1710,7 @@ img {
     padding: 22px 42px;
     border: 2px solid rgba(205, 203, 234, 0.2);
     margin: 80px 6.5px 0;
-    width: 444px;
+    width: 100%;
     text-decoration: none;
     justify-content: center;
     display: flex;
