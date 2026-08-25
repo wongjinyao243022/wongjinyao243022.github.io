@@ -1680,6 +1680,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 
@@ -1695,6 +1696,7 @@ img {
 .footer-cta-btn {
     display: flex;
     flex-direction: row;
+    width: 90%;
 }
 
 .footer-cta-btn>.button-link>.p4 {
@@ -1724,6 +1726,9 @@ img {
     margin: 40px 0;
 }
 
+.footer-contact-link {
+    text-decoration: none;
+}
 
 /* Social icons */
 
@@ -2258,14 +2263,6 @@ img {
     .header {
         padding: 15px 16px;
     }
-
-    .logo img {
-        width: auto;
-        max-width: 150px;
-        height: auto;
-    }
-
-
 
     .menu-btn {
         width: 50px;
