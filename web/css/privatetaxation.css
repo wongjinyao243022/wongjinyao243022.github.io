@@ -1473,6 +1473,9 @@
     .business-hero-content {
         padding: 40px 0;
         text-align: center;
+        Display: flex;
+        Flex-direction: column;
+        Justify-content: center;
     }
 
     .business-hero-image {
