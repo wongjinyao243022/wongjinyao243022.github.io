@@ -331,7 +331,7 @@ h6 {
     flex: 0 1 auto;
 }
 
-.menu .p4 {
+.menu .supporttxt {
     text-decoration: none;
     color: var(--textcolor);
     white-space: nowrap;
@@ -392,8 +392,9 @@ h6 {
     pointer-events: auto;
 }
 
-.submenu .p5 {
+.submenu .list {
     display: block;
+    text-decoration: none;
     padding: 18px 20px;
     color: var(--white);
     background: var(--slateblue);
@@ -401,7 +402,7 @@ h6 {
 
 }
 
-.submenu .p5:hover {
+.submenu .list:hover {
     background-color: var(--rosepink);
 }
 
@@ -1398,7 +1399,7 @@ Achieve Your Goals */
 }
 
 
-.mobile-submenu .p2 {
+.mobile-submenu .quote {
     color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1465,7 +1466,7 @@ Achieve Your Goals */
     box-sizing: border-box;
 }
 
-button.overlay-btn>.p4 {
+button.overlay-btn>.supporttxt {
     color: var(--white);
 }
 
@@ -1594,7 +1595,7 @@ img {
     text-align: center;
 }
 
-.footer-subscribe-subtitle .p4 {
+.footer-subscribe-subtitle .supporttxt {
     color: var(--slateblue);
 }
 
@@ -1692,7 +1693,7 @@ img {
     flex-direction: row;
 }
 
-.footer-cta-btn>.button-link>.p4 {
+.footer-cta-btn>.button-link>.supporttxt {
     font-weight: 600;
     color: var(--white);
     line-height: 20.4px;
