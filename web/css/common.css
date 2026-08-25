@@ -1990,6 +1990,15 @@ img {
     .footer-cta-btn>button {
         width: 100%;
     }
+
+    .team-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-card {
+        width: 45%;
+    }
 }
 
 /* === Tablet  === */
@@ -2174,6 +2183,10 @@ img {
 
     .hero-overlay h6 {
         text-align: center;
+    }
+
+    .team-card {
+        width: 100%;
     }
 
     /* =========================
