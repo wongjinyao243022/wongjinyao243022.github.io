@@ -193,7 +193,6 @@
 @media (max-width: 840px) {
 
 
-
     .about-intro-container {
         flex-direction: column;
         gap: 40px;
@@ -202,22 +201,40 @@
 
     .about-intro-content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
+    /* Stats 一个一个排列 */
+    .about-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 25px 0;
+    }
+
+    .about-stat {
+        width: 100%;
+    }
+
+    /* Button */
+    .about-intro-content .postbtn {
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    /* Image 在 Button 下面 */
     .about-intro-image {
         width: 100%;
+        order: 2;
     }
 
     .about-intro-image img {
         width: 100%;
     }
 
-
-    .about-stats {
-        gap: 30px;
-        margin: 25px 0;
-    }
-
+    /* Purpose */
     .purpose-section {
         padding: 80px 30px;
     }
@@ -227,26 +244,9 @@
         gap: 45px;
     }
 
-    .purpose-content {
-        width: 100%;
-    }
-
+    .purpose-content,
     .skills-container {
         width: 100%;
-    }
-
-
-
-    .skill {
-        margin-bottom: 25px;
-    }
-
-    .skill-top {
-        font-size: 15px;
-    }
-
-    .skill-bar {
-        height: 10px;
     }
 
 
@@ -257,10 +257,6 @@
     }
 
     .marketing-image {
-        width: 100%;
-    }
-
-    .marketing-image img {
         width: 100%;
     }
 

@@ -2185,6 +2185,11 @@ img {
         text-align: center;
     }
 
+    .team-card-container {
+        margin: 0;
+        gap: 0;
+    }
+
     .team-card {
         width: 100%;
     }
