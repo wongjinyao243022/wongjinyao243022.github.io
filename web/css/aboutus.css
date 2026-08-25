@@ -15,13 +15,13 @@
     margin: 20px 0;
 }
 
-.about-text>.p1 {
+.about-text>.herosubt {
     margin: 0;
     font-weight: 400;
     color: var(--darknavy);
 }
 
-.p1 .about-intro {
+.hero-subt .about-intro {
     width: 100%;
     padding: 120px;
 }
@@ -67,7 +67,7 @@
 
 
 
-.postbtn>.p4 {
+.postbtn>.supporttxt {
     text-decoration: none;
     color: var(--white);
 }
@@ -172,7 +172,8 @@
     margin: 0;
 }
 
-.marketing-description>.p4 {
+
+.marketing-description>.supporttxt {
     color: var(--darknavy);
 }
 

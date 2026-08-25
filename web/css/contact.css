@@ -36,7 +36,7 @@
     color: var(--white);
 }
 
-.card .p4 {
+.card .supporttxt {
     color: var(--textcolor);
     padding: 30px 35px 20px;
 
@@ -66,7 +66,7 @@
     margin: 20px 0;
 }
 
-.contact-left .p4 {
+.contact-left .supporttxt {
     margin: 20px 0;
 }
 
