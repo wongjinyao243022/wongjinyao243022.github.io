@@ -7,6 +7,10 @@
     line-height: 1.4;
 }
 
+.about-intro-content>h3 {
+    color: var(--darknavy);
+}
+
 .about-text {
     margin: 20px 0;
 }
@@ -26,11 +30,10 @@
     display: flex;
     align-items: center;
     gap: 60px;
-    margin: 100px 100px;
+    margin: 100px auto;
+    max-width: 1320px;
 }
 
-
-/* Image */
 
 .about-intro-image {
     width: 50%;
@@ -40,6 +43,7 @@
 .about-intro-image img {
     width: 95%;
     object-fit: cover;
+    display: block;
     border-radius: 40px 0;
 }
 
@@ -65,11 +69,8 @@
 
 .postbtn>.p4 {
     text-decoration: none;
-    color: var(--white)
+    color: var(--white);
 }
-
-
-
 
 .purpose-section {
     width: 100%;
@@ -82,12 +83,11 @@
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
+
     display: flex;
     align-items: center;
     gap: 60px;
 }
-
-
 
 .purpose-content {
     width: 50%;
@@ -98,10 +98,10 @@
     color: var(--darknavy);
 }
 
-
 .skills-container {
     width: 50%;
 }
+
 
 .skill {
     margin-bottom: 35px;
@@ -113,13 +113,10 @@
 
 .skill-top {
     display: flex;
-
     justify-content: space-between;
-
     margin-bottom: 7px;
 
     color: var(--darkblue);
-
     font-family: var(--font-base);
     font-size: 17px;
 }
@@ -151,20 +148,20 @@
     width: 92%;
 }
 
+
+
 .marketing-section {
     width: 100%;
     max-width: 1330px;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 30px;
+    box-sizing: border-box;
 }
-
-
 
 .marketing-header {
     text-align: center;
     margin-bottom: 45px;
 }
-
 
 .marketing-header h3 {
     margin: 0 0 12px;
@@ -176,7 +173,7 @@
 }
 
 .marketing-description>.p4 {
-    color: var(--darknavy)
+    color: var(--darknavy);
 }
 
 .marketing-image {
@@ -185,18 +182,81 @@
 }
 
 .marketing-image img {
-    width: 100%;
+    width: 98%;
     object-fit: cover;
     display: block;
+    margin: 0 auto;
 }
+
+
+
+
+@media (max-width: 1320px) {
+
+    /* ABOUT INTRO */
+
+    .about-intro-container {
+        gap: 45px;
+        margin: 90px 70px;
+    }
+
+    .about-intro-content {
+        width: 50%;
+    }
+
+    .about-intro-image {
+        width: 50%;
+    }
+
+    .about-intro-image img {
+        width: 100%;
+    }
+
+    .about-stats {
+        gap: 30px;
+    }
+
+
+    /* PURPOSE */
+
+    .purpose-section {
+        padding: 100px 50px;
+    }
+
+    .purpose-container {
+        gap: 45px;
+    }
+
+    .purpose-content,
+    .skills-container {
+        width: 50%;
+    }
+
+
+    /* MARKETING */
+
+    .marketing-section {
+        max-width: 1200px;
+        padding: 60px 40px;
+    }
+
+    .marketing-image img {
+        width: 95%;
+    }
+}
+
+
+
 
 @media (max-width: 840px) {
 
-
     .about-intro-container {
-        flex-direction: column;
-        gap: 40px;
+        width: auto;
         margin: 70px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
     }
 
     .about-intro-content {
@@ -205,7 +265,23 @@
         flex-direction: column;
     }
 
-    /* Stats 一个一个排列 */
+    .about-intro-content>h3 {
+        text-align: left;
+    }
+
+    .about-tagline {
+        margin-bottom: 12px;
+    }
+
+    .about-text {
+        margin: 15px 0;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
     .about-stats {
         display: flex;
         flex-direction: column;
@@ -217,14 +293,22 @@
         width: 100%;
     }
 
-    /* Button */
+
+    /* =====================================================
+       BUTTON
+    ===================================================== */
+
     .about-intro-content .postbtn {
         align-self: flex-start;
         margin-top: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
-    /* Image 在 Button 下面 */
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
     .about-intro-image {
         width: 100%;
         order: 2;
@@ -232,15 +316,23 @@
 
     .about-intro-image img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
-    /* Purpose */
+
+    /* =====================================================
+       PURPOSE
+    ===================================================== */
+
     .purpose-section {
         padding: 80px 30px;
     }
 
     .purpose-container {
+        width: 100%;
         flex-direction: column;
+        align-items: stretch;
         gap: 45px;
     }
 
@@ -249,15 +341,176 @@
         width: 100%;
     }
 
+    .purpose-content>h3 {
+        margin-bottom: 15px;
+    }
+
+
+    /* =====================================================
+       SKILLS
+    ===================================================== */
+
+    .skill {
+        margin-bottom: 25px;
+    }
+
+    .skill-top {
+        font-size: 15px;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+
+    /* =====================================================
+       MARKETING
+    ===================================================== */
 
     .marketing-section {
         width: 100%;
+        max-width: none;
         padding: 60px 30px;
         box-sizing: border-box;
+    }
+
+    .marketing-header {
+        margin-bottom: 35px;
     }
 
     .marketing-image {
         width: 100%;
     }
 
+    .marketing-image img {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   440px — MOBILE
+========================================================= */
+
+@media (max-width: 440px) {
+
+    /* =====================================================
+       ABOUT INTRO
+    ===================================================== */
+
+    .about-intro-container {
+        margin: 50px 20px;
+        gap: 30px;
+    }
+
+    .about-tagline {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .about-text {
+        margin: 15px 0;
+    }
+
+    .about-text>.p1 {
+        line-height: 1.6;
+    }
+
+    .about-intro-content>h3 {
+        line-height: 1.3;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
+    .about-stats {
+        gap: 18px;
+        margin: 22px 0;
+    }
+
+    .about-stat {
+        width: 100%;
+    }
+
+    .about-stat h3 {
+        margin-bottom: 5px;
+    }
+
+
+    /* =====================================================
+       BUTTON
+    ===================================================== */
+
+    .about-intro-content .postbtn {
+        width: 100%;
+        align-self: stretch;
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .about-intro-image {
+        width: 100%;
+    }
+
+    .about-intro-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px 0;
+    }
+
+
+    /* =====================================================
+       PURPOSE
+    ===================================================== */
+
+    .purpose-section {
+        padding: 60px 20px;
+    }
+
+    .purpose-container {
+        gap: 35px;
+    }
+
+    .purpose-content,
+    .skills-container {
+        width: 100%;
+    }
+
+    .skill {
+        margin-bottom: 22px;
+    }
+
+    .skill-top {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .skill-bar {
+        height: 9px;
+    }
+
+
+    .marketing-section {
+        padding: 50px 20px;
+    }
+
+    .marketing-header {
+        margin-bottom: 30px;
+    }
+
+    .marketing-image {
+        width: 100%;
+    }
+
+    .marketing-image img {
+        width: 100%;
+        height: auto;
+    }
 }
