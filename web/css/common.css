@@ -1224,26 +1224,31 @@ Achieve Your Goals */
 /* ================================
            LAPTOP / MOBILE MENU
         ================================ */
-
 .laptop-menu {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
     background: rgba(29, 32, 58, 0.96);
-    padding: 70px 8.5% 50px;
-    transition: left 0.45s ease;
+
+    transform: translateX(-100%);
+    transition: transform 0.45s ease;
+
     overflow-y: auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 70px;
+    z-index: 9999;
+}
+
+.laptop-menu.active {
+    transform: translateX(0);
 }
 
 .laptop-menu.active {
     left: 0;
     z-index: 9999;
+    transform: translateX(0);
+
 }
 
 
