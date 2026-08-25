@@ -1472,11 +1472,14 @@
 
     .business-hero-content {
         padding: 40px 0;
+        align-items: center;
     }
 
     .business-hero-image {
         width: 100%;
         margin: 0;
+        margin-top: 60px;
+        padding-top: 30px;
     }
 
     .businessman-image {
@@ -1498,34 +1501,39 @@
 
 @media (max-width: 440px) {
 
-    .projects-container {
+    .business-hero {
         width: 100%;
-
-        padding: 0 15px;
-
-        margin: 0 auto;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-
+        padding: 0 40px 50px;
         box-sizing: border-box;
     }
 
-
-    .project-item {
-        width: 100%;
-        max-width: 320px;
-
-        margin: 0 auto;
-
+    .business-hero-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
 
+    .business-hero-content {
+        padding: 40px 0;
         align-items: center;
+    }
 
-        text-align: center;
+    .business-hero-image {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .businessman-image {
+        width: 100%;
+    }
+
+    .businessman-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0 0 0 35px;
     }
 
 

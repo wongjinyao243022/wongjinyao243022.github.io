@@ -366,11 +366,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #ffffff;
-}
-
 /* Section Outer Layout */
 .features-section {
     width: 100%;
@@ -404,11 +399,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-}
-
 /* Circular Icon Container with Outer Ring */
 .icon-wrapper {
     width: 110px;
@@ -425,7 +415,7 @@ body {
 
 /* Heading Styling */
 .feature-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
     color: #1a2238;
     margin-bottom: 14px;
@@ -434,7 +424,8 @@ body {
 
 /* Body Text Styling */
 .feature-description {
-    font-size: 15px;
+    font-size: 17px;
+    font-family: var(--font-base);
     line-height: 1.6;
     color: #6c757d;
     font-weight: 500;
@@ -486,18 +477,13 @@ body {
         box-shadow: 0 0 0 8px #eeeff5;
     }
 
-    .icon-wrapper svg {
-        width: 30px;
-        height: 30px;
-    }
-
     .feature-title {
-        font-size: 18px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
 
     .feature-description {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     /* Enforce line break on small screens as shown in 440px design */
@@ -506,16 +492,15 @@ body {
     }
 }
 
+
+/* =========================================
+  CONTENT SECTION - 1510px
+   ========================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #ffffff;
-    color: #556070;
 }
 
 /* Main Outer Wrapper for 1510px Screen Canvas */
@@ -538,10 +523,12 @@ body {
 
 /* Top Paragraph */
 .intro-text {
-    font-size: 15px;
+    font-size: 17px;
+    font-family: var(--font-base);
     line-height: 1.7;
     color: #64748b;
     margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 /* 2-Column Image Layout */
@@ -580,7 +567,8 @@ body {
 
 .overlay-title {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: var(--font-base);
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -594,14 +582,14 @@ body {
 }
 
 .section-title {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 800;
     color: #1a2238;
     margin-bottom: 16px;
 }
 
 .description-text {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.7;
     color: #64748b;
 }
@@ -628,7 +616,7 @@ body {
     }
 
     .section-title {
-        font-size: 24px;
+        font-size: 36px;
     }
 }
 
@@ -640,12 +628,14 @@ body {
 
     .intro-text,
     .description-text {
-        font-size: 14px;
+        font-size: 17px;
+        font-family: var(--font-base);
         line-height: 1.6;
     }
 
     .intro-text {
-        margin-bottom: 30px;
+        margin-bottom: 36px;
+        padding-bottom: 30px;
     }
 
     .image-grid {
@@ -663,18 +653,18 @@ body {
     }
 
     .overlay-title {
-        font-size: 14px;
+        font-size: 17px;
         letter-spacing: 0.3px;
     }
 
     .section-title {
-        font-size: 22px;
+        font-size: 36px;
         margin-bottom: 12px;
     }
 }
 
 /* =========================================================
-   PROJECTS SECTION
+   PROJECTS SECTION - 1510px
    ========================================================= */
 
 * {
@@ -683,12 +673,7 @@ body {
     padding: 0;
 }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #ffffff;
-}
-
-/* Outer Section Layout (Desktop 1510px canvas) */
+/* Outer Section Layout (Desktop 1510px) */
 .projects-section {
     width: 100%;
     max-width: 1510px;
@@ -715,7 +700,8 @@ body {
 
 .sub-title {
     display: inline-block;
-    font-size: 15px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #e63956;
     margin-bottom: 12px;
@@ -723,7 +709,7 @@ body {
 }
 
 .main-title {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: 800;
     color: #1a2238;
     letter-spacing: -0.5px;
@@ -749,7 +735,7 @@ body {
 .project-image-wrapper {
     width: 100%;
     height: 320px;
-    border-radius: 16px;
+    border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
 }
@@ -759,27 +745,22 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-image-wrapper img {
-    transform: scale(1.03);
 }
 
 /* Project Titles & Subtitle Styling */
 .project-title {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 800;
     color: #1a2238;
     margin-bottom: 8px;
 }
 
 .project-category {
-    font-size: 14px;
+    font-size: 17px;
+    font-family: var(--font-base);
     font-weight: 500;
     color: #94a3b8;
 }
-
 
 /* Tablet Breakpoint (e.g., 840px) */
 @media (max-width: 991px) {
@@ -792,7 +773,7 @@ body {
     }
 
     .main-title {
-        font-size: 30px;
+        font-size: 44px;
     }
 
     /* Switch 2-column grid to stacked single column */
@@ -818,13 +799,13 @@ body {
     }
 
     .sub-title {
-        font-size: 13px;
+        font-size: 19px;
         margin-bottom: 8px;
     }
 
     /* Allow main title text to break into multiple lines cleanly */
     .main-title {
-        font-size: 26px;
+        font-size: 44px;
         line-height: 1.25;
     }
 
@@ -839,11 +820,11 @@ body {
     }
 
     .project-title {
-        font-size: 20px;
+        font-size: 32px;
         margin-bottom: 6px;
     }
 
     .project-category {
-        font-size: 13px;
+        font-size: 17px;
     }
 }
