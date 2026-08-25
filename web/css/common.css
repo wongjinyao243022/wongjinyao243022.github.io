@@ -1523,6 +1523,21 @@ img {
     border-radius: 0 0 0 35px;
 }
 
+
+/*logo section*/
+.logo-container {
+    padding: 60px 30px;
+    background-color: var(--darkblue);
+}
+
+.row-logo {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 /*Laoptop Menu Links*/
 
 /*FOOTER */
@@ -2151,6 +2166,13 @@ img {
         margin-bottom: 60px;
     }
 
+    .row-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
 }
 
 
