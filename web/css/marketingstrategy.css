@@ -214,7 +214,7 @@
     .success-image {
         height: 589px;
 
-        border-radius: 0 0 18px 18px;
+        border-radius: 0 0 0 22px;
     }
 
     .success-content h2 {
@@ -276,7 +276,7 @@
     .success-image {
         height: 330px;
 
-        border-radius: 0 0 15px 15px;
+        border-radius: 0 0 0 22px;
     }
 
     .section-tag {

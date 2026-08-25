@@ -1460,13 +1460,35 @@
 
 
     .business-hero {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        padding: 0 40px 50px;
+        box-sizing: border-box;
     }
 
     .business-hero-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .business-hero-content {
+        padding: 40px 0;
+    }
+
+    .business-hero-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .businessman-image {
+        width: 100%;
+    }
+
+    .businessman-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0 0 0 35px;
     }
 }
 
