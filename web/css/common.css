@@ -1243,6 +1243,7 @@ Achieve Your Goals */
 
 .laptop-menu.active {
     left: 0;
+    z-index: 9999;
 }
 
 
@@ -1463,14 +1464,9 @@ Achieve Your Goals */
     box-sizing: border-box;
 }
 
-.overlay-btnp4 {
-    margin: 0;
+button.overlay-btn>.p4 {
     color: var(--white);
-    text-align: center;
-    text-decoration: none;
-
 }
-
 
 
 .laptop-menu {
