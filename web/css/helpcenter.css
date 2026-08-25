@@ -1,740 +1,867 @@
- .help-hero {
-     width: 90%;
-     height: 400px;
-     margin: 0 auto;
-     background-image: url(../images/heroimages.png);
-     background-size: cover;
-     background-position: center;
-     position: relative;
-     border-radius: 0 0 0 30px;
-     overflow: hidden;
- }
-
- .help-hero-overlay {
-     width: 100%;
-     height: 100%;
-     background-color: rgba(20, 25, 55, 0.65);
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
- }
-
- .help-hero-overlay h2 {
-     color: var(--white);
-     margin: 0 0 20px;
- }
-
- .help-hero-overlay h5 {
-     color: var(--white);
-     margin: 20px 0 15px;
-
- }
-
- .search-bar {
-     margin-top: 0;
-     display: flex;
-     justify-content: center;
-     width: 100%;
-     gap: 10px;
-     margin-top: 30px;
- }
-
- .search-field {
-     position: relative;
-     width: 40%;
- }
-
- .search-icon {
-     position: absolute;
-     left: 22px;
-     top: 48%;
-     transform: translateY(-50%) scaleX(-1);
-     font-size: 30px;
-     pointer-events: none;
- }
-
- .search-bar input {
-     width: 100%;
-     padding: 20px 20px 20px 58px;
-     border-radius: 100px;
-     border: none;
-     outline: none;
-     box-sizing: border-box;
-     letter-spacing: -0.255px;
-     color: var(--textcolor);
- }
-
- .search-bar input::placeholder {
-     color: rgba(31, 41, 55, 0.7);
- }
-
- .section {
-     width: 95%;
-     margin: auto;
-     padding: 60px 30px;
-     text-align: center;
-
- }
-
- .section h3 {
-     margin-top: 60px;
-     margin-bottom: 60px;
- }
-
-
- .cards {
-     display: flex;
-     justify-content: center;
-     gap: 26.35px;
- }
-
- .card {
-     position: relative;
-     background: var(--white);
-     border-radius: 12px;
-     width: 30%;
-     margin: 0;
-     overflow: hidden;
-     text-align: left;
-     border: 1px solid rgba(79, 87, 141, 0.12);
- }
-
- .card h5 {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     margin: 0;
-     padding: 40px 0 20px 40px;
-     color: var(--white);
-     box-sizing: border-box;
-     z-index: 1;
- }
-
- .card img {
-     width: 100%;
-     display: block;
-     border-radius: 0;
- }
-
- .card ul {
-     list-style: none;
-     padding: 20px 20px;
- }
-
- .card li {
-     margin-top: 15px;
-     font-size: 17px;
-     font-weight: 600;
-     line-height: 1.6;
-     font-family: var(--font-base);
-
- }
-
- .card li:hover {
-     color: var(--rosepink);
- }
-
- .learning-section {
-     width: 100%;
-     padding: 100px 0px;
-     margin: 80px 0;
-     text-align: center;
-     background: var(--lightbluegrey);
-     box-sizing: border-box;
- }
-
- .learning-section h3 {
-     margin-bottom: 60px;
- }
-
- .learning-cards {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
-
- .learning-card {
-     width: 40%;
-     background: var(--darkblue);
-     margin: 26.35px;
-     padding: 50px;
-     box-sizing: border-box;
-     text-align: left;
-     border-radius: 0 0 0 20px;
- }
-
- .learning-card:hover {
-     background: var(--submenucolor);
-
- }
-
- .learning-card-top {
-     display: flex;
-     align-items: center;
-     gap: 16px;
-     margin-bottom: 12px;
- }
-
- .learning-card-top img {
-     width: 80px;
-     height: 80px;
-     object-fit: contain;
-     flex-shrink: 0;
- }
-
- .learning-card h5 {
-     margin: 0;
-     color: var(--white);
-     line-height: 1.2;
- }
-
- .learning-card .p4 {
-     color: var(--white);
-     margin-top: 20px;
- }
-
- .learning-card-content {
-     display: flex;
-     align-items: center;
-     gap: 16px;
- }
-
- .learning-card-content .text-group {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     margin-left: 30px;
- }
-
-
- .resource-section {
-     width: 100%;
-     padding: 80px 0;
- }
-
- .resource-cards {
-     width: 92%;
-     margin: auto;
-     display: flex;
-     justify-content: space-between;
-     gap: 50px;
- }
-
- .resource-card {
-     width: 28%;
-     position: relative;
-     overflow: hidden
- }
-
- .resource-card img {
-     width: 100%;
-     display: block;
-     border-radius: 0;
- }
-
- .resource-card .p1 {
-     position: absolute;
-     inset: 0;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     width: 100%;
-     margin: 0;
-     padding: 0 20px;
-     color: var(--white);
- }
-
-
- .faq-section {
-     width: 100%;
-     padding: 100px 60px;
- }
-
- .faq-section h3 {
-     text-align: center;
-     margin-bottom: 60px;
- }
-
-
- .faq-container {
-     width: 90%;
-     max-width: 1200px;
-     margin: 0 auto;
-     display: flex;
-     gap: 100px;
- }
-
-
-
- .faq-column {
-     width: 45%;
- }
-
-
-
- .faq-item {
-     width: 100%;
-
-     border-bottom: 1px solid rgba(79, 87, 141, 0.15);
- }
-
-
- .faq-question {
-     width: 100%;
-
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-
-     padding: 25px 0;
-
-     border: none;
-     background: transparent;
-
-     cursor: pointer;
-
-     text-align: left;
- }
-
-
-
-
- .faq-question h6 {
-     margin: 0;
-     padding-right: 30px;
-     color: var(--darkblue);
- }
-
-
- .faq-question button {
-     width: 30px;
-     height: 30px;
-     flex-shrink: 0;
-     padding: 0;
-     margin: 0;
-     border: none;
-     background-color: var(--lightblue);
-     color: var(--white);
-
-     font-size: 20px;
-     font-weight: 400;
-     line-height: 1;
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-     cursor: pointer;
- }
-
-
- .faq-question button:focus,
- .faq-question button:active {
-     background: transparent;
-     background-color: transparent;
-     border: none;
-     outline: none;
- }
-
- .faq-question button:hover {
-     background-color: var(--rosepink);
- }
-
-
-
- @media (max-width: 840px) {
-
-     .help-hero {
-         width: 90%;
-         border-radius: 0 0 0 30px;
-         background-position: center;
-         background-size: cover;
-     }
-
-     .help-hero-overlay h2 {
-         margin-bottom: 10px;
-     }
-
-     .help-hero-overlay h5 {
-         margin: 10px 0;
-     }
-
-
-     /* SEARCH */
-
-     .search-bar {
-         margin-top: 20px;
-     }
-
-     .search-field {
-         width: 60%;
-     }
-
-     .search-bar input {
-         padding: 15px 15px 15px 45px;
-         font-size: 13px;
-     }
-
-     .search-icon {
-         left: 17px;
-         font-size: 22px;
-     }
-
-
-
-     .section {
-         width: 90%;
-         padding: 50px 0px;
-         box-sizing: border-box;
-     }
-
-     .section h3 {
-         margin-top: 30px;
-         margin-bottom: 40px;
-     }
-
-
-     .cards {
-         display: flex;
-         flex-direction: column;
-         gap: 40px;
-     }
-
-     .card {
-         width: 100%;
-         height: auto;
-         margin: 0;
-         border-radius: 10px;
-     }
-
-     .card h5 {
-         padding: 25px 0 15px 25px;
-     }
-
-     .card img {
-         width: 100%;
-         height: 100px;
-         object-fit: cover;
-     }
-
-     .card ul {
-         padding: 15px 25px 20px;
-         margin: 0;
-     }
-
-     .learning-section {
-         width: 100%;
-         padding: 80px 20px;
-         margin: 60px 0;
-         box-sizing: border-box;
-     }
-
-     .learning-section h3 {
-         margin-bottom: 40px;
-     }
-
-     .learning-cards {
-         display: flex;
-         flex-direction: column;
-         gap: 16px;
-     }
-
-     .learning-card {
-         width: 100%;
-         margin: 0;
-         padding: 30px;
-         border-radius: 0 0 0 20px;
-     }
-
-     .learning-card-top {
-         gap: 12px;
-         margin-bottom: 8px;
-     }
-
-     .learning-card-top img {
-         width: 55px;
-         height: 55px;
-     }
-
-
-     .learning-card-content {
-         flex-direction: column;
-         align-items: flex-start;
-         gap: 12px;
-     }
-
-     .learning-card-content img {
-         width: 58px;
-         height: 58px;
-     }
-
-     .learning-card-content .text-group {
-         margin-left: 0;
-         width: 100%;
-     }
-
-
-     /* RESOURCE SECTION */
-
-     .resource-section {
-         width: 100%;
-         padding: 60px 0;
-     }
-
-     .resource-cards {
-         width: 90%;
-         display: flex;
-         flex-direction: column;
-         gap: 25px;
-     }
-
-     .resource-card {
-         width: 100%;
-     }
-
-     .faq-section {
-         width: 100%;
-         padding: 60px 0;
-     }
-
-     .faq-section h3 {
-         margin-bottom: 40px;
-     }
-
-     .faq-container {
-         width: 90%;
-         display: flex;
-         flex-direction: column;
-         gap: 0;
-     }
-
-     .faq-column {
-         width: 100%;
-     }
-
-     .faq-item h6 {
-         gap: 15px;
-         padding: 18px 0;
-     }
-
-     .faq-item h6 {
-         line-height: 1.4;
-     }
-
-     .faq-section {
-         padding: 80px 30px;
-     }
-
-     .faq-container {
-         width: 100%;
-
-         flex-direction: column;
-
-         gap: 0;
-     }
-
-     .faq-column {
-         width: 100%;
-     }
-
- }
-
-
-
-
-
- @media (max-width: 440px) {
-
-     .help-hero {
-         width: 93%;
-         height: 240px;
-         border-radius: 0 0 0 25px;
-     }
-
-     .help-hero-overlay {
-         padding: 20px;
-         box-sizing: border-box;
-     }
-
-     .help-hero-overlay h2 {
-         font-size: 24px;
-         margin-bottom: 5px;
-     }
-
-     .help-hero-overlay h5 {
-         font-size: 11px;
-         margin: 5px 0;
-     }
-
-
-     /* SEARCH */
-
-     .search-bar {
-         margin-top: 15px;
-     }
-
-     .search-field {
-         width: 85%;
-     }
-
-     .search-bar input {
-         padding: 11px 12px 11px 35px;
-         font-size: 10px;
-     }
-
-     .search-icon {
-         left: 13px;
-         font-size: 17px;
-     }
-
-
-     /* SECTION */
+.help-hero {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
 
-     .section {
-         width: 93%;
-         padding: 35px 10px;
-     }
+    background-image: url(../images/heroimages.png);
+    background-size: cover;
+    background-position: center;
 
-     .section h3 {
-         margin-top: 20px;
-         margin-bottom: 25px;
-         font-size: 19px;
-     }
+    position: relative;
 
+    border-radius: 0 0 0 30px;
+    overflow: hidden;
+}
 
-     /* CARDS */
+.help-hero-overlay {
+    width: 100%;
+    height: 100%;
 
-     .cards {
-         gap: 12px;
-     }
-
-     .card {
-         width: 100%;
-         border-radius: 7px;
-     }
+    background-color: rgba(20, 25, 55, 0.65);
 
-     .card h5 {
-         padding: 18px 0 10px 15px;
-         font-size: 11px;
-     }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-     .card img {
-         height: 95px;
-     }
+    text-align: center;
+}
 
-     .card ul {
-         padding: 10px 15px 14px;
-     }
+.help-hero-overlay h2 {
+    color: var(--white);
+    margin: 0 0 20px;
+}
 
-     .card li {
-         margin-top: 5px;
-         font-size: 8px;
-         line-height: 1.5;
-     }
-
-
-     /* LEARNING */
-
-     .learning-section {
-         margin: 40px 0;
-     }
-
-     .learning-section h2 {
-         margin-bottom: 25px;
-
-     }
-
-     .learning-cards {
-         gap: 30px;
-     }
-
-     .learning-card {
-         border-radius: 0 0 0 15px;
-     }
-
-     .learning-card-top {
-         gap: 10px;
-     }
-
-     .learning-card-top img {
-         width: 40px;
-         height: 40px;
-     }
-
-     .learning-card .p4 {
-         margin-top: 6px;
-         line-height: 1.4;
-     }
-
-
-     /* RESOURCE */
-
-     .resource-section {
-         padding: 40px 0;
-     }
-
-     .resource-cards {
-         width: 93%;
-         gap: 15px;
-     }
-
-     .resource-card {
-         width: 100%;
-     }
-
-     .resource-card .p1 {
-         bottom: 15px;
-         padding: 25px 15px;
-         font-size: 10px;
-     }
-
-
-     /* FAQ */
-
-     .faq-section {
-         padding: 40px 0;
-     }
-
-     .faq-section h3 {
-         margin-bottom: 25px;
-     }
-
-     .faq-container {
-         width: 93%;
-     }
-
-     .faq-item {
-         padding: 12px 0;
-         gap: 8px;
-     }
-
-     .faq-item h6 {
-         line-height: 1.4;
-     }
-
-     .faq-item {
-         padding: 20px 0;
-         gap: 8px;
-     }
-
-     .faq-section {
-         padding: 60px 16px;
-     }
-
-     .faq-section h3 {
-         margin-bottom: 40px;
-     }
-
-     .faq-question {
-         padding: 20px 0;
-     }
-
-     .faq-question h6 {
-         font-size: 16px;
-         line-height: 1.4;
-     }
- }
+.help-hero-overlay h5 {
+    color: var(--white);
+    margin: 20px 0 15px;
+}
+
+
+
+.search-bar {
+    width: 100%;
+
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-field {
+    position: relative;
+    width: 40%;
+}
+
+.search-icon {
+    position: absolute;
+
+    left: 22px;
+    top: 48%;
+
+    transform: translateY(-50%) scaleX(-1);
+
+    font-size: 30px;
+
+    pointer-events: none;
+}
+
+.search-bar input {
+    width: 100%;
+
+    padding: 20px 20px 20px 58px;
+
+    border-radius: 100px;
+    border: none;
+    outline: none;
+
+    box-sizing: border-box;
+
+    letter-spacing: -0.255px;
+    color: var(--textcolor);
+}
+
+.search-bar input::placeholder {
+    color: rgba(31, 41, 55, 0.7);
+}
+
+
+.section {
+    width: 95%;
+
+    margin: auto;
+    padding: 60px 30px;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.section h3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 26.35px;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    margin: 0;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid rgba(79, 87, 141, 0.12);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 20px 40px;
+    color: var(--white);
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.card li {
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.6;
+    font-family: var(--font-base);
+}
+
+.card li:hover {
+    color: var(--rosepink);
+}
+
+
+
+
+.learning-section {
+    width: 100%;
+    padding: 100px 0;
+    margin: 80px 0;
+    text-align: center;
+    background: var(--lightbluegrey);
+}
+
+.learning-section h3 {
+    margin-bottom: 60px;
+}
+
+.learning-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learning-card {
+    width: 40%;
+    margin: 26.35px;
+    padding: 50px;
+    background: var(--darkblue);
+    text-align: left;
+    border-radius: 0 0 0 20px;
+}
+
+.learning-card:hover {
+    background: var(--submenucolor);
+}
+
+.learning-card-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+
+.learning-card h5 {
+    margin: 0;
+
+    color: var(--white);
+
+    line-height: 1.2;
+}
+
+.learning-card .supporttxt {
+    color: var(--white);
+
+    margin-top: 20px;
+}
+
+.learning-card-content {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.learning-card-content .text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 30px;
+}
+
+
+.resource-section {
+    width: 100%;
+
+    padding: 80px 0;
+}
+
+.resource-cards {
+    width: 92%;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.resource-card {
+    position: relative;
+
+    width: 28%;
+
+    overflow: hidden;
+}
+
+.resource-card img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 0;
+}
+
+.resource-card .herosubt {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--white);
+
+    box-sizing: border-box;
+}
+
+
+.faq-section {
+    width: 100%;
+
+    padding: 100px 60px;
+
+    box-sizing: border-box;
+}
+
+.faq-section h3 {
+    text-align: center;
+
+    margin: 0 0 60px;
+}
+
+
+.faq-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+
+
+.faq-column {
+    width: 50%;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+
+
+.faq-item {
+    width: 100%;
+
+    border-bottom: 1px solid rgba(79, 87, 141, 0.15);
+
+    box-sizing: border-box;
+}
+
+
+
+
+.faq-question {
+    width: 100%;
+
+    min-height: 80px;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* QUESTION TEXT */
+
+.faq-question h6 {
+    flex: 1;
+
+    min-width: 0;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: var(--darkblue);
+
+    line-height: 1.4;
+
+    box-sizing: border-box;
+}
+
+
+/* PLUS BUTTON */
+
+.faq-question button {
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    flex-shrink: 0;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    background-color: var(--lightblue);
+
+    color: var(--white);
+
+    font-size: 20px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* BUTTON STATES */
+
+.faq-question button:hover {
+    background-color: var(--rosepink);
+}
+
+.faq-question button:focus,
+.faq-question button:active {
+    outline: none;
+    border: none;
+}
+
+
+
+@media (max-width: 1320px) {
+
+    .learning-card {
+        width: 40%;
+        margin: 26.35px;
+        padding: 45px;
+    }
+
+    .faq-container {
+        width: 92%;
+        gap: 60px;
+    }
+
+    .card h5 {
+        padding: 40px 20px 20px 10px;
+        white-space: nowrap;
+    }
+}
+
+
+
+@media (max-width: 840px) {
+
+    /* HERO */
+
+    .help-hero {
+        width: 90%;
+
+        height: 400px;
+
+        border-radius: 0 0 0 30px;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .help-hero-overlay h2 {
+        margin-bottom: 10px;
+    }
+
+    .help-hero-overlay h5 {
+        margin: 10px 0;
+    }
+
+
+    /* SEARCH */
+
+    .search-bar {
+        margin-top: 20px;
+    }
+
+    .search-field {
+        width: 60%;
+    }
+
+    .search-bar input {
+        padding: 15px 15px 15px 45px;
+
+        font-size: 13px;
+    }
+
+    .search-icon {
+        left: 17px;
+
+        font-size: 22px;
+    }
+
+
+    /* MAIN SECTION */
+
+    .section {
+        width: 90%;
+
+        padding: 50px 0;
+
+        box-sizing: border-box;
+    }
+
+    .section h3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .card {
+        width: 100%;
+
+        height: auto;
+
+        margin: 0;
+
+        border-radius: 10px;
+    }
+
+    .card h5 {
+        padding: 25px 0 15px 25px;
+    }
+
+    .card img {
+        width: 100%;
+
+        height: 100px;
+
+        object-fit: cover;
+    }
+
+    .card ul {
+        padding: 15px 25px 20px;
+    }
+
+
+    /* LEARNING */
+
+    .learning-section {
+        width: 100%;
+
+        padding: 80px 20px;
+
+        margin: 60px 0;
+
+        box-sizing: border-box;
+    }
+
+    .learning-section h3 {
+        margin-bottom: 40px;
+    }
+
+    .learning-cards {
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .learning-card {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 30px;
+
+        border-radius: 0 0 0 20px;
+    }
+
+    .learning-card-top {
+        gap: 12px;
+
+        margin-bottom: 8px;
+    }
+
+    .learning-card-top img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .learning-card-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .learning-card-content img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .learning-card-content .text-group {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+
+    /* RESOURCE */
+
+    .resource-section {
+        width: 100%;
+
+        padding: 60px 0;
+    }
+
+    .resource-cards {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+
+
+    .faq-section {
+        width: 100%;
+
+        padding: 80px 30px;
+
+        box-sizing: border-box;
+    }
+
+    .faq-section h3 {
+        margin-bottom: 40px;
+    }
+
+    .faq-container {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .faq-column {
+        width: 100%;
+
+        flex: none;
+    }
+
+    .faq-question {
+        min-height: 70px;
+
+        padding: 18px 0;
+
+        gap: 20px;
+    }
+
+    .faq-question h6 {
+        line-height: 1.4;
+    }
+
+}
+
+
+@media (max-width: 440px) {
+
+
+
+    .help-hero {
+        width: 93%;
+
+        height: 240px;
+
+        border-radius: 0 0 0 25px;
+    }
+
+    .help-hero-overlay {
+        padding: 20px;
+
+        box-sizing: border-box;
+    }
+
+    .help-hero-overlay h2 {
+
+        margin-bottom: 5px;
+    }
+
+    .help-hero-overlay h5 {
+
+        margin: 5px 0;
+    }
+
+
+    /* SEARCH */
+
+    .search-bar {
+        margin-top: 15px;
+    }
+
+    .search-field {
+        width: 85%;
+    }
+
+    .search-bar input {
+        padding: 11px 12px 11px 35px;
+    }
+
+    .search-icon {
+        left: 13px;
+
+    }
+
+
+    /* SECTION */
+
+    .section {
+        width: 93%;
+        padding: 35px 10px;
+    }
+
+    .section h3 {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+
+        border-radius: 7px;
+    }
+
+    .card h5 {
+        padding: 18px 0 10px 15px;
+
+    }
+
+    .card img {
+        height: 95px;
+    }
+
+    .card ul {
+        padding: 10px 15px 14px;
+    }
+
+    .card li {
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+
+
+    /* LEARNING */
+
+    .learning-section {
+        padding: 60px 16px;
+
+        margin: 40px 0;
+    }
+
+    .learning-section h3 {
+        margin-bottom: 25px;
+    }
+
+    .learning-cards {
+        gap: 30px;
+    }
+
+    .learning-card {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 25px;
+
+        border-radius: 0 0 0 15px;
+    }
+
+    .learning-card-top {
+        gap: 10px;
+    }
+
+    .learning-card .p4 {
+        margin-top: 6px;
+
+        line-height: 1.4;
+    }
+
+
+    /* RESOURCE */
+
+    .resource-section {
+        padding: 40px 0;
+    }
+
+    .resource-cards {
+        width: 93%;
+
+        gap: 15px;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+
+    .resource-card .p1 {
+        bottom: 15px;
+
+        padding: 25px 15px;
+
+        font-size: 10px;
+    }
+
+
+
+    .faq-section {
+        padding: 60px 16px;
+    }
+
+    .faq-section h3 {
+        margin-bottom: 30px;
+    }
+
+    .faq-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .faq-column {
+        width: 100%;
+    }
+
+    .faq-question {
+        min-height: 65px;
+
+        padding: 18px 0;
+
+        gap: 12px;
+    }
+
+    .faq-question h6 {
+
+        line-height: 1.4;
+        padding-right: 5px;
+    }
+
+    .faq-question button {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+    }
+
+}

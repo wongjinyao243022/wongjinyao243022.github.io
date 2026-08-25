@@ -413,39 +413,6 @@
 }
 
 
-
-.business-hero-title {
-    max-width: 600px;
-
-    margin: 0 0 25px;
-
-    font-family: var(--font-heading);
-
-    font-size: 44px;
-    font-weight: 700;
-
-    line-height: 1.35;
-
-    color: #080b12;
-}
-
-
-.business-hero-description {
-    max-width: 600px;
-
-    margin: 0;
-
-    font-family: var(--font-base);
-
-    font-size: 17px;
-    font-weight: 400;
-
-    line-height: 1.7;
-
-    color: #20232d;
-}
-
-
 /* =========================================
    RIGHT IMAGE
 ========================================= */
@@ -1473,9 +1440,20 @@
     .business-hero-content {
         padding: 40px 0;
         text-align: center;
-        Display: flex;
-        Flex-direction: column;
-        Justify-content: center;
+    }
+
+    .business-hero-title {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+
+    .business-hero-description {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .business-hero-image {
