@@ -1737,6 +1737,7 @@ img {
 
 .footer-social-icon img {
     width: auto;
+    border-radius: 0;
 }
 
 .social-icon {
