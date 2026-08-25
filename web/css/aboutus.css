@@ -23,7 +23,7 @@
     margin: 20px 0;
 }
 
-.about- .about-text>.p4 {
+.about-text>.p1 {
     margin: 0;
     font-weight: 400;
     color: var(--darknavy);
@@ -90,14 +90,14 @@
 
 .purpose-section {
     width: 100%;
-    padding: 75px 30px;
+    padding: 120px 30px;
     box-sizing: border-box;
     background-color: var(--lightbluegrey);
 }
 
 .purpose-container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1320px;
 
     margin: 0 auto;
 
@@ -105,7 +105,7 @@
 
     align-items: center;
 
-    gap: 100px;
+    gap: 60px;
 }
 
 
@@ -125,7 +125,7 @@
 }
 
 .skill {
-    margin-bottom: 18px;
+    margin-bottom: 35px;
 }
 
 .skill:last-child {
@@ -142,28 +142,34 @@
     color: var(--darkblue);
 
     font-family: var(--font-base);
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .skill-bar {
     width: 100%;
-    height: 6px;
-
-    background-color: #dce1ef;
-
+    height: 15px;
+    background-color: var(--lavendablue);
     border-radius: 100px;
-
     overflow: hidden;
 }
 
 .skill-bar span {
     display: block;
-
     height: 100%;
-
     background-color: var(--rosepink);
-
     border-radius: 100px;
+}
+
+.consulting {
+    width: 85%;
+}
+
+.management {
+    width: 76%;
+}
+
+.brainstorming {
+    width: 92%;
 }
 
 .marketing-section {
@@ -181,21 +187,18 @@
 }
 
 
-.marketing-header h2 {
+.marketing-header h3 {
     margin: 0 0 12px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #22253d;
+    color: var(--darknavy);
 }
 
 .marketing-description {
     margin: 0;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #333;
 }
 
-
+.marketing-description>.p4 {
+    color: var(--darknavy)
+}
 
 .marketing-image {
     width: 100%;
