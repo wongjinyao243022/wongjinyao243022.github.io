@@ -1,21 +1,9 @@
-.about-page {
-    width: 100%;
-    overflow: hidden;
-}
-
-.about-page img {
-    display: block;
-    max-width: 100%;
-}
-
-
 .about-tagline {
     margin: 0 0 16px 0;
     color: var(--rosepink);
     font-family: var(--font-base);
     font-size: 13px;
     font-weight: 400;
-
     line-height: 1.4;
 }
 
@@ -32,15 +20,13 @@
 .p1 .about-intro {
     width: 100%;
     padding: 120px;
-    box-sizing: border-box;
-
 }
 
 .about-intro-container {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin: 100px;
+    margin: 100px 100px;
 }
 
 
@@ -61,9 +47,7 @@
 
 .about-stats {
     display: flex;
-
     gap: 45px;
-
     margin: 32px 0 28px;
 }
 
@@ -80,7 +64,6 @@
 
 
 .postbtn>.p4 {
-
     text-decoration: none;
     color: var(--white)
 }
@@ -98,13 +81,9 @@
 .purpose-container {
     width: 100%;
     max-width: 1320px;
-
     margin: 0 auto;
-
     display: flex;
-
     align-items: center;
-
     gap: 60px;
 }
 
@@ -209,4 +188,80 @@
     width: 100%;
     object-fit: cover;
     display: block;
+}
+
+@media (max-width: 840px) {
+
+
+
+    .about-intro-container {
+        flex-direction: column;
+        gap: 40px;
+        margin: 70px 30px;
+    }
+
+    .about-intro-content {
+        width: 100%;
+    }
+
+    .about-intro-image {
+        width: 100%;
+    }
+
+    .about-intro-image img {
+        width: 100%;
+    }
+
+
+    .about-stats {
+        gap: 30px;
+        margin: 25px 0;
+    }
+
+    .purpose-section {
+        padding: 80px 30px;
+    }
+
+    .purpose-container {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .purpose-content {
+        width: 100%;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+
+
+    .skill {
+        margin-bottom: 25px;
+    }
+
+    .skill-top {
+        font-size: 15px;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+
+    .marketing-section {
+        width: 100%;
+        padding: 60px 30px;
+        box-sizing: border-box;
+    }
+
+    .marketing-image {
+        width: 100%;
+    }
+
+    .marketing-image img {
+        width: 100%;
+    }
+
 }
