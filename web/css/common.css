@@ -44,7 +44,7 @@ and  nav.bar text color  */
 }
 
 /*headings*/
-h1,
+.footer-contact-num,
 .num,
 h2,
 h3,
@@ -57,7 +57,12 @@ h6,
 
 
 /*h1 is used at footer Contact No */
-h1 {
+.footer-contact-num {
+    text-decoration: none;
+    text-align: center;
+    color: var(--footernum);
+    opacity: 0.2;
+    margin: 40px 0;
     font-size: 100px;
     font-weight: 700;
     Line-height: 120px;
@@ -1713,15 +1718,6 @@ img {
     text-decoration: none;
     justify-content: center;
     display: flex;
-}
-
-
-/* Phone number */
-.footer-contact-num {
-    text-align: center;
-    color: var(--footernum);
-    opacity: 0.2;
-    margin: 40px 0;
 }
 
 .footer-contact-link {
