@@ -1676,6 +1676,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 
@@ -1691,6 +1692,7 @@ img {
 .footer-cta-btn {
     display: flex;
     flex-direction: row;
+    width: 90%;
 }
 
 .footer-cta-btn>.button-link>.supporttxt {
@@ -1720,6 +1722,9 @@ img {
     margin: 40px 0;
 }
 
+.footer-contact-link {
+    text-decoration: none;
+}
 
 /* Social icons */
 
@@ -2262,14 +2267,6 @@ img {
         padding: 15px 16px;
     }
 
-    .logo img {
-        width: auto;
-        max-width: 150px;
-        height: auto;
-    }
-
-
-
     .menu-btn {
         width: 50px;
         height: 50px;
@@ -2562,7 +2559,6 @@ img {
     #footer-cta {
         padding: 60px 16px 30px;
     }
-
 
     .footer-cta-btn>.button-link {
         width: 100%;
