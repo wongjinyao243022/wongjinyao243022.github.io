@@ -37,13 +37,16 @@
     transform: translateX(-50%);
 }
 
-.menu .p4 {
+.menu>.supporttxt {
     color: var(--white);
 }
 
-
+.has-submenu>.supporttxt {
+    color: var(--white);
+}
 
 /* HEADER BUTTON AREA*/
+
 
 
 .header-btn {
