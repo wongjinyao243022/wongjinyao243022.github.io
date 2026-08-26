@@ -1,6 +1,4 @@
-/* =========================================================
-   HOME PAGE HERO
-========================================================= */
+/* HOME PAGE HERO*/
 
 .home-hero {
     width: 100%;
@@ -16,6 +14,8 @@
 /* homepage header*/
 .header {
     background: transparent;
+    position: relative;
+    z-index: 1002;
 }
 
 /*HOME LOGO*/
@@ -1316,6 +1316,10 @@ body.menu-open {
         grid-template-columns: repeat(2, 1fr);
         display: grid;
         row-gap: 30px;
+    }
+
+    .row-logo>img {
+        width: 80%;
     }
 
 
