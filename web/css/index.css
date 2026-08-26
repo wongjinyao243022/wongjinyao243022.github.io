@@ -37,13 +37,16 @@
     transform: translateX(-50%);
 }
 
-.menu .p4 {
+.menu>.supporttxt {
     color: var(--white);
 }
 
-
+.has-submenu>.supporttxt {
+    color: var(--white);
+}
 
 /* HEADER BUTTON AREA*/
+
 
 
 .header-btn {
@@ -445,13 +448,6 @@ body.menu-open {
     line-height: 24px;
 }
 
-.p3 {
-    color: var(--rosepink);
-    border-bottom-width: 0.1px;
-    border-bottom-color: rgb(34, 37, 61);
-    border-bottom-style: dotted;
-
-}
 
 #strategy {
     display: flex;
@@ -1318,7 +1314,7 @@ body.menu-open {
 
     .row-logo {
         grid-template-columns: repeat(2, 1fr);
-
+        display: grid;
         row-gap: 30px;
     }
 
