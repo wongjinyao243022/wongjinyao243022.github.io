@@ -95,7 +95,7 @@
     height: 18px;
 }
 
-.request-phone-btn .p4 {
+.request-phone-btn .supportxt {
     color: var(--white);
     margin: 0;
 }
@@ -246,7 +246,7 @@
 }
 
 
-.menu-text>.p1 {
+.menu-text>.herosubt {
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -0.51px;
@@ -440,7 +440,7 @@ body.menu-open {
     color: rgb(166, 171, 205);
 }
 
-.item-caption .p4 {
+.item-caption .supportxt {
     margin: 0;
     line-height: 24px;
 }
@@ -481,7 +481,7 @@ body.menu-open {
 }
 
 
-.strategy-subheading>.p1 {
+.strategy-subheading>.herpsubt {
     font-weight: 500;
     margin-bottom: 20px;
 
@@ -572,11 +572,9 @@ body.menu-open {
     margin: 20px 0px 15px 0px;
 }
 
-.about-heading>.p3 {
-    border-bottom-width: 0.05px;
+.about-heading>.section-tag {
+
     border-bottom-color: var(--white);
-    border-bottom-style: dotted;
-    width: fit-content;
 }
 
 .about-us-tab-container {
@@ -611,7 +609,7 @@ body.menu-open {
     font-size: 16px;
 }
 
-.toggle-content .p4 {
+.toggle-content .supporttxt {
     color: var(--white);
     line-height: 30.6px;
     padding: 15px 15px 15px 0px;
@@ -625,7 +623,7 @@ body.menu-open {
     display: none;
 }
 
-.about-contact>.p4 {
+.about-contact>.supporttxt {
     margin: 40px 0px 10px 0px;
     color: rgb(255, 255, 255, 0.7);
 }
@@ -651,7 +649,7 @@ body.menu-open {
     margin: 5px 10px 0px 0px;
 }
 
-.contact-phone .p1 {
+.contact-phone .herosubt {
     color: var(--white);
 
 }
@@ -688,7 +686,7 @@ body.menu-open {
     margin: 20px 0px 15px 0px;
 }
 
-.team-subtitle>.p4 {
+.team-subtitle>.supporttxt {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -894,7 +892,7 @@ body.menu-open {
         max-width: 700px;
     }
 
-    .team-subtitle>.p4 {
+    .team-subtitle>.supporttxt {
         margin: 0 auto 40px;
     }
 
@@ -1074,7 +1072,7 @@ body.menu-open {
         text-align: center;
     }
 
-    .about-heading>.p3 {
+    .about-heading>.section-tag {
         margin: 0 auto;
     }
 
@@ -1093,7 +1091,7 @@ body.menu-open {
         text-align: center;
     }
 
-    .toggle-content .p4 {
+    .toggle-content .supporttxt {
         padding: 15px 0;
     }
 

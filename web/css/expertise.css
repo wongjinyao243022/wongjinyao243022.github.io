@@ -19,7 +19,6 @@
 
 .hero-subtitle {
     font-family: var(--font-base);
-    font-size: 20px;
     color: var(--herotext);
     margin-top: 20px;
 }
@@ -46,7 +45,6 @@
 
 .hero-features .feature p {
     font-family: var(--font-base);
-    font-size: 15px;
     color: var(--herotext);
     margin: 0;
 }
@@ -75,8 +73,6 @@
 
 .section-heading>p {
     font-family: var(--font-base);
-    font-size: 17px;
-    line-height: 1.7;
     color: #6b7280;
 }
 
@@ -136,8 +132,6 @@
 
 .approach-content p {
     font-family: var(--font-base);
-    font-size: 16px;
-    line-height: 1.75;
     color: #6b7280;
     margin: 0 0 30px;
 }
@@ -237,8 +231,6 @@
 
 .about-content>p {
     font-family: var(--font-base);
-    font-size: 16px;
-    line-height: 1.75;
     color: var(--lavendablue);
     max-width: 460px;
 }
@@ -254,7 +246,6 @@
 
 .about-list li {
     font-family: var(--font-base);
-    font-size: 16px;
     color: var(--white);
     display: flex;
     align-items: center;
@@ -290,10 +281,8 @@
 
 .stat-item p {
     font-family: var(--font-base);
-    font-size: 15px;
     color: var(--herotext);
     margin: 30px 0 0;
-    line-height: 30.6px;
 }
 
 /* testimonial section*/
@@ -326,8 +315,6 @@
 
 .testimonial-text {
     font-family: var(--font-base);
-    font-size: 18px;
-    line-height: 1.7;
     color: var(--textcolor);
     margin: 0 0 25px;
 }
@@ -348,7 +335,6 @@
 .testimonial-author {
     display: block;
     font-family: var(--font-base);
-    font-size: 15px;
     color: var(--herotext);
 }
 
@@ -363,7 +349,6 @@
 
     .hero-subtitle {
         margin-top: 32px;
-        font-size: 24px;
         font-family: var(--font-base);
     }
 
@@ -386,7 +371,6 @@
 
     .feature p {
         font-family: var(--font-base);
-        font-size: 17px;
     }
 
     .approach-section {
@@ -443,7 +427,6 @@
 
     .hero-subtitle {
         margin-top: 25px;
-        font-size: 24px;
         font-family: var(--font-base);
     }
 
@@ -521,8 +504,6 @@
     .hero-subtitle {
         margin-top: 24px;
         font-family: var(--font-base);
-        font-size: 17px;
-        line-height: 1.5;
     }
 
     .hero-features {
