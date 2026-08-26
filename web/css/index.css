@@ -16,6 +16,8 @@
 /* homepage header*/
 .header {
     background: transparent;
+    z-index: 1002;
+    position: relative;
 }
 
 /*HOME LOGO*/

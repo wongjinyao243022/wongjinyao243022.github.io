@@ -142,7 +142,8 @@ h6 {
 .countertitle,
 .functionsub,
 .menutitle,
-.text {
+.text,
+.subpagetitle {
     font-family: var(--font-base);
 }
 
