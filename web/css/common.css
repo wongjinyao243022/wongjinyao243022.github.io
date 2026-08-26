@@ -406,6 +406,9 @@ h6 {
     background-color: var(--rosepink);
 }
 
+.button-link {
+    text-decoration: none;
+}
 
 /* =========================================================
    PROJECT MEGA MENU
