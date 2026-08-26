@@ -329,6 +329,7 @@ h6 {
     justify-content: center;
     gap: 38px;
     flex: 0 1 auto;
+    margin: auto;
 }
 
 .menu .supporttxt {
@@ -540,6 +541,7 @@ h6 {
 
 .talk-btn {
     flex-shrink: 0;
+    margin-left: auto;
 }
 
 .request {
