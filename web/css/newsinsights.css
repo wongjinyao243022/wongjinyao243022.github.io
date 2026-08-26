@@ -22,7 +22,6 @@
 
 .featured-image {
     width: 620px;
-    height: 384px;
     flex-shrink: 0;
 
     overflow: hidden;
@@ -584,7 +583,6 @@
 
     .featured-image {
         width: 100%;
-        height: 397px;
 
         border-radius: 10px;
     }
