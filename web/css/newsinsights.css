@@ -58,8 +58,8 @@
 
     background: #ef3f61;
     color: #ffffff;
-
-    font-size: 11px;
+    font-family: var(--font-base);
+    font-size: 12px;
     font-weight: 600;
 
     margin-bottom: 27px;
@@ -67,6 +67,7 @@
 
 .featured-category {
     font-size: 15px;
+    font-family: var(--font-base);
     font-weight: 400;
     line-height: 1.5;
 
@@ -80,7 +81,8 @@
 }
 
 .featured-content h2 {
-    font-size: 31px;
+    font-size: 32px;
+    font-family: var(--font-heading);
     line-height: 1.4;
     font-weight: 700;
 
@@ -92,6 +94,7 @@
 
 .featured-description {
     font-size: 17px;
+    font-family: var(--font-base);
     line-height: 1.8;
     font-weight: 400;
 
@@ -117,15 +120,16 @@
 
     color: #bb5868;
     text-decoration: none;
-
-    font-size: 16px;
+    font-family: var(--font-base);
+    font-size: 17px;
     font-weight: 400;
 
     transition: 0.3s ease;
 }
 
 .featured-read-more span {
-    font-size: 22px;
+    font-size: 17px;
+    font-family: var(--font-base);
     line-height: 1;
 }
 
@@ -133,6 +137,7 @@
     color: #9f4252;
     transform: translateX(4px);
 }
+
 
 /* =========================================================
    2. RECENT POST SECTION (dark highlight strip)
@@ -183,7 +188,7 @@
 
 .post-title a {
     font-family: var(--font-heading);
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
     color: var(--white);
@@ -206,7 +211,7 @@
     align-items: center;
     gap: 10px;
     font-family: var(--font-base);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--rosepink);
     text-decoration: none;
@@ -273,7 +278,8 @@
 }
 
 .article-meta {
-    font-size: 13px;
+    font-size: 15px;
+    font-family: var(--font-base);
     color: #838f9e;
     margin-bottom: 12px;
 }
@@ -284,7 +290,8 @@
 }
 
 .article-title {
-    font-size: 20px;
+    font-size: 28px;
+    font-family: var(--font-heading);
     font-weight: 800;
     line-height: 1.35;
     margin-bottom: 20px;
@@ -301,7 +308,8 @@
 }
 
 .read-more {
-    font-size: 14px;
+    font-size: 17px;
+    font-family: var(--font-base);
     font-weight: 600;
     color: #e63956;
     text-decoration: none;
@@ -332,7 +340,8 @@
 }
 
 .widget-title {
-    font-size: 20px;
+    font-size: 28px;
+    font-family: var(--font-heading);
     font-weight: 800;
     color: #1a2238;
     margin-bottom: 24px;
@@ -353,7 +362,8 @@
 }
 
 .widget-text {
-    font-size: 14px;
+    font-size: 17px;
+    font-family: var(--font-base);
     line-height: 1.6;
     color: #64748b;
     margin-bottom: 20px;
@@ -376,14 +386,16 @@
 }
 
 .banner-year {
-    font-size: 52px;
+    font-size: 80px;
+    font-family: var(--font-heading);
     font-weight: 800;
     line-height: 1;
     letter-spacing: -1px;
 }
 
 .banner-heading {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: var(--font-base);
     font-weight: 800;
     line-height: 1.2;
     margin-top: 8px;
@@ -396,7 +408,8 @@
     color: #ffffff;
     padding: 14px 24px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 17px;
+    font-family: var(--font-base);
     font-weight: 700;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -414,13 +427,15 @@
 }
 
 .banner-date {
-    font-size: 26px;
+    font-size: 40px;
+    font-family: var(--font-heading);
     font-weight: 800;
     letter-spacing: -0.5px;
 }
 
 .banner-location {
-    font-size: 15px;
+    font-size: 24px;
+    font-family: var(--font-base);
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
 }
@@ -470,7 +485,7 @@
     }
 
     .article-title {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 
@@ -525,7 +540,7 @@
     }
 
     .article-title {
-        font-size: 22px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 
@@ -600,13 +615,13 @@
     }
 
     .featured-category {
-        font-size: 14px;
+        font-size: 17px;
 
         margin-bottom: 20px;
     }
 
     .featured-content h2 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 1.38;
 
         letter-spacing: -0.5px;
@@ -615,7 +630,7 @@
     }
 
     .featured-description {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.9;
 
         margin-bottom: 34px;
@@ -628,7 +643,7 @@
     }
 
     .featured-read-more {
-        font-size: 16px;
+        font-size: 17px;
         gap: 12px;
     }
 
@@ -673,18 +688,18 @@
     }
 
     .article-meta {
-        font-size: 12px;
+        font-size: 17px;
         margin-bottom: 8px;
     }
 
     .article-title {
-        font-size: 18px;
+        font-size: 28px;
         line-height: 1.3;
         margin-bottom: 12px;
     }
 
     .read-more {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     /* Mobile Widget Styles */
@@ -698,7 +713,7 @@
     }
 
     .widget-title {
-        font-size: 18px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 
@@ -709,7 +724,7 @@
     }
 
     .widget-text {
-        font-size: 13px;
+        font-size: 17px;
         margin-bottom: 16px;
     }
 
@@ -721,25 +736,25 @@
     }
 
     .banner-year {
-        font-size: 40px;
+        font-size: 80px;
     }
 
     .banner-heading {
-        font-size: 24px;
+        font-size: 40px;
         margin-top: 4px;
         margin-bottom: 20px;
     }
 
     .banner-btn {
         padding: 12px 20px;
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .banner-date {
-        font-size: 22px;
+        font-size: 40px;
     }
 
     .banner-location {
-        font-size: 14px;
+        font-size: 24px;
     }
 }
