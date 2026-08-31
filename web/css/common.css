@@ -1873,7 +1873,7 @@ img {
     }
 
     .overlay-cta {
-        width: 100%;
+        width: max-content;
         flex: none;
         margin: 40px 0 0 0;
         text-align: center;
