@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    --font-heading: "Tenor Sans", sans-serif;
+    --font-base: "Kumbh Sans", sans-serif;
+    --backgroundcolor: #FBFCEE;
+    /* webpage background color*/
+    --footercolor: #472425;
+    /* footer background color*/
+    --textcolor: #140503;
+    /* main text color*/
+    --lightgrey: #82878E;
+    /* caption text color, nav bar text color*/
+    --footertext: #F6F7F8;
+    /* footer text color*/
+    --white: #FFFEFE;
+    /* CTA section text color*/
+    --footerlogo: #573435;
+    /* footer bottom large logo wordings color*/
+    --olivegreen: #677115;
+    /*column background color*/
+    --rustysword: #A8463F;
+    /*column background color*/
+    --softorange: #ED9266;
+    /*button colors*/
+    --Highlightext: #A7ACB2;
+    /*highlight text color*/
+}
