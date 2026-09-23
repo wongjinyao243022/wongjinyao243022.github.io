@@ -31,6 +31,95 @@
     /*column background color*/
     --softorange: #ED9266;
     /*button colors*/
-    --Highlightext: #A7ACB2;
+    --highlightext: #A7ACB2;
     /*highlight text color*/
+}
+
+.section-title,
+.section-subtitle,
+.large-logo-text,
+.overline-text,
+.hero-title,
+.card-title,
+.button-text,
+.feature-title,
+.counter-text {
+    font-family: var(--font-heading);
+}
+
+
+.caption-text {
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lightgrey);
+    line-height: 26px;
+}
+
+.section-title {
+    font-size: 57px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 57px;
+}
+
+.section-subtitle {
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 28px;
+}
+
+
+.large-logo-text {
+    font-size: 220.816px;
+    font-weight: 400;
+    color: var(--footerlogo);
+    letter-spacing: -6.62448px;
+    line-height: 220.816px;
+}
+
+.overline-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 104.44px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 93.996px;
+    letter-spacing: -3.1332px;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 32px;
+}
+
+.button-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 15.0514px;
+    letter-spacing: 1px;
+}
+
+.feature-title {
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 28px;
+}
+
+.counter-text {
+    font-size: 120px;
+    font-weight: 400;
+    color: var(--textcolor);
+    line-height: 108px;
 }
