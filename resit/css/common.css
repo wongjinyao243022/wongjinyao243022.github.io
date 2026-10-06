@@ -43,7 +43,8 @@
 .card-title,
 .button-text,
 .feature-title,
-.counter-text {
+.counter-text,
+.footer-column-title {
     font-family: var(--font-heading);
 }
 
@@ -117,6 +118,13 @@
     line-height: 28px;
 }
 
+.footer-column-title {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--footertext);
+    line-height: 21.9982px;
+}
+
 .counter-text {
     font-size: 120px;
     font-weight: 400;
@@ -132,6 +140,8 @@ header>.header-logo {
     max-width: 100%;
 }
 
+
+/* === HEADER === */
 header {
     display: flex;
     flex-direction: row;
@@ -182,6 +192,10 @@ nav {
     color: var(--textcolor);
     font-size: 20px;
 }
+
+
+/* === FOOTER === */
+
 
 @media screen and (max-width: 1278px) {
     .hamburger-menu {
