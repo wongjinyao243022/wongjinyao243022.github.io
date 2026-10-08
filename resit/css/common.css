@@ -196,6 +196,71 @@ nav {
 
 /* === FOOTER === */
 
+footer {
+    background-color: var(--footercolor);
+    padding: 100px 70px 70px;
+
+}
+
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    gap: 14%;
+    padding-bottom: 150px;
+
+}
+
+.footer-corner-logo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-corner-logo>p {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer-corner-logo .footer-column {
+    display: block;
+}
+
+.footer-corner-logo .caption-text {
+    color: var(--white);
+    max-width: 390px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column .caption-text {
+    color: var(--white);
+}
+
+.footer-column-title {
+    margin-bottom: 20px;
+}
+
+.caption-text {
+    margin-bottom: 20px;
+}
+
+.footer-large-logo-text {
+    width: 100%;
+    overflow: hidden;
+}
+
+.large-logo-text {
+    font-size: 14vw;
+    white-space: nowrap;
+}
+
+
+
+
 
 @media screen and (max-width: 1278px) {
     .hamburger-menu {
