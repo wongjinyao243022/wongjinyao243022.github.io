@@ -1,39 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
+/* =========================
+   GLOBAL RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* === ROOT VARIABLES === */
 :root {
     --font-heading: "Tenor Sans", sans-serif;
     --font-base: "Kumbh Sans", sans-serif;
+
     --backgroundcolor: #FBFCEE;
-    /* webpage background color*/
     --footercolor: #472425;
-    /* footer background color*/
     --textcolor: #140503;
-    /* main text color*/
     --lightgrey: #82878E;
-    /* caption text color, nav bar text color*/
     --footertext: #F6F7F8;
-    /* footer text color*/
     --white: #FFFEFE;
-    /* CTA section text color*/
     --footerlogo: #573435;
-    /* footer bottom large logo wordings color*/
     --olivegreen: #677115;
-    /*column background color*/
     --rustysword: #A8463F;
-    /*column background color*/
     --softorange: #ED9266;
-    /*button colors*/
     --highlightext: #A7ACB2;
-    /*highlight text color*/
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+    font-family: var(--font-base);
+}
+
+body.menu-is-open {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
 
 .section-title,
 .section-subtitle,
@@ -48,7 +67,6 @@
     font-family: var(--font-heading);
 }
 
-
 .caption-text {
     font-family: var(--font-base);
     font-size: 16px;
@@ -61,7 +79,7 @@
     font-size: 57px;
     font-weight: 400;
     color: var(--textcolor);
-    line-height: 57px;
+    line-height: 1;
 }
 
 .section-subtitle {
@@ -71,19 +89,20 @@
     line-height: 28px;
 }
 
-
 .large-logo-text {
-    font-size: 220.816px;
+    font-size: 14vw;
     font-weight: 400;
     color: var(--footerlogo);
-    letter-spacing: -6.62448px;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .overline-text {
     font-size: 14px;
     font-weight: 400;
     color: var(--textcolor);
-    line-height: 14px;
+    line-height: 1;
     letter-spacing: 1px;
 }
 
@@ -91,7 +110,7 @@
     font-size: 104.44px;
     font-weight: 400;
     color: var(--textcolor);
-    line-height: 93.996px;
+    line-height: 0.9;
     letter-spacing: -3.1332px;
 }
 
@@ -106,7 +125,7 @@
     font-size: 13px;
     font-weight: 400;
     color: var(--textcolor);
-    line-height: 15.0514px;
+    line-height: 1.2;
     letter-spacing: 1px;
 }
 
@@ -121,62 +140,73 @@
     font-size: 19px;
     font-weight: 400;
     color: var(--footertext);
-    line-height: 21.9982px;
+    line-height: 22px;
 }
 
 .counter-text {
     font-size: 120px;
     font-weight: 400;
     color: var(--textcolor);
-    line-height: 108px;
+    line-height: 0.9;
 }
 
-body {
-    background-color: var(--backgroundcolor);
-}
+/* =========================
+   HEADER
+========================= */
 
-header>.header-logo {
-    max-width: 100%;
-}
-
-
-/* === HEADER === */
 header {
     display: flex;
     flex-direction: row;
-    padding: 40px 70px;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 70px;
+    position: relative;
+    z-index: 100;
 }
 
-.hamburger-menu {
-    display: none;
+.header-logo {
+    max-width: 180px;
+    flex-shrink: 0;
 }
 
-.overlay-menu {
-    display: none;
+.header-logo a {
+    display: block;
 }
 
-nav {
+.header-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop navigation */
+
+.nav-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .nav-bar-text {
-    font-family: var(--font-heading);
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 30px;
     margin: 0 15px;
     list-style: none;
-    text-decoration: none;
 }
 
 .nav-bar-text a {
     color: var(--textcolor);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+.nav-bar-text a:hover {
+    color: var(--rustysword);
+}
+
+/* Social media icons */
 
 .social-icon {
     margin-left: 28px;
@@ -184,23 +214,178 @@ nav {
 
 .social-icon span {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .social-icon a {
     color: var(--textcolor);
     font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+.social-icon a:hover {
+    color: var(--rustysword);
+}
 
-/* === FOOTER === */
+/* =========================
+   HAMBURGER MENU BUTTON
+========================= */
+
+.hamburger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger-menu img {
+    display: block;
+    width: 30px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* =========================
+   OVERLAY MENU
+========================= */
+
+.overlay-menu {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 34%;
+    min-width: 390px;
+    height: 100vh;
+    height: 100dvh;
+
+    padding: 38px 40px;
+    background-color: #281516;
+
+    z-index: 1000;
+
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+
+    overflow-y: auto;
+
+    transition:
+        transform 0.45s ease,
+        visibility 0s linear 0.45s;
+}
+
+/* Open overlay */
+
+.overlay-menu.menu-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+
+    transition:
+        transform 0.45s ease,
+        visibility 0s;
+}
+
+/* Overlay logo */
+
+.overlay-logo {
+    display: inline-block;
+    width: fit-content;
+    color: #FBFCEE;
+    font-family: var(--font-base);
+    font-size: 34px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 75px;
+}
+
+/* Close button */
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+
+    font-family: var(--font-base);
+    font-size: 38px;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--softorange);
+}
+
+/* Overlay navigation links */
+
+.overlay-menu-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    padding-top: 100px;
+}
+
+.overlay-menu-text a {
+    display: inline-block;
+    color: #F6F7F8;
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.overlay-menu-text a:hover {
+    color: var(--softorange);
+    transform: translateX(5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: var(--footercolor);
     padding: 100px 70px 70px;
+    color: var(--footertext);
 }
 
-/* Fixed 3-column grid: [logo + text] | [office] | [links + follow us] */
+.footer-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Three-column footer layout */
+
 .footer-text {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -208,12 +393,23 @@ footer {
     padding-bottom: 150px;
 }
 
+/* Footer links */
+
 .caption-text a,
 .section-subtitle a,
 .footer-column-title a {
     color: var(--footertext);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+.caption-text a:hover,
+.section-subtitle a:hover,
+.footer-column-title a:hover {
+    color: var(--softorange);
+}
+
+/* Logo and description */
 
 .footer-corner-logo {
     display: flex;
@@ -235,15 +431,18 @@ footer {
     max-width: 360px;
 }
 
+/* Footer columns */
+
 .footer-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-/* Links and Follow Us: two equal columns */
 .footer-column-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .footer-column .caption-text {
@@ -254,9 +453,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.caption-text {
+.footer-column .caption-text {
     margin-bottom: 20px;
 }
+
+/* Large footer logo */
 
 .footer-large-logo-text {
     width: 100%;
@@ -269,33 +470,103 @@ footer {
     white-space: nowrap;
 }
 
-
-
-
+/* =========================
+   TABLET RESPONSIVE
+========================= */
 
 @media screen and (max-width: 1278px) {
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
+
+    header {
+        padding: 30px 40px;
     }
 
     .nav-bar {
         display: none;
     }
 
-    header {
+    .hamburger-menu {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    }
+
+    .overlay-menu {
+        width: 30%;
+        min-width: 0;
+        padding: 30px 40px;
+    }
+
+    .overlay-logo {
+        font-size: 32px;
+        margin-bottom: 65px;
+    }
+
+    .overlay-menu-text {
+        gap: 32px;
+    }
+
+    .overlay-menu-text a {
+        font-size: 26px;
+    }
+
+    .footer-text {
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+        gap: 25px;
+    }
+
+    footer {
+        padding: 70px 40px 40px;
     }
 }
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media screen and (max-width: 766px) {
+
+    header {
+        padding: 25px 20px;
+    }
+
+    .header-logo {
+        max-width: 150px;
+    }
+
+    .hamburger-menu img {
+        width: 28px;
+        height: 24px;
+    }
+
+    .overlay-menu {
+        width: 100%;
+        min-width: 0;
+        padding: 30px 25px;
+    }
+
+    .overlay-logo {
+        font-size: 28px;
+        margin-bottom: 65px;
+    }
+
+    .close-btn {
+        top: 22px;
+        right: 20px;
+    }
+
+    .overlay-menu-text {
+        gap: 28px;
+    }
+
+    .overlay-menu-text a {
+        font-size: 24px;
+    }
+
+    /* Footer layout */
+
     .footer-text {
         display: flex;
         flex-direction: column;
+        gap: 35px;
         padding-bottom: 65px;
-        gap: 20px;
     }
 
     .footer-corner-logo {
@@ -303,18 +574,82 @@ footer {
     }
 
     .footer-corner-logo .caption-text {
-        max-width: fit-content;
+        max-width: 100%;
     }
 
     .footer-column-container {
-        display: flex;
-        flex-direction: row;
-        gap: 50%;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        align-items: start;
+    }
+
+    .footer-column-title {
+        font-size: 17px;
     }
 
     footer {
-        padding: 50px 10px 25px 20px;
+        padding: 50px 20px 25px;
     }
 
+    .large-logo-text {
+        font-size: 13.5vw;
+        letter-spacing: -0.04em;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 380px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    .header-logo {
+        max-width: 130px;
+    }
+
+    .overlay-menu {
+        padding: 25px 20px;
+    }
+
+    .overlay-logo {
+        font-size: 25px;
+    }
+
+    .overlay-menu-text a {
+        font-size: 22px;
+    }
+
+    .footer-column-container {
+        gap: 15px;
+    }
+
+    .caption-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .overlay-menu,
+    .overlay-menu.menu-open,
+    .overlay-menu-text a,
+    .close-btn,
+    .nav-bar-text a,
+    .social-icon a {
+        transition: none;
+    }
 }
