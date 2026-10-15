@@ -199,12 +199,8 @@ header {
 .nav-bar-text a {
     color: var(--textcolor);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-.nav-bar-text a:hover {
-    color: var(--rustysword);
-}
 
 /* Social media icons */
 
@@ -222,7 +218,6 @@ header {
     color: var(--textcolor);
     font-size: 20px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .social-icon a:hover {
@@ -280,9 +275,6 @@ header {
 
     overflow-y: auto;
 
-    transition:
-        transform 0.45s ease,
-        visibility 0s linear 0.45s;
 }
 
 /* Open overlay */
@@ -292,9 +284,7 @@ header {
     visibility: visible;
     pointer-events: auto;
 
-    transition:
-        transform 0.45s ease,
-        visibility 0s;
+
 }
 
 /* Overlay logo */
@@ -333,11 +323,7 @@ header {
     line-height: 1;
 
     cursor: pointer;
-    transition: color 0.3s ease;
-}
 
-.close-btn:hover {
-    color: var(--softorange);
 }
 
 /* Overlay navigation links */
@@ -357,16 +343,8 @@ header {
     font-size: 28px;
     font-weight: 400;
     text-decoration: none;
-
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
 }
 
-.overlay-menu-text a:hover {
-    color: var(--softorange);
-    transform: translateX(5px);
-}
 
 /* =========================
    FOOTER
@@ -400,13 +378,6 @@ footer {
 .footer-column-title a {
     color: var(--footertext);
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.caption-text a:hover,
-.section-subtitle a:hover,
-.footer-column-title a:hover {
-    color: var(--softorange);
 }
 
 /* Logo and description */
@@ -440,9 +411,11 @@ footer {
 }
 
 .footer-column-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
+    justify-content: space-between;
+    padding-right: 80px;
 }
 
 .footer-column .caption-text {
@@ -464,11 +437,6 @@ footer {
     overflow: hidden;
 }
 
-.large-logo-text {
-    font-size: 14vw;
-    line-height: 1;
-    white-space: nowrap;
-}
 
 /* =========================
    TABLET RESPONSIVE
@@ -494,18 +462,6 @@ footer {
         padding: 30px 40px;
     }
 
-    .overlay-logo {
-        font-size: 32px;
-        margin-bottom: 65px;
-    }
-
-    .overlay-menu-text {
-        gap: 32px;
-    }
-
-    .overlay-menu-text a {
-        font-size: 26px;
-    }
 
     .footer-text {
         grid-template-columns: 1.5fr 1fr 1.5fr;
@@ -542,10 +498,6 @@ footer {
         padding: 30px 25px;
     }
 
-    .overlay-logo {
-        font-size: 28px;
-        margin-bottom: 65px;
-    }
 
     .close-btn {
         top: 22px;
@@ -556,9 +508,6 @@ footer {
         gap: 28px;
     }
 
-    .overlay-menu-text a {
-        font-size: 24px;
-    }
 
     /* Footer layout */
 
@@ -584,18 +533,10 @@ footer {
         align-items: start;
     }
 
-    .footer-column-title {
-        font-size: 17px;
-    }
-
     footer {
         padding: 50px 20px 25px;
     }
 
-    .large-logo-text {
-        font-size: 13.5vw;
-        letter-spacing: -0.04em;
-    }
 }
 
 /* =========================
@@ -616,40 +557,8 @@ footer {
         padding: 25px 20px;
     }
 
-    .overlay-logo {
-        font-size: 25px;
-    }
-
-    .overlay-menu-text a {
-        font-size: 22px;
-    }
-
     .footer-column-container {
         gap: 15px;
     }
 
-    .caption-text {
-        font-size: 14px;
-        line-height: 24px;
-    }
-}
-
-/* =========================
-   REDUCED MOTION
-========================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-    .overlay-menu,
-    .overlay-menu.menu-open,
-    .overlay-menu-text a,
-    .close-btn,
-    .nav-bar-text a,
-    .social-icon a {
-        transition: none;
-    }
 }
