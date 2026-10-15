@@ -391,6 +391,7 @@ footer {
 .footer-corner-logo>p {
     color: var(--white);
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .footer-corner-logo .footer-column {
