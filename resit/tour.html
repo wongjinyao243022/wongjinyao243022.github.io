@@ -12,80 +12,63 @@
 
 <body>
     <header>
+        <!-- Logo -->
         <div class="header-logo">
-            <img src="images/header-logo.png" width="100%">
+            <a href="index.html">
+                <img src="images/header-logo.png" alt="Elementra Travel" width="100%">
+            </a>
         </div>
 
-        <!--Navigation bar-->
+        <!-- Desktop navigation -->
         <nav class="nav-bar">
             <ul class="nav-bar-text">
-                <li class="overline-text"><a href="index.html">HOME</a></li>
-                <li class="overline-text"><a href="about.html">ABOUT</a></li>
-                <li class="overline-text"><a href="tour.html">TOURS</a></li>
-                <li class="overline-text"><a href="contact.html">CONTACT</a></li>
+                <li class="overline-text">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="overline-text">
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="overline-text">
+                    <a href="tour.html">TOURS</a>
+                </li>
+                <li class="overline-text">
+                    <a href="contact.html">CONTACT</a>
+                </li>
             </ul>
 
-            <!--Social media icons-->
+            <!-- Social media icons -->
             <div class="social-icon">
                 <span>
-                    <a href="https://x.com/ThemerexThemes">
+                    <a href="https://x.com/ThemerexThemes" aria-label="X">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/themerex_net/">
-                        <i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://www.instagram.com/themerex_net/" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </span>
             </div>
         </nav>
 
-        <!-- Hamburger menu -->
-        <div class="hamburger-menu">
-            <img src="images/hamburger-menu.png" width="30px" height="25px">
-        </div>
+        <!-- Hamburger button -->
+        <button class="hamburger-menu" type="button" aria-label="Open menu" aria-controls="overlay-menu"
+            aria-expanded="false">
+            <img src="images/hamburger-menu.png" alt="" width="30" height="25">
+        </button>
 
-        <!-- Overlay menu for laptop view -->
-        <div class="overlay-menu">
-            <button id="close-menu" class="close-btn" type="button">
-                ✕
+        <!-- Single overlay menu -->
+        <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
+
+            <button id="close-menu" class="close-btn" type="button" aria-label="Close menu">
+                &times;
             </button>
 
-            <div class="overlay-menu-text">
-
-                <!--Home-->
-                <a href="index.html">
-                    <span class="menu-text">
-                        <p class="text">
-                            HOME
-                        </p>
-                    </span>
-                </a>
-
-                <!--about-->
-                <a href="about.html">
-                    <span class="menu-text">
-                        <p class="text">
-                            ABOUT
-                        </p>
-                    </span>
-                </a>
-
-                <!--tours-->
-                <a href="tours.html">
-                    <span class="menu-text">
-                        <p class="text">
-                            TOURS
-                        </p>
-                    </span>
-                </a>
-
-                <!--contact-->
-                <a href="contact.html">
-                    <span class="menu-text">
-                        <p class="text">
-                            CONTACT
-                        </p>
-                    </span>
-                </a>
-            </div>
+            <nav class="overlay-menu-text">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="tour.html">TOURS</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
         </div>
     </header>
 
@@ -444,7 +427,7 @@
 
             <div class="footer-text">
                 <div class="footer-corner-logo">
-                    <p class="section-subtitle">ELEMENTRA.</p>
+                    <p class="section-subtitle"><a href="index.html">ELEMENTRA.</a></p>
                     <div class="footer-column">
                         <p class="caption-text">At Elementra, we believe in the power of creativity and collaboration to
                             drive success. Our dedicated team is here to help you.</p>
@@ -453,61 +436,53 @@
 
                 <div class="footer-column">
                     <p class="footer-column-title">OFFICE</p>
-                    <p class="caption-text">Germany —<br> 785 15h Street, Office 47<br> Berlin, De
-                        81566
-                    </p>
-                    <p class="caption-text">info@gmail.com</p>
-                    <p class="footer-column-title">+1 840 841 25 69</p>
+                    <p class="caption-text"><a href="https://maps.app.goo.gl/UQkBmGNQtGwj8os89" target="_blank">Germany
+                            —<br> 785 15h Street, Office 47<br> Berlin, De
+                            81566
+                        </a></p>
+                    <p class="caption-text"><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+                    <p class="footer-column-title"><a href="tel:+18408412569">+1 840 841 25 69</a></p>
                 </div>
+                <div class="footer-column-container">
+                    <div class="footer-column">
 
-                <div class="footer-column">
+                        <p class="footer-column-title">LINKS</p>
 
-                    <p class="footer-column-title">LINKS</p>
-
-                    <p class="caption-text">
-                        Home
-                    </p>
-
-                    <p class="caption-text">
-                        About
-                    </p>
-
-                    <p class="caption-text">
-                        Tours
-                    </p>
-
-                    <p class="caption-text">
-                        Contact
-                    </p>
-                </div>
-
-                <div class="footer-column">
+                        <p class="caption-text"><a href="index.html">Home</a></p>
 
 
-                    <p class="footer-column-title">FOLLOW US</p>
+                        <p class="caption-text"><a href="about.html">About</a></p>
 
-                    <p class="caption-text">
-                        Facebook
-                    </p>
+                        <p class="caption-text"><a href="tour.html">Tours</a></p>
 
-                    <p class="caption-text">
-                        Twitter
-                    </p>
 
-                    <p class="caption-text">
-                        Instagram
-                    </p>
+                        <p class="caption-text"><a href="contact.html">Contact</a></p>
+                    </div>
 
-                    <p class="caption-text">
-                        Youtube
-                    </p>
+                    <div class="footer-column">
+
+
+                        <p class="footer-column-title">FOLLOW US</p>
+
+                        <p class="caption-text"><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></p>
+
+
+                        <p class="caption-text"><a href="https://x.com/themerexthemes">Twitter</a></p>
+
+
+                        <p class="caption-text"><a href="https://www.instagram.com/themerex_net/">Instagram</a></p>
+
+
+                        <p class="caption-text"><a href="https://www.youtube.com/@themerex">Youtube</a></p>
+
+                    </div>
 
                 </div>
-
-
             </div>
             <div class="footer-large-logo-text">
-                <p class="large-logo-text">ELEMENTRA</p>
+                <p class="large-logo-text">
+                    ELEMENTRA
+                </p>
             </div>
 
         </div>
