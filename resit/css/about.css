@@ -1,0 +1,219 @@
+/* Styles used only on the about page. */
+.about-intro {
+    padding-top: 125px;
+}
+
+.about-intro .section-title {
+    width: 66%;
+}
+
+.about-description {
+    width: 50%;
+    margin: 20px 0 60px auto;
+}
+
+.about-hero-image {
+    width: 100%;
+}
+
+.about-counter {
+    padding: 100px 0;
+}
+
+.about-counter .caption-text {
+    margin-bottom: 20px;
+}
+
+.about-counter .counter-text {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.team-section {
+    padding: 150px 0 110px;
+}
+
+.team-heading {
+    padding-right: 25px;
+}
+
+.team-heading .feature-title {
+    margin-top: 28px;
+}
+
+.team-card img {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.team-card h3 {
+    margin-bottom: 6px;
+}
+
+.about-word {
+    color: #e4e5d8;
+    font-size: 14.75vw;
+}
+
+.about-reviews .section-heading {
+    max-width: 920px;
+}
+
+.partner-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: var(--white);
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+    border: 1px solid #f1f1f1;
+}
+
+.partner-item img {
+    width: 190px;
+}
+
+.explore-gallery {
+    align-items: center;
+    gap: 70px;
+    margin-top: 80px;
+}
+
+.explore-gallery img {
+    width: 100%;
+}
+
+.join-team-section {
+    padding-top: 0;
+}
+
+.join-team-section .section-heading {
+    margin-bottom: 80px;
+}
+
+.benefit-card {
+    padding: 0 30px;
+}
+
+/* Desktop */
+@media (max-width: 1472px) {
+    .explore-gallery {
+        gap: 50px;
+    }
+
+    .benefit-card {
+        padding: 0 25px;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1278px) {
+    .about-intro {
+        padding-top: 85px;
+    }
+
+    .about-intro .section-title {
+        width: 85%;
+    }
+
+    .about-counter .counter-text {
+        font-size: 54px;
+        line-height: 1;
+    }
+
+    .team-section {
+        padding: 80px 0;
+    }
+
+    .team-heading {
+        padding-right: 0;
+    }
+
+    .team-heading .feature-title {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .partner-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .partner-item {
+        padding: 35px 25px;
+    }
+
+    .explore-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .benefit-card {
+        padding: 0;
+    }
+}
+
+/* Tablet */
+@media (max-width: 766px) {
+    .about-intro {
+        padding-top: 60px;
+    }
+
+    .about-intro .section-title, .about-description {
+        width: 100%;
+    }
+
+    .about-description {
+        margin: 25px 0 40px;
+    }
+
+    .team-section {
+        padding: 30px 0 70px;
+    }
+
+    .team-card {
+        max-width: 410px;
+        margin: 0 auto;
+    }
+
+    .partner-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .join-team-section .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .benefit-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 421px) {
+    .about-intro {
+        padding-top: 45px;
+    }
+
+    .about-counter .counter-text {
+        font-size: 46px;
+    }
+
+    .partner-item {
+        padding: 25px 20px;
+    }
+
+    .explore-gallery {
+        gap: 20px;
+    }
+}

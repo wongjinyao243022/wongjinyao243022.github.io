@@ -4,148 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementra Travel</title>
+    <meta name="description"
+        content="Explore Elementra travel packages, from seaside escapes to wilderness adventures.">
+    <title>Our tours | Elementra Travel</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="css/tour.css">
 </head>
 
-<body>
-    <header>
-        <!-- Logo -->
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="images/header-logo.png" alt="Elementra Travel" width="100%">
-            </a>
-        </div>
+<body class="inner-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-        <!-- Desktop navigation -->
-        <nav class="nav-bar">
-            <ul class="nav-bar-text">
-                <li class="overline-text">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="overline-text">
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li class="overline-text">
-                    <a href="tour.html">TOURS</a>
-                </li>
-                <li class="overline-text">
-                    <a href="contact.html">CONTACT</a>
-                </li>
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html" class="header-logo"><img src="images/header-logo.png" alt="Elementra Travel — Home"
+                width="195" height="24"></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="tour.html" aria-current="page">TOURS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
-
-            <!-- Social media icons -->
-            <div class="social-icon">
-                <span>
-                    <a href="https://x.com/ThemerexThemes" aria-label="X">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/themerex_net/" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </span>
+            <div class="social-links">
+                <a href="https://x.com/ThemerexThemes" aria-label="Elementra on X">𝕏</a>
+                <a href="https://www.instagram.com/themerex_net/" aria-label="Elementra on Instagram"><span
+                        class="instagram-icon" aria-hidden="true"></span></a>
             </div>
         </nav>
 
-        <!-- Hamburger button -->
-        <button class="hamburger-menu" type="button" aria-label="Open menu" aria-controls="overlay-menu"
-            aria-expanded="false">
-            <img src="images/hamburger-menu.png" alt="" width="30" height="25">
-        </button>
-
-        <!-- Single overlay menu -->
-        <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
-
-            <button id="close-menu" class="close-btn" type="button" aria-label="Close menu">
-                &times;
-            </button>
-
-            <nav class="overlay-menu-text">
+        <!-- Mobile menu -->
+        <details class="mobile-menu">
+            <summary aria-label="Toggle navigation menu">
+                <img src="images/hamburger-menu.png" alt="" width="28" height="24">
+            </summary>
+            <nav aria-label="Mobile navigation">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
-                <a href="tour.html">TOURS</a>
+                <a href="tour.html" aria-current="page">TOURS</a>
                 <a href="contact.html">CONTACT</a>
             </nav>
-        </div>
+        </details>
     </header>
+    <main id="main-content">
+        <section class="section-heading tour-intro container">
+            <p class="overline-text">Travel packages &amp; tours</p>
+            <h1 class="section-title">Discover our tours</h1>
+            <p class="caption-text">Elementra Travel curates unique travel experiences through personalized planning.
+            </p>
+        </section>
 
-
-
-
-
-
-
-    <footer id="footer">
-        <div class="footer-container">
-
-            <div class="footer-text">
-                <div class="footer-corner-logo">
-                    <p class="section-subtitle"><a href="index.html">ELEMENTRA.</a></p>
-                    <div class="footer-column">
-                        <p class="caption-text">At Elementra, we believe in the power of creativity and collaboration to
-                            drive success. Our dedicated team is here to help you.</p>
-                    </div>
+        <!-- Each tour uses the same image and text layout. -->
+        <section class="container tour-list" aria-label="Available tours">
+            <article class="tour-card">
+                <img class="tour-image" src="images/tour-1.jpg" alt="Hot-air balloons floating above a rocky valley"
+                    width="850" height="670">
+                <div class="tour-content">
+                    <h2 class="feature-title">Skyward Adventure</h2>
+                    <p class="caption-text">3 days</p>
+                    <p class="caption-text tour-description">Elementra Travel showcases a portfolio that reflects our
+                        unique travel experiences.</p>
+                    <a href="contact.html" class="text-link">Explore more <span aria-hidden="true">↗</span></a>
                 </div>
+            </article>
+            <article class="tour-card">
+                <img class="tour-image" src="images/tour-2.jpg" alt="A relaxing resort beside the sea" loading="lazy"
+                    width="850" height="670">
+                <div class="tour-content">
+                    <h2 class="feature-title">Seaside resort</h2>
+                    <p class="caption-text">5 days</p>
+                    <p class="caption-text tour-description">Elementra Travel showcases a portfolio that reflects our
+                        unique travel experiences.</p>
+                    <a href="contact.html" class="text-link">Explore more <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="tour-card">
+                <img class="tour-image" src="images/tour-3.jpg" alt="Wildlife in a natural safari landscape"
+                    loading="lazy" width="850" height="670">
+                <div class="tour-content">
+                    <h2 class="feature-title">Wilderness Safari</h2>
+                    <p class="caption-text">2 days</p>
+                    <p class="caption-text tour-description">Elementra Travel showcases a portfolio that reflects our
+                        unique travel experiences.</p>
+                    <a href="contact.html" class="text-link">Explore more <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="tour-card">
+                <img class="tour-image" src="images/tour-4.jpg" alt="A picturesque European destination" loading="lazy"
+                    width="850" height="670">
+                <div class="tour-content">
+                    <h2 class="feature-title">Europe Tour</h2>
+                    <p class="caption-text">10 days</p>
+                    <p class="caption-text tour-description">Elementra Travel showcases a portfolio that reflects our
+                        unique travel experiences.</p>
+                    <a href="contact.html" class="text-link">Explore more <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="tour-card">
+                <img class="tour-image" src="images/tour-5.jpg" alt="A lighthouse overlooking a dramatic coastline"
+                    loading="lazy" width="850" height="670">
+                <div class="tour-content">
+                    <h2 class="feature-title">Lighthouse Views</h2>
+                    <p class="caption-text">3 days</p>
+                    <p class="caption-text tour-description">Elementra Travel showcases a portfolio that reflects our
+                        unique travel experiences.</p>
+                    <a href="contact.html" class="text-link">Explore more <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </section>
 
+        <!-- Click a question to open or close its answer. -->
+        <section class="section white-section faq-section">
+            <div class="container two-columns">
+                <div class="faq-heading">
+                    <p class="overline-text">Common questions</p>
+                    <h2 class="section-title">Frequently asked questions</h2>
+                    <p class="caption-text">Elementra Travel offers insights into our unique travel experiences. We
+                        address all your travel inquiries and concerns.</p>
+                </div>
+                <div>
+                    <details class="faq-item">
+                        <summary>
+                            What should I do first?
+                        </summary>
+                        <p class="caption-text">Contact our team with your destination ideas, travel dates, and budget.
+                            We will help you choose a tour and plan the next steps.</p>
+                    </details>
+                    <details class="faq-item" open>
+                        <summary>
+                            Do you provide virtual consultations?
+                        </summary>
+                        <p class="caption-text">Yes, we offer virtual consultations to assist you in planning your dream
+                            trip from the comfort of your home. Our experts are ready to discuss your travel preferences
+                            and help you create a tailored itinerary.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            What travel services do you specialize in?
+                        </summary>
+                        <p class="caption-text">We specialize in travel agency services, emphasizing personalized travel
+                            planning, group travel coordination, and delivering valuable travel content through our
+                            blog.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            Do you collaborate with startups?
+                        </summary>
+                        <p class="caption-text">Yes, we can help plan group trips and company retreats. Contact our team
+                            to discuss the size of your group, your goals, and your budget.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="tour-cta photo-banner">
+            <div class="container">
+                <h2 class="medium-title">Let's embark on your dream trip today!</h2>
+                <a href="contact.html" class="button">Get started now</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wide-container">
+            <div class="footer-columns">
+                <div class="footer-intro">
+                    <a href="index.html" class="footer-logo">ELEMENTRA.</a>
+                    <p>At Elementra, we believe in the power of creativity and collaboration to drive success. Our
+                        dedicated team is here to help you.</p>
+                </div>
+                <div class="footer-column footer-office">
+                    <h2>Office</h2>
+                    <p>Germany —<br>785 15h Street, Office 47<br>Berlin, De 81566</p>
+                    <p><a href="mailto:hi@elementra.com">hi@elementra.com</a></p>
+                    <p><a href="tel:+18408412569">+1 840 841 25 69</a></p>
+                </div>
+                <nav class="footer-column" aria-label="Footer navigation">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tour.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
                 <div class="footer-column">
-                    <p class="footer-column-title">OFFICE</p>
-                    <p class="caption-text"><a href="https://maps.app.goo.gl/UQkBmGNQtGwj8os89" target="_blank">Germany
-                            —<br> 785 15h Street, Office 47<br> Berlin, De
-                            81566
-                        </a></p>
-                    <p class="caption-text"><a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                    <p class="footer-column-title"><a href="tel:+18408412569">+1 840 841 25 69</a></p>
-                </div>
-                <div class="footer-column-container">
-                    <div class="footer-column">
-
-                        <p class="footer-column-title">LINKS</p>
-
-                        <p class="caption-text"><a href="index.html">Home</a></p>
-
-
-                        <p class="caption-text"><a href="about.html">About</a></p>
-
-                        <p class="caption-text"><a href="tour.html">Tours</a></p>
-
-
-                        <p class="caption-text"><a href="contact.html">Contact</a></p>
-                    </div>
-
-                    <div class="footer-column">
-
-
-                        <p class="footer-column-title">FOLLOW US</p>
-
-                        <p class="caption-text"><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></p>
-
-
-                        <p class="caption-text"><a href="https://x.com/themerexthemes">Twitter</a></p>
-
-
-                        <p class="caption-text"><a href="https://www.instagram.com/themerex_net/">Instagram</a></p>
-
-
-                        <p class="caption-text"><a href="https://www.youtube.com/@themerex">Youtube</a></p>
-
-                    </div>
-
+                    <h2>Follow us</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></li>
+                        <li><a href="https://x.com/ThemerexThemes">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/themerex_net/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@themerex">YouTube</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-large-logo-text">
-                <p class="large-logo-text">
-                    ELEMENTRA
-                </p>
-            </div>
-
+            <p class="large-word footer-word" aria-hidden="true">Elementra</p>
         </div>
-
     </footer>
-
 </body>
 
 </html>

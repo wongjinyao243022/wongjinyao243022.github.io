@@ -1,151 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Meet Elementra Travel and the people behind our personalized travel experiences.">
+        <title>About us | Elementra Travel</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/about.css">
+    </head>
+    <body class="inner-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementra Travel</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="js/menu.js" defer></script>
-</head>
-
-<body>
-    <header>
-        <!-- Logo -->
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="images/header-logo.png" alt="Elementra Travel" width="100%">
-            </a>
-        </div>
-
-        <!-- Desktop navigation -->
-        <nav class="nav-bar">
-            <ul class="nav-bar-text">
-                <li class="overline-text">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="overline-text">
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li class="overline-text">
-                    <a href="tour.html">TOURS</a>
-                </li>
-                <li class="overline-text">
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-
-            <!-- Social media icons -->
-            <div class="social-icon">
-                <span>
-                    <a href="https://x.com/ThemerexThemes" aria-label="X">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/themerex_net/" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </span>
-            </div>
-        </nav>
-
-        <!-- Hamburger button -->
-        <button class="hamburger-menu" type="button" aria-label="Open menu" aria-controls="overlay-menu"
-            aria-expanded="false">
-            <img src="images/hamburger-menu.png" alt="" width="30" height="25">
-        </button>
-
-        <!-- Single overlay menu -->
-        <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
-
-            <button id="close-menu" class="close-btn" type="button" aria-label="Close menu">
-                &times;
-            </button>
-
-            <nav class="overlay-menu-text">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="tour.html">TOURS</a>
-                <a href="contact.html">CONTACT</a>
+        <!-- Header -->
+        <header class="site-header">
+            <a href="index.html" class="header-logo"><img src="images/header-logo.png" alt="Elementra Travel — Home" width="195" height="24"></a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" aria-current="page">ABOUT</a></li>
+                    <li><a href="tour.html">TOURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://x.com/ThemerexThemes" aria-label="Elementra on X">𝕏</a>
+                    <a href="https://www.instagram.com/themerex_net/" aria-label="Elementra on Instagram"><span class="instagram-icon" aria-hidden="true"></span></a>
+                </div>
             </nav>
-        </div>
-    </header>
 
+            <!-- Mobile menu -->
+            <details class="mobile-menu">
+                <summary aria-label="Toggle navigation menu">
+                    <img src="images/hamburger-menu.png" alt="" width="28" height="24">
+                </summary>
+                <nav aria-label="Mobile navigation">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html" aria-current="page">ABOUT</a>
+                    <a href="tour.html">TOURS</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+            </details>
+        </header>
+        <main id="main-content">
 
-
-
-
-
-
-    <footer id="footer">
-        <div class="footer-container">
-
-            <div class="footer-text">
-                <div class="footer-corner-logo">
-                    <p class="section-subtitle"><a href="index.html">ELEMENTRA.</a></p>
-                    <div class="footer-column">
-                        <p class="caption-text">At Elementra, we believe in the power of creativity and collaboration to
-                            drive success. Our dedicated team is here to help you.</p>
+            <!-- Our story -->
+            <section class="about-intro container">
+                <p class="overline-text">Our journey so far</p>
+                <h1 class="section-title"><span class="highlight-text">Our story &amp; mission:</span> creating personalized travel experiences</h1>
+                <p class="caption-text about-description">Elementra Travel began as a small travel blog in 2020, sharing stories and tips. We have since evolved into a full-service travel agency, committed to creating unforgettable journeys for our clients.</p>
+                <img class="about-hero-image" src="images/about-hero.jpg" alt="Sunset over a quiet coastal landscape" width="1290" height="500">
+            </section>
+            <section class="counter-section about-counter" aria-label="Our agency in numbers">
+                <div class="container four-columns">
+                    <div class="counter-item">
+                        <p class="caption-text">Founded in</p>
+                        <p class="counter-text">2020</p>
+                    </div>
+                    <div class="counter-item">
+                        <p class="caption-text">Countries served</p>
+                        <p class="counter-text">54</p>
+                    </div>
+                    <div class="counter-item">
+                        <p class="caption-text">Colleagues</p>
+                        <p class="counter-text">254</p>
+                    </div>
+                    <div class="counter-item">
+                        <p class="caption-text">Clients satisfaction</p>
+                        <p class="counter-text">98%</p>
                     </div>
                 </div>
+            </section>
 
-                <div class="footer-column">
-                    <p class="footer-column-title">OFFICE</p>
-                    <p class="caption-text"><a href="https://maps.app.goo.gl/UQkBmGNQtGwj8os89" target="_blank">Germany
-                            —<br> 785 15h Street, Office 47<br> Berlin, De
-                            81566
-                        </a></p>
-                    <p class="caption-text"><a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                    <p class="footer-column-title"><a href="tel:+18408412569">+1 840 841 25 69</a></p>
+            <!-- Our leaders -->
+            <section class="team-section">
+                <div class="container three-columns">
+                    <div class="team-heading">
+                        <p class="overline-text">Meet our team</p>
+                        <h2 class="section-title">Our leaders</h2>
+                        <p class="feature-title">We're 120+ individuals from across the world driven by bold ideas.</p>
+                    </div>
+                    <article class="team-card">
+                        <img src="images/team-1.jpg" alt="David Carter" loading="lazy" width="410" height="540">
+                        <h3 class="small-title">David Carter</h3>
+                        <p class="caption-text">CEO &amp; Founder</p>
+                    </article>
+                    <article class="team-card">
+                        <img src="images/team-2.jpg" alt="Sarah Thompson" loading="lazy" width="410" height="540">
+                        <h3 class="small-title">Sarah Thompson</h3>
+                        <p class="caption-text">CMO &amp; Co-founder</p>
+                    </article>
                 </div>
-                <div class="footer-column-container">
-                    <div class="footer-column">
-
-                        <p class="footer-column-title">LINKS</p>
-
-                        <p class="caption-text"><a href="index.html">Home</a></p>
-
-
-                        <p class="caption-text"><a href="about.html">About</a></p>
-
-                        <p class="caption-text"><a href="tour.html">Tours</a></p>
-
-
-                        <p class="caption-text"><a href="contact.html">Contact</a></p>
+            </section>
+            <p class="large-word about-word" aria-hidden="true">Elementra</p>
+            <section class="section about-reviews">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="overline-text">Inside our agency</p>
+                        <h2 class="section-title">What our team has to say about working here</h2>
                     </div>
-
-                    <div class="footer-column">
-
-
-                        <p class="footer-column-title">FOLLOW US</p>
-
-                        <p class="caption-text"><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></p>
-
-
-                        <p class="caption-text"><a href="https://x.com/themerexthemes">Twitter</a></p>
-
-
-                        <p class="caption-text"><a href="https://www.instagram.com/themerex_net/">Instagram</a></p>
-
-
-                        <p class="caption-text"><a href="https://www.youtube.com/@themerex">Youtube</a></p>
-
-                    </div>
-
+                </div>
+                <div class="wide-container four-columns review-grid">
+                    <article class="testimonial-card">
+                        <p class="review-rating" aria-label="Traveller rating">★★★★★</p>
+                        <p class="review-text">Elementra Travel turned my trip into a remarkable journey! Their tailored planning made everything smooth and delightful.</p>
+                        <div class="testimonial-person">
+                            <img src="images/testimonial-1.jpg" alt="Isabella Rossi" width="65" height="65" loading="lazy">
+                            <div>
+                                <h3>Isabella Rossi</h3>
+                                <p class="caption-text">Luxury traveler</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="review-rating" aria-label="Traveller rating">★★★★☆</p>
+                        <p class="review-text">Elementra turned my getaway into a remarkable journey! Their attention and tailored service made everything perfect.</p>
+                        <div class="testimonial-person">
+                            <img src="images/testimonial-2.jpg" alt="Sophie Dupont" width="65" height="65" loading="lazy">
+                            <div>
+                                <h3>Sophie Dupont</h3>
+                                <p class="caption-text">Road tripper</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="review-rating" aria-label="Traveller rating">★★★★★</p>
+                        <p class="review-text">Thanks to Elementra, I had the adventure of a lifetime! Their knowledgeable guidance was essential during the trip.</p>
+                        <div class="testimonial-person">
+                            <img src="images/testimonial-3.jpg" alt="Hannah Baker" width="65" height="65" loading="lazy">
+                            <div>
+                                <h3>Hannah Baker</h3>
+                                <p class="caption-text">Cruise lover</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="review-rating" aria-label="Traveller rating">★★★★☆</p>
+                        <p class="review-text">Elementra Travel turned my trip into an unforgettable adventure! Their tailored planning made every detail perfect.</p>
+                        <div class="testimonial-person">
+                            <img src="images/testimonial-4.jpg" alt="Aron Smith" width="65" height="65" loading="lazy">
+                            <div>
+                                <h3>Aron Smith</h3>
+                                <p class="caption-text">Adventure seeker</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="partner-section" aria-label="Our travel partners">
+                <div class="partner-item">
+                    <img src="images/partner-1.png" alt="Booking.com" loading="lazy" width="190" height="80">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-2.png" alt="Sabre" loading="lazy" width="190" height="80">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-3.png" alt="CNN" loading="lazy" width="190" height="80">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-4.png" alt="BBC" loading="lazy" width="190" height="80">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-5.png" alt="Trainline" loading="lazy" width="190" height="80">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-6.png" alt="Transat" loading="lazy" width="190" height="80">
                 </div>
             </div>
-            <div class="footer-large-logo-text">
-                <p class="large-logo-text">
-                    ELEMENTRA
-                </p>
+            <section class="section white-section explore-section">
+                <div class="container">
+                    <p class="overline-text">Driven by passion</p>
+                    <div class="two-columns explore-heading">
+                        <h2 class="section-title">Let's explore together</h2>
+                        <div class="text-content">
+                            <p class="caption-text">Elementra Travel is dedicated to crafting unique travel experiences that inspire and enrich. We believe in the power of exploration and the joy it brings.</p>
+                            <p class="caption-text">With a focus on personalized service, we ensure that your travel dreams become a reality. Join us as we embark on adventures that create lasting memories.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wide-container four-columns explore-gallery">
+                    <img src="images/explore-1.jpg" alt="Discovering a new landscape" loading="lazy" width="585" height="525">
+                    <img src="images/explore-2.jpg" alt="A memorable outdoor journey" loading="lazy" width="585" height="750">
+                    <img src="images/explore-3.jpg" alt="Exploring a beautiful destination" loading="lazy" width="585" height="525">
+                    <img src="images/explore-4.jpg" alt="An inspiring travel experience" loading="lazy" width="585" height="750">
+                </div>
+            </section>
+            <section class="section white-section join-team-section">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="overline-text">Embark on our adventure</p>
+                        <h2 class="section-title">Join our team</h2>
+                    </div>
+                    <div class="three-columns">
+                        <article class="benefit-card feature-card">
+                            <p class="feature-icon" aria-hidden="true">☀</p>
+                            <h3 class="feature-title">Flexible work</h3>
+                            <p class="caption-text">Experience the joy of travel planning with our expert guidance.</p>
+                        </article>
+                        <article class="benefit-card feature-card">
+                            <p class="feature-icon" aria-hidden="true">↗</p>
+                            <h3 class="feature-title">Career growth</h3>
+                            <p class="caption-text">Our service helps clients design their dream vacations tailored to their preferences.</p>
+                        </article>
+                        <article class="benefit-card feature-card">
+                            <p class="feature-icon" aria-hidden="true">♡</p>
+                            <h3 class="feature-title">Wellness benefits</h3>
+                            <p class="caption-text">We specialize in organizing group travel for families and corporate events.</p>
+                        </article>
+                    </div>
+                    <div class="button-row">
+                        <a href="contact.html" class="button">Get started now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wide-container">
+                <div class="footer-columns">
+                    <div class="footer-intro">
+                        <a href="index.html" class="footer-logo">ELEMENTRA.</a>
+                        <p>At Elementra, we believe in the power of creativity and collaboration to drive success. Our dedicated team is here to help you.</p>
+                    </div>
+                    <div class="footer-column footer-office">
+                        <h2>Office</h2>
+                        <p>Germany —<br>785 15h Street, Office 47<br>Berlin, De 81566</p>
+                        <p><a href="mailto:hi@elementra.com">hi@elementra.com</a></p>
+                        <p><a href="tel:+18408412569">+1 840 841 25 69</a></p>
+                    </div>
+                    <nav class="footer-column" aria-label="Footer navigation">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="tour.html">Tours</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-column">
+                        <h2>Follow us</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></li>
+                            <li><a href="https://x.com/ThemerexThemes">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/themerex_net/">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/@themerex">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="large-word footer-word" aria-hidden="true">Elementra</p>
             </div>
-
-        </div>
-
-    </footer>
-
-</body>
-
+        </footer>
+    </body>
 </html>

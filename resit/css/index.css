@@ -1,0 +1,387 @@
+/* Styles used only on the home page. */
+.hero-section {
+    padding: 45px 0 95px;
+    background: url("../images/deco-mountains.png") right 210px / 42% auto no-repeat;
+}
+
+.hero-title {
+    font-size: 10.8vw;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+}
+
+.hero-title span {
+    display: block;
+    font-size: 7vw;
+    letter-spacing: -0.025em;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 25% 36% 27%;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.hero-description {
+    max-width: 270px;
+    align-self: start;
+    padding-top: 80px;
+}
+
+.hero-arrow {
+    margin-bottom: 50px;
+    font-size: 75px;
+    line-height: 1;
+}
+
+.hero-description .overline-text {
+    line-height: 26px;
+}
+
+.hero-image-main, .hero-image-small {
+    width: 100%;
+}
+
+.services-section .section-heading {
+    margin-bottom: 90px;
+}
+
+.service-card img {
+    width: 260px;
+    margin: 30px auto;
+}
+
+.service-card .caption-text {
+    margin-top: 12px;
+}
+
+.locations-intro {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.locations-intro .feature-title {
+    text-transform: uppercase;
+}
+
+.locations-gallery img {
+    width: 100%;
+}
+
+.locations-gallery img:nth-child(even) {
+    margin-top: 30px;
+}
+
+.memories-section {
+    display: flex;
+    align-items: end;
+    min-height: 40vw;
+    padding: 60px 0;
+    background-image: url("../images/memories.jpg");
+}
+
+.memories-section .section-title {
+    max-width: 585px;
+    margin-bottom: 30px;
+}
+
+.adventure-layout {
+    gap: 14%;
+}
+
+.adventure-left .text-content {
+    margin-top: 30px;
+}
+
+.adventure-left img {
+    margin-top: 100px;
+}
+
+.adventure-right .text-content {
+    margin-top: 40px;
+}
+
+.adventure-layout img {
+    width: 100%;
+}
+
+.blog-section .section-heading {
+    max-width: 670px;
+}
+
+.blog-card img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blog-card .overline-text {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.blog-card h3 {
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.blog-card .caption-text {
+    font-size: 13px;
+}
+
+.ordinary-section {
+    padding: 70px 0;
+    background: url("../images/ordinary.jpg") center / cover;
+}
+
+.ordinary-content {
+    width: 410px;
+    min-height: 560px;
+    margin-left: auto;
+    padding: 55px 40px;
+    background-color: var(--white);
+}
+
+.ordinary-content .caption-text {
+    margin: 30px 0;
+}
+
+/* Radio buttons let the reader choose a review without JavaScript. */
+.review-slider {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review-choice {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.home-reviews .testimonial-card {
+    display: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.review-choice:checked + .testimonial-card {
+    display: block;
+}
+
+.review-choice:focus-visible + .testimonial-card {
+    outline: 2px solid var(--rustysword);
+    outline-offset: 10px;
+}
+
+.home-reviews .review-text {
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.home-reviews .testimonial-person {
+    flex-direction: column;
+}
+
+.review-dots {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.review-dots label {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e3e4d8;
+    cursor: pointer;
+}
+
+#review-1:checked ~ .review-dots label[for="review-1"],
+#review-2:checked ~ .review-dots label[for="review-2"],
+#review-3:checked ~ .review-dots label[for="review-3"] {
+    background-color: var(--softorange);
+}
+
+.instagram-section {
+    padding-bottom: 150px;
+}
+
+.instagram-section h2 {
+    margin-bottom: 50px;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.instagram-section h2 a {
+    border-bottom: 1px solid currentColor;
+}
+
+.instagram-gallery img {
+    width: 100%;
+}
+
+/* Desktop */
+@media (max-width: 1472px) {
+    .blog-card h3 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1278px) {
+    .hero-section {
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+
+    .hero-description {
+        padding-top: 45px;
+    }
+
+    .hero-arrow {
+        margin-bottom: 30px;
+        font-size: 55px;
+    }
+
+    .hero-description .overline-text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .locations-intro {
+        margin-top: 65px;
+    }
+
+    .locations-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .adventure-layout {
+        gap: 8%;
+    }
+
+    .ordinary-content {
+        width: 380px;
+        min-height: 0;
+        padding: 45px 35px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 766px) {
+    .hero-section {
+        padding: 30px 0 0;
+        background-position: right 150px;
+        background-size: 75%;
+    }
+
+    .hero-title span {
+        margin-bottom: 8px;
+        font-size: 9vw;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 35px;
+    }
+
+    .hero-description {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        padding-top: 0;
+    }
+
+    .hero-arrow {
+        display: none;
+    }
+
+    .service-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .services-section .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .locations-intro {
+        margin-top: 40px;
+    }
+
+    .locations-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .memories-section {
+        min-height: 420px;
+        padding: 40px 0;
+    }
+
+    .adventure-layout {
+        gap: 45px;
+    }
+
+    .adventure-left img {
+        margin-top: 40px;
+    }
+
+    .ordinary-section {
+        padding: 150px 0 40px;
+    }
+
+    .ordinary-content {
+        width: 100%;
+        max-width: 410px;
+        padding: 35px 25px;
+    }
+
+    .home-reviews .review-text {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .instagram-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .instagram-section {
+        padding-bottom: 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 421px) {
+    .hero-title {
+        font-size: 10vw;
+    }
+
+    .hero-layout {
+        gap: 20px;
+    }
+
+    .blog-card h3 {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .instagram-gallery {
+        gap: 15px;
+    }
+}
