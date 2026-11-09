@@ -58,13 +58,6 @@ h4 {
     font-weight: 400;
 }
 
-/* Keep keyboard navigation visible. */
-a:focus,
-button:focus {
-    outline: 2px solid var(--orange);
-    outline-offset: 4px;
-}
-
 /* 3. Text styles: reuse these classes instead of repeating font sizes. */
 .page-title {
     font-size: 88px;
