@@ -1,175 +1,443 @@
-/* Styles used only on the tours page. */
-.tour-intro {
-    padding: 150px 0 50px;
-    margin-bottom: 0;
+/* Tours page */
+.tour-hero {
+    padding-top: 105px;
+    padding-bottom: 65px;
+    text-align: center;
+}
+
+.tour-hero h1 {
+    margin-bottom: 10px;
+    font-size: clamp(56px, 6vw, 92px);
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .tour-list {
-    padding-bottom: 150px;
+    padding-top: 0;
 }
 
 .tour-card {
     display: grid;
-    grid-template-columns: 2.08fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
-.tour-card:last-child {
-    margin-bottom: 0;
-}
-
-.tour-image {
+.tour-card>img {
     width: 100%;
-    height: 100%;
+    height: 570px;
     object-fit: cover;
 }
 
-.tour-content {
+.tour-card-copy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 45px 40px;
-    background-color: var(--white);
+    min-height: 570px;
+    padding: 48px 54px;
+    background: var(--white);
 }
 
-.tour-content h2 {
-    margin-bottom: 8px;
+.tour-card-copy h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
-.tour-description {
-    margin: 30px 0 40px;
+.tour-card-copy>p:nth-of-type(2) {
+    max-width: 560px;
 }
 
-.tour-content .text-link {
+.tour-card-copy .arrow-link {
     margin-top: auto;
 }
 
-.faq-heading .caption-text {
-    max-width: 440px;
-    margin-top: 30px;
+.faq-section {
+    background: var(--white);
+
 }
 
-/* Each question opens with the HTML details element. */
-.faq-item {
-    border-bottom: 1px solid #e1e1e1;
+.faq-grid {
+    display: flex;
+    flex-direction: row;
+    padding: 150px 0;
+    gap: 30px;
 }
 
-.faq-item summary {
+.faq-heading .section-title {
+    margin-bottom: 26px;
+}
+
+.faq-heading .body-copy {
+    max-width: 470px;
+}
+
+.faq-list details {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.faq-list summary {
     position: relative;
-    padding: 26px 35px 26px 0;
+    padding: 28px 45px 28px 0;
     font-family: var(--font-heading);
-    font-size: 19px;
-    line-height: 22px;
-    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.3;
     list-style: none;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
-.faq-item:first-child summary {
-    padding-top: 10px;
-}
-
-.faq-item summary::-webkit-details-marker {
+.faq-list summary::-webkit-details-marker {
     display: none;
 }
 
-.faq-item summary::after {
+.faq-list summary::after {
     position: absolute;
+    top: 25px;
     right: 0;
-    content: "+";
     font-size: 24px;
+    content: "+";
 }
 
-.faq-item[open] summary::after {
+.faq-list details[open] summary::after {
     content: "−";
 }
 
-.faq-item .caption-text {
-    padding: 0 20px 26px 0;
+.faq-list details p {
+    max-width: 650px;
+    padding: 0 45px 28px 0;
 }
 
 .tour-cta {
-    padding: 150px 0;
-    background-image: url("../images/image-03.jpg");
+    position: relative;
+    color: var(--white);
     text-align: center;
 }
 
+.tour-cta>img {
+    width: 100%;
+    height: 483px;
+    object-fit: cover;
+}
+
+.tour-cta>div {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
 .tour-cta h2 {
-    max-width: 650px;
-    margin: 0 auto 30px;
+    margin-bottom: 42px;
+    font-size: clamp(48px, 5vw, 82px);
+    line-height: 1.08;
+    text-transform: uppercase;
 }
 
-/* Desktop */
-@media (max-width: 1472px) {
-    .tour-content {
-        padding: 45px 40px;
+@media (min-width: 1280px) and (max-width: 1473px) {
+    .tour-hero {
+        padding-top: 150px;
+        padding-bottom: 72px;
     }
-}
 
-/* Laptop */
-@media (max-width: 1278px) {
-    .tour-intro {
-        padding-top: 95px;
+    .tour-hero h1 {
+        margin-bottom: 14px;
+        font-size: 60px;
+    }
+
+    .tour-hero .body-copy {
+        font-size: 14px;
+    }
+
+    .tour-list .page-width,
+    .faq-grid {
+        width: calc(100% - 200px);
+        max-width: none;
     }
 
     .tour-card {
-        grid-template-columns: 1.4fr 1fr;
-        gap: 20px;
+        grid-template-columns: 2.05fr 1fr;
+        gap: 28px;
+        margin-bottom: 28px;
     }
 
-    .tour-content {
-        padding: 30px 25px;
+    .tour-card>img,
+    .tour-card-copy {
+        height: 662px;
+        min-height: 662px;
     }
 
-    .tour-list {
-        padding-bottom: 95px;
+    .tour-card-copy {
+        padding: 46px 40px;
     }
 
-    .tour-cta {
-        padding: 100px 0;
+    .tour-card-copy h2 {
+        font-size: 24px;
+    }
+
+    .tour-card-copy p {
+        font-size: 14px;
+    }
+
+    .faq-section {
+        padding-top: 75px;
+        padding-bottom: 251px;
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: 630px 1fr;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .faq-list summary {
+        font-size: 18px;
+    }
+
+    .faq-list details p {
+        font-size: 14px;
+    }
+
+    .tour-cta>img {
+        height: 480px;
+    }
+
+    .tour-cta h2 {
+        margin-bottom: 30px;
+        font-size: 48px;
     }
 }
 
-/* Tablet */
-@media (max-width: 766px) {
-    .tour-intro {
-        padding: 60px 0 40px;
+@media (max-width: 1279px) {
+    .tour-hero {
+        padding-top: 80px;
+        padding-bottom: 66px;
+    }
+
+    .tour-hero h1 {
+        margin-bottom: 10px;
+        font-size: 44px;
+    }
+
+    .tour-hero .body-copy {
+        font-size: 13px;
+    }
+
+    .tour-list {
+        padding-bottom: 66px;
+    }
+
+    .tour-list .page-width,
+    .faq-grid {
+        width: calc(100% - 60px);
+        max-width: none;
+    }
+
+    .tour-card {
+        grid-template-columns: 2.07fr 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .tour-card>img,
+    .tour-card-copy {
+        height: 380px;
+        min-height: 380px;
+    }
+
+    .tour-card-copy {
+        padding: 30px 32px;
+    }
+
+    .tour-card-copy h2 {
+        font-size: 20px;
+    }
+
+    .tour-card-copy p {
+        font-size: 13px;
+    }
+
+    .faq-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 75px 0 166px;
+    }
+
+    .faq-list summary {
+        padding: 20px 35px 20px 0;
+        font-size: 18px;
+    }
+
+    .faq-list summary::after {
+        top: 18px;
+    }
+
+    .faq-list details p {
+        padding: 0 35px 20px 0;
+        font-size: 13px;
+    }
+
+    .tour-cta>img {
+        height: 340px;
+    }
+
+    .tour-cta h2 {
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tour-hero {
+        padding-top: 45px;
+        padding-bottom: 29px;
+    }
+
+    .tour-hero h1 {
+        font-size: 34px;
+    }
+
+    .tour-hero .body-copy {
+        font-size: 12px;
+    }
+
+    .tour-list {
+        padding-bottom: 66px;
+    }
+
+    .tour-list .page-width,
+    .faq-grid {
+        width: calc(100% - 40px);
     }
 
     .tour-card {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 20px;
+        margin-bottom: 20px;
     }
 
-    .tour-image {
+    .tour-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour-card>img {
         height: auto;
+        min-height: 0;
+        aspect-ratio: auto;
     }
 
-    .tour-description {
-        margin: 20px 0 30px;
+    .tour-card-copy {
+        height: auto;
+        min-height: 188px;
+        padding: 24px 30px;
     }
 
-    .tour-list {
-        padding-bottom: 70px;
+    .tour-card-copy h2 {
+        font-size: 18px;
     }
 
-    .tour-cta {
-        padding: 75px 0;
+    .tour-card-copy p {
+        font-size: 12px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 0 130px;
+    }
+
+    .faq-heading .section-title {
+        margin-bottom: 14px;
+        font-size: 30px;
+    }
+
+    .faq-heading .body-copy {
+        font-size: 12px;
+    }
+
+    .faq-list summary {
+        padding: 18px 30px 18px 0;
+        font-size: 16px;
+    }
+
+    .faq-list summary::after {
+        top: 16px;
+    }
+
+    .faq-list details p {
+        padding: 0 30px 18px 0;
+        font-size: 12px;
+    }
+
+    .tour-cta>img {
+        height: 220px;
+    }
+
+    .tour-cta h2 {
+        margin-bottom: 18px;
+        font-size: 24px;
+    }
+
+    .tour-cta h2 br {
+        display: none;
     }
 }
 
-/* Mobile */
-@media (max-width: 421px) {
-    .tour-content {
-        padding: 28px 22px;
+@media (max-width: 423px) {
+    .tour-hero {
+        padding-top: 35px;
+        padding-bottom: 22px;
     }
 
-    .faq-item summary {
-        font-size: 17px;
+    .tour-hero h1 {
+        font-size: 28px;
     }
 
-    .tour-cta {
-        padding: 60px 0;
+    .tour-list .page-width,
+    .faq-grid {
+        width: calc(100% - 36px);
+    }
+
+    .tour-card-copy {
+        min-height: 180px;
+        padding: 22px 20px;
+    }
+
+    .tour-card-copy h2 {
+        font-size: 18px;
+    }
+
+    .faq-heading .section-title {
+        font-size: 28px;
+    }
+
+    .faq-list summary {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .faq-list summary::after {
+        top: 14px;
+    }
+
+    .tour-cta>img {
+        height: 220px;
+    }
+
+    .tour-cta h2 {
+        font-size: 22px;
+    }
+
+    .tour-cta h2 br {
+        display: block;
     }
 }

@@ -1,219 +1,361 @@
-/* Styles used only on the about page. */
-.about-intro {
-    padding-top: 125px;
+/* About page */
+.about-hero h1 {
+    max-width: 1280px;
+    font-size: clamp(54px, 6vw, 94px);
+    line-height: 1.08;
+    text-transform: uppercase;
 }
 
-.about-intro .section-title {
-    width: 66%;
+.about-hero h1 span {
+    display: block;
+    color: var(--muted);
 }
 
-.about-description {
-    width: 50%;
-    margin: 20px 0 60px auto;
+.hero-copy {
+    width: 52%;
+    max-width: 700px;
+    margin: 45px 0 70px auto;
+    font-size: 18px;
 }
 
-.about-hero-image {
+.about-hero img {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 .about-counter {
-    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-bottom: 110px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
 }
 
-.about-counter .caption-text {
+.about-counter span,
+.about-counter strong {
+    display: block;
+}
+
+.about-counter span {
     margin-bottom: 20px;
+    color: var(--muted);
 }
 
-.about-counter .counter-text {
-    font-size: 70px;
-    line-height: 70px;
+.about-counter strong {
+    font-family: var(--font-heading);
+    font-size: clamp(64px, 6vw, 96px);
+    font-weight: 400;
+    line-height: 1;
 }
 
 .team-section {
-    padding: 150px 0 110px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr;
+    gap: 24px;
+    padding: 150px 0 0 0;
 }
 
 .team-heading {
-    padding-right: 25px;
+    padding-right: 50px;
 }
 
-.team-heading .feature-title {
-    margin-top: 28px;
+.team-heading>p:last-child {
+    margin-top: 18px;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
-.team-card img {
+.team-grid article img {
     width: 100%;
-    margin-bottom: 28px;
+    aspect-ratio: 0.76;
+    object-fit: cover;
 }
 
-.team-card h3 {
-    margin-bottom: 6px;
+.team-grid article h3 {
+    margin-top: 20px;
+    font-size: 23px;
+    text-transform: uppercase;
 }
 
 .about-word {
-    color: #e4e5d8;
-    font-size: 14.75vw;
+    margin-top: 110px;
+    color: #e4e5dc;
+    font-family: var(--font-heading);
+    font-size: clamp(100px, 14vw, 220px);
+    line-height: 0.85;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.about-reviews .section-heading {
-    max-width: 920px;
+.review-heading {
+    margin-bottom: 72px;
+    text-align: center;
 }
 
-.partner-section {
+.team-review-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team-review-grid article {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    padding: 34px 30px;
+    border: 1px solid #dddddd;
+    background: var(--white);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.team-review-grid .stars {
+    margin-bottom: 30px;
+    color: #ff5f52;
+    letter-spacing: 3px;
+}
+
+.team-review-grid article>div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: auto;
+    padding-top: 28px;
+}
+
+.team-review-grid img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-review-grid strong,
+.team-review-grid small {
+    display: block;
+}
+
+.team-review-grid strong {
+    font-weight: 400;
+}
+
+.team-review-grid small {
+    margin-top: 4px;
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: 14px;
+    text-transform: none;
+}
+
+
+
+.partner-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: var(--white);
+    background: var(--white);
 }
 
-.partner-item {
+.partner-grid div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 55px 20px;
-    border: 1px solid #f1f1f1;
+    min-height: 145px;
+    border: 1px solid #eeeeee;
 }
 
-.partner-item img {
-    width: 190px;
+.partner-grid img {
+    width: 150px;
+    height: auto;
+}
+
+.explore-section {
+    background: var(--white);
+}
+
+.explore-copy {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 95px;
+    padding: 150px 70px;
+}
+
+.explore-copy .body-copy {
+    padding-top: 38px;
+    font-size: 17px;
+}
+
+.explore-copy .body-copy p+p {
+    margin-top: 28px;
 }
 
 .explore-gallery {
-    align-items: center;
-    gap: 70px;
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    width: calc(100% - 140px);
+    margin: 0 auto;
 }
 
 .explore-gallery img {
     width: 100%;
+    aspect-ratio: 1.04;
+    object-fit: cover;
 }
 
-.join-team-section {
-    padding-top: 0;
-}
 
-.join-team-section .section-heading {
-    margin-bottom: 80px;
-}
 
-.benefit-card {
-    padding: 0 30px;
-}
 
-/* Desktop */
-@media (max-width: 1472px) {
+
+
+
+@media (max-width: 1279px) {
+    .team-review-grid article {
+        padding: 30px 24px;
+        font-size: 18px;
+    }
+
     .explore-gallery {
-        gap: 50px;
-    }
-
-    .benefit-card {
-        padding: 0 25px;
+        width: 100%;
+        gap: 24px;
     }
 }
 
-/* Laptop */
-@media (max-width: 1278px) {
-    .about-intro {
-        padding-top: 85px;
+@media (max-width: 767px) {
+    .about-hero h1 {
+        font-size: 48px;
     }
 
-    .about-intro .section-title {
-        width: 85%;
+    .hero-copy {
+        width: 100%;
+        margin: 34px 0 45px;
     }
 
-    .about-counter .counter-text {
-        font-size: 54px;
-        line-height: 1;
+    .about-hero img {
+        height: auto;
+        aspect-ratio: 1.6;
     }
 
-    .team-section {
-        padding: 80px 0;
+    .about-counter {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 46px 20px;
+        padding-bottom: 80px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .team-heading {
+        grid-column: 1 / -1;
         padding-right: 0;
+        padding-bottom: 20px;
     }
 
-    .team-heading .feature-title {
-        font-size: 19px;
-        line-height: 25px;
+    .about-word {
+        margin-top: 85px;
+        font-size: 19vw;
     }
 
-    .partner-section {
+    .team-review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .partner-item {
-        padding: 35px 25px;
+    .explore-copy {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
-    .explore-gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-    }
-
-    .benefit-card {
-        padding: 0;
-    }
-}
-
-/* Tablet */
-@media (max-width: 766px) {
-    .about-intro {
-        padding-top: 60px;
-    }
-
-    .about-intro .section-title, .about-description {
-        width: 100%;
-    }
-
-    .about-description {
-        margin: 25px 0 40px;
-    }
-
-    .team-section {
-        padding: 30px 0 70px;
-    }
-
-    .team-card {
-        max-width: 410px;
-        margin: 0 auto;
-    }
-
-    .partner-section {
-        grid-template-columns: repeat(2, 1fr);
+    .explore-copy .body-copy {
+        padding-top: 10px;
     }
 
     .explore-gallery {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        margin-top: 40px;
     }
 
-    .join-team-section .section-heading {
-        margin-bottom: 45px;
-    }
-
-    .benefit-card {
-        max-width: 350px;
-        margin: 0 auto;
-    }
 }
 
-/* Mobile */
-@media (max-width: 421px) {
-    .about-intro {
-        padding-top: 45px;
+@media (max-width: 423px) {
+    .about-hero h1 {
+        font-size: 33px;
     }
 
-    .about-counter .counter-text {
-        font-size: 46px;
+    .hero-copy {
+        font-size: 15px;
     }
 
-    .partner-item {
-        padding: 25px 20px;
+    .about-counter strong {
+        font-size: 58px;
+    }
+
+    .about-counter span {
+        font-size: 13px;
+    }
+
+    .team-heading .section-title {
+        font-size: 38px;
+    }
+
+    .team-heading>p:last-child {
+        font-size: 18px;
+    }
+
+    .team-grid {
+        gap: 18px;
+    }
+
+    .team-grid article h3 {
+        font-size: 16px;
+    }
+
+    .team-grid article p {
+        font-size: 13px;
+    }
+
+    .review-heading .section-title {
+        font-size: 34px;
+    }
+
+    .team-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-review-grid article {
+        min-height: 330px;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-grid div {
+        min-height: 105px;
+    }
+
+    .partner-grid img {
+        width: 115px;
     }
 
     .explore-gallery {
-        gap: 20px;
+        gap: 14px;
     }
+
 }

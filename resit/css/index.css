@@ -1,387 +1,698 @@
-/* Styles used only on the home page. */
-.hero-section {
-    padding: 45px 0 95px;
-    background: url("../images/deco-mountains.png") right 210px / 42% auto no-repeat;
+/* Home page */
+.home-hero {
+    padding-top: 36px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line);
 }
 
 .hero-title {
-    font-size: 10.8vw;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
+    position: relative;
+    z-index: 2;
+    font-size: clamp(82px, 10.5vw, 166px);
+    line-height: 0.82;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
     white-space: nowrap;
 }
 
 .hero-title span {
     display: block;
-    font-size: 7vw;
-    letter-spacing: -0.025em;
-}
-
-.hero-layout {
-    display: grid;
-    grid-template-columns: 25% 36% 27%;
-    align-items: end;
-    justify-content: space-between;
-    margin-top: 55px;
-}
-
-.hero-description {
-    max-width: 270px;
-    align-self: start;
-    padding-top: 80px;
-}
-
-.hero-arrow {
-    margin-bottom: 50px;
-    font-size: 75px;
+    font-size: 0.62em;
     line-height: 1;
 }
 
-.hero-description .overline-text {
-    line-height: 26px;
+.hero-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.18fr 0.9fr;
+    align-items: end;
+    gap: 48px;
+    margin-top: 54px;
 }
 
-.hero-image-main, .hero-image-small {
-    width: 100%;
-}
-
-.services-section .section-heading {
-    margin-bottom: 90px;
-}
-
-.service-card img {
-    width: 260px;
-    margin: 30px auto;
-}
-
-.service-card .caption-text {
-    margin-top: 12px;
-}
-
-.locations-intro {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.locations-intro .feature-title {
+.hero-intro {
+    max-width: 300px;
+    font-size: 13px;
+    line-height: 1.6;
     text-transform: uppercase;
 }
 
-.locations-gallery img {
-    width: 100%;
+.hero-arrow {
+    display: block;
+    margin-bottom: 52px;
 }
 
-.locations-gallery img:nth-child(even) {
+.hero-intro .outline-button {
     margin-top: 30px;
+    text-transform: none;
 }
 
-.memories-section {
+.hero-main-image {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.hero-side-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+
+/* Service Cards */
+.service-grid {
     display: flex;
-    align-items: end;
-    min-height: 40vw;
-    padding: 60px 0;
-    background-image: url("../images/memories.jpg");
+    flex-direction: row;
+    gap: 38px;
 }
 
-.memories-section .section-title {
-    max-width: 585px;
-    margin-bottom: 30px;
-}
-
-.adventure-layout {
-    gap: 14%;
-}
-
-.adventure-left .text-content {
-    margin-top: 30px;
-}
-
-.adventure-left img {
-    margin-top: 100px;
-}
-
-.adventure-right .text-content {
-    margin-top: 40px;
-}
-
-.adventure-layout img {
-    width: 100%;
-}
-
-.blog-section .section-heading {
-    max-width: 670px;
-}
-
-.blog-card img {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.blog-card .overline-text {
-    margin-bottom: 15px;
-    font-size: 13px;
-}
-
-.blog-card h3 {
-    margin-bottom: 18px;
-    font-size: 28px;
-    line-height: 32px;
-}
-
-.blog-card .caption-text {
-    font-size: 13px;
-}
-
-.ordinary-section {
-    padding: 70px 0;
-    background: url("../images/ordinary.jpg") center / cover;
-}
-
-.ordinary-content {
-    width: 410px;
-    min-height: 560px;
-    margin-left: auto;
-    padding: 55px 40px;
-    background-color: var(--white);
-}
-
-.ordinary-content .caption-text {
-    margin: 30px 0;
-}
-
-/* Radio buttons let the reader choose a review without JavaScript. */
-.review-slider {
-    max-width: 780px;
-    margin: 0 auto;
+.service-card {
+    flex: 1;
+    min-width: 0;
+    min-height: 580px;
+    padding: 40px 36px 36px;
     text-align: center;
 }
 
-.review-choice {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
+.service-card h3 {
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
-.home-reviews .testimonial-card {
-    display: none;
-    padding: 0;
-    border: 0;
-    background: transparent;
+.service-card p {
+    margin-top: 2px;
+    font-size: 15px;
 }
 
-.review-choice:checked + .testimonial-card {
+.service-card img {
+    width: 60%;
+    max-width: 250px;
+    height: 310px;
+    margin: 24px auto 26px;
+    object-fit: cover;
+}
+
+.service-card a {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Green Card */
+.service-green {
+    background: var(--olive);
+    color: var(--white);
+}
+
+.service-green img {
+    border-radius: 180px 180px 0 0;
+}
+
+/* White Card */
+.service-white {
+    background: var(--white);
+}
+
+.service-white img {
+    border-radius: 130px 0 130px 0;
+}
+
+/* Red Card */
+.service-red {
+    background: var(--red);
+    color: var(--white);
+}
+
+.service-red img {
+    border-radius: 50%;
+}
+
+/* Locations */
+.locations-word {
+    color: #e5e6dc;
+    font-family: var(--font-heading);
+    font-size: clamp(88px, 14vw, 220px);
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.locations-section {
+    overflow: hidden;
+}
+
+.location-copy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 95px 0 44px;
+    text-transform: uppercase;
+}
+
+.location-copy>p:last-child {
+    max-width: 540px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.location-grid img {
+    width: 100%;
+    aspect-ratio: 0.78;
+    object-fit: cover;
+}
+
+.location-grid img:nth-child(even) {
+    margin-top: 32px;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter-grid strong,
+.counter-grid span {
     display: block;
 }
 
-.review-choice:focus-visible + .testimonial-card {
-    outline: 2px solid var(--rustysword);
-    outline-offset: 10px;
+.counter-grid strong {
+    font-family: var(--font-heading);
+    font-size: clamp(64px, 7vw, 105px);
+    font-weight: 400;
+    line-height: 1;
 }
 
-.home-reviews .review-text {
-    margin-bottom: 50px;
-    font-size: 23px;
-    line-height: 28px;
+.counter-grid span {
+    margin-top: 14px;
+    font-size: 12px;
 }
 
-.home-reviews .testimonial-person {
-    flex-direction: column;
+/* Memories */
+.memories-section {
+    position: relative;
+    color: var(--white);
 }
 
-.review-dots {
+.memories-section>img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.memories-copy {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    left: 0;
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 40px;
+    align-items: end;
+    justify-content: space-between;
 }
 
-.review-dots label {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #e3e4d8;
-    cursor: pointer;
+.memories-copy h2 {
+    font-size: clamp(44px, 5vw, 78px);
+    line-height: 1.05;
+    text-transform: uppercase;
 }
 
-#review-1:checked ~ .review-dots label[for="review-1"],
-#review-2:checked ~ .review-dots label[for="review-2"],
-#review-3:checked ~ .review-dots label[for="review-3"] {
-    background-color: var(--softorange);
+/* Adventure */
+.adventure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
 }
 
-.instagram-section {
-    padding-bottom: 150px;
+.adventure-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 90px;
 }
 
-.instagram-section h2 {
-    margin-bottom: 50px;
-    font-size: 19px;
-    line-height: 22px;
-    text-align: center;
+.adventure-copy .section-title {
+    max-width: 590px;
+    margin-bottom: 38px;
 }
 
-.instagram-section h2 a {
-    border-bottom: 1px solid currentColor;
+.adventure-copy .body-copy {
+    max-width: 585px;
+    margin-bottom: 24px;
 }
 
-.instagram-gallery img {
+.adventure-image {
     width: 100%;
 }
 
-/* Desktop */
-@media (max-width: 1472px) {
-    .blog-card h3 {
-        font-size: 25px;
-        line-height: 29px;
-    }
+.adventure-last-copy {
+    max-width: 520px;
 }
 
-/* Laptop */
-@media (max-width: 1278px) {
-    .hero-section {
-        padding-top: 35px;
-        padding-bottom: 60px;
-    }
-
-    .hero-description {
-        padding-top: 45px;
-    }
-
-    .hero-arrow {
-        margin-bottom: 30px;
-        font-size: 55px;
-    }
-
-    .hero-description .overline-text {
-        font-size: 12px;
-        line-height: 22px;
-    }
-
-    .locations-intro {
-        margin-top: 65px;
-    }
-
-    .locations-gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .adventure-layout {
-        gap: 8%;
-    }
-
-    .ordinary-content {
-        width: 380px;
-        min-height: 0;
-        padding: 45px 35px;
-    }
+/* Blog */
+.blog-section {
+    background: var(--white);
 }
+
+.blog-heading {
+    margin-bottom: 58px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    gap: 28px;
+}
+
+.blog-grid img {
+    width: 100%;
+    aspect-ratio: 1.32;
+    margin-bottom: 24px;
+    object-fit: cover;
+}
+
+.blog-grid article:nth-child(even) img {
+    aspect-ratio: 0.96;
+}
+
+.blog-grid h3 {
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.blog-grid .eyebrow {
+    margin-bottom: 5px;
+    color: var(--muted);
+}
+
+.blog-grid .body-copy {
+    font-size: 13px;
+}
+
+/* Ordinary */
+.ordinary-section {
+    position: relative;
+}
+
+.ordinary-section>img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+}
+
+.ordinary-card {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 42%;
+    max-width: 420px;
+    padding: 56px 44px;
+    background: var(--white);
+    transform: translateY(-50%);
+}
+
+.ordinary-card h2 {
+    margin-bottom: 36px;
+    font-size: clamp(38px, 4vw, 62px);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.ordinary-card p {
+    margin-bottom: 56px;
+}
+
+.ordinary-card a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Reviews */
+.reviews-section {
+    overflow: hidden;
+    background: var(--white);
+    text-align: center;
+}
+
+.reviews-section>.marquee {
+    display: flex;
+    width: max-content;
+    margin-bottom: 86px;
+    font-size: clamp(54px, 10vw, 150px);
+    line-height: 0.92;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.marquee span {
+    padding-right: 0.4em;
+}
+
+.review-card {
+    width: calc(100% - 40px);
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.review-card .stars {
+    margin-bottom: 28px;
+    color: #ff5f52;
+    letter-spacing: 4px;
+}
+
+.review-card blockquote {
+    font-family: var(--font-heading);
+    font-size: 23px;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.review-card img {
+    width: 65px;
+    height: 65px;
+    margin: 28px auto 12px;
+    border-radius: 50%;
+}
+
+.review-card h3 {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Instagram */
+.instagram-section {
+    text-align: center;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 34px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 
 /* Tablet */
-@media (max-width: 766px) {
-    .hero-section {
-        padding: 30px 0 0;
-        background-position: right 150px;
-        background-size: 75%;
+@media (max-width: 1279px) {
+    .home-hero {
+        padding-top: 25px;
     }
 
-    .hero-title span {
-        margin-bottom: 8px;
-        font-size: 9vw;
+    .hero-grid {
+        grid-template-columns: 0.85fr 1.15fr 0.9fr;
+        gap: 36px;
     }
 
-    .hero-layout {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-        margin-top: 35px;
+    .hero-main-image {
+        height: 440px;
     }
 
-    .hero-description {
-        grid-column: 1 / -1;
-        max-width: 400px;
-        padding-top: 0;
-    }
-
-    .hero-arrow {
-        display: none;
+    .hero-side-image {
+        height: 280px;
     }
 
     .service-card {
-        max-width: 350px;
-        margin: 0 auto;
+        min-height: 520px;
+        padding: 36px 28px 30px;
     }
 
-    .services-section .section-heading {
-        margin-bottom: 45px;
+    .service-card img {
+        width: 220px;
+        height: 275px;
     }
 
-    .locations-intro {
-        margin-top: 40px;
+    .adventure-grid {
+        gap: 65px 55px;
     }
 
-    .locations-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .blog-container {
-        grid-template-columns: 1fr;
-    }
-
-    .memories-section {
-        min-height: 420px;
-        padding: 40px 0;
-    }
-
-    .adventure-layout {
-        gap: 45px;
-    }
-
-    .adventure-left img {
-        margin-top: 40px;
-    }
-
-    .ordinary-section {
-        padding: 150px 0 40px;
-    }
-
-    .ordinary-content {
-        width: 100%;
-        max-width: 410px;
-        padding: 35px 25px;
-    }
-
-    .home-reviews .review-text {
-        font-size: 21px;
-        line-height: 27px;
-    }
-
-    .instagram-gallery {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .instagram-section {
-        padding-bottom: 70px;
+    .blog-grid h3 {
+        font-size: 22px;
     }
 }
 
 /* Mobile */
-@media (max-width: 421px) {
+@media (max-width: 767px) {
+    .home-hero {
+        padding-top: 5px;
+        padding-bottom: 55px;
+    }
+
     .hero-title {
-        font-size: 10vw;
+        font-size: clamp(50px, 13vw, 88px);
+        line-height: 0.95;
+        white-space: normal;
     }
 
-    .hero-layout {
+    .hero-title span {
+        font-size: 0.75em;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
         gap: 20px;
+        margin-top: 24px;
     }
 
-    .blog-card h3 {
-        font-size: 23px;
-        line-height: 28px;
+    .hero-grid>img {
+        width: 100%;
+        height: auto;
     }
 
-    .instagram-gallery {
-        gap: 15px;
+    .hero-intro {
+        grid-column: 1 / -1;
+        max-width: 440px;
+    }
+
+    .hero-arrow {
+        margin-bottom: 24px;
+    }
+
+    .hero-intro .outline-button {
+        margin-top: 20px;
+    }
+
+    .hero-main-image,
+    .hero-side-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    .service-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        min-height: 0;
+    }
+
+    .location-copy {
+        grid-template-columns: 1fr;
+        margin-top: 55px;
+    }
+
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 18px;
+    }
+
+    .memories-section>img {
+        height: 460px;
+    }
+
+    .memories-copy {
+        bottom: 40px;
+        display: block;
+    }
+
+    .memories-copy .outline-button {
+        margin-top: 26px;
+    }
+
+    .adventure-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .adventure-col {
+        gap: 32px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid article:nth-child(even) img,
+    .blog-grid img {
+        aspect-ratio: 1.2;
+    }
+
+    .ordinary-section>img {
+        height: 570px;
+    }
+
+    .ordinary-card {
+        right: 28px;
+        width: 50%;
+        padding: 42px 32px;
+    }
+
+    .ordinary-card p {
+        margin-bottom: 42px;
+    }
+
+    .reviews-section>.marquee {
+        margin-bottom: 60px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small mobile */
+@media (max-width: 423px) {
+    .hero-title {
+        font-size: 38px;
+        letter-spacing: 0;
+    }
+
+    .hero-title span {
+        font-size: 1em;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-intro {
+        grid-column: 1;
+        font-size: 11px;
+    }
+
+    .hero-main-image,
+    .hero-side-image {
+        height: auto;
+        aspect-ratio: 1.2;
+    }
+
+
+
+    .service-card {
+        padding: 30px 28px;
+    }
+
+    .service-card h3 {
+        font-size: 21px;
+    }
+
+    .service-card img {
+        width: 220px;
+        height: 275px;
+    }
+
+    .locations-word {
+        margin-right: -70px;
+        font-size: 58px;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .location-copy>p:last-child {
+        font-size: 18px;
+    }
+
+    .counter-grid strong {
+        font-size: 58px;
+    }
+
+    .memories-section>img {
+        height: 430px;
+    }
+
+    .memories-copy h2 {
+        font-size: 34px;
+    }
+
+    .adventure-copy .section-title {
+        font-size: 36px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid article {
+        margin-bottom: 24px;
+    }
+
+    .blog-grid h3 {
+        font-size: 21px;
+    }
+
+    .ordinary-section>img {
+        height: 500px;
+    }
+
+    .ordinary-card {
+        right: 18px;
+        width: 50%;
+        padding: 32px 22px;
+    }
+
+    .ordinary-card h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .ordinary-card p {
+        margin-bottom: 28px;
+        font-size: 12px;
+    }
+
+    .ordinary-card a {
+        font-size: 11px;
+    }
+
+    .reviews-section>.marquee {
+        font-size: 38px;
+    }
+
+    .review-card blockquote {
+        font-size: 17px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
