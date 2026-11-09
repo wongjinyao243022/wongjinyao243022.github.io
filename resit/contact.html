@@ -10,113 +10,160 @@
     </title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contact.css">
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    </html>
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="site-header">
-        <a class="header-logo" href="index.html"><img src="images/header-logo.png" alt="Elementra Travel home"></a>
-        <nav class="desktop-nav" aria-label="Main navigation">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tour.html">Tours</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://x.com/ThemerexThemes" aria-label="Elementra on X">X</a>
-                <a href="https://www.instagram.com/themerex_net/" aria-label="Elementra on Instagram">
-                    <span class="instagram-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </nav>
-        <details class="mobile-menu">
-            <summary aria-label="Open navigation"><img src="images/hamburger-menu.png" alt=""></summary>
-            <nav aria-label="Mobile navigation">
+    <!-- Site header -->
+    <div class="site-header">
+        <a class="header-logo" href="index.html">
+            <img src="images/header-logo.png" alt="Elementra Travel home">
+        </a>
+        <div class="desktop-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="tour.html">Tours</a>
-                <a href="contact.html" aria-current="page">Contact</a>
-            </nav>
-        </details>
-    </header>
-
-    <main id="main-content">
-        <div class="contact-hero page-width">
-            <img src="images/contact-hero.jpg" alt="A hiker following a trail through a mountain valley">
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/ThemerexThemes" aria-label="Elementra on X">
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/themerex_net/" aria-label="Elementra on Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation"
+            aria-controls="mobile-menu" aria-expanded="false">☰</button>
+        <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tour.html">Tours</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </div>
+    </div>
+    <div id="main-content" role="main">
+        <div class="contact-hero page-width">
+            <img src="images/contact-hero.jpg" alt="A hiker following a trail through a mountain valley" class="photo">
+        </div>
+        <!-- Contact info -->
         <section class="contact-info section-space">
             <div class="page-width">
-                <h1>General inquiries</h1>
-                <div class="contact-grid">
+                <h1 class="feature-title">General inquiries</h1>
+                <div class="contact-row four-columns">
                     <div>
-                        <h2>General inquiries</h2>
-                        <p><a href="mailto:hi@elementra.com">hi@elementra.com</a></p>
-                    </div>
-                    <div>
-                        <h2>Address</h2>
-                        <p class="contact-address-wide">Germany —<br>785 15h Street,<br>Office 47 Berlin,<br>DE 81566
+                        <h2 class="small-heading">General inquiries</h2>
+                        <p class="body-text body-large heading-font">
+                            <a href="mailto:hi@elementra.com">hi@elementra.com</a>
                         </p>
-                        <p class="contact-address-tablet">Germany —<br>785 15h Street, Office<br>47 Berlin, DE 81566</p>
                     </div>
                     <div>
-                        <h2>Hours</h2>
-                        <p>Mon-Fri 9:00AM — 4:00PM</p>
+                        <h2 class="small-heading">Address</h2>
+                        <p class="contact-address-wide body-text body-large heading-font">Germany —<br>785 15h
+                            Street,<br>Office 47 Berlin,<br>DE 81566
+                        </p>
+                        <p class="contact-address-tablet body-text body-large heading-font">Germany —<br>785 15h Street,
+                            Office<br>47 Berlin, DE 81566</p>
                     </div>
                     <div>
-                        <h2>Socials</h2>
-                        <p><a href="https://www.facebook.com/ThemerexThemes">Facebook</a><br><a
-                                href="https://x.com/ThemerexThemes">X (Twitter)</a><br><a
-                                href="https://www.instagram.com/themerex_net/">Instagram</a></p>
+                        <h2 class="small-heading">Hours</h2>
+                        <p class="body-text body-large heading-font">Mon-Fri 9:00AM — 4:00PM</p>
+                    </div>
+                    <div>
+                        <h2 class="small-heading">Socials</h2>
+                        <p class="body-text body-large heading-font">
+                            <a href="https://www.facebook.com/ThemerexThemes">Facebook</a>
+                            <br>
+                            <a href="https://x.com/ThemerexThemes">X (Twitter)</a>
+                            <br>
+                            <a href="https://www.instagram.com/themerex_net/">Instagram</a>
+                        </p>
                     </div>
                 </div>
                 <div class="contact-message">
-                    <h2>Contact us to discover how to make your travel dreams a reality. Reach out at <a
-                            href="mailto:hi@elementra.com">hi@elementra.com</a></h2>
+                    <h2 class="section-title">Contact us to discover how to make your travel dreams a reality. Reach out
+                        at <a href="mailto:hi@elementra.com" class="card-title">hi@elementra.com</a>
+                    </h2>
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer class="site-footer">
+    </div>
+    <!-- Site footer -->
+    <div class="site-footer">
         <div class="page-width">
             <div class="footer-columns">
-                <div class="footer-intro"><a class="footer-logo" href="index.html">ELEMENTRA.</a>
-                    <p>At Elementra, we believe in the power of creativity and collaboration to drive success. Our
+                <div class="footer-intro">
+                    <a class="footer-logo" href="index.html">ELEMENTRA.</a>
+                    <p class="body-text">At Elementra, we believe in the power of creativity and collaboration to drive
+                        success. Our
                         dedicated team is here to help you.</p>
                 </div>
                 <div class="footer-column footer-office">
-                    <h2>Office</h2>
-                    <p>Germany —<br>785 15h Street, Office 47<br>Berlin, DE 81566</p>
-                    <p><a href="mailto:hi@elementra.com">hi@elementra.com</a><br><a href="tel:+18408412569">+1 840 841
-                            25 69</a></p>
+                    <h2 class="small-heading">Office</h2>
+                    <p class="body-text">Germany —<br>785 15h Street, Office 47<br>Berlin, DE 81566</p>
+                    <p class="body-text">
+                        <a href="mailto:hi@elementra.com">hi@elementra.com</a>
+                        <br>
+                        <a href="tel:+18408412569">+1 840 841
+                            25 69</a>
+                    </p>
                 </div>
-                <nav class="footer-column" aria-label="Footer navigation">
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="tour.html">Tours</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#travel-stories">Blog</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
+                <div class="footer-column" aria-label="Footer navigation">
+                    <h2 class="small-heading">Links</h2>
+                    <div class="footer-links">
+                        <div>
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div>
+                            <a href="tour.html">Tours</a>
+                        </div>
+                        <div>
+                            <a href="about.html">About</a>
+                        </div>
+                        <div>
+                            <a href="index.html#travel-stories">Blog</a>
+                        </div>
+                        <div>
+                            <a href="contact.html">Contacts</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="footer-column">
-                    <h2>Follow us</h2>
-                    <ul>
-                        <li><a href="https://www.facebook.com/ThemerexThemes">Facebook</a></li>
-                        <li><a href="https://x.com/ThemerexThemes">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/themerex_net/">Instagram</a></li>
-                        <li><a href="https://www.youtube.com/@themerex">YouTube</a></li>
-                    </ul>
+                    <h2 class="small-heading">Follow us</h2>
+                    <div class="footer-links">
+                        <div>
+                            <a href="https://www.facebook.com/ThemerexThemes">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="https://x.com/ThemerexThemes">Twitter</a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/themerex_net/">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/@themerex">YouTube</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="footer-word" aria-hidden="true">Elementra</p>
+            <p class="footer-word display-word" aria-hidden="true">Elementra</p>
         </div>
-    </footer>
+    </div>
+    <html>
 
+    <head>
+        <script src="js/menu.js"></script>
+    </head>
+
+    </html>
 </body>
 
 </html>

@@ -1,9 +1,6 @@
-/* About page */
+/* About: story and photograph */
 .about-hero h1 {
     max-width: 1280px;
-    font-size: clamp(54px, 6vw, 94px);
-    line-height: 1.08;
-    text-transform: uppercase;
 }
 
 .about-hero h1 span {
@@ -15,347 +12,224 @@
     width: 52%;
     max-width: 700px;
     margin: 45px 0 70px auto;
-    font-size: 18px;
 }
 
 .about-hero img {
-    width: 100%;
     height: 500px;
-    object-fit: cover;
 }
 
+/* Agency facts */
 .about-counter {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
     padding-bottom: 110px;
+    border-bottom: 1px solid var(--text);
     text-align: center;
-    border-bottom: 1px solid black;
-
-}
-
-.about-counter span,
-.about-counter strong {
-    display: block;
 }
 
 .about-counter span {
+    display: block;
     margin-bottom: 20px;
     color: var(--muted);
 }
 
-.about-counter strong {
-    font-family: var(--font-heading);
-    font-size: clamp(64px, 6vw, 96px);
-    font-weight: 400;
-    line-height: 1;
-}
-
-.team-section {
-    position: relative;
-    overflow: hidden;
-}
-
-
-.team-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 1fr 1fr;
-    gap: 24px;
-    padding: 150px 0 0 0;
+/* Team members */
+.team-row {
+    padding-top: 150px;
 }
 
 .team-heading {
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
-.team-heading>p:last-child {
+.team-heading .quote-text {
     margin-top: 18px;
-    font-family: var(--font-heading);
-    font-size: 24px;
-    line-height: 1.2;
-    text-transform: uppercase;
 }
 
-.team-grid article img {
-    width: 100%;
-    aspect-ratio: 0.76;
-    object-fit: cover;
+.team-card img {
+    height: 550px;
 }
 
-.team-grid article h3 {
+.team-card h3 {
     margin-top: 20px;
-    font-size: 23px;
-    text-transform: uppercase;
 }
 
 .about-word {
     margin-top: 110px;
     color: #e4e5dc;
-    font-family: var(--font-heading);
-    font-size: clamp(100px, 14vw, 220px);
-    line-height: 0.85;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .review-heading {
     margin-bottom: 72px;
-    text-align: center;
 }
 
-.team-review-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.team-review-grid article {
+/* Reviews from travellers */
+.team-review-card {
     display: flex;
     flex-direction: column;
     min-height: 400px;
-    padding: 34px 30px;
+    padding: 34px 26px;
     border: 1px solid #dddddd;
-    background: var(--white);
-    font-family: var(--font-heading);
-    font-size: 20px;
-    line-height: 1.25;
-    text-transform: uppercase;
+    background-color: var(--white);
 }
 
-.team-review-grid .stars {
-    margin-bottom: 30px;
-    color: #ff5f52;
-    letter-spacing: 3px;
+.team-review-card .review-author {
+    gap: 14px;
 }
 
-.team-review-grid article>div {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-top: auto;
-    padding-top: 28px;
-}
-
-.team-review-grid img {
+.team-review-card .round-photo {
     width: 62px;
     height: 62px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
-.team-review-grid strong,
-.team-review-grid small {
-    display: block;
+/* Partner logos */
+.partner-row {
+    background-color: var(--white);
+    row-gap: 0;
 }
 
-.team-review-grid strong {
-    font-weight: 400;
-}
-
-.team-review-grid small {
-    margin-top: 4px;
-    color: var(--muted);
-    font-family: var(--font-body);
-    font-size: 14px;
-    text-transform: none;
-}
-
-
-
-.partner-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background: var(--white);
-}
-
-.partner-grid div {
+.partner-row>div {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 16.66%;
     min-height: 145px;
+    padding: 15px;
     border: 1px solid #eeeeee;
 }
 
-.partner-grid img {
+.partner-row img {
     width: 150px;
-    height: auto;
 }
 
-.explore-section {
-    background: var(--white);
-}
-
+/* Introductory text and gallery */
 .explore-copy {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    margin-bottom: 95px;
-    padding: 150px 70px;
+    margin-bottom: 75px;
 }
 
 .explore-copy .body-copy {
     padding-top: 38px;
-    font-size: 17px;
 }
 
-.explore-copy .body-copy p+p {
+.explore-copy p+p {
     margin-top: 28px;
 }
 
 .explore-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
-    width: calc(100% - 140px);
+    width: 90%;
     margin: 0 auto;
 }
 
 .explore-gallery img {
-    width: 100%;
-    aspect-ratio: 1.04;
-    object-fit: cover;
+    height: 280px;
 }
 
-
-
-
-
-
-
+/* Tablet */
 @media (max-width: 1279px) {
-    .team-review-grid article {
-        padding: 30px 24px;
-        font-size: 18px;
+    .team-heading {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .team-card {
+        width: 48%;
+    }
+
+    .team-row {
+        padding-top: 80px;
+    }
+
+    .team-card img {
+        height: 420px;
+    }
+
+    .team-review-row>* {
+        width: 48%;
+    }
+
+    .team-review-card {
+        min-height: 330px;
     }
 
     .explore-gallery {
         width: 100%;
-        gap: 24px;
+    }
+
+    .explore-gallery img {
+        height: 230px;
     }
 }
 
+/* Mobile */
 @media (max-width: 767px) {
-    .about-hero h1 {
-        font-size: 48px;
-    }
-
     .hero-copy {
         width: 100%;
         margin: 34px 0 45px;
     }
 
     .about-hero img {
-        height: auto;
-        aspect-ratio: 1.6;
+        height: 330px;
     }
 
     .about-counter {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 46px 20px;
         padding-bottom: 80px;
     }
 
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .team-row {
+        padding-top: 0;
     }
 
     .team-heading {
-        grid-column: 1 / -1;
         padding-right: 0;
-        padding-bottom: 20px;
+    }
+
+    .team-card {
+        width: 48%;
+    }
+
+    .team-card img {
+        height: 360px;
     }
 
     .about-word {
-        margin-top: 85px;
-        font-size: 19vw;
+        margin-top: 70px;
     }
 
-    .team-review-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .partner-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .explore-copy {
-        grid-template-columns: 1fr;
-        gap: 16px;
+    .partner-row>div {
+        width: 33.33%;
     }
 
     .explore-copy .body-copy {
-        padding-top: 10px;
+        padding-top: 0;
     }
 
-    .explore-gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .explore-gallery img {
+        height: 250px;
     }
-
 }
 
+/* Small mobile */
 @media (max-width: 423px) {
-    .about-hero h1 {
-        font-size: 33px;
+    .about-hero img {
+        height: 240px;
     }
 
-    .hero-copy {
-        font-size: 15px;
+    .team-card img {
+        height: 230px;
     }
 
-    .about-counter strong {
-        font-size: 58px;
+    .team-review-row>* {
+        width: 100%;
     }
 
-    .about-counter span {
-        font-size: 13px;
+    .partner-row>div {
+        width: 50%;
+        min-height: 110px;
     }
 
-    .team-heading .section-title {
-        font-size: 38px;
-    }
-
-    .team-heading>p:last-child {
-        font-size: 18px;
-    }
-
-    .team-grid {
-        gap: 18px;
-    }
-
-    .team-grid article h3 {
-        font-size: 16px;
-    }
-
-    .team-grid article p {
-        font-size: 13px;
-    }
-
-    .review-heading .section-title {
-        font-size: 34px;
-    }
-
-    .team-review-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .team-review-grid article {
-        min-height: 330px;
-    }
-
-    .partner-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .partner-grid div {
-        min-height: 105px;
-    }
-
-    .partner-grid img {
+    .partner-row img {
         width: 115px;
     }
 
-    .explore-gallery {
-        gap: 14px;
+    .explore-gallery img {
+        height: 170px;
     }
-
 }
