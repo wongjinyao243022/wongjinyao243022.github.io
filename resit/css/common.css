@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');
 
-/* 1. Colours and fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colours and fonts */
 :root {
     --font-heading: "Tenor Sans", sans-serif;
     --font-body: "Kumbh Sans", sans-serif;
@@ -15,13 +21,6 @@
     --olive: #6c7b0c;
     --red: #b4443e;
     --footer: #4b2728;
-}
-
-/* 2. Basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -58,7 +57,7 @@ h4 {
     font-weight: 400;
 }
 
-/* 3. Text styles: reuse these classes instead of repeating font sizes. */
+/* Text styles */
 .page-title {
     font-size: 88px;
     line-height: 1.08;
@@ -169,7 +168,7 @@ h4 {
     line-height: 1;
 }
 
-/* 4. Shared page width and spacing */
+/* Shared page width and spacing */
 .page-width {
     width: 92%;
     max-width: 1400px;
@@ -229,7 +228,7 @@ h4 {
     object-fit: cover;
 }
 
-/* 5. Buttons and links */
+/* Buttons and links */
 .outline-button,
 .solid-button {
     display: inline-block;
@@ -268,7 +267,7 @@ h4 {
     font-size: 21px;
 }
 
-/* 6. Header and navigation */
+/* Header and navigation */
 .site-header {
     position: relative;
     z-index: 20;
@@ -328,7 +327,7 @@ h4 {
     text-align: center;
 }
 
-/* Font Awesome supplies the two brand icons chosen for this website. */
+/* Social Icon */
 .social-links i {
     font-size: 20px;
 }
@@ -368,7 +367,7 @@ h4 {
     color: var(--orange);
 }
 
-/* 7. Footer */
+/* Footer */
 .site-footer {
     overflow: hidden;
     padding: 92px 0 38px;
@@ -640,7 +639,7 @@ h4 {
     }
 }
 
-/* Mobile */
+/* Tablet */
 @media (max-width: 767px) {
     .page-title {
         font-size: 48px;
@@ -756,7 +755,7 @@ h4 {
     }
 }
 
-/* Small mobile */
+/* Mobile */
 @media (max-width: 423px) {
     .page-title {
         font-size: 34px;
