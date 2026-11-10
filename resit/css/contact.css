@@ -1,3 +1,7 @@
+.site-header {
+    border-bottom: none;
+}
+
 /* Contact: opening photograph */
 .contact-hero {
     padding-top: 10px;
