@@ -1,6 +1,6 @@
 /* About: story and photograph */
 .about-hero h1 {
-    max-width: 1280px;
+    max-width: 70%;
 }
 
 .about-hero h1 span {
@@ -32,10 +32,6 @@
 }
 
 /* Team members */
-.team-row {
-    padding-top: 150px;
-}
-
 .team-heading {
     padding-right: 30px;
 }
@@ -55,6 +51,7 @@
 .about-word {
     margin-top: 110px;
     color: #e4e5dc;
+    font-size: 220.816px;
 }
 
 .review-heading {
@@ -208,6 +205,15 @@
 
 /* Small mobile */
 @media (max-width: 423px) {
+    .page-width>.page-title {
+        font-size: 30px;
+    }
+
+    .about-word {
+        font-size: 59.8px;
+        margin-top: 65px;
+    }
+
     .about-hero img {
         height: 240px;
     }

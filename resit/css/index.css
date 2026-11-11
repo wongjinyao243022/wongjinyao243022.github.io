@@ -1,4 +1,16 @@
 /* Home: opening heading and three columns */
+.position-img {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: 40%;
+    height: auto;
+}
+
+.site-header {
+    border-bottom: none;
+}
+
 .home-hero {
     padding-top: 36px;
     padding-bottom: 80px;
@@ -17,12 +29,18 @@
     max-width: 300px;
 }
 
-.hero-intro p {
-    text-transform: uppercase;
+.hero-intro img {
+    padding-bottom: 55px;
 }
 
 .hero-intro .outline-button {
     margin-top: 30px;
+}
+
+.hero-intro>.outline-button:hover {
+    background-color: black;
+    color: var(--white);
+    border-color: transparent;
 }
 
 .hero-main-image {
@@ -48,9 +66,9 @@
 
 .service-card img {
     width: 80%;
-    max-width: 250px;
-    height: 310px;
-    margin: 24px auto 26px;
+    max-width: 286px;
+    height: 382.8px;
+    margin: 45px 30px;
 }
 
 .service-green {
@@ -82,6 +100,7 @@
 /* Destinations and numbers */
 .locations-word {
     color: #e5e6dc;
+    flex-shrink: 1;
 }
 
 .location-copy {
@@ -89,7 +108,7 @@
 }
 
 .location-description {
-    max-width: 540px;
+    max-width: 46%;
 }
 
 .location-row img {
@@ -172,7 +191,6 @@
 
 .blog-card .eyebrow {
     margin-bottom: 5px;
-    color: var(--muted);
 }
 
 /* White card over the landscape photograph */
@@ -198,7 +216,7 @@
 }
 
 .ordinary-card p {
-    margin-bottom: 40px;
+    margin-bottom: 144.724px;
 }
 
 /* Customer review */
@@ -235,9 +253,21 @@
 }
 
 /* Instagram photographs */
+.page-width>p>a {
+    border-bottom: 3px solid var(--orange);
+}
+
+.page-width>p>a:hover {
+    color: var(--orange);
+    ;
+}
+
+
 .instagram-section {
     text-align: center;
 }
+
+
 
 .instagram-row {
     margin-top: 34px;
@@ -270,9 +300,6 @@
         padding: 36px 24px 30px;
     }
 
-    .service-card img {
-        height: 275px;
-    }
 
     .location-row img {
         height: 310px;
@@ -317,16 +344,36 @@
         height: auto;
     }
 
-    .service-card {
-        min-height: 0;
+    /* Keep the three service cards beside each other */
+    .service-row {
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 4.25%;
     }
 
+    /* Card size */
+    .service-row>.service-card {
+        width: 30.5%;
+        min-height: 428px;
+        padding: 32px 24px 28px;
+    }
+
+    /* Service photograph size */
     .service-card img {
-        width: 220px;
+        display: block;
+        width: 100%;
+        max-width: none;
+        height: 220px;
+        margin: 22px 0;
+        object-fit: cover;
     }
 
     .location-copy {
         margin-top: 55px;
+    }
+
+    .location-description {
+        max-width: 100%;
     }
 
     .location-row img {
@@ -377,10 +424,65 @@
     }
 }
 
-/* Small mobile */
+
 @media (max-width: 423px) {
+    .hero-intro img {
+        width: 12%;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 44.7px;
+        line-height: 0.9;
+        letter-spacing: 0;
+        white-space: nowrap;
+    }
+
+    .hero-title span {
+        display: block;
+        font-size: 29.5px;
+        line-height: 1;
+    }
+
+    .position-img {
+        top: 23%;
+        width: 60%;
+    }
+
+    /* Stack and centre the service cards */
+    .service-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* Override the 30.5% width from the 767px breakpoint */
+    .service-row>.service-card {
+        width: 100%;
+        min-height: 0;
+        padding: 30px 25px;
+    }
+
+    /* Keep the original image shape */
+    .service-card img {
+        display: block;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin: 30px 0;
+        object-fit: cover;
+    }
+
+    .adventure-copy .section-title {
+        font-size: 30px;
+    }
+
     .location-row img {
         height: 210px;
+    }
+
+    .location-description {
+        max-width: 100%;
     }
 
     .blog-row>* {
@@ -393,12 +495,12 @@
     }
 
     .ordinary-section>img {
-        height: 620px;
+        height: 382px;
     }
 
     .ordinary-card {
-        width: 86%;
-        right: 7%;
+        width: 90%;
+
     }
 
     .instagram-row>* {
