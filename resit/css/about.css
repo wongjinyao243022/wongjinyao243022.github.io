@@ -51,7 +51,9 @@
 .about-word {
     margin-top: 110px;
     color: #e4e5dc;
-    font-size: 220.816px;
+    font-size: clamp(32px, 15vw, 220.816px);
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .review-heading {

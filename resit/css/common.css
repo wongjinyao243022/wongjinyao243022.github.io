@@ -277,6 +277,10 @@ h4 {
     color: var(--orange);
 }
 
+.text-link:hover {
+    color: #82878E;
+}
+
 /* Header and navigation */
 .site-header {
     position: relative;
@@ -412,6 +416,10 @@ h4 {
     width: 25%;
 }
 
+.footer-office>p:hover {
+    color: var(--orange);
+}
+
 .footer-column {
     min-width: 14%;
 }
@@ -435,6 +443,10 @@ h4 {
 .footer-column p,
 .footer-links>div {
     margin-bottom: 19px;
+}
+
+.footer-links>div>a:hover {
+    color: var(--orange);
 }
 
 .site-footer .body-copy {
@@ -831,6 +843,7 @@ h4 {
 
     .display-word {
         font-size: 61.9752px;
+        letter-spacing: -2px;
     }
 
     .hero-title {
