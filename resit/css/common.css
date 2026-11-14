@@ -156,7 +156,7 @@ h4 {
 
 /* The home page has one extra-large heading. */
 .hero-title {
-    font-size: 162.628px;
+    font-size: 5vw;
     line-height: 0.9;
     letter-spacing: -5px;
     text-transform: uppercase;
@@ -188,7 +188,6 @@ h4 {
     background-color: var(--white);
 }
 
-/* object-fit keeps cropped photos in the same shape without stretching them. */
 .photo {
     width: 100%;
     object-fit: cover;
@@ -286,7 +285,7 @@ h4 {
     position: relative;
     z-index: 20;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 32px;
     min-height: 145px;
