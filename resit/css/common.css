@@ -64,7 +64,7 @@ h4 {
 }
 
 .section-title {
-    font-size: 64px;
+    font-size: 57px;
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -93,7 +93,7 @@ h4 {
     text-transform: uppercase;
 }
 
-.eyebrow {
+.subtitle {
     margin-bottom: 14px;
     font-size: 14px;
     line-height: 1.4;
@@ -139,7 +139,7 @@ h4 {
 
 .display-word {
     font-family: var(--font-heading);
-    font-size: 220px;
+    font-size: 224px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ h4 {
 
 /* The home page has one extra-large heading. */
 .hero-title {
-    font-size: 5vw;
+    font-size: 163px;
     line-height: 0.9;
     letter-spacing: -5px;
     text-transform: uppercase;
@@ -164,7 +164,7 @@ h4 {
 
 .hero-title span {
     display: block;
-    font-size: 104.44px;
+    font-size: 104px;
     line-height: 1;
 }
 
@@ -282,14 +282,12 @@ h4 {
 
 /* Header and navigation */
 .site-header {
-    position: relative;
     z-index: 20;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 32px;
     min-height: 145px;
-    padding: 0 5%;
     border-bottom: 1px solid var(--text);
 }
 
@@ -453,7 +451,6 @@ h4 {
 }
 
 .footer-word {
-    font-size: 223.8px;
     color: #5b3738;
     line-height: 0.8;
     letter-spacing: -6px;
@@ -588,10 +585,6 @@ h4 {
 }
 
 .banner-center {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -609,6 +602,20 @@ h4 {
 
     .section-title {
         font-size: 48px;
+    }
+
+    .hero-title span {
+        font-size: 54px;
+        display: block;
+        line-height: 1;
+    }
+
+    .hero-title {
+        font-size: 81px;
+    }
+
+    .hero-intro img {
+        width: 5%;
     }
 
     .banner-title {
@@ -635,18 +642,6 @@ h4 {
         font-size: 72px;
     }
 
-    .display-word {
-        font-size: 110px;
-    }
-
-    .hero-title {
-        font-size: 100px;
-    }
-
-    .hero-title span {
-        font-size: 64px;
-    }
-
     .section-space {
         padding: 95px 0;
     }
@@ -654,6 +649,10 @@ h4 {
     .site-header {
         min-height: 92px;
         padding: 0 4%;
+    }
+
+    .display-word {
+        font-size: 190px;
     }
 
     .header-logo {
@@ -709,7 +708,7 @@ h4 {
     }
 
     .feature-title {
-        font-size: 34px;
+        font-size: 25px;
     }
 
     .card-title {
@@ -730,19 +729,6 @@ h4 {
 
     .number-text {
         font-size: 64px;
-    }
-
-    .display-word {
-        font-size: 100px;
-    }
-
-    .hero-title {
-        font-size: 72px;
-        letter-spacing: -2px;
-    }
-
-    .hero-title span {
-        font-size: 54px;
     }
 
     .section-space {
@@ -808,6 +794,10 @@ h4 {
     .faq-answer {
         padding-bottom: 20px;
     }
+
+    .display-word {
+        font-size: 113px;
+    }
 }
 
 /* mobile */
@@ -817,7 +807,7 @@ h4 {
     }
 
     .section-title {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .banner-title {
@@ -841,18 +831,8 @@ h4 {
     }
 
     .display-word {
-        font-size: 61.9752px;
+        font-size: 15vw;
         letter-spacing: -2px;
-    }
-
-    .hero-title {
-        font-size: 44.7px;
-        letter-spacing: 0;
-        width: 100%
-    }
-
-    .hero-title span {
-        font-size: 29.5px;
     }
 
     .section-space {

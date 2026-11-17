@@ -59,8 +59,11 @@
 }
 
 /* Final invitation */
-.tour-cta>img {
+.tour-cta {
     height: 483px;
+    background-image: url(../images/image-03.jpg);
+    background-size: cover;
+    display: flex;
 }
 
 .tour-cta h2 {
@@ -70,6 +73,12 @@
 .banner-center>a {
     font-family: var(--font-heading);
     letter-spacing: 1px;
+}
+
+.banner-center .banner-title {
+    color: var(--white);
+    font-size: 47px;
+    width: 50%;
 }
 
 /* Tablet */
@@ -87,7 +96,7 @@
         padding: 32px;
     }
 
-    .tour-cta>img {
+    .tour-cta {
         height: 340px;
     }
 
@@ -124,8 +133,13 @@
         margin-bottom: 14px;
     }
 
-    .tour-cta>img {
-        height: 280px;
+    .banner-center .banner-title {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .tour-cta {
+        height: 220px;
     }
 
     .tour-cta h2 {

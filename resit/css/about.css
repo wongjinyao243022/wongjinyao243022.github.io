@@ -51,7 +51,6 @@
 .about-word {
     margin-top: 110px;
     color: #e4e5dc;
-    font-size: clamp(32px, 15vw, 220.816px);
     line-height: 1;
     white-space: nowrap;
 }
@@ -211,17 +210,27 @@
         font-size: 30px;
     }
 
-    .about-word {
-        font-size: 59.8px;
-        margin-top: 65px;
+    .about-hero h1 {
+        max-width: 100%;
     }
 
     .about-hero img {
-        height: 240px;
+        height: 148px;
     }
 
     .team-card img {
         height: 230px;
+    }
+
+    .review-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+
+    .review-heading .section-title {
+        text-align: center;
     }
 
     .team-review-row>* {
