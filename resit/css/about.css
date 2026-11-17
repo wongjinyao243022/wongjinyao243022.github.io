@@ -158,6 +158,11 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
     .hero-copy {
         width: 100%;
         margin: 34px 0 45px;

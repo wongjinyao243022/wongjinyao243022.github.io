@@ -41,14 +41,17 @@
     border-top: 1px solid var(--line);
 }
 
+.message-column {
+    width: 100%;
+}
+
 .contact-message h2 {
-    max-width: 90%;
-    margin: 0;
+    font-size: 58px;
+    line-height: 1.08;
 }
 
 .contact-message a {
-    display: block;
-    color: var(--muted);
+    color: #a6abb3;
 }
 
 /* Tablet */
@@ -74,7 +77,7 @@
     }
 
     .contact-message h2 {
-        max-width: 100%;
+        font-size: 36px;
     }
 }
 
@@ -102,7 +105,12 @@
     }
 
     .contact-message h2 {
-        max-width: 100%;
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    .contact-message a {
+        overflow-wrap: anywhere;
     }
 
     .contact-address-wide {
@@ -117,5 +125,9 @@
 @media (max-width: 423px) {
     .contact-row {
         row-gap: 20px;
+    }
+
+    .contact-message h2 {
+        width: 98%;
     }
 }
