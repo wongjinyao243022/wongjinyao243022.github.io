@@ -139,7 +139,7 @@ h4 {
 
 .display-word {
     font-family: var(--font-heading);
-    font-size: 224px;
+    font-size: clamp(62px, 15vw, 224px);
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ h4 {
 
 /* The home page has one extra-large heading. */
 .hero-title {
-    font-size: 163px;
+    font-size: clamp(44px, 10vw, 163px);
     line-height: 0.9;
     letter-spacing: -5px;
     text-transform: uppercase;
@@ -164,7 +164,7 @@ h4 {
 
 .hero-title span {
     display: block;
-    font-size: 104px;
+    font-size: clamp (30px, 8vw, 104px);
     line-height: 1;
 }
 
@@ -485,18 +485,23 @@ h4 {
     padding-top: 28px;
 }
 
-.review-author strong,
-.review-author small {
+.team-member-name,
+.nickname {
     display: block;
 }
 
-.review-author strong {
+.team-member-name {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 19px;
     font-weight: 400;
 }
 
-.review-author small {
+.nickname {
+    font-size: 15px;
     margin-top: 4px;
     font-family: var(--font-body);
+    color: var(--muted);
     font-size: 14px;
     text-transform: none;
 }
@@ -594,7 +599,6 @@ h4 {
     text-align: center;
 }
 
-/* Tablet */
 @media (max-width: 1279px) {
     .page-title {
         font-size: 64px;
@@ -602,16 +606,6 @@ h4 {
 
     .section-title {
         font-size: 48px;
-    }
-
-    .hero-title span {
-        font-size: 54px;
-        display: block;
-        line-height: 1;
-    }
-
-    .hero-title {
-        font-size: 81px;
     }
 
     .hero-intro img {
@@ -651,10 +645,6 @@ h4 {
         padding: 0 4%;
     }
 
-    .display-word {
-        font-size: 190px;
-    }
-
     .header-logo {
         width: 195px;
     }
@@ -668,26 +658,25 @@ h4 {
         align-items: center;
         justify-content: center;
     }
-
-    /* Keep the close button above the opened menu. */
-    .menu-toggle[aria-expanded="true"] {
-        position: fixed;
-        top: 25px;
-        right: 30px;
-        z-index: 1001;
-        color: var(--white);
-        font-size: 36px;
-    }
-
-    .mobile-menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
-    }
 }
 
-/* Mobile */
+/* Keep the close button above the opened menu. */
+.menu-toggle[aria-expanded="true"] {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    z-index: 1001;
+    color: var(--white);
+    font-size: 36px;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 @media (max-width: 767px) {
     .mobile-menu {
         width: 100%;
@@ -794,14 +783,10 @@ h4 {
     .faq-answer {
         padding-bottom: 20px;
     }
-
-    .display-word {
-        font-size: 113px;
-    }
 }
 
 /* mobile */
-@media (max-width: 423px) {
+@media (max-width: 422px) {
     .page-title {
         font-size: 34px;
     }
@@ -828,11 +813,6 @@ h4 {
 
     .number-text {
         font-size: 58px;
-    }
-
-    .display-word {
-        font-size: 15vw;
-        letter-spacing: -2px;
     }
 
     .section-space {

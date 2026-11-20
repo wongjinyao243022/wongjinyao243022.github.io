@@ -483,7 +483,7 @@
     }
 
     .ordinary-section {
-        height: 290px;
+        height: 310px;
         padding: 35px 30px;
     }
 
@@ -516,19 +516,6 @@
     .hero-intro img {
         width: 12%;
         padding-bottom: 15px;
-    }
-
-    .hero-title {
-        font-size: 44px;
-        width: 100%;
-        line-height: 0.9;
-        letter-spacing: 0;
-    }
-
-    .hero-title span {
-        font-size: 30px;
-        display: block;
-        line-height: 1;
     }
 
     .position-img {
@@ -601,9 +588,9 @@
         height: 382px;
     }
 
-    .ordinary-card {
-        width: 90%;
-
+    .ordinary-section {
+        padding: 20px;
+        height: 330px;
     }
 
     .instagram-row>* {
