@@ -286,7 +286,6 @@
     height: 200px;
 }
 
-/* Tablet */
 @media (max-width: 1279px) {
     .blog-row>* {
         width: 48%;
@@ -338,7 +337,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 767px) {
     .position-img {
         top: 25%;
@@ -510,7 +508,6 @@
         height: 180px;
     }
 }
-
 
 @media (max-width: 423px) {
     .hero-intro img {

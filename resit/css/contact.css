@@ -54,7 +54,6 @@
     color: #a6abb3;
 }
 
-/* Tablet */
 @media (max-width: 1279px) {
     .contact-info {
         padding: 90px 0;
@@ -81,8 +80,6 @@
     }
 }
 
-
-/* Mobile */
 @media (max-width: 767px) {
     .contact-info {
         padding: 64px 0;
